@@ -1,0 +1,63 @@
+--------- beginning of system
+12-07 13:44:49.863  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 13:44:49.863  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 13:44:49.863  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 13:45:21.215  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 13:45:21.216  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 13:45:21.216  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 13:45:21.590  1883  1967 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:45:21.763  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:45:21.924  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:45:27.771  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:45:53.259  1883  3974 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.297  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.607  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.672  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.747  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.768  1883  1898 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.836  1883  2444 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.868  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.893  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.923  1883  2444 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:53.957  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:45:54.045  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of main
+12-07 13:46:27.824  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:46:35.825  2420  3474 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:46:36.111  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:46:51.853  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:46:56.377  2420  2321 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:46:56.731  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:46:56.792  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:47:08.218  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:47:08.218  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:47:09.117  3590  3590 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:47:09.727  1613  3606 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:47:13.251  1613  3621 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:47:27.854  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:47:38.577 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:47:40.907  3630  3630 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:48:03.546  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99187 pid 3630: No such file or directory
+12-07 13:48:06.622  1613  3671 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:48:07.057  2420  2321 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:48:07.546  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:48:08.230  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:48:08.231  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

@@ -1,0 +1,364 @@
+--------- beginning of main
+--------- beginning of system
+12-07 11:13:14.320  1736  1736 E wificond: NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+12-07 11:13:19.286  2378 24834 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:13:21.551  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:13:21.552  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:13:21.815  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 11:13:21.862  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 11:13:36.269  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:13:36.318  1727  1945 E         : Couldn't opendir /data/app/vmdl407074216.tmp: No such file or directory
+12-07 11:13:36.318  1727  1945 E installd: Failed to delete /data/app/vmdl407074216.tmp: No such file or directory
+12-07 11:13:52.815 25376 25376 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25376
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	... 11 more
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:14:00.276 25376 25376 E AndroidRuntime: 	... 17 more
+12-07 11:14:00.340  1629  1629 E lowmemorykiller: Error writing /proc/25376/oom_score_adj; errno=22
+12-07 11:14:22.325  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:14:22.326  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:14:37.262  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:15:02.546 25412 25412 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:15:24.215  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:15:24.216  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:15:24.336 25438 25438 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25438
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	... 11 more
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:15:36.519 25438 25438 E AndroidRuntime: 	... 17 more
+12-07 11:15:36.574  1629  1629 E lowmemorykiller: Error writing /proc/25438/oom_score_adj; errno=22
+12-07 11:15:38.822  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:15:41.585 25469 25469 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25469
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	... 11 more
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:15:46.681 25469 25469 E AndroidRuntime: 	... 17 more
+12-07 11:15:48.866  1629  1629 E lowmemorykiller: Error writing /proc/25469/oom_score_adj; errno=22
+12-07 11:15:53.934 25497 25497 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:15:56.328 25497 25497 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-07 11:15:58.663 25514 25514 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:15:58.772  1722  1748 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 11:15:58.995  1737  2084 E OMXNodeInstance: getConfig(0xe9a2c000:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-07 11:16:01.097  1722  1856 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25514
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	... 11 more
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:16:01.180 25514 25514 E AndroidRuntime: 	... 17 more
+12-07 11:16:01.238  1629  1629 E lowmemorykiller: Error writing /proc/25514/oom_score_adj; errno=22
+12-07 11:16:03.923  1722  1749 E IPCThreadState: binder thread pool (4 threads) starved for 190 ms
+12-07 11:16:13.719 25555 25555 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25555
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	... 11 more
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:16:18.763 25555 25555 E AndroidRuntime: 	... 17 more
+12-07 11:16:20.931  1629  1629 E lowmemorykiller: Error opening /proc/25555/oom_score_adj; errno=2
+12-07 11:16:21.098  1722  1856 E IPCThreadState: binder thread pool (4 threads) starved for 105 ms
+12-07 11:16:21.219  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 11:16:24.005 25585 25585 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:16:25.970  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:16:25.970  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:16:31.059 25605 25605 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:16:31.237  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:16:40.540  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:16:55.861 25646 25646 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25646
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	... 11 more
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Unknown URI: content://com.evancharlton.mileage/fields/
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:226)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.Activity.managedQuery(Activity.java:2559)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:92)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 11:17:10.311 25646 25646 E AndroidRuntime: 	... 17 more
+12-07 11:17:27.663  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:17:27.663  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:17:27.883  1741  1741 E /system/bin/tombstoned: Traces for pid 19845 written to: /data/anr/trace_13
+12-07 11:17:30.142  1880  1896 E ActivityManager: Aborting stack trace dump (current firstPid=19845); deadline exceeded.
+12-07 11:17:30.221  1880  1896 E ActivityManager: ANR in com.evancharlton.mileage (com.evancharlton.mileage/.Mileage)
+12-07 11:17:30.221  1880  1896 E ActivityManager: PID: 25646
+12-07 11:17:30.221  1880  1896 E ActivityManager: Reason: Input dispatching timed out (Waiting because no window has focus but there is a focused application that may eventually add a window when it finishes starting up.)
+12-07 11:17:30.221  1880  1896 E ActivityManager: Load: 4.48 / 4.24 / 3.75
+12-07 11:17:30.221  1880  1896 E ActivityManager: CPU usage from 0ms to 26689ms later (2018-12-07 11:17:03.461 to 2018-12-07 11:17:30.150):
+12-07 11:17:30.221  1880  1896 E ActivityManager:   76% 1880/system_server: 36% user + 40% kernel / faults: 4163 minor 502 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   51% 19845/com.google.android.googlequicksearchbox:search: 21% user + 29% kernel / faults: 3832 minor 333 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   40% 646/kswapd0: 0% user + 40% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   17% 1722/surfaceflinger: 7.8% user + 9.9% kernel / faults: 7 minor 3 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   9.5% 1702/kworker/u9:3: 0% user + 9.5% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   9.1% 18700/kworker/u9:4: 0% user + 9.1% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   8.9% 2008/com.android.systemui: 4.8% user + 4.1% kernel / faults: 65 minor 23 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   8.8% 1992/com.google.android.inputmethod.latin: 4.2% user + 4.5% kernel / faults: 1991 minor 108 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   8.2% 23839/kworker/u8:1: 0% user + 8.2% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   8% 1610/android.hardware.audio@2.0-service: 2.2% user + 5.7% kernel / faults: 23 minor 15 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   3.5% 20586/com.google.android.apps.messaging: 0% user + 3.5% kernel / faults: 170 minor 87 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   7.7% 25585/com.google.android.apps.photos: 2.1% user + 5.6% kernel / faults: 701 minor 311 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   2% 2422/com.google.android.apps.nexuslauncher: 1.1% user + 0.8% kernel / faults: 934 minor 110 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.9% 1701/kworker/u9:2: 0% user + 0.9% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.8% 2300/adbd: 0.1% user + 0.7% kernel / faults: 36751 minor
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.8% 1700/kworker/u9:1: 0% user + 0.8% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.7% 25658/kworker/u8:2: 0% user + 0.7% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.6% 1628/audioserver: 0.2% user + 0.4% kernel / faults: 108 minor 37 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.6% 22385/kworker/u8:6: 0% user + 0.6% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.5% 2378/com.google.android.gms.persistent: 0.2% user + 0.2% kernel / faults: 160 minor 60 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.4% 1745/android.hardware.graphics.composer@2.1-service: 0% user + 0.4% kernel / faults: 14 minor
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.4% 22205/kworker/u8:3: 0% user + 0.4% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.3% 1624/android.hardware.sensors@1.0-service: 0.1% user + 0.2% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.2% 1553/logd: 0% user + 0.2% kernel / faults: 3 minor 3 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.2% 21141/kworker/u8:5: 0% user + 0.2% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.2% 3/ksoftirqd/0: 0% user + 0.2% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 2331/com.google.android.googlequicksearchbox:interactor: 0% user + 0% kernel / faults: 246 minor 64 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.1% 25366/com.android.commands.monkey: 0% user + 0.1% kernel / faults: 50 minor 12 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 25453/kworker/2:1: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0.1% 24509/kworker/0:2: 0% user + 0.1% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 1715/jbd2/dm-1-8: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 2125/com.android.phone: 0% user + 0% kernel / faults: 29 minor 9 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 2482/com.google.android.gms: 0% user + 0% kernel / faults: 18 minor 24 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 23814/wpa_supplicant: 0% user + 0% kernel / faults: 11 minor 12 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 7/rcu_preempt: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 1619/android.hardware.gnss@1.0-service: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 1741/tombstoned: 0% user + 0% kernel / faults: 2 minor 1 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 2318/logcat: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 2780/com.android.vending: 0% user + 0% kernel / faults: 48 minor 18 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 24285/android.process.media: 0% user + 0% kernel / faults: 45 minor 4 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:   0% 25412/com.android.chrome:sandboxed_process20: 0% user + 0% kernel / faults: 21 minor 73 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:  +0% 25680/crash_dump32: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:  +0% 25682/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager: 32% TOTAL: 7.2% user + 21% kernel + 3.5% iowait + 0.6% softirq
+12-07 11:17:30.221  1880  1896 E ActivityManager: CPU usage from 46ms to 4434ms later (2018-12-07 11:17:03.508 to 2018-12-07 11:17:07.895):
+12-07 11:17:30.221  1880  1896 E ActivityManager:   195% 1880/system_server: 100% user + 94% kernel / faults: 668 minor 52 major
+12-07 11:17:30.221  1880  1896 E ActivityManager:     94% 1895/android.bg: 26% user + 67% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:     91% 1889/HeapTaskDaemon: 48% user + 42% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:     6.7% 1896/ActivityManager: 6.7% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:     1.2% 1891/Binder:1880_2: 0.4% user + 0.8% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:     0.8% 3624/Binder:1880_12: 0.8% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:     0.4% 1880/system_server: 0.4% user + 0% kernel
+12-07 11:17:30.221  1880  1896 E ActivityManager:   93% 25646/com.evancharlton.mileage: 5.3% user + 88% kernel / faults: 278 
+12-07 11:17:35.447  1741  1741 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_06
+12-07 11:17:37.690 25695 25695 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:17:40.155  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:42.375  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:17:42.404  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:42.534  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:42.690  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:44.627  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:44.778  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:44.891  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:44.981  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:47.170  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:47.264  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:47.351  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:47.442  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:47.518  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:49.422  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:49.526  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:49.610  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:49.697  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:51.892  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:52.009  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:52.111  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:52.207  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:54.170  1880  1968 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-07 11:17:54.255  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:54.362  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:54.465  1880  4544 E memtrack: Couldn't load memtrack module
+12-07 11:17:56.769  1880  4544 E memtrack: Couldn't load memtrack module

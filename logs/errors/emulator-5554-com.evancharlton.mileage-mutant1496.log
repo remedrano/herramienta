@@ -1,0 +1,231 @@
+--------- beginning of main
+--------- beginning of system
+12-07 21:32:10.132 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 21:32:11.440 21180 21180 E Dialer  : VvmStatusSmsFetcher - Request SMS send failed: RESULT_ERROR_GENERIC_FAILURE
+12-07 21:32:11.462 21180 21395 E Dialer  : VvmActivationTask - Unable to send status request SMS
+12-07 21:32:13.520  1729  1729 E         : Couldn't opendir /data/app/vmdl1262239109.tmp: No such file or directory
+12-07 21:32:13.520  1729  1729 E installd: Failed to delete /data/app/vmdl1262239109.tmp: No such file or directory
+12-07 21:32:14.363 22677 22677 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22677
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:14.749 22677 22677 E AndroidRuntime: 	... 11 more
+12-07 21:32:14.785  1632  1632 E lowmemorykiller: Error writing /proc/22677/oom_score_adj; errno=22
+12-07 21:32:15.166 15927 22697 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:15.349 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 21:32:18.577 22703 22703 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22703
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:18.890 22703 22703 E AndroidRuntime: 	... 11 more
+12-07 21:32:18.918  1632  1632 E lowmemorykiller: Error writing /proc/22703/oom_score_adj; errno=22
+12-07 21:32:19.337 22727 22727 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22727
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:19.597 22727 22727 E AndroidRuntime: 	... 11 more
+12-07 21:32:19.665  1632  1632 E lowmemorykiller: Error writing /proc/22727/oom_score_adj; errno=22
+12-07 21:32:19.985 15927 22747 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:20.460 22750 22750 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22750
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:20.714 22750 22750 E AndroidRuntime: 	... 11 more
+12-07 21:32:20.751  1632  1632 E lowmemorykiller: Error writing /proc/22750/oom_score_adj; errno=22
+12-07 21:32:20.969 15927 22770 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:21.198 22773 22773 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22773
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:21.519 22773 22773 E AndroidRuntime: 	... 11 more
+12-07 21:32:21.563  1632  1632 E lowmemorykiller: Error writing /proc/22773/oom_score_adj; errno=22
+12-07 21:32:22.110 15927 22795 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:23.134 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:32:23.134 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:32:23.861 22800 22800 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22800
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:24.235 22800 22800 E AndroidRuntime: 	... 11 more
+12-07 21:32:24.310  1632  1632 E lowmemorykiller: Error writing /proc/22800/oom_score_adj; errno=22
+12-07 21:32:24.729 15927 22820 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:24.856 16410 22045 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_af6ba2c4-4415-418b-ac4c-98d658aa0857)
+12-07 21:32:25.030 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 21:32:25.098 22825 22825 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22825
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:25.393 22825 22825 E AndroidRuntime: 	... 11 more
+12-07 21:32:25.776 15927 22843 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:26.305  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 21:32:27.406 16085 16085 E RecyclerView: No adapter attached; skipping layout
+12-07 21:32:28.644 22852 22852 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22852
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: tag must be non-null
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.widget.TabHost.newTabSpec(TabHost.java:122)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:64)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:35)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:32:28.896 22852 22852 E AndroidRuntime: 	... 11 more
+12-07 21:32:28.949  1632  1632 E lowmemorykiller: Error writing /proc/22852/oom_score_adj; errno=22
+12-07 21:32:29.263 15927 22872 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:32:30.935 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-07 21:32:31.044 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

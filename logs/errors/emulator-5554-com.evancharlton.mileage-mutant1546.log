@@ -1,0 +1,71 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:42:04.796 15976 16042 E InputDispatcher: channel '4fed75f com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:42:04.800 15976 16042 E InputDispatcher: channel '826a79a com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:42:04.801 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:42:04.801 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:42:04.801 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:42:05.087  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 16:42:05.087  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 16:42:05.736 16506 27259 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:42:05.957 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:42:06.019 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:42:07.768  1729  1752 E         : Couldn't opendir /data/app/vmdl48280893.tmp: No such file or directory
+12-07 16:42:07.768  1729  1752 E installd: Failed to delete /data/app/vmdl48280893.tmp: No such file or directory
+12-07 16:42:09.209 27470 27470 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 27470
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.EastChart that attempts to sub-type erroneous class com.evancharlton.mileage.charts.LongitudeChart (declaration of 'com.evancharlton.mileage.charts.EastChart' appears in base.apk)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.charts.LongitudeChart that attempts to sub-type erroneous class com.evancharlton.mileage.charts.LineChart (declaration of 'com.evancharlton.mileage.charts.LongitudeChart' appears in base.apk)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	... 15 more
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.charts.LineChart: void com.evancharlton.mileage.charts.LineChart.addPoint(long, double) failed to verify: void com.evancharlton.mileage.charts.LineChart.addPoint(long, double): [0x3] register v2 has type Zero/null but expected Long (Low Half) (declaration of 'com.evancharlton.mileage.charts.LineChart' appears in base.apk)
+12-07 16:42:14.633 27470 27470 E AndroidRuntime: 	... 15 more
+12-07 16:42:14.672  1632  1632 E lowmemorykiller: Error writing /proc/27470/oom_score_adj; errno=22
+12-07 16:42:14.751 15976 16042 E InputDispatcher: channel '230218d Toast (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:42:14.755 15976 16042 E InputDispatcher: channel 'b779cb0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:42:15.383 15927 27507 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:42:16.521 27511 27511 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:42:16.723 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a3433d VFE...CL. ...P.... 0,436-1038,583 #9b} because the view is not tagged for visual element logging.
+12-07 16:42:17.134 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{da3baf3 VFE...CL. .F....ID 0,21-207,279 #9c} because the view is not tagged for visual element logging.
+12-07 16:42:17.497 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a3433d VFE...CL. ...P.... 0,436-1038,583 #9b} because the view is not tagged for visual element logging.
+12-07 16:42:18.230 27538 27538 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:42:24.473 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 16:42:21.044]
+12-07 16:42:26.451  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:42:26.773 16506 27575 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:42:27.003 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:42:28.608 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:42:29.087 15927 27594 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000

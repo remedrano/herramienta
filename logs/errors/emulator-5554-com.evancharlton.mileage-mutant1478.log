@@ -1,0 +1,265 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:30:12.209 15927 20802 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:30:17.057  1729  1729 E         : Couldn't opendir /data/app/vmdl1763511919.tmp: No such file or directory
+12-07 16:30:17.057  1729  1729 E installd: Failed to delete /data/app/vmdl1763511919.tmp: No such file or directory
+12-07 16:30:17.306 16216 16216 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+12-07 16:30:18.031 20860 20860 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:18.460 20860 20860 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20860
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:18.463 20860 20860 E AndroidRuntime: 	... 11 more
+12-07 16:30:18.520  1632  1632 E lowmemorykiller: Error writing /proc/20860/oom_score_adj; errno=22
+12-07 16:30:19.288 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 16:30:19.369 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 16:30:20.932 16410 19812 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_6a902e8c-d249-4cbe-9c7e-a6f5c69ea861)
+12-07 16:30:22.971 20882 20882 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:23.236 20882 20882 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20882
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:23.239 20882 20882 E AndroidRuntime: 	... 11 more
+12-07 16:30:23.293  1632  1632 E lowmemorykiller: Error writing /proc/20882/oom_score_adj; errno=22
+12-07 16:30:23.360 16485 18625 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-tN4gS3v9Xc2S4ISDSBHI3A==/base.apk' I/O error
+12-07 16:30:23.361 16485 18625 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-tN4gS3v9Xc2S4ISDSBHI3A==/base.apk
+12-07 16:30:23.752 20901 20901 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:24.007 20901 20901 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20901
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:24.008 20901 20901 E AndroidRuntime: 	... 11 more
+12-07 16:30:24.141 16485 16498 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-tN4gS3v9Xc2S4ISDSBHI3A==/base.apk' I/O error
+12-07 16:30:24.141 16485 16498 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-tN4gS3v9Xc2S4ISDSBHI3A==/base.apk
+12-07 16:30:24.748 20921 20921 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:25.000 20921 20921 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20921
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:25.001 20921 20921 E AndroidRuntime: 	... 11 more
+12-07 16:30:25.030  1632  1632 E lowmemorykiller: Error writing /proc/20921/oom_score_adj; errno=22
+12-07 16:30:25.536 20941 20941 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:25.782 20941 20941 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20941
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:25.784 20941 20941 E AndroidRuntime: 	... 11 more
+12-07 16:30:25.839  1632  1632 E lowmemorykiller: Error writing /proc/20941/oom_score_adj; errno=22
+12-07 16:30:27.142  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:30:27.380 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:30:27.380 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:30:27.984 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:30:28.087 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:30:28.106 20965 20965 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:28.383 20965 20965 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20965
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:28.385 20965 20965 E AndroidRuntime: 	... 11 more
+12-07 16:30:28.425  1632  1632 E lowmemorykiller: Error writing /proc/20965/oom_score_adj; errno=22
+12-07 16:30:28.756 15927 20986 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:30:29.461 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:30:29.706 20990 20990 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:29.920 20990 20990 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20990
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:29.922 20990 20990 E AndroidRuntime: 	... 11 more
+12-07 16:30:29.968  1632  1632 E lowmemorykiller: Error writing /proc/20990/oom_score_adj; errno=22
+12-07 16:30:30.214 15927 21012 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:30:30.787 15927 21017 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:30:31.083 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:30:31.334 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:30:32.806 21021 21021 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:30:33.123 21021 21021 E harlton.mileag: Invalid ID 0x00000000.
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21021
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.content.res.Resources.getDrawable(Resources.java:802)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:66)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:33)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:30:33.124 21021 21021 E AndroidRuntime: 	... 11 more
+12-07 16:30:33.213  1632  1632 E lowmemorykiller: Error writing /proc/21021/oom_score_adj; errno=22
+12-07 16:30:33.573 15927 21041 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000

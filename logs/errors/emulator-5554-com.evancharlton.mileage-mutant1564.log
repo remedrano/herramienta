@@ -1,0 +1,73 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:46:17.269 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:46:17.269 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:46:17.269 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:46:17.271 15976 16042 E InputDispatcher: channel '5a9f96a com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:46:17.272 15976 16042 E InputDispatcher: channel '5ffa5cc com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:46:18.869 16506 28981 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:46:19.207 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:46:21.127  1729  2328 E         : Couldn't opendir /data/app/vmdl167652774.tmp: No such file or directory
+12-07 16:46:21.127  1729  2328 E installd: Failed to delete /data/app/vmdl167652774.tmp: No such file or directory
+12-07 16:46:22.821 29048 29048 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:46:24.100 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 16:46:24.133 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:46:26.538  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:46:27.517 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 16:46:27.517 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:46:31.393 15976 15993 E libprocessgroup: Error encountered killing process cgroup uid 99021 pid 28932: No such file or directory
+12-07 16:46:32.974 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:46:36.527 16506 28791 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:46:36.863 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:46:36.981 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:46:38.512 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:46:39.978 15927 29103 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:46:44.607 15976 15987 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.628 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.658 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.683 15976 16115 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.701 15976 15998 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.718 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.790 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.805 15976 16115 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.835 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:44.880 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.104 15976 15987 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.127 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.217 15976 15991 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.253 15976 18399 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.301 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.341 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.375 15976 18399 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:45.406 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:46:49.321 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

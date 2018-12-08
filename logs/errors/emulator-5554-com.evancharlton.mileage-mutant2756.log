@@ -1,0 +1,50 @@
+--------- beginning of system
+--------- beginning of main
+12-08 13:27:15.228  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:27:15.228  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:27:15.228  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:27:17.164  2429 13444 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:27:17.470  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:27:17.484  2429  3197 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544311610000, Current: 1544293629592. Skipping this Position.
+12-08 13:27:17.511  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:27:18.824  1732  1759 E         : Couldn't opendir /data/app/vmdl1435566017.tmp: No such file or directory
+12-08 13:27:18.824  1732  1759 E installd: Failed to delete /data/app/vmdl1435566017.tmp: No such file or directory
+12-08 13:27:20.215 13527 13527 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:27:25.911  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 13:27:25.912  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:27:26.257 13527 13527 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:27:26.257 13527 13527 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:27:37.679  2429 12998 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:27:38.112  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:27:38.266  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:27:40.161  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:27:41.289 13527 13527 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:27:41.294 13527 13527 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:27:41.589  1614 13589 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:27:41.712  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:27:51.771  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:27:55.650  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

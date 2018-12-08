@@ -1,0 +1,45 @@
+--------- beginning of system
+--------- beginning of main
+12-07 22:00:54.175 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 22:00:54.175 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 22:00:54.175 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 22:00:54.305 16485 19833 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-07 22:00:58.275  1729  1752 E         : Couldn't opendir /data/app/vmdl785279979.tmp: No such file or directory
+12-07 22:00:58.275  1729  1752 E installd: Failed to delete /data/app/vmdl785279979.tmp: No such file or directory
+12-07 22:01:00.722  1499  1499 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 22:01:02.090  1518  1518 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-07 22:01:04.925  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 22:01:04.925  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 22:01:11.517 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:14.958 16506  1236 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 22:01:15.014 16506  1236 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 22:01:15.197 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 22:01:15.282 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 22:01:22.586 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:24.471 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:24.581  1724  1724 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-07 22:01:25.757 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 22:01:26.692  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 22:01:29.051 15927  1600 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 22:01:40.375 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:40.488 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:44.476 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:01:46.298 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

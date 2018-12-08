@@ -1,0 +1,67 @@
+--------- beginning of system
+12-07 14:01:18.272  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 14:01:18.272  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 14:01:18.272  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 14:01:33.219  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:02:33.238  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:03:18.650  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 14:03:18.664  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 14:03:18.715  1738  1738 E wificond: No Offload Service available
+12-07 14:03:18.917  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 14:03:18.928  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 14:03:18.941  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 14:03:19.003  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 14:03:23.349  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 14:03:29.361  1883  3983 E NotificationService: Package enqueue rate is 17.424028. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-07 14:03:33.289  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:03:34.443  1883  4257 E NotificationService: Package enqueue rate is 6.1331496. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+--------- beginning of main
+12-07 14:03:53.979  5655  5655 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 14:03:59.647 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{668ba20 VFE...CL. .F....ID 0,142-1038,289 #1ec} because the view is not tagged for visual element logging.
+12-07 14:04:06.332  5699  5699 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-07 14:04:08.499  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 14:04:08.499  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 14:04:08.871 28976 28985 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 14:03:55.562]
+12-07 14:04:17.647 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:04:17.648 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:04:31.655 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 14:04:33.334  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:04:36.097  1632  1632 E lowmemorykiller: Error opening /proc/5287/oom_score_adj; errno=2
+12-07 14:04:36.824 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:04:36.824 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:04:43.224  2528  5162 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_7f8dc92d-b0f3-402a-b085-28d92b0a8d56)
+12-07 14:04:44.283 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{84dad03 VFE...CL. ...P.... 0,583-1038,730 #201} because the view is not tagged for visual element logging.
+12-07 14:04:44.976 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7b1dab9 VFE...CL. ...P.... 0,142-1038,289 #1fe} because the view is not tagged for visual element logging.
+12-07 14:04:45.935 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{84dad03 VFE...CL. ...P.... 0,583-1038,730 #201} because the view is not tagged for visual element logging.
+12-07 14:04:46.126 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71bc480 VFE...CL. ...P.... 0,-5-1038,142 #1fd} because the view is not tagged for visual element logging.
+12-07 14:04:46.385 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71bc480 VFE...CL. .F....ID 0,-5-1038,142 #1fd} because the view is not tagged for visual element logging.
+12-07 14:04:57.700  2420  5736 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 14:04:57.797  2420  5736 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 14:04:58.324  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 14:04:58.466  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 14:05:00.458 28976 28976 E PSAC    : Bitmap height 179 is less than first row height for pixel search
+12-07 14:05:04.222 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:05:04.222 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 14:05:04.290 28976 29013 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 14:05:08.510  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 14:05:08.511  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 14:05:13.654  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 14:05:15.400  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99202 pid 5655: No such file or directory

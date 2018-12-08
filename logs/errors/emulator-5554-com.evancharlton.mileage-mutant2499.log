@@ -1,0 +1,101 @@
+--------- beginning of system
+12-08 07:37:08.866  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of crash
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 4916
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.tasks.VehicleStatisticsTask: void com.evancharlton.mileage.tasks.VehicleStatisticsTask.update(com.evancharlton.mileage.provider.Statistic, double) failed to verify: void com.evancharlton.mileage.tasks.VehicleStatisticsTask.update(com.evancharlton.mileage.provider.Statistic, double): [0x1] register v3 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.tasks.VehicleStatisticsTask' appears in base.apk)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.evancharlton.mileage.VehicleStatisticsActivity.calculate(VehicleStatisticsActivity.java:206)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.evancharlton.mileage.VehicleStatisticsActivity.recalculate(VehicleStatisticsActivity.java:170)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.evancharlton.mileage.VehicleStatisticsActivity.onCreate(VehicleStatisticsActivity.java:131)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.View.onKeyUp(View.java:13216)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2716)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.View.dispatchKeyEvent(View.java:12450)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1891)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.widget.TabHost.dispatchKeyEvent(TabHost.java:346)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:428)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1820)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3360)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:160)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 07:37:55.516  4916  4916 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+--------- beginning of main
+12-08 07:38:02.380  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 07:38:02.381  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 07:38:04.963  2448  4938 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 07:38:05.243  2448  4938 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 07:38:05.243  2448  4938 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 07:38:07.593  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 07:38:07.670  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 07:38:09.807  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:38:12.214  4965  4965 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 07:38:29.163  5002  5002 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 07:39:04.005  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:39:04.006  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 07:39:04.007  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 07:39:11.207  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:39:25.620 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 07:39:27.659 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 07:39:30.484  2448  5025 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 07:39:32.854  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 07:39:32.904  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 07:39:44.705  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 07:39:52.183  2448  5050 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 07:39:57.004  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 07:39:59.395  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 07:39:59.445  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:40:01.558  5070  5070 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 07:40:04.063  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 07:40:04.063  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 07:40:09.141  1992  1992 E RecyclerView: No adapter attached; skipping layout
+12-08 07:40:11.214  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:40:23.692  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:40:35.245  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:40:35.341  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 07:40:40.435  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99064 pid 5070: No such file or directory
+12-08 07:40:47.252  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

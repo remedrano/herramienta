@@ -1,0 +1,86 @@
+--------- beginning of system
+--------- beginning of main
+12-08 06:05:10.373  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 06:05:10.373  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 06:05:10.373  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 06:05:17.049  2448 30014 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:05:18.919  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:05:18.980  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:05:23.153  1730  1755 E         : Couldn't opendir /data/app/vmdl344579055.tmp: No such file or directory
+12-08 06:05:23.153  1730  1755 E installd: Failed to delete /data/app/vmdl344579055.tmp: No such file or directory
+12-08 06:05:25.557  2475 30167 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 06:05:27.491 30185 30185 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:05:55.698  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:05:55.698  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:06:00.033  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:06:28.253  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 06:06:36.942  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:06:46.037 29746 29757 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-l60MyoYcxO0GQqDaWtBIMA==/base.apk' I/O error
+12-08 06:06:46.037 29746 29757 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-l60MyoYcxO0GQqDaWtBIMA==/base.apk
+12-08 06:06:48.035  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:06:52.605  2448 30206 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:06:54.690  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:06:54.752  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:06:56.860  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:06:56.860  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:06:58.873  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:07:01.254  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:07:01.604  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 06:07:10.152  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:07:10.340 30258 30258 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:07:10.571 30276 30276 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:07:12.485  2448 30235 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:07:14.729  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:07:14.812  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:07:14.858 30298 30298 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:07:15.086 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 06:07:16.810  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 06:07:19.160 30298 30298 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-08 06:07:21.254 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 06:07:23.615 30362 30362 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:07:23.756 30362 30362 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 06:07:23.756 30362 30362 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 06:07:23.756 30362 30362 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 06:07:27.953 30391 30391 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:07:41.176  2448 29805 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-171s,latest=428s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-471s last_run=-8s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 06:07:48.204  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 06:07:56.919  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:07:56.919  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:07:56.950  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 06:07:58.893  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 06:07:58.969  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 06:08:03.125  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

@@ -1,0 +1,134 @@
+--------- beginning of system
+12-07 05:44:10.204  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:44:10.204  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:44:10.204  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-07 05:44:31.399  1610 10537 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:44:39.805  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:44:39.805  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:44:44.431  2378 10206 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:44:44.713  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:44:44.830  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:44:44.994  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:44:46.547 10558 10558 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:44:47.903  1880  4500 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:47.922  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:47.958  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:47.984  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.005  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.039  1880  1897 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.100  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.264  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.300  1880  4424 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.330  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:48.431  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 05:44:54.706  2482  9941 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_3095b584-b1c3-4ca2-9c1b-d42d19d26a7a)
+12-07 05:45:00.206  2378 10242 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:45:00.540  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:45:00.667  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:45:08.750 10604 10604 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:45:11.509  1610 10632 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:45:23.674  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 05:45:23.683  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 05:45:23.771  1736  1736 E wificond: No Offload Service available
+12-07 05:45:23.920  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:45:23.952  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:45:23.970  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:45:23.990  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:45:24.483  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 05:45:24.501 10647 10647 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:45:24.501 10647 10647 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:45:24.505 10647 10647 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:45:24.505 10647 10647 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:45:24.580 10647 10647 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:45:24.580 10647 10647 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:45:24.649 10647 10647 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:45:24.649 10647 10647 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:45:24.836  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 05:45:24.836  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 05:45:24.836  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 05:45:25.070  1880  1969 E WifiP2pService: Unhandled message { when=-2ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:45:25.077  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:45:25.096  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:45:34.142  2378 10660 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:45:34.572  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:45:34.656  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:45:38.822 10668 10668 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:45:39.664  1610 10693 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:45:39.806  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:45:39.806  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:45:41.556  1610 10697 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:45:44.995  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:45:54.796  1610 10707 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:46:07.162  1610 10718 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:46:07.836  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:46:07.836  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:46:07.843  2768  2935 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 05:46:09.931  1610 10722 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:46:18.016 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:18.017 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:18.018 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:18.019 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-07 05:46:18.019 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-07 05:46:18.326  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99031 pid 10668: No such file or directory
+12-07 05:46:19.966 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:19.969 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:19.969 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:19.969 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:19.969 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:19.969 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:19.970 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:19.971 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:19.971 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-07 05:46:19.971 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-07 05:46:20.061 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:20.061 10456 10456 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-07 05:46:20.061 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:20.061 10456 10456 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-07 05:46:20.062 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:20.063 10456 10456 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-07 05:46:20.063 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:20.063 10456 10456 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-07 05:46:20.063 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-07 05:46:20.063 10456 10456 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.

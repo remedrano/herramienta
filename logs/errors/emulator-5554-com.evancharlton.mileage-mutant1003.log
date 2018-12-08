@@ -1,0 +1,97 @@
+--------- beginning of system
+12-07 05:22:14.056  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:22:14.056  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:22:14.056  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 05:22:15.017  1880  1895 E AutofillSession: Error notifying client to finish session
+12-07 05:22:15.017  1880  1895 E AutofillSession: android.os.DeadObjectException
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.BinderProxy.transactNative(Native Method)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.view.autofill.IAutoFillManagerClient$Stub$Proxy.setSessionFinished(IAutoFillManagerClient.java:512)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2751)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2738)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerServiceImpl.destroySessionsLocked(AutofillManagerServiceImpl.java:1042)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:579)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:569)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.access$400(AutofillManagerService.java:100)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService$2.onSomePackagesChanged(AutofillManagerService.java:215)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at com.android.internal.content.PackageMonitor.onReceive(PackageMonitor.java:451)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1391)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA.run(Unknown Source:2)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:22:15.017  1880  1895 E AutofillSession: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:22:44.735  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:23:26.247  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 05:23:26.253  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 05:23:26.315  1736  1736 E wificond: No Offload Service available
+12-07 05:23:30.522  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+--------- beginning of main
+12-07 05:23:44.305  5100  5100 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 5100
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.initContentView(Editor.java:3589)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.widget.Editor$PinnedPopupWindow.<init>(Editor.java:3271)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.<init>(Editor.java:3555)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.widget.Editor.replace(Editor.java:439)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.widget.-$$Lambda$DZXn7FbDDFyBvNjI-iG9_hfa7kw.run(Unknown Source:2)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 05:23:44.316  5100  5100 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 05:23:44.523  5557  5557 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:23:44.740  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:23:45.197  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:23:45.530  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:23:51.420  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 05:23:51.738  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 05:23:51.753  1610  5619 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:23:52.523  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d2b3495 VFE...CL. ...P.... 21,436-1059,583 #14} because the view is not tagged for visual element logging.
+12-07 05:23:52.847  5623  5623 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:23:53.392  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:23:53.393  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:23:54.083  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c6ab8e4 VFE...CL. ...P.... 21,877-1059,1024 #17} because the view is not tagged for visual element logging.
+12-07 05:23:54.102  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f0fe477 VFE...CL. ...P.... 21,730-1059,877 #16} because the view is not tagged for visual element logging.
+12-07 05:23:54.138  5653  5653 E .android.gms.u: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:23:54.405  5668  5668 E .apps.messagin: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:23:55.201  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{21e614d VFE...CL. ......ID 21,1024-1059,1171 #18} because the view is not tagged for visual element logging.
+12-07 05:23:55.221  5691  5691 E d.configupdate: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:23:57.385  1610  5733 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:23:58.018  5739  5739 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:24:04.991  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:24:07.398  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c9dceab VFE...CL. ...P.... 0,-5-1038,142 #1f} because the view is not tagged for visual element logging.
+12-07 05:24:07.604  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{fdbdac6 VFE...CL. ...P.... 0,436-1038,583 #22} because the view is not tagged for visual element logging.
+12-07 05:24:07.682  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c9dceab VFE...CL. ...P.... 0,-5-1038,142 #1f} because the view is not tagged for visual element logging.
+12-07 05:24:10.111  1610  5822 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:24:21.265  1610  5842 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:24:23.410  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:24:28.166  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:24:33.316  1880  1895 E memtrack: Couldn't load memtrack module

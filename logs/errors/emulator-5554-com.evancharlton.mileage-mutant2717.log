@@ -1,0 +1,69 @@
+--------- beginning of main
+--------- beginning of system
+12-08 13:16:45.931  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:16:45.931  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:16:45.931  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:16:47.741  2429  9982 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:16:48.114  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:16:48.173  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:16:49.382  1732  1934 E         : Couldn't opendir /data/app/vmdl1235248147.tmp: No such file or directory
+12-08 13:16:49.382  1732  1934 E installd: Failed to delete /data/app/vmdl1235248147.tmp: No such file or directory
+12-08 13:16:49.392  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:50.702 10063 10063 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:51.673  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:51.932  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 13:16:51.933  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:54.158  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:54.545  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 13:16:54.546  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:55.088 10063 10063 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:16:55.088 10063 10063 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:16:57.837  1885  2169 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@a33dc88
+12-08 13:16:57.919  1996  1996 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 13:17:04.870  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:17:04.871  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:17:05.435  2608  9359 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_c8504e70-b8d5-4cc3-8075-7abababb0514)
+12-08 13:17:09.405  2429  9312 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:17:09.715  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:17:09.739  2429  3197 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544311007000, Current: 1544293017303. Skipping this Position.
+12-08 13:17:09.838  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:17:10.197  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:17:12.130  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:17:13.602  1614 10134 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:17:13.877 10137 10137 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:17:14.920 10155 10155 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:17:15.052  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{1ad7163 VFE...CL. ...P.... 207,21-414,279 #39} because the view is not tagged for visual element logging.
+12-08 13:17:15.797  1614 10170 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:17:26.922  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99014 pid 10155: No such file or directory
+12-08 13:17:28.984 10063 10063 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:17:28.984 10063 10063 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

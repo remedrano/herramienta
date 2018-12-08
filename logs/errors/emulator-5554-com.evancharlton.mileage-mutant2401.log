@@ -1,0 +1,55 @@
+--------- beginning of main
+--------- beginning of system
+12-08 10:35:58.034  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 10:35:58.034  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 10:35:58.034  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 10:35:58.755 27102 27102 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:35:58.785 27115 27115 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:35:59.491 27151 27151 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:36:00.706 27151 27151 E DocsApplication: [main] No default account found during application creation.
+12-08 10:36:01.685  1730  1755 E         : Couldn't opendir /data/app/vmdl124060331.tmp: No such file or directory
+12-08 10:36:01.685  1730  1755 E installd: Failed to delete /data/app/vmdl124060331.tmp: No such file or directory
+12-08 10:36:02.664  2475 27135 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 10:36:03.730 27219 27219 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:36:15.280 27246 27246 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:36:15.763 27246 27246 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 10:36:16.017  1740  1740 E OMXNodeInstance: getConfig(0xf48ac0c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 10:36:22.490  2448 26853 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 10:36:22.517  2448 26853 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 10:36:22.729  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 10:36:22.779  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 10:36:26.675  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 10:36:27.021  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:36:28.803 27293 27293 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:36:29.574 27312 27312 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:36:37.942  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 10:36:43.435  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:36:43.435  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:36:45.554  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:36:45.649  1611 27361 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 10:37:13.473  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 10:37:43.442  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:37:43.442  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:37:45.561  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:38:43.489  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:38:43.490  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:38:45.561  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:38:56.693 27368 27368 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.

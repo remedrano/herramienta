@@ -1,0 +1,144 @@
+--------- beginning of system
+12-07 01:01:24.159  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 01:01:24.159  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 01:01:24.159  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 01:01:45.257  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 01:01:51.297  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 01:01:51.298  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 01:01:51.298  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 01:01:51.367 13633 13633 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 01:01:51.367 13633 13633 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 01:01:51.367 13633 13633 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 01:01:51.687  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 01:01:51.809  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 01:01:51.897  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 01:02:02.375  1880  2228 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.399  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.530  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.551  1880  4995 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.586  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.687  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.708  1880  4995 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.731  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:02:02.823  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of main
+12-07 01:02:12.730 13742 13742 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:02:26.856  2378 13066 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 01:02:27.082  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 01:02:27.138  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 01:02:35.383 13797 13797 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:02:38.031  1610 13826 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:02:39.895  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 01:02:39.895  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 01:02:45.261  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 01:02:49.620  2378 13457 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 01:02:50.255  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 01:03:14.725 13546 13546 E WindowManager: 
+12-07 01:03:14.725 13546 13546 E WindowManager: android.view.WindowLeaked: Activity com.evancharlton.mileage.FieldActivity has leaked window DecorView@fbe0687[FieldActivity] that was originally added here
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:511)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:346)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.policy.PhoneWindow.openPanel(PhoneWindow.java:887)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUpPanel(PhoneWindow.java:1104)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUp(PhoneWindow.java:2007)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:350)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.os.Looper.loop(Looper.java:160)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 01:03:14.725 13546 13546 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 01:03:16.444  2378 13066 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 01:03:16.891  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 01:03:16.984  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 01:03:22.373  1610 13895 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:03:22.765 13898 13898 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:03:24.855  1610 13924 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:03:34.295 13546 13546 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 01:03:34.296 13546 13546 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 01:03:39.898  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 01:03:39.898  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 01:03:39.898 13933 13933 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:03:41.706  1610 13958 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:03:45.279  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 01:03:47.346  1880  2568 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:47.362  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:47.431  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:47.451  1880  4057 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:47.491  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:47.590  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 01:03:54.052  1610 13970 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:03:56.534  1610 13974 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 01:03:59.170  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 01:03:59.173  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 01:03:59.220  1736  1736 E wificond: No Offload Service available
+12-07 01:03:59.221  1880  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-07 01:03:59.282  1880  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-07 01:03:59.302  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 01:03:59.316  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 01:03:59.331  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 01:03:59.340  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 01:04:03.413  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 01:04:03.488  1880  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-07 01:04:04.080  2378 14003 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 01:04:04.227  1733  1824 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 01:04:04.519 14010 14010 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:04:04.891 14027 14027 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-07 01:04:05.950  1880  2228 E NotificationService: Package enqueue rate is 15.452861. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox

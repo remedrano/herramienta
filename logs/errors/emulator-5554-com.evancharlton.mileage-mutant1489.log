@@ -1,0 +1,242 @@
+--------- beginning of main
+--------- beginning of system
+12-07 21:31:27.592 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:29.119 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:31.536  1729  1729 E         : Couldn't opendir /data/app/vmdl557673995.tmp: No such file or directory
+12-07 21:31:31.536  1729  1729 E installd: Failed to delete /data/app/vmdl557673995.tmp: No such file or directory
+12-07 21:31:32.513 22129 22129 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22129
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:32.925 22129 22129 E AndroidRuntime: 	... 11 more
+12-07 21:31:32.948  1632  1632 E lowmemorykiller: Error writing /proc/22129/oom_score_adj; errno=22
+12-07 21:31:33.275 15927 22149 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:33.452 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 21:31:33.538 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 21:31:33.539 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:33.539 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:34.852 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-07 21:31:34.868 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:34.868 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:35.373 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 21:31:35.941 22154 22154 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22154
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:36.214 22154 22154 E AndroidRuntime: 	... 11 more
+12-07 21:31:36.780 22178 22178 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22178
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:37.092 22178 22178 E AndroidRuntime: 	... 11 more
+12-07 21:31:37.120  1632  1632 E lowmemorykiller: Error writing /proc/22178/oom_score_adj; errno=22
+12-07 21:31:37.502 15927 22198 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:37.909 22204 22204 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22204
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:38.184 22204 22204 E AndroidRuntime: 	... 11 more
+12-07 21:31:38.215  1632  1632 E lowmemorykiller: Error writing /proc/22204/oom_score_adj; errno=22
+12-07 21:31:38.481 15927 22225 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:38.651 22228 22228 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22228
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:38.979 22228 22228 E AndroidRuntime: 	... 11 more
+12-07 21:31:39.015  1632  1632 E lowmemorykiller: Error writing /proc/22228/oom_score_adj; errno=22
+12-07 21:31:39.307 15927 22248 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:40.724 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:40.724 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:31:41.169 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:31:41.229 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:31:41.411 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:31:41.495 22256 22256 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22256
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:41.770 22256 22256 E AndroidRuntime: 	... 11 more
+12-07 21:31:41.936 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:41.945 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:31:42.237 15927 22276 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:42.571 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:42.958 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 21:31:43.047 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:43.077 22282 22282 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:43.200 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22282
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:43.434 22282 22282 E AndroidRuntime: 	... 11 more
+12-07 21:31:43.474  1632  1632 E lowmemorykiller: Error writing /proc/22282/oom_score_adj; errno=22
+12-07 21:31:43.766 15927 22302 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:31:43.932 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:44.218 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:45.524 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:31:46.805 22305 22305 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22305
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TabHost$IndicatorStrategy android.widget.TabHost$TabSpec.mIndicatorStrategy' on a null object reference
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.widget.TabHost$TabSpec.access$200(TabHost.java:503)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:218)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 21:31:46.978 22305 22305 E AndroidRuntime: 	... 11 more
+12-07 21:31:47.002  1632  1632 E lowmemorykiller: Error writing /proc/22305/oom_score_adj; errno=22
+12-07 21:31:47.885 15976 15989 E memtrack: Couldn't load memtrack module

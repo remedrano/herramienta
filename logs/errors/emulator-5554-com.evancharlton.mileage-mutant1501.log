@@ -1,0 +1,258 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:32:30.935 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-07 16:32:31.044 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 16:32:34.505  1729  2327 E         : Couldn't opendir /data/app/vmdl927406072.tmp: No such file or directory
+12-07 16:32:34.505  1729  2327 E installd: Failed to delete /data/app/vmdl927406072.tmp: No such file or directory
+12-07 16:32:35.417 22929 22929 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22929
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:35.776 22929 22929 E AndroidRuntime: 	... 11 more
+12-07 16:32:35.818  1632  1632 E lowmemorykiller: Error writing /proc/22929/oom_score_adj; errno=22
+12-07 16:32:38.417 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:32:38.417 16561 16561 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:32:39.072 22958 22958 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22958
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:39.418 22958 22958 E AndroidRuntime: 	... 11 more
+12-07 16:32:39.463  1632  1632 E lowmemorykiller: Error writing /proc/22958/oom_score_adj; errno=22
+12-07 16:32:39.872 15927 22978 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:39.981 22981 22981 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22981
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:40.285 22981 22981 E AndroidRuntime: 	... 11 more
+12-07 16:32:40.304  1632  1632 E lowmemorykiller: Error writing /proc/22981/oom_score_adj; errno=22
+12-07 16:32:40.652 15927 23001 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:41.143 23004 23004 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 23004
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:41.452 23004 23004 E AndroidRuntime: 	... 11 more
+12-07 16:32:41.493  1632  1632 E lowmemorykiller: Error writing /proc/23004/oom_score_adj; errno=22
+12-07 16:32:41.809 15927 23025 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:42.120 23028 23028 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 23028
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:42.376 23028 23028 E AndroidRuntime: 	... 11 more
+12-07 16:32:42.402  1632  1632 E lowmemorykiller: Error writing /proc/23028/oom_score_adj; errno=22
+12-07 16:32:42.792 15927 23050 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:43.834 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:32:43.834 16085 16085 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 16:32:44.683 23055 23055 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 23055
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:44.874 23055 23055 E AndroidRuntime: 	... 11 more
+12-07 16:32:44.897  1632  1632 E lowmemorykiller: Error writing /proc/23055/oom_score_adj; errno=22
+12-07 16:32:45.140 15927 23076 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:45.685 23079 23079 E .apps.messagin: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:45.821 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:32:45.958 23095 23095 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 23095
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:46.336 23095 23095 E AndroidRuntime: 	... 11 more
+12-07 16:32:46.384  1632  1632 E lowmemorykiller: Error writing /proc/23095/oom_score_adj; errno=22
+12-07 16:32:47.147  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 16:32:47.150  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 16:32:47.220 15926 15926 E wificond: No Offload Service available
+12-07 16:32:47.222 15976 16053 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-07 16:32:47.388 15976 16054 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-07 16:32:47.470 15976 16055 E WifiP2pService: Unhandled message { when=-7ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 16:32:47.477 15976 16055 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 16:32:47.508 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:32:47.534 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:32:47.542 23146 23146 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:47.715 15976 15989 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-07 16:32:48.181 15976 16056 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '132 interface setmtu radio0 1500' failed with '400 132 Failed to set MTU (Permission denied)'
+12-07 16:32:49.151 16506 23192 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 16:32:49.179 23197 23197 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:49.601 23215 23215 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 23215
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.Class.getName()' on a null object reference
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.content.ComponentName.<init>(ComponentName.java:131)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.content.Intent.<init>(Intent.java:6082)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.createTabSpec(Mileage.java:65)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:37)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 16:32:49.994 23215 23215 E AndroidRuntime: 	... 11 more
+12-07 16:32:50.063  1632  1632 E lowmemorykiller: Error writing /proc/23215/oom_score_adj; errno=22
+12-07 16:32:50.145 16485 19321 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-dMrduYPIIfbrxy5NcDLCig==/base.apk' I/O error
+12-07 16:32:50.145 16485 19321 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-dMrduYPIIfbrxy5NcDLCig==/base.apk
+12-07 16:32:50.561 23079 23079 E Bugle   : com.google.android.apps.messaging.shared.util.common.AsyncTimeoutReporter$SilentTimeoutError: CommitPhenotypeAction.executeAction did not complete in 1000ms
+12-07 16:32:50.660 15927 23250 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:32:51.351 23256 23256 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:32:51.961 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:32:51.975 15976 16053 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-07 16:32:52.624 15925 15942 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 16:32:52.664 16506 23290 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 16:32:52.891 16506 23298 E WakeLock: GCM_CONN_ALARM release without a matched acquire!

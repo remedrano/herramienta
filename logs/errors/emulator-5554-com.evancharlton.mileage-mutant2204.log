@@ -1,0 +1,63 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:30:50.818  1881  1953 E InputDispatcher: channel '5c95dc4 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:30:50.862  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:30:50.862  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:30:50.862  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:30:50.988  2463  3011 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 03:30:52.197  2448 10824 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:30:52.297  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:30:53.287  1730  1730 E         : Couldn't opendir /data/app/vmdl1703751743.tmp: No such file or directory
+12-08 03:30:53.287  1730  1730 E installd: Failed to delete /data/app/vmdl1703751743.tmp: No such file or directory
+12-08 03:30:53.874  2475 12053 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:30:54.203 12101 12101 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:30:55.409  1992  8192 E putmethod.lati: Invalid ID 0x00000001.
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 03:30:55.411  1992  8192 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 03:30:55.469 12121 12121 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:31:00.651  1881  3619 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@1348003
+12-08 03:31:00.728  1992  1992 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 03:31:01.580  1611 12152 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:31:01.636  2448 12148 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:31:02.008  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:31:02.311  2448 12148 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=6
+12-08 03:31:03.410 12170 12170 E t_app_installe: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:31:05.156  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:31:08.317  2448 11946 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:31:08.780  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:31:08.923  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:31:12.258  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:31:14.438  1611 12223 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:31:17.405  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:31:26.483  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:31:31.757  1881  5713 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:31.788  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:31.808  1881  5403 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:31.832  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:31.986  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:32.009  1881  2132 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:32.048  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 03:31:32.074  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping

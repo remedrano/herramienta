@@ -1,0 +1,145 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:50:09.600 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:50:10.250 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 16:50:04.189]
+12-07 16:50:11.591 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:50:11.591 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:50:11.591 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:50:11.612 15976 16042 E InputDispatcher: channel '3b6da86 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:50:11.613 15976 16042 E InputDispatcher: channel 'f3c841e com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:50:12.998 16506 30076 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:50:13.253 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:50:14.206 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:50:15.559  1729  2327 E         : Couldn't opendir /data/app/vmdl78830053.tmp: No such file or directory
+12-07 16:50:15.559  1729  2327 E installd: Failed to delete /data/app/vmdl78830053.tmp: No such file or directory
+12-07 16:50:17.416 30386 30386 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:50:22.119 15976 19497 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@ce813e
+12-07 16:50:22.196 16085 16085 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-07 16:50:24.201  1739  1739 E OMXNodeInstance: getConfig(0xee326b40:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+--------- beginning of crash
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30386
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at com.evancharlton.mileage.ImportActivity$FileAdapter.getView(ImportActivity.java:213)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.AbsSpinner.onMeasure(AbsSpinner.java:204)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.Spinner.onMeasure(Spinner.java:602)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6749)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1535)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:825)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:704)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.ScrollView.measureChildWithMargins(ScrollView.java:1308)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.ScrollView.onMeasure(ScrollView.java:350)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:978)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:704)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6749)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:978)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:704)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6749)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at com.android.internal.policy.DecorView.onMeasure(DecorView.java:716)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.View.measure(View.java:23169)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2718)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1572)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1855)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1460)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:7183)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:949)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:761)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:696)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:935)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 16:50:24.510 30386 30386 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 16:50:24.702 15976 16042 E InputDispatcher: channel 'ae616c5 com.evancharlton.mileage/com.evancharlton.mileage.ImportExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:50:24.702 15976 16042 E InputDispatcher: channel '5ef0f30 com.evancharlton.mileage/com.evancharlton.mileage.ImportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:50:24.704 15976 16042 E InputDispatcher: channel '567213a com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:50:24.934 30451 30451 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: Exception in upload method
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 262182
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.io.bn.abort(SourceFile:12)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.ay.abort(SourceFile:28)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.bq.e(SourceFile:22)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.a.disconnect(SourceFile:25)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.b.run(SourceFile:5)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ar.execute(SourceFile:3)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:262)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:223)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.a.afterDone(SourceFile:42)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ay.cancel(SourceFile:2)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.l(SourceFile:48)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.exit(SourceFile:51)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.dQ(SourceFile:8)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.taskgraph.stream.a.e.end(SourceFile:10)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.kg(SourceFile:73)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.bGq(SourceFile:19)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.a(SourceFile:57)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.s.aws(SourceFile:24)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.u.run(SourceFile:21)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.i.run(Unknown Source:4)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:50:25.432 16561 16849 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.o.run(SourceFile:6)
+12-07 16:50:25.463 15976 15993 E libprocessgroup: Error encountered killing process cgroup uid 99025 pid 30268: No such file or directory
+12-07 16:50:26.408 15976 15991 E AutofillSession: No assist structure - app might have crashed providing it
+12-07 16:50:26.622  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:50:30.848 16561 16708 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 16:50:31.006 16506 30076 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:50:31.336 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:50:31.413 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:50:32.419 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:50:38.988 30496 30496 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.

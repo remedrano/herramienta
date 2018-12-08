@@ -1,0 +1,56 @@
+--------- beginning of system
+--------- beginning of main
+12-08 04:06:03.610  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 04:06:03.610  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 04:06:03.610  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 04:06:03.868  2463 17779 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 04:06:06.775  1730  1930 E         : Couldn't opendir /data/app/vmdl1436663291.tmp: No such file or directory
+12-08 04:06:06.775  1730  1930 E installd: Failed to delete /data/app/vmdl1436663291.tmp: No such file or directory
+12-08 04:06:07.431  2475 18128 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 04:06:08.848 18186 18186 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 04:06:11.867 18186 18186 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 04:06:11.867 18186 18186 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 04:06:12.935 18186 18186 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 04:06:12.935 18186 18186 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 04:06:24.522  2448 16609 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 04:06:24.638  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 04:06:24.671  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 04:06:26.557  1881  1899 E BluetoothAdapter: Bluetooth binder is null
+12-08 04:06:26.559  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 04:06:34.932  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 04:06:39.170  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 04:06:39.170  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 04:06:39.445  1992  1992 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-08 04:06:39.446  1992  1992 E EGL_emulation: tid 1992: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-08 04:06:39.465  1992  1992 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-08 04:06:39.465  1992  1992 E EGL_emulation: tid 1992: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-08 04:06:40.527 18252 18252 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 04:06:40.589  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{496b70a VFE...CL. ...P.... 0,436-1038,583 #34} because the view is not tagged for visual element logging.
+12-08 04:06:40.609  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b838b44 VFE...CL. ...P.... 0,289-1038,436 #33} because the view is not tagged for visual element logging.
+12-08 04:06:40.695  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e69ad09 VFE...CL. ...P.... 0,142-1038,289 #32} because the view is not tagged for visual element logging.
+12-08 04:06:40.916  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b838b44 VFE...CL. ...p.... 0,289-1038,436 #33} because the view is not tagged for visual element logging.
+12-08 04:06:40.936  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b838b44 VFE...CL. ...P.... 0,289-1038,436 #33} because the view is not tagged for visual element logging.
+12-08 04:06:41.307  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{fd792f VFE...CL. ...P.... 0,583-1038,730 #35} because the view is not tagged for visual element logging.
+12-08 04:06:41.711  2692  2692 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e69ad09 VFE...CL. ...P.... 0,142-1038,289 #32} because the view is not tagged for visual element logging.
+12-08 04:06:43.978  1611 18287 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 04:06:44.113  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 04:06:44.177  2692  2700 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 04:06:42.879]
+12-08 04:06:46.593  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

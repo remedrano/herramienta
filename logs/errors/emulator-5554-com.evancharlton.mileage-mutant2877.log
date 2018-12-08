@@ -1,0 +1,96 @@
+--------- beginning of system
+--------- beginning of main
+12-08 19:00:01.323 22035 22052 E SQLiteLog: (1) no such table: fillups
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 19:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:00:02.883  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:00:02.883  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:00:02.883  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:00:04.231  2429 21780 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:00:04.555  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:00:05.006  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:00:05.007  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:00:06.633  1732  1732 E         : Couldn't opendir /data/app/vmdl1744264415.tmp: No such file or directory
+12-08 19:00:06.633  1732  1732 E installd: Failed to delete /data/app/vmdl1744264415.tmp: No such file or directory
+12-08 19:00:08.166 22162 22162 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:00:10.706  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:00:13.651  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 19:00:13.676  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 19:00:13.737  1741  1741 E wificond: No Offload Service available
+12-08 19:00:14.034  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:00:14.060  1885  1971 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:00:14.096  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:00:14.157  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:00:14.362  1885  1972 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '524 interface setmtu radio0 1500' failed with '400 524 Failed to set MTU (Permission denied)'
+12-08 19:00:15.633  2429 22210 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:00:18.404  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:00:18.695  1885  1968 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 19:00:19.605  1738  1800 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 19:00:20.073  2429 21780 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:00:20.779  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:00:20.976  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:00:23.607  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:00:23.903  2429 22233 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:00:24.129  2429 22252 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:00:26.118  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:00:26.146 22162 22180 E SQLiteLog: (1) no such table: fillups
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 19:00:26.152 22162 22180 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:00:26.666  1614 22256 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 19:00:34.939  1885  1898 E memtrack: Couldn't load memtrack module

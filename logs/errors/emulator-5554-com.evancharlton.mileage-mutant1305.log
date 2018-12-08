@@ -1,0 +1,87 @@
+--------- beginning of system
+12-07 11:15:29.518  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 11:15:29.518  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 11:15:29.518  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 11:15:53.177  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 11:15:53.177  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 11:15:53.177  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 11:15:53.734  1883  1967 E WifiP2pService: Unhandled message { when=-6ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:53.749  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:15:54.626  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 11:15:54.648  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 11:15:54.815  1738  1738 E wificond: No Offload Service available
+12-07 11:15:54.997  1883  1967 E WifiP2pService: Unhandled message { when=-8ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:55.053  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:55.219  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:15:55.687  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 11:15:55.688  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 11:15:55.688  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 11:15:55.925  1883  1967 E WifiP2pService: Unhandled message { when=-4ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:55.935  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:15:55.951  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:15:56.524  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 11:15:56.527  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 11:15:56.649  1738  1738 E wificond: No Offload Service available
+12-07 11:15:56.734  1883  1967 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:56.742  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:15:56.764  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:15:56.771  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:16:00.693  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+--------- beginning of main
+12-07 11:16:09.590 10947 10947 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:16:11.599  1990  1990 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-07 11:16:12.228  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:16:23.255  2420 10781 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:16:23.422  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:16:23.487  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:16:31.256 11003 11003 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:16:33.790  1613 11028 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:16:43.455  2420 11048 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:16:44.090  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:16:56.615  2528 10328 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_f5b6b0af-9539-4f77-8194-3cf6c621026b)
+12-07 11:17:02.554  2420 10993 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:17:03.192  1739  1739 E OMXNodeInstance: getConfig(0xedf112a0:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-07 11:17:03.214  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:17:03.436  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:17:06.515  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:17:06.515  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:17:07.359  1613 11112 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:17:12.237  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:17:14.015 11116 11116 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:17:14.659  2759  2975 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 11:17:15.937  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 11:17:14.444]
+12-07 11:17:18.215  1613 11151 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:17:26.927 10826 10826 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:17:26.927 10826 10826 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:17:28.048  1990  1990 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 11:17:32.053  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 11:17:34.474  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d63cc87 VFE...CL. ...P.... 0,-5-1038,142 #d2} because the view is not tagged for visual element logging.
+12-07 11:17:34.815  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d63cc87 VFE...CL. ...P.... 0,-5-1038,142 #d2} because the view is not tagged for visual element logging.
+12-07 11:17:37.113  1613 11167 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:17:48.047  1613 11181 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:17:49.034  2759  2759 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:17:49.034  2759  2759 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:17:49.131  2759  2975 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 11:17:52.181  1613 11185 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:18:01.916 10826 10826 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:18:01.916 10826 10826 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 11:18:06.521  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:18:06.521  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

@@ -1,0 +1,66 @@
+--------- beginning of system
+12-07 07:55:07.408  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 07:55:07.408  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 07:55:07.408  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 07:55:36.862  9476  9476 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 07:55:36.862  9476  9476 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 07:55:36.862  9476  9476 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 07:55:54.080  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:56:53.908  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 07:57:25.902  1610  9719 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:57:28.416  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 07:57:37.359  9732  9732 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:57:40.236  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:57:40.237  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:57:53.979  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:57:55.351  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ffe4278 VFE...CL. ...P.... 0,306-1038,453 #8f} because the view is not tagged for visual element logging.
+12-07 07:57:55.742  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ffe4278 VFE...CL. ...P.... 0,306-1038,453 #8f} because the view is not tagged for visual element logging.
+12-07 07:57:56.267  6805  6813 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 07:57:41.564]
+12-07 07:57:56.793  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ffe4278 VFE...CL. .F....ID 0,306-1038,453 #8f} because the view is not tagged for visual element logging.
+12-07 07:57:59.535  9413  9413 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:57:59.535  9413  9413 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:58:03.017  2482  9372 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_4c8f69d0-1c6e-40ef-84ff-29f314183b32)
+12-07 07:58:10.704  6805  6805 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 07:58:14.838  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{85fcf30 VFE...CL. ...P.... 0,-5-1038,142 #92} because the view is not tagged for visual element logging.
+12-07 07:58:15.024  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{da8feeb VFE...CL. ...P.... 0,436-1038,583 #95} because the view is not tagged for visual element logging.
+12-07 07:58:15.149  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{85fcf30 VFE...CL. ...P.... 0,-5-1038,142 #92} because the view is not tagged for visual element logging.
+12-07 07:58:27.680  9413  9413 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:58:27.680  9413  9413 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:58:40.238  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:58:40.238  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:58:54.030  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

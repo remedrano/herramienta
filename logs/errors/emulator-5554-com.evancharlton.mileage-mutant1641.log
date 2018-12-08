@@ -1,0 +1,90 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:03:32.768 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:03:32.768 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:03:32.768 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:03:32.786 15976 16042 E InputDispatcher: channel 'a59d5d3 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:03:32.786 15976 16042 E InputDispatcher: channel '795d1dc Toast (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:03:32.786 15976 16042 E InputDispatcher: channel '1823da2 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:03:34.241 16506  1887 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:03:34.354 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-08 03:03:34.376 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-08 03:03:36.357  1729  1729 E         : Couldn't opendir /data/app/vmdl1382960088.tmp: No such file or directory
+12-08 03:03:36.357  1729  1729 E installd: Failed to delete /data/app/vmdl1382960088.tmp: No such file or directory
+12-08 03:03:38.066  2141  2141 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:03:39.358 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 03:03:39.363 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 03:03:41.232  2141  2141 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 03:03:41.232  2141  2141 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 03:03:44.263 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 03:03:45.406 15976 17388 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateSystemUiLocked:2331 due to an invalid token. uid:10060 token:android.os.Binder@426e13b
+12-08 03:03:45.415 15976 17388 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@426e13b
+12-08 03:03:45.472 16085 16085 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 03:03:47.731 16506  2173 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:03:47.793 16506  2173 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 03:03:47.984 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-08 03:03:48.179 16561 16708 E PBSessionCacheImpl: sessionId[72837592488141679] not persisted.
+12-08 03:03:48.192 16561 16708 E PBSessionCacheImpl: sessionId[72837592488141679] not persisted.
+12-08 03:03:48.355 15976 15989 E memtrack: Couldn't load memtrack module
+12-08 03:03:48.481 15927  2200 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:03:51.371 15927  2224 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:03:53.949 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:03:54.872 15976 15989 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:03:54.947  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 03:03:54.953  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 03:03:55.081 15926 15926 E wificond: No Offload Service available
+12-08 03:03:55.084 15976 16053 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 03:03:55.223 15976 16054 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 03:03:55.345 15976 16055 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:03:55.359 15976 16055 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:03:55.386 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:03:55.404  2243  2243 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:03:55.424 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:03:56.373 15976 15989 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:03:56.486  2243  2243 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-08 03:03:59.337 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:03:59.395 15976 16053 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 03:04:00.172 16506  2300 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 03:04:00.198 15925 15942 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 03:04:00.396  2301  2301 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:04:00.635  2319  2319 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:04:02.620 16506  2366 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-211s,latest=388s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-511s last_run=-2s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 03:04:04.936  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:04:04.936  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:04:15.473 15976 15989 E memtrack: Couldn't load memtrack module
+12-08 03:04:15.615 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 22:04:17.745  2384  2384 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-07 22:04:18.906 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220258903, start=1544238227197
+12-07 22:04:18.950 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220258950, start=1544238227305
+12-07 22:04:18.952 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220258952, start=1544238227664
+12-07 22:04:19.045 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220259045, start=1544238227857
+12-07 22:04:19.064 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220259063, start=1544238227858
+12-07 22:04:19.068 16506  2364 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220259068, start=1544238227855
+12-07 22:04:19.126 16506  2366 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544220259126, start=1544238227859
+12-07 22:04:21.809  2141  2141 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 22:04:21.809  2141  2141 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 22:04:24.275 15976 15989 E memtrack: Couldn't load memtrack module

@@ -1,0 +1,54 @@
+--------- beginning of main
+--------- beginning of system
+12-08 18:06:20.452  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99003 pid 6010: No such file or directory
+12-08 18:06:21.377  1885  1957 E InputDispatcher: channel '7c43813 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 18:06:21.378  1885  1957 E InputDispatcher: channel '6a392d3 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 18:06:21.456  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 18:06:21.456  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 18:06:21.456  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 18:06:22.620  2429  5433 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:06:22.909  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 18:06:24.245  1732  1935 E         : Couldn't opendir /data/app/vmdl307567236.tmp: No such file or directory
+12-08 18:06:24.245  1732  1935 E installd: Failed to delete /data/app/vmdl307567236.tmp: No such file or directory
+12-08 18:06:24.859  2608  6065 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 18:06:25.176  6124  6124 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:06:26.171  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 18:06:26.171  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 18:06:29.902  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:29.972  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:31.101  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 13
+12-08 18:06:35.506  1996  1996 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 18:06:36.188  2742  2987 E PlayCommon: [137] com.google.android.play.b.w.a(20): Failed to connect to server for server timestamp: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 18:06:36.189  2742  2987 E PlayCommon: [137] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 18:06:37.017  2429  5567 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:06:37.633  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 18:06:37.703  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 18:06:38.655  1996  1996 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 18:06:39.114  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 18:06:41.100  1614  6172 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:06:42.170  6179  6179 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:06:43.573  1614  6209 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000

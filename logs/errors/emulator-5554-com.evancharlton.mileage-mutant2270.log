@@ -1,0 +1,47 @@
+--------- beginning of main
+12-08 03:46:07.639  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+--------- beginning of system
+12-08 03:46:13.388  1730  1755 E         : Couldn't opendir /data/app/vmdl1561478981.tmp: No such file or directory
+12-08 03:46:13.388  1730  1755 E installd: Failed to delete /data/app/vmdl1561478981.tmp: No such file or directory
+12-08 03:46:14.254  2475 15906 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:46:14.930 15949 15949 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:46:25.002 15980 15980 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:46:28.931  2463  2492 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-cRpL9a7Bu7qiMjU5jmIssA==/base.apk' I/O error
+12-08 03:46:28.932  2463  2492 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-cRpL9a7Bu7qiMjU5jmIssA==/base.apk
+12-08 03:46:30.361  2448 14967 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:46:30.489  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:46:30.523  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:46:35.207  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:46:36.553  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:46:37.986  1611 16032 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:46:38.253  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:46:38.253  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:46:38.304  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:46:44.008  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:46:45.089  1881  1934 E system_server: No package ID ff found for ID 0xffffffff.
+--------- beginning of crash
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15949
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: java.lang.NumberFormatException: For input string: " i"
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:583)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(ServiceIntervalTemplateActivity.java:83)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 03:46:57.020 15949 15949 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 03:46:57.115  1881  1953 E InputDispatcher: channel 'e0f39a6 com.evancharlton.mileage/com.evancharlton.mileage.ServiceIntervalTemplateActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:46:57.115  1881  1953 E InputDispatcher: channel '6173a com.evancharlton.mileage/com.evancharlton.mileage.ServiceIntervalsListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:46:57.115  1881  1953 E InputDispatcher: channel '7e821a1 com.evancharlton.mileage/com.evancharlton.mileage.ServiceIntervalTemplateListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:46:57.115  1881  1953 E InputDispatcher: channel 'd1a5b66 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:46:57.260 16060 16060 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:46:58.768  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

@@ -1,0 +1,70 @@
+--------- beginning of main
+12-08 02:53:58.436  5134  5134 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:53:58.470  5147  5147 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of system
+12-08 02:53:58.578  5164  5164 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:53:59.518  5211  5211 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:00.752  5235  5235 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:01.593  5257  5257 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:03.609  5211  5211 E DocsApplication: [main] No default account found during application creation.
+12-08 02:54:04.634  1729  1931 E         : Couldn't opendir /data/app/vmdl1267547115.tmp: No such file or directory
+12-08 02:54:04.635  1729  1931 E installd: Failed to delete /data/app/vmdl1267547115.tmp: No such file or directory
+12-08 02:54:08.713  5320  5320 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:09.294 16561 16708 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 02:54:10.003 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-08 02:54:10.031 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-08 02:54:10.322  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 02:54:10.322  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 02:54:11.110 16085 31762 E putmethod.lati: Invalid ID 0x00000001.
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 02:54:11.119 16085 31762 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 02:54:17.012  5320  5342 E SQLiteLog: (1) no such table: fillups
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 02:54:17.029  5320  5342 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 02:54:19.480  5360  5360 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:20.328  5360  5360 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 02:54:20.637  1724  2165 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 02:54:20.684  1739  2097 E OMXNodeInstance: getConfig(0xee326de0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 02:54:20.836  1724  1767 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 02:54:22.947 16506  4796 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544237662947, start=1544238227857
+12-08 02:54:22.953 16506  4796 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544237662953, start=1544238227858
+12-08 02:54:32.286  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 02:54:33.911  5398  5398 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:42.095 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 02:54:52.984 15927  5452 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 02:54:56.321  5457  5457 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:56.938  5471  5471 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:54:57.818 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{3cefc8 VFE...CL. ...P.... 0,289-1038,436 #178} because the view is not tagged for visual element logging.
+12-08 02:54:57.960 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4154074 VFE...CL. ...P.... 0,436-1038,583 #179} because the view is not tagged for visual element logging.
+12-08 02:55:00.678 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 02:54:58.743]
+12-08 02:55:04.544  5517  5517 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 02:55:10.340  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 02:55:10.340  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 02:55:32.306  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 02:56:10.341  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 02:56:10.341  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 02:56:32.330  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

@@ -1,0 +1,133 @@
+--------- beginning of system
+12-07 13:07:44.760  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 13:07:44.760  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 13:07:44.760  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-07 13:08:06.141  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:08:07.881  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:08:07.881  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:08:09.576  1613 30585 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:08:10.281  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:08:26.942  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:08:27.745  2420 30295 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:08:28.261  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:08:28.465  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:08:38.377  2420 30498 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:08:38.689  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:08:43.872  1613 30619 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:08:51.617 30629 30629 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:09:07.886  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:09:07.886  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:09:12.883  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 13:09:13.024 27057 27057 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:09:13.024 27057 27057 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:09:13.048 27057 27057 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:09:13.049 27057 27057 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:09:13.161 27057 27057 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:09:13.161 27057 27057 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:09:13.161 27057 27057 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:09:13.161 27057 27057 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:09:13.261 27057 27057 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:09:13.261 27057 27057 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:09:13.535  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 13:09:13.535  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 13:09:13.536  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 13:09:13.857  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:09:13.885  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:09:13.936  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:09:13.975  2420 27080 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 13:09:14.028  2420 27080 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:09:14.242 30536 30679 E SQLiteLog: (1) no such table: fillups
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 13:09:14.252 30536 30679 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 13:09:26.981  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:09:27.373  2420 30498 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:09:27.679  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:09:27.777  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:09:28.641  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:09:37.145  1613 30693 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:09:37.765 30700 30700 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:09:42.789  2561  2771 E PlayCommon: [113] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-07 13:09:50.668 30729 30729 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:10:02.834 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:10:07.888  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:10:07.888  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:10:15.680 30536 30766 E SQLiteLog: (1) no such table: fillups
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 13:10:15.691 30536 30766 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 13:10:20.513  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 13:10:20.517  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 13:10:20.588  1738  1738 E wificond: No Offload Service available
+12-07 13:10:20.729  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:10:20.769  1883  1967 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:10:20.806  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:10:20.840  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:10:22.747  1613 30782 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:10:23.025  2420 30498 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:10:23.108  2420 30498 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 13:10:23.563  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:10:25.299  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:10:25.512  1724  1766 E SurfaceFlinger: getLayerUser(name=0xeac68d70) is dead
+12-07 13:10:25.512  1724  1766 E SurfaceFlinger: getLayerUser(name=0xeac68d70) is dead
+12-07 13:10:25.671  1883  1965 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-07 13:10:26.010  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 13:10:26.466  2420 30805 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:10:26.880 30807 30807 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:10:27.013  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:10:29.041  2420 30593 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-74s,latest=525s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-374s last_run=-2s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED

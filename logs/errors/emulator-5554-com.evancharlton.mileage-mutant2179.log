@@ -1,0 +1,58 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:22:33.709  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:22:33.709  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:22:33.709  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:22:33.849  2463  9242 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 03:22:34.262  1881  1934 E BatteryStatsImpl: Unable to find object for WindowManager in uid 10554 mapsize=0 activeoverflow=null curoverflow=null
+12-08 03:22:34.980  2448  9272 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:22:35.064  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:22:36.094  1730  1930 E         : Couldn't opendir /data/app/vmdl1348263074.tmp: No such file or directory
+12-08 03:22:36.094  1730  1930 E installd: Failed to delete /data/app/vmdl1348263074.tmp: No such file or directory
+12-08 03:22:37.028  9621  9621 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:22:38.467  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:22:38.468  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:22:44.173  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:22:47.426  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:22:50.793  2448  9272 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:22:51.154  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:22:51.180  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:22:53.767  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:22:54.453  1626  1626 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 03:22:54.455  1626  1626 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 03:22:54.487  1739  1739 E wificond: No Offload Service available
+12-08 03:22:54.490  1881  1964 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 03:22:54.557  1881  1965 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 03:22:54.600  1881  1966 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:22:54.619  1881  1966 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:22:54.639  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:22:54.668  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:22:54.789  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:22:55.077  1611  9681 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:22:55.589  1881  1967 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '314 interface setmtu radio0 1500' failed with '400 314 Failed to set MTU (Permission denied)'
+12-08 03:22:56.117  1611  9694 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:22:56.460  9703  9703 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:22:58.819  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:22:58.861  1881  1964 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 03:22:59.425  2448  9745 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 03:22:59.670  1736  1785 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 03:23:00.510  2448  9751 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 03:23:06.511  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99005 pid 9703: No such file or directory

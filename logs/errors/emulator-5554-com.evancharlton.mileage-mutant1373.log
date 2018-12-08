@@ -1,0 +1,90 @@
+--------- beginning of system
+12-07 17:36:54.021  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 17:36:54.021  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 17:36:54.021  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 17:37:20.359  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 17:38:18.144  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 17:38:18.235  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 17:38:20.386  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 17:38:20.422  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 17:38:24.703 25620 25620 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:38:24.876  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a667daa VFE...CL. ...P.... 0,583-1038,730 #39b} because the view is not tagged for visual element logging.
+12-07 17:38:25.079  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a667daa VFE...CL. ...P.... 0,583-1038,730 #39b} because the view is not tagged for visual element logging.
+12-07 17:38:25.145  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{911e538 VFE...CL. ...P.... 0,142-1038,289 #398} because the view is not tagged for visual element logging.
+12-07 17:38:26.169  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d86ca76 VFE...CL. ...P.... 0,436-1038,583 #39a} because the view is not tagged for visual element logging.
+12-07 17:38:43.236  2420 25613 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 17:38:43.570  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 17:38:52.116  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 17:38:52.480  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 17:38:52.726 25232 25232 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:38:52.728 25232 25232 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:38:52.771 25232 25232 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:38:52.771 25232 25232 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:38:52.917 25232 25232 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:38:52.917 25232 25232 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:38:52.918 25232 25232 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:38:52.918 25232 25232 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:38:53.003 25232 25232 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:38:53.003 25232 25232 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:38:53.483  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 17:38:53.483  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 17:38:53.484  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 17:38:53.981  1883  1967 E WifiP2pService: Unhandled message { when=-2ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:38:54.032  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:38:54.286  2420 25254 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 17:38:54.389  2420 25254 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 17:38:54.834  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 17:38:54.846  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 17:38:55.003  1738  1738 E wificond: No Offload Service available
+12-07 17:38:55.199  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:38:55.269  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:38:55.302  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:38:55.401  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:38:59.413  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:39:00.248  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 17:39:00.384  2420 25709 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 17:39:00.971  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 17:39:07.586  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 17:39:07.586  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 17:39:12.707  2420 25609 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 17:39:13.217  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 17:39:13.446  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 17:39:20.422  1613 25731 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 17:39:20.423  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 17:39:21.464 25737 25737 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:39:21.522  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4debb17 VFE...CL. ...P.... 21,436-1059,583 #39e} because the view is not tagged for visual element logging.
+12-07 17:39:21.917  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4a594f6 VFE...CL. ...P.... 21,877-1059,1024 #3a1} because the view is not tagged for visual element logging.
+12-07 17:39:34.335  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 17:39:31.548]
+12-07 17:39:49.767  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 17:39:53.496  1613 25781 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 17:39:56.267  2528 25138 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_201d0ac5-2f50-44d7-9052-d7fa4c1f207a)
+12-07 17:40:03.590  1632  1632 E lowmemorykiller: Error opening /proc/24865/oom_score_adj; errno=2
+12-07 17:40:03.595  1632  1632 E lowmemorykiller: Error opening /proc/24894/oom_score_adj; errno=2
+12-07 17:40:05.450  2420 25722 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 17:40:06.358  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 17:40:07.590  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 17:40:07.590  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 17:40:12.446  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99120 pid 25737: No such file or directory
+12-07 17:40:14.299  2420 25726 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 17:40:14.305  1613 25806 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 17:40:14.703  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 17:40:20.444  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

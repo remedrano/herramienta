@@ -1,0 +1,147 @@
+--------- beginning of system
+12-07 05:41:44.233  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:41:44.233  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:41:44.233  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 05:41:45.032  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:42:06.812  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 05:42:07.682  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+--------- beginning of main
+12-07 05:42:23.853  2378  9313 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:42:24.180  9977  9977 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:24.193  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:42:24.240  9988  9988 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:24.270  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:42:26.164 10036 10036 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:26.259 10048 10048 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:26.329 10036 10036 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 05:42:26.329 10036 10036 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 05:42:26.329 10036 10036 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 05:42:27.242 10084 10084 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:39.798  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:42:39.798  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:42:39.891  2378  9943 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:42:40.141  2378  2937 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544161285657, Current: 1544143359000. Skipping this Position.
+12-07 05:42:40.537  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:42:40.674  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:42:44.567  1610 10137 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:42:44.964  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:42:47.919 10143 10143 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:42:48.538  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{93879df VFE...CL. ......ID 0,583-1038,730 #e5} because the view is not tagged for visual element logging.
+12-07 05:42:48.558  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{27438f5 VFE...CL. ...P.... 0,142-1038,289 #e2} because the view is not tagged for visual element logging.
+12-07 05:42:49.480  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4d4d4fb VFE...CL. ...P.... 0,436-1038,583 #e4} because the view is not tagged for visual element logging.
+12-07 05:42:52.987  2768  2776 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 05:42:52.097]
+12-07 05:43:00.529  1610 10183 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:43:00.653  2378  9943 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:43:00.880  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:43:06.390  2482  9940 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_06de2f83-6ed7-49b9-9a4e-d4d5c92514ab)
+12-07 05:43:06.777  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:43:06.913  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 05:43:06.921  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 05:43:07.003  1736  1736 E wificond: No Offload Service available
+12-07 05:43:07.134  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:43:07.151  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:43:07.166  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:43:07.190  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:43:11.169  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:43:11.729  2378 10220 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 05:43:11.877  2378 10223 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:43:12.051  1733  1824 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 05:43:14.092  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:43:22.897  9866  9866 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:22.898  9866  9866 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:26.135  2378 10206 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:43:26.404  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:43:26.447  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:43:31.039  1610 10250 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:43:31.562  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:31.564  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:31.939 10254 10254 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:43:33.045  1610 10280 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:43:38.184 10291 10291 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:43:38.648  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:43:39.801  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:43:39.801  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:43:41.919  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:41.919  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:43:42.060  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4398ac8 VFE...CL. ...P.... 0,583-1038,730 #f4} because the view is not tagged for visual element logging.
+12-07 05:43:42.485  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ed25f80 VFE...CL. ...P.... 0,142-1038,289 #f1} because the view is not tagged for visual element logging.
+12-07 05:43:43.006  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4398ac8 VFE...CL. ...P.... 0,583-1038,730 #f4} because the view is not tagged for visual element logging.
+12-07 05:43:43.512  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6a1d403 VFE...CL. ...P.... 0,-5-1038,142 #f0} because the view is not tagged for visual element logging.
+12-07 05:43:43.732  1610 10312 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:43:44.850  2768  2776 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 05:43:43.431]
+12-07 05:43:44.969  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:43:49.834  1992  9017 E putmethod.lati: Invalid ID 0x00000002.
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x2
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 05:43:49.854  1992  9017 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 05:43:53.136  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 05:43:53.191 10195 10195 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:43:53.191 10195 10195 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:43:53.194 10195 10195 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:43:53.194 10195 10195 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:43:53.315 10195 10195 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:43:53.315 10195 10195 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:43:53.315 10195 10195 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:43:53.315 10195 10195 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:43:53.429 10195 10195 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 05:43:53.429 10195 10195 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 05:43:53.718  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 05:43:53.718  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 05:43:53.718  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 05:43:53.926  1880  1967 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-07 05:43:53.927  1880  1967 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-07 05:43:53.950  1880  1967 E HalDevMgr: Should have at least 1 chip!
+12-07 05:43:53.950  1880  1967 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-07 05:43:53.963  1880  1967 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-07 05:43:53.963  1880  1967 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-07 05:43:53.963  1880  1967 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-07 05:43:53.964  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:43:53.974  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:43:53.983  2378 10223 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 05:43:53.986  2378 10223 E GCM     : Connection closed with errorCode 20
+12-07 05:43:53.990  1880  1967 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-07 05:43:53.982  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:43:54.038  2378 10223 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:43:54.815  1610 10334 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:44:01.591  2378 10341 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 05:44:01.606  2378 10341 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:44:06.151  1629  1629 E lowmemorykiller: Error writing /proc/10254/oom_score_adj; errno=22
+12-07 05:44:06.178  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99028 pid 10254: No such file or directory

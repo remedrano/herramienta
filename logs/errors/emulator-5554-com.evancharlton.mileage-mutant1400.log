@@ -1,0 +1,106 @@
+--------- beginning of system
+12-07 13:17:25.179  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 13:17:25.179  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 13:17:25.179  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 13:17:27.154  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:18:27.179  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:18:56.228  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:07.825  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 13:19:08.471  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 13:19:08.471  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 13:19:08.471  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 13:19:08.860  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:19:08.967  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:08.999  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:10.106  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 13:19:10.113  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 13:19:10.282  1738  1738 E wificond: No Offload Service available
+--------- beginning of main
+12-07 13:19:10.494  1883  1967 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:19:10.504  1883  1967 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:19:10.528  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:10.554  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:12.194  2420 30982 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-07 13:19:12.223  2420 30982 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-07 13:19:14.518  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:19:15.415  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 13:19:15.486  2420 31943 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:19:20.600  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:19:23.002  2420 31858 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:19:23.183  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:19:23.248  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:19:27.198  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:19:30.620  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:19:34.592 31957 31957 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:19:34.635 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6430ed5 VFE...CL. ...P.... 0,142-1038,289 #d4} because the view is not tagged for visual element logging.
+12-07 13:19:34.662 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6430ed5 VFE...CL. ...P.... 0,142-1038,289 #d4} because the view is not tagged for visual element logging.
+12-07 13:19:34.716 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6d066ea VFE...CL. ...P.... 0,-5-1038,142 #d3} because the view is not tagged for visual element logging.
+12-07 13:19:34.748 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9134ddb VFE...CL. ...P.... 0,289-1038,436 #d5} because the view is not tagged for visual element logging.
+12-07 13:19:35.251 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1531078 VFE...CL. ...P.... 0,436-1038,583 #d6} because the view is not tagged for visual element logging.
+12-07 13:19:35.422  1613 31973 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:19:36.552 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{432c351 VFE...CL. ...P.... 0,583-1038,730 #d7} because the view is not tagged for visual element logging.
+12-07 13:19:36.843 28976 28985 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 13:19:34.873]
+12-07 13:19:53.126 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{778fb89 VFE...CL. ...P.... 0,289-1038,453 #da} because the view is not tagged for visual element logging.
+12-07 13:19:53.334 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{778fb89 VFE...CL. ...P.... 0,289-1038,453 #da} because the view is not tagged for visual element logging.
+12-07 13:19:53.861 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a7dabaf VFE...CL. .F....ID 0,142-1038,289 #d9} because the view is not tagged for visual element logging.
+12-07 13:19:56.363 28976 29013 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 13:20:06.725 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:20:07.992  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:20:07.992  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:20:11.116  1613 32008 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:20:15.735 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{83f5aea VFE...CL. ...P.... 0,583-1038,730 #ee} because the view is not tagged for visual element logging.
+12-07 13:20:16.380 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e9d2478 VFE...CL. ........ 0,142-1038,289 #eb} because the view is not tagged for visual element logging.
+12-07 13:20:16.603 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{83f5aea VFE...CL. ...P.... 0,583-1038,730 #ee} because the view is not tagged for visual element logging.
+12-07 13:20:17.098 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ba931db VFE...CL. ...P.... 0,-5-1038,142 #ea} because the view is not tagged for visual element logging.
+12-07 13:20:18.395 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ba931db VFE...CL. ...P.... 0,-5-1038,142 #ea} because the view is not tagged for visual element logging.
+12-07 13:20:18.433 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e303bb6 VFE...CL. ...P.... 0,436-1038,583 #ed} because the view is not tagged for visual element logging.
+12-07 13:20:19.086 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e303bb6 VFE...CL. ...P.... 0,436-1038,583 #ed} because the view is not tagged for visual element logging.
+12-07 13:20:26.843  1613 32018 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:20:27.238  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:20:30.340  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 13:20:30.469 31914 31914 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:20:30.469 31914 31914 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:20:30.509 31914 31914 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:20:30.512 31914 31914 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:20:30.656 31914 31914 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:20:30.656 31914 31914 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:20:30.659 31914 31914 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:20:30.659 31914 31914 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:20:30.735 31914 31914 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 13:20:30.736 31914 31914 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 13:20:31.042  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 13:20:31.042  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 13:20:31.042  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 13:20:31.252  1883  1965 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-07 13:20:31.252  1883  1965 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-07 13:20:31.331  1883  1965 E HalDevMgr: Should have at least 1 chip!
+12-07 13:20:31.331  1883  1965 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-07 13:20:31.354  1883  1965 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-07 13:20:31.355  1883  1965 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-07 13:20:31.355  1883  1965 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-07 13:20:31.358  1883  1967 E WifiP2pService: Unhandled message { when=-2ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:20:31.374  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:20:31.375  2420 31943 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 13:20:31.437  2420 31943 E GCM     : Connection closed with errorCode 20
+12-07 13:20:31.457  1883  1965 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-07 13:20:31.458  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:20:31.479  2420 31943 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:20:41.396  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99159 pid 31957: No such file or directory

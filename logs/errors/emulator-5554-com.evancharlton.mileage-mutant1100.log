@@ -1,0 +1,52 @@
+--------- beginning of system
+12-07 06:59:09.913  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 06:59:09.913  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 06:59:09.913  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 06:59:50.376  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:00:50.393  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 07:00:57.895  2378 29254 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:00:58.199  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:01:31.467  2378 29089 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:01:31.698  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 07:01:31.773  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:01:39.954 29351 29351 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:01:40.410  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:01:40.411  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:01:40.726  1610 29367 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:01:50.419  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:01:54.035 29386 29386 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:01:58.290 29411 29411 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:02:04.650  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:02:12.506  1610 29449 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:02:17.816  1992  1992 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 07:02:28.416  1610 29457 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:02:29.375  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:02:29.375  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:02:29.844  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:02:29.847  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:02:32.868  1610 29461 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:02:40.417  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:02:40.417  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:02:40.532  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99088 pid 29386: No such file or directory
+12-07 07:02:43.151  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 07:02:44.957 29129 29129 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:02:44.957 29129 29129 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

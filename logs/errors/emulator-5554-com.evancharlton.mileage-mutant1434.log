@@ -1,0 +1,134 @@
+--------- beginning of system
+12-07 19:14:26.424  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 19:14:26.424  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 19:14:26.424  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 19:14:33.641  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of crash
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 7483
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.services.RecalculateEconomyService: void com.evancharlton.mileage.services.RecalculateEconomyService.onHandleIntent(android.content.Intent) failed to verify: void com.evancharlton.mileage.services.RecalculateEconomyService.onHandleIntent(android.content.Intent): [0xB2] register v9 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.services.RecalculateEconomyService' appears in base.apk)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.evancharlton.mileage.services.RecalculateEconomyService.run(RecalculateEconomyService.java:26)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.calculate(FillupListActivity.java:177)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.initUI(FillupListActivity.java:104)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.onCreate(FillupListActivity.java:55)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:14:43.143  7483  7483 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:15:33.669  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:16:33.797  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 19:17:10.263  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 19:17:10.447  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 19:17:22.287  7931  7931 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:17:22.652 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{26a0d0a VFE...CL. ...P.... 0,142-1038,289 #277} because the view is not tagged for visual element logging.
+12-07 19:17:22.721 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{26a0d0a VFE...CL. ...P.... 0,142-1038,289 #277} because the view is not tagged for visual element logging.
+12-07 19:17:22.792 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6dcc97b VFE...CL. ...P.... 0,-5-1038,142 #276} because the view is not tagged for visual element logging.
+12-07 19:17:22.817 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1877398 VFE...CL. ...P.... 0,289-1038,436 #278} because the view is not tagged for visual element logging.
+12-07 19:17:23.348 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b74b7f1 VFE...CL. ...P.... 0,436-1038,583 #279} because the view is not tagged for visual element logging.
+12-07 19:17:24.685 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{623efd6 VFE...CL. ...P.... 0,583-1038,730 #27a} because the view is not tagged for visual element logging.
+12-07 19:17:26.158 28976 28985 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 19:17:23.141]
+12-07 19:17:33.824  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:17:43.290 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{739d69 VFE...CL. ...P.... 0,289-1038,453 #27d} because the view is not tagged for visual element logging.
+12-07 19:17:43.611 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{739d69 VFE...CL. ...P.... 0,289-1038,453 #27d} because the view is not tagged for visual element logging.
+12-07 19:17:44.443 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f85a0fa VFE...CL. .F....ID 0,453-1038,600 #27e} because the view is not tagged for visual element logging.
+12-07 19:17:50.159 28976 29013 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 19:17:51.876 28976 28976 E GsaWebChromeClient: WebView=com.google.android.apps.gsa.search.core.webview.s@c59488f, Url=about:blank, Source=about:blank, Line=1, Message=Uncaught ReferenceError: google is not defined
+12-07 19:17:58.816 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 19:18:04.264 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 19:18:04.265 28976 28976 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 19:18:08.315  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 19:18:08.315  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 19:18:14.319  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 19:18:23.045  1613  7992 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 19:18:24.638  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 19:18:27.765  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 19:18:27.958  7247  7247 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 19:18:27.958  7247  7247 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 19:18:27.981  7247  7247 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 19:18:27.981  7247  7247 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 19:18:28.142  7247  7247 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 19:18:28.142  7247  7247 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 19:18:28.143  7247  7247 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 19:18:28.143  7247  7247 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 19:18:28.227  7247  7247 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 19:18:28.227  7247  7247 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 19:18:28.344  1883  7272 E DhcpClient: Read error
+12-07 19:18:28.344  1883  7272 E DhcpClient: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-07 19:18:28.344  1883  7272 E DhcpClient: 	at libcore.io.Linux.readBytes(Native Method)
+12-07 19:18:28.344  1883  7272 E DhcpClient: 	at libcore.io.Linux.read(Linux.java:184)
+12-07 19:18:28.344  1883  7272 E DhcpClient: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-07 19:18:28.344  1883  7272 E DhcpClient: 	at android.system.Os.read(Os.java:414)
+12-07 19:18:28.344  1883  7272 E DhcpClient: 	at android.net.dhcp.DhcpClient$ReceiveThread.run(DhcpClient.java:364)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: readPacket error: 
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.readBytes(Native Method)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.read(Linux.java:184)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.system.Os.read(Os.java:414)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.readPacket(PacketReader.java:137)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.handleInput(PacketReader.java:207)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.access$100(PacketReader.java:70)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader$1.onFileDescriptorEvents(PacketReader.java:189)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.dispatchEvents(MessageQueue.java:285)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.os.Looper.loop(Looper.java:160)
+12-07 19:18:28.464  1883  7250 E ConnectivityPacketTracker.wlan0: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 19:18:28.576  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 19:18:28.576  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 19:18:28.576  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 19:18:28.802  1883  1965 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-07 19:18:28.802  1883  1965 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-07 19:18:28.846  1883  1965 E HalDevMgr: Should have at least 1 chip!
+12-07 19:18:28.846  1883  1965 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-07 19:18:28.861  1883  1965 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-07 19:18:28.861  1883  1965 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-07 19:18:28.862  1883  1965 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-07 19:18:28.889  1883  1967 E WifiP2pService: Unhandled message { when=-9ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 19:18:28.952  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 19:18:28.993  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 19:18:29.048  2420  7291 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 19:18:29.053  2420  7291 E GCM     : Connection closed with errorCode 20
+12-07 19:18:29.453  2420  7291 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 19:18:30.053  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99213 pid 7931: No such file or directory
+12-07 19:18:33.611  2420  8004 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 19:18:33.635  2420  8004 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 19:18:33.847  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:18:34.660  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

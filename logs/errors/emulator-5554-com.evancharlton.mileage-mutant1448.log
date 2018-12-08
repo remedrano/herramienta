@@ -1,0 +1,461 @@
+--------- beginning of system
+--------- beginning of crash
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 10777
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:37:32.777 10777 10777 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:37:36.578  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:38:23.897  2391  2391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 19:38:26.454 11016 11016 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 19:38:26.454 11016 11016 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:38:26.454 11016 11016 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:38:38.748  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:38:43.821  2391  2391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 19:39:39.467  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 10857
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:39:47.117 10857 10857 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:40:40.688  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11118
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.delete(FillUpsProvider.java:165)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:341)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.content.ContentResolver.delete(ContentResolver.java:1684)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.delete(Dao.java:324)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$3.onClick(BaseFormActivity.java:121)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:172)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:41:00.335 11118 11118 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11170
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.insert(FillUpsProvider.java:200)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:265)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.content.ContentResolver.insert(ContentResolver.java:1587)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:308)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:41:14.648 11170 11170 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:41:40.892  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11203
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:41:40.918 11203 11203 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11240
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.delete(FillUpsProvider.java:165)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:341)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.content.ContentResolver.delete(ContentResolver.java:1684)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.delete(Dao.java:324)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$3.onClick(BaseFormActivity.java:121)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:172)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:42:27.290 11240 11240 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:42:41.758  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:43:42.866  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:44:44.971  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11275
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.insert(FillUpsProvider.java:200)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:265)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.content.ContentResolver.insert(ContentResolver.java:1587)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:308)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:44:56.051 11275 11275 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:45:45.028  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:46:46.204  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11378
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:47:04.134 11378 11378 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11434
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:47:33.077 11434 11434 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:47:46.206  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11470
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.insert(FillUpsProvider.java:200)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:265)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.content.ContentResolver.insert(ContentResolver.java:1587)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:308)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:48:01.807 11470 11470 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:48:47.064  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:48:56.371  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 19:49:48.778  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:50:02.707  2420 10599 E ActivityThread: Failed to find provider info for com.google.android.gsf.gservices
+12-07 19:51:08.340  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:52:08.352  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11505
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.insert(FillUpsProvider.java:200)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:265)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.content.ContentResolver.insert(ContentResolver.java:1587)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:308)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:52:37.748 11505 11505 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:52:40.288 11718 11718 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:52:57.798  1883  1898 E AutofillSession: No assist structure - app might have crashed providing it
+12-07 19:53:08.633  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11718
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:53:11.061 11718 11718 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:53:11.268 11755 11755 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:53:21.904  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 19:53:21.904  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 19:53:22.189 11781 11781 E earchbox:searc: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:53:38.360 11781 11781 E OverlaySController: Calling with an invalid UID, the interface will not work
+12-07 19:53:42.769 11807 11807 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:53:49.729 11832 11832 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: Task 174 failed or timed out. Client 51814930159736799 disconnecting from SearchService!
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: java.util.concurrent.CancellationException: Task was cancelled.
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.common.r.a.d.fa(SourceFile:101)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.common.r.a.d.get(SourceFile:80)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.common.r.a.cw.l(SourceFile:1)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.common.r.a.bd.n(SourceFile:34)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.common.r.a.bf.run(SourceFile:4)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bj.run(SourceFile:2)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:53:52.038 11781 11781 E SearchServiceStarter: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:53:54.359 11781 11802 E GeofenceHelper: Failed: remove geofences by PendingIntent
+12-07 19:53:54.407 11781 11827 E BluetoothAdapter: Bluetooth binder is null
+12-07 19:54:01.692  2420  8793 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 19:54:01.998  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 19:54:03.803  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 19:54:08.635  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:54:13.071 11890 11890 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:54:22.069  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 19:54:22.070  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 19:54:40.361  2420 11919 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 19:54:42.960  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 19:54:42.990  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 19:54:52.102  2561  2771 E PlayCommon: [113] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-07 19:55:10.119  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11755
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:55:10.183 11755 11755 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:55:10.333 11956 11956 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:55:18.948  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 19:55:23.348  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 19:55:23.348  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11956
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:55:28.236 11956 11956 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:55:29.870  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 19:55:29.990 11992 11992 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:55:30.252  1990  1990 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 19:55:34.515 11992 11992 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 19:55:34.515 11992 11992 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11992
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ComponentName android.content.Intent.getComponent()' on a null object reference
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1517)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1560)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.app.ContextImpl.startService(ContextImpl.java:1532)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.content.ContextWrapper.startService(ContextWrapper.java:664)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.run(AutomaticBackupService.java:29)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:270)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:259)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 19:55:37.314 11992 11992 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 19:55:37.337  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 19:55:37.407  1883  1954 E InputDispatcher: channel 'f764d5c PopupWindow:5de49da (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 19:55:37.409  1883  1954 E InputDispatcher: channel '5b986a0 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 19:55:39.146 12024 12024 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:55:41.654  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

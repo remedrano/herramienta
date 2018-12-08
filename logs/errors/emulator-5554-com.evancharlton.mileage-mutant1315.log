@@ -1,0 +1,132 @@
+--------- beginning of system
+12-07 11:28:32.640  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 11:28:32.640  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 11:28:32.640  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 11:29:12.301  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 11:29:22.680  2420 12897 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:29:23.247  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:29:30.523  2420 12948 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:29:30.674  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:29:30.742  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:29:34.417 12969 12969 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:29:36.393  1613 12996 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+--------- beginning of crash
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 12840
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: java.lang.NumberFormatException: For input string: "3450)"
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:594)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(ServiceIntervalTemplateActivity.java:90)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:29:46.683 12840 12840 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:29:47.465  2420 13009 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:29:48.125  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:29:52.022  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 11:29:52.043 12628 12628 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:29:52.043 12628 12628 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:29:52.075 12628 12628 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:29:52.075 12628 12628 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:29:52.209 12628 12628 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:29:52.209 12628 12628 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:29:52.209 12628 12628 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:29:52.209 12628 12628 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:29:52.301 12628 12628 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:29:52.301 12628 12628 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:29:52.591  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 11:29:52.591  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 11:29:52.591  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 11:29:52.862  1883  1967 E WifiP2pService: Unhandled message { when=-6ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:29:52.868  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:29:52.875  2420 12651 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:29:52.881  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:29:52.903  2420 12651 E GCM     : Connection closed with errorCode 20
+12-07 11:29:52.933  2420 12651 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13023
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: java.lang.NumberFormatException: For input string: "30002-"
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:594)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(ServiceIntervalTemplateActivity.java:83)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:30:00.734 13023 13023 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:30:06.647  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:30:06.648  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:30:12.308  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:30:12.500  2420 12615 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:30:12.583  2420 12615 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:30:12.757  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:30:12.848  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:30:18.863  1613 13111 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:30:19.133 13118 13118 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:30:20.805  1613 13144 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:30:35.255  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 11:30:35.841 13153 13153 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:30:37.124  1613 13178 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:30:37.837  2759  2759 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-07 11:30:51.828  1613 13189 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:30:54.352  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99052 pid 13153: No such file or directory
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13068
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: java.lang.NumberFormatException: For input string: "900,8"
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:594)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(ServiceIntervalTemplateActivity.java:90)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:30:59.729 13068 13068 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:30:59.821  1883  1954 E InputDispatcher: channel 'cbf43a3 com.evancharlton.mileage/com.evancharlton.mileage.ServiceIntervalTemplateActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 11:30:59.821  1883  1954 E InputDispatcher: channel '6ee1d56 com.evancharlton.mileage/com.evancharlton.mileage.ServiceIntervalTemplateListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 11:30:59.901 13204 13204 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:31:03.366  1724  1876 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 11:31:03.467  1724  1766 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property

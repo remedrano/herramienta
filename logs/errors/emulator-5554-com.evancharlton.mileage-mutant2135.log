@@ -1,0 +1,102 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:10:23.822  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:10:23.822  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:10:23.822  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:10:24.311  1881  1934 E BatteryStatsImpl: Unable to find object for WindowManager in uid 10532 mapsize=0 activeoverflow=null curoverflow=null
+12-08 03:10:24.982  2448  4594 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:10:25.123  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:10:26.351  1730  1755 E         : Couldn't opendir /data/app/vmdl1687127380.tmp: No such file or directory
+12-08 03:10:26.351  1730  1755 E installd: Failed to delete /data/app/vmdl1687127380.tmp: No such file or directory
+12-08 03:10:26.558  2119  2119 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+12-08 03:10:26.964  2475  4910 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:10:27.136  4960  4960 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:38.418  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:10:38.419  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:10:39.654  2448  4748 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:10:39.713  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 03:10:39.843  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 03:10:40.030  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:10:40.139  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:10:42.122  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:10:43.159  2119  2119 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-08 03:10:43.191  5010  5010 E ndroid.setting: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:43.451  1611  5026 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:10:43.615  2119  2119 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-08 03:10:44.016  5032  5032 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:44.116  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:10:44.174  5052  5052 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:44.541  2119  2119 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-08 03:10:44.620  2119  2119 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-08 03:10:44.843  5074  5074 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:44.898  5074  5074 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 03:10:44.898  5074  5074 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 03:10:44.898  5074  5074 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 03:10:45.222  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:45.323  2004  2004 E StatusBarSignalPolicy: Unexpected subscription 1
+12-08 03:10:45.397  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:45.498  1881  1934 E system_server: No package ID ff found for ID 0xffffffff.
+12-08 03:10:45.540  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:45.626  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:45.757  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:45.812  5101  5101 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:45.900  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:46.279  5119  5119 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:46.890  5119  5119 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-08 03:10:46.897  5141  5141 E oadcastreceive: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:47.262  5164  5164 E .apps.messagin: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:47.953  1881  1967 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '29 interface setmtu radio0 1500' failed with '400 29 Failed to set MTU (Permission denied)'
+12-08 03:10:48.410  1881  1964 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-08 03:10:48.413  5192  5192 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:48.816  5221  5221 E droid.apps.map: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:10:48.819  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:10:51.491  2475  3147 E MDD     : FileGroupManager: Trying to add expired group predictondevice.
+12-08 03:10:51.491  2475  3147 E MDD     : MDDManager class aaoc
+12-08 03:10:51.491  2475  3147 E MDD     : FileGroupManager: Trying to add expired group expander.
+12-08 03:10:51.491  2475  3147 E MDD     : MDDManager class aaoc
+12-08 03:10:51.559  2692  2692 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-08 03:10:51.570  2692  2692 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-08 03:10:52.140  2692  2692 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-08 03:10:52.553  2494  5331 E Finsky  : [175] com.google.android.finsky.setup.am.a(77): Error prefetching preloads, using account=null, preloads=NULL, preloadGroups=NULL
+12-08 03:10:52.553  2494  5331 E Finsky  : com.google.android.finsky.setup.fetchers.RawDocumentsFetchException[reason=pai_config, account=null]
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at com.google.android.finsky.setup.am.a(SourceFile:50)
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at com.google.android.finsky.setup.ao.call(Unknown Source:4)
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 03:10:52.553  2494  5331 E Finsky  : 	at java.lang.Thread.run(Thread.java:764)
+12-08 03:10:53.510  5352  5352 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.

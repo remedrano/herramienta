@@ -1,0 +1,160 @@
+--------- beginning of system
+--------- beginning of main
+12-08 13:16:04.858  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:16:04.858  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:16:04.858  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:16:04.868  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:16:04.869  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:16:05.168  2407  5081 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 13:16:06.548  2429  9538 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:16:07.037  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:16:07.160  9806  9806 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:08.247  2429  9802 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-523s,latest=76s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-823s last_run=-1s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 13:16:08.403  1732  1934 E         : Couldn't opendir /data/app/vmdl391112649.tmp: No such file or directory
+12-08 13:16:08.403  1732  1934 E installd: Failed to delete /data/app/vmdl391112649.tmp: No such file or directory
+12-08 13:16:08.881  2429  2914 E akgr    : Phenotype API error. Event # brpy@9312a595, EventCode: 12 [CONTEXT service_id=51 ]
+12-08 13:16:08.881  2429  2914 E akgr    : akfn: 29503
+12-08 13:16:08.881  2429  2914 E akgr    : 	at akgy.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):40)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at akgx.b(Unknown Source:2)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):107)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):101)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at rbx.run(Unknown Source:7)
+12-08 13:16:08.881  2429  2914 E akgr    : 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: serviceID=51, operation=GetCommittedConfigurationOperationCall
+12-08 13:16:08.887  2429  2914 E AsyncOperation: OperationException[Status{statusCode=unknown status code: 29503, resolution=null}]
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):115)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):101)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at rbx.run(Unknown Source:7)
+12-08 13:16:08.887  2429  2914 E AsyncOperation: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:08.896  2429  3033 E NetRec  : [114] ahqw.a: Could not retrieve server token for package com.google.android.apps.gcs
+12-08 13:16:08.896  2429  3033 E NetRec  : java.util.concurrent.ExecutionException: ppw: 29503: 
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at arhb.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at arhb.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):28)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at ahqw.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at ahqw.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):4)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at ahqt.getHeaders(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at com.android.volley.toolbox.HttpClientStack.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):9)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at qph.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at bpq.executeRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at com.android.volley.toolbox.BasicNetwork.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):10)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at qpi.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):13)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at com.android.volley.NetworkDispatcher.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):6)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at com.android.volley.NetworkDispatcher.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.896  2429  3033 E NetRec  : Caused by: ppw: 29503: 
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at pvq.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):3)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at akei.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):3)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at akgx.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):7)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at yax.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):5)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):34)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at rbx.run(Unknown Source:7)
+12-08 13:16:08.896  2429  3033 E NetRec  : 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:09.651  9852  9852 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:10.195  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:16:12.309  9873  9873 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:12.623  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:16.174  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:16.447  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 13:16:16.460  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 13:16:18.284  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:19.741  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:20.667  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:22.697  2429  2914 E akgr    : Phenotype API error. Event # brpy@e751805a, EventCode: 12 [CONTEXT service_id=51 ]
+12-08 13:16:22.697  2429  2914 E akgr    : akfn: 29503
+12-08 13:16:22.697  2429  2914 E akgr    : 	at akgy.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):40)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at akgx.b(Unknown Source:2)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):107)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):101)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at rbx.run(Unknown Source:7)
+12-08 13:16:22.697  2429  2914 E akgr    : 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: serviceID=51, operation=GetCommittedConfigurationOperationCall
+12-08 13:16:22.704  2429  2914 E AsyncOperation: OperationException[Status{statusCode=unknown status code: 29503, resolution=null}]
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):115)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at akgr.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):101)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at rbx.run(Unknown Source:7)
+12-08 13:16:22.704  2429  2914 E AsyncOperation: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:22.711  2429  3034 E NetRec  : [115] ahqw.a: Could not retrieve server token for package com.google.android.apps.gcs
+12-08 13:16:22.711  2429  3034 E NetRec  : java.util.concurrent.ExecutionException: ppw: 29503: 
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at arhb.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at arhb.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):28)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at ahqw.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at ahqw.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):4)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at ahqt.getHeaders(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at com.android.volley.toolbox.HttpClientStack.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):9)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at qph.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at bpq.executeRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at com.android.volley.toolbox.BasicNetwork.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):10)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at qpi.performRequest(:com.google.android.gms@14799040@14.7.99 (100700-223214910):13)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at com.android.volley.NetworkDispatcher.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):6)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at com.android.volley.NetworkDispatcher.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.711  2429  3034 E NetRec  : Caused by: ppw: 29503: 
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at pvq.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):3)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at akei.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):3)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at akgx.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):7)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at yax.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):5)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):34)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at rbx.run(Unknown Source:7)
+12-08 13:16:22.711  2429  3034 E NetRec  : 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:16:24.599  2429  9753 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:16:25.298  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:25.304  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:16:25.425  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:25.465  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:16:27.685  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:16:27.822  1727  1727 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=63, front.active.{w=1080, h=1920}
+12-08 13:16:28.979  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:29.066  9852  9852 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:16:29.066  9852  9852 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:16:29.495  1614  9937 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:16:31.091  1614  9942 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:16:31.547  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:31.784  9946  9946 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:33.108  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:33.216  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:38.608  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:16:40.814  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99013 pid 9946: No such file or directory

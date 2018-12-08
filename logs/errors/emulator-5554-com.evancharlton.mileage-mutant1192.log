@@ -1,0 +1,265 @@
+--------- beginning of system
+12-07 11:01:31.571  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:02:31.603  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:02:33.834  1880  1897 E AutofillSession: No assist structure - app might have crashed providing it
+12-07 11:03:12.660  1880  3496 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@6cfd214
+12-07 11:03:31.865  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:03:39.217  1736  1736 E wificond: NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+--------- beginning of crash
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24782
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: UPDATE fields SET description=?,_id=?,title=?,type=? WHERE _id = ?null
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1667)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1615)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.evancharlton.mileage.provider.tables.FieldsTable.update(FieldsTable.java:124)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:256)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:04:08.196 24782 24782 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+--------- beginning of main
+12-07 11:04:17.773  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:04:17.778  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:04:29.542  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 11:04:32.304  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:05:14.123  2378 24831 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:05:16.432  2378 24831 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:05:16.513  2378 24831 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:05:16.515  2378 24831 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:05:18.733  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:05:18.734  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:05:18.900  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 11:05:19.162  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 11:05:21.283  1880  1897 E AutofillSession: No assist structure - app might have crashed providing it
+12-07 11:05:33.229  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:05:36.062 19845 19845 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 11:05:53.066  2378 24834 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:05:53.301  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 11:05:53.311  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 11:06:19.122  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:06:19.123  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:06:33.850  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:07:19.130  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:07:19.135  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:07:33.854  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:07:54.759  2780  2915 E PlayCommon: [145] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-07 11:08:19.271  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:08:19.271  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:08:33.908  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:09:03.694 24871 24871 E SQLiteLog: (1) near "null": syntax error
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24871
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: UPDATE fields SET description=?,_id=?,title=?,type=? WHERE _id = ?null
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1667)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1615)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.evancharlton.mileage.provider.tables.FieldsTable.update(FieldsTable.java:124)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:256)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:305)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 11:09:03.759 24871 24871 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 11:09:06.300 24954 24954 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:09:20.463  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:09:20.464  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:09:35.120  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:09:47.416  2378 24916 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:09:47.574  2378 24916 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:09:47.575  2378 24916 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 11:09:52.412  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 11:09:54.819  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 11:09:57.422  1736  1736 E wificond: Received error messsage: Operation not supported on transport endpoint
+12-07 11:09:57.422  1736  1736 E wificond: NL80211_CMD_ABORT_SCAN failed
+12-07 11:10:09.473 24992 24992 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:10:21.052  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:10:21.052  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:10:21.113 19845 19845 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 11:10:35.604  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:10:38.071  1880  1896 E system_server: libdebuggerd_client: received packet of unexpected length from tombstoned: expected 128, received -1
+12-07 11:10:40.472  1880  1896 E system_server: libdebuggerd_client: timeout expired
+12-07 11:10:40.473  1880  1896 E ActivityManager: Aborting stack trace dump (current firstPid=19845); deadline exceeded.
+12-07 11:10:40.632  1880  1896 E ActivityManager: ANR in com.evancharlton.mileage (com.evancharlton.mileage/.FieldActivity)
+12-07 11:10:40.632  1880  1896 E ActivityManager: PID: 24954
+12-07 11:10:40.632  1880  1896 E ActivityManager: Reason: Input dispatching timed out (Waiting to send key event because the focused window has not finished processing all of the input events that were previously delivered to it.  Outbound queue length: 0.  Wait queue length: 10.)
+12-07 11:10:40.632  1880  1896 E ActivityManager: Load: 5.63 / 3.53 / 3.37
+12-07 11:10:40.632  1880  1896 E ActivityManager: CPU usage from 4ms to 30931ms later (2018-12-07 11:10:09.554 to 2018-12-07 11:10:40.481):
+12-07 11:10:40.632  1880  1896 E ActivityManager:   65% 1880/system_server: 33% user + 31% kernel / faults: 4167 minor 548 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   57% 646/kswapd0: 0% user + 57% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   37% 2482/com.google.android.gms: 18% user + 18% kernel / faults: 4179 minor 187 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   24% 2422/com.google.android.apps.nexuslauncher: 11% user + 12% kernel / faults: 416 minor 65 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   23% 24992/com.android.chrome:sandboxed_process19: 5.4% user + 17% kernel / faults: 3028 minor 1149 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   14% 1675/kworker/u9:0: 0% user + 14% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   10% 19845/com.google.android.googlequicksearchbox:search: 3.1% user + 6.9% kernel / faults: 4917 minor 660 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   8.8% 1701/kworker/u9:2: 0% user + 8.8% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   8.2% 1702/kworker/u9:3: 0% user + 8.2% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   8.5% 1992/com.google.android.inputmethod.latin: 4% user + 4.5% kernel / faults: 2216 minor 179 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   8.2% 2347/kworker/u8:4: 0% user + 8.2% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   7.2% 23839/kworker/u8:1: 0% user + 7.2% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   6.8% 24761/com.android.commands.monkey: 2.6% user + 4.2% kernel / faults: 64 minor 21 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   6.6% 1733/netd: 0.6% user + 5.9% kernel / faults: 6 minor 4 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   4.1% 1722/surfaceflinger: 2% user + 2.1% kernel / faults: 26 minor 3 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   1.7% 24954/com.evancharlton.mileage: 1.7% user + 0% kernel / faults: 13813 minor 234 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   1.4% 24581/com.google.android.inputmethod.latin:train: 1.1% user + 0.3% kernel / faults: 2578 minor 59 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   1.4% 2300/adbd: 0.1% user + 1.2% kernel / faults: 50115 minor 2 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.9% 21141/kworker/u8:5: 0% user + 0.9% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.7% 1700/kworker/u9:1: 0% user + 0.7% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.7% 1745/android.hardware.graphics.composer@2.1-service: 0.2% user + 0.5% kernel / faults: 6 minor 1 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.6% 2378/com.google.android.gms.persistent: 0% user + 0.6% kernel / faults: 310 minor 59 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.6% 22385/kworker/u8:6: 0% user + 0.6% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.4% 2008/com.android.systemui: 0.1% user + 0.3% kernel / faults: 101 minor 28 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.3% 1553/logd: 0% user + 0.3% kernel / faults: 3 minor 3 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.3% 18700/kworker/u9:4: 0% user + 0.3% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.2% 1624/android.hardware.sensors@1.0-service: 0% user + 0.2% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.3% 23934/kworker/u8:0: 0% user + 0.3% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.1% 3/ksoftirqd/0: 0% user + 0.1% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 20586/com.google.android.apps.messaging: 0% user + 0% kernel / faults: 246 minor 79 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.1% 22205/kworker/u8:3: 0% user + 0.1% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.1% 1715/jbd2/dm-1-8: 0% user + 0.1% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0.1% 24509/kworker/0:2: 0% user + 0.1% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1622/android.hardware.health@2.0-service.goldfish: 0% user + 0% kernel / faults: 6 minor 5 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1868/hostapd_nohidl: 0% user + 0% kernel / faults: 11 minor 10 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 2125/com.android.phone: 0% user + 0% kernel / faults: 15 minor 1 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 2318/logcat: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 7/rcu_preempt: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1554/servicemanager: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1608/healthd: 0% user + 0% kernel / faults: 1 minor 1 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1620/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 9 minor 3 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1677/dmcrypt_write: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1736/wificond: 0% user + 0% kernel / faults: 4 minor 8 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1741/tombstoned: 0% user + 0% kernel / faults: 8 minor 3 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 1829/netmgr: 0% user + 0% kernel / faults: 1 minor 3 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 23784/kworker/2:0: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 23814/wpa_supplicant: 0% user + 0% kernel / faults: 10 minor 20 major
+12-07 11:10:40.632  1880  1896 E ActivityManager:   0% 24842/com.android.systemui:screenshot: 0% user + 0% kernel / faults: 45 minor
+12-07 11:10:40.632  1880  1896 E ActivityManager:  +0% 25012/kworker/2:2: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:  +0% 25024/crash_dump32: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager:  +0% 25026/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel
+12-07 11:10:40.632  1880  1896 E ActivityManager: 72% TOTAL: 11% user + 31% kernel + 28% iowait + 1.4% softirq
+12-07 11:10:40.632  1880  1896 E ActivityManager: CPU usage 
+12-07 11:10:45.485  1741  1741 E /system/bin/tombstoned: Traces for pid 19845 written to: /data/anr/trace_11
+12-07 11:10:50.292  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99186 pid 24992: No such file or directory
+12-07 11:10:50.469  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:52.677  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:52.824  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:52.922  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:53.011  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:54.984  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:55.107  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:55.175  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:55.240  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:55.307  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.412  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.495  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.575  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.642  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.706  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:57.768  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:59.666  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:59.742  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:59.830  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:10:59.918  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:00.055  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:00.081  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:00.082  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:00.083  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:00.084  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.130  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.151  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.170  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.180  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.189  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.206  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.217  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.230  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.244  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.260  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.266  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.282  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.292  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.300  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.308  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.319  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.328  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.336  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.346  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.353  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.359  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.365  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.371  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.377  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.382  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.416  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.423  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.438  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.449  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.455  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.474  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.534  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:02.551  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.439  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.455  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.495  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.511  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.525  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.546  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.565  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.587  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.601  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.612  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.623  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.630  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.655  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.664  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.675  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.681  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.691  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.711  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.715  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.721  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.725  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.729  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.733  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.737  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.742  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.746  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.807  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.811  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.814  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.819  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.825  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.825  1880  4569 E memtrack: Couldn't load memtrack module
+12-07 11:11:04.825  1880  4569 E memtrack: Couldn't load memtrack module

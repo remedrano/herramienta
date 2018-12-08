@@ -1,0 +1,76 @@
+--------- beginning of system
+12-08 10:40:11.843  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 10:40:11.843  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 10:40:11.843  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 10:40:29.904  1630  1630 E lowmemorykiller: Error writing /proc/27575/oom_score_adj; errno=22
+12-08 10:40:33.536 27884 27884 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:34.150 27884 27884 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 10:40:34.481  1740  2118 E OMXNodeInstance: getConfig(0xf48ac0c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 10:40:38.165  2448 26585 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 10:40:38.604  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 10:40:38.740  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 10:40:43.570  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:40:43.570  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:40:45.577  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:40:47.776 27926 27926 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:48.307 27945 27945 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:54.513  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 10:40:56.235 27997 27997 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:56.533 28013 28013 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:58.051 28061 28061 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:58.165 28061 28061 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 10:40:58.165 28061 28061 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 10:40:58.165 28061 28061 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 10:40:58.907 28093 28093 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:40:59.728 28117 28117 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:41:39.078  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:41:43.888  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:41:43.889  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:41:45.867  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:41:49.098  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:42:03.207  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:42:13.872  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 10:42:13.878  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:42:27.327  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:42:37.339  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:42:43.949  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:42:43.950  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:42:45.870  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:42:47.358  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:43:04.667  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:43:14.688  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

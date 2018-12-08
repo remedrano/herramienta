@@ -1,0 +1,60 @@
+--------- beginning of system
+12-08 07:33:26.400  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 07:33:26.400  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 07:33:26.400  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 07:34:05.870  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:34:10.873  4694  4694 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 07:34:10.873  4694  4694 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 07:35:00.025  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 07:35:00.032  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 07:35:07.126  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:35:09.810  1992  4740 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-08 07:35:11.772  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:35:11.886  1992  4744 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-08 07:35:16.753  1992  4747 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-08 07:35:16.801  1992  4749 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-08 07:35:19.113  1992  4740 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-08 07:35:21.787  2448  4720 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 07:35:24.069  2448  4720 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 07:35:24.280  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 07:35:24.360  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 07:35:43.120  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 07:35:52.756  2448  4722 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 07:35:57.453  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:35:57.780  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 07:35:59.822  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 07:35:59.917  4785  4785 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 07:36:00.085  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 07:36:00.086  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 07:36:02.424  2692  2692 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 07:36:02.425  2692  2692 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 07:36:07.128  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 07:36:09.285  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:36:09.576  1992  1992 E RecyclerView: No adapter attached; skipping layout
+12-08 07:36:24.165  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:36:28.929  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 07:36:33.477  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 07:36:35.891  1725  1797 E IPCThreadState: binder thread pool (4 threads) starved for 2050 ms
+12-08 07:36:35.945  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 07:36:36.313  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 07:36:38.194  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99062 pid 4785: No such file or directory
+12-08 07:36:50.095  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

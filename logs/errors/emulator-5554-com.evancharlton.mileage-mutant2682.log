@@ -1,0 +1,52 @@
+--------- beginning of main
+--------- beginning of system
+12-08 18:05:43.152  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 18:05:43.152  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 18:05:43.152  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 18:05:44.600  2429  4994 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:05:44.758  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 18:05:44.790  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 18:05:45.843  1732  1935 E         : Couldn't opendir /data/app/vmdl1502734573.tmp: No such file or directory
+12-08 18:05:45.844  1732  1935 E installd: Failed to delete /data/app/vmdl1502734573.tmp: No such file or directory
+12-08 18:05:46.458  2608  5883 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 18:05:46.772  5934  5934 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:05:57.382  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:03.403  2407  2419 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-nD6ggGMud9XEHjmI5jCTZA==/base.apk' I/O error
+12-08 18:06:03.404  2407  2419 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-nD6ggGMud9XEHjmI5jCTZA==/base.apk
+12-08 18:06:04.340  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 18:06:04.340  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 18:06:04.469  2429  5567 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:06:04.683  2429  5567 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 18:06:05.135  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 18:06:05.260  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 18:06:06.901  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 18:06:07.911  5934  5934 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:06:07.913  5934  5934 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:06:08.285  1614  6004 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:06:09.401  6010  6010 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:06:09.848  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:10.012  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{86c4cae VFE...CL. ...P.... 207,21-414,279 #b} because the view is not tagged for visual element logging.
+12-08 18:06:10.090  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 18:06:10.887  1614  6037 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:06:13.046  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:13.270  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:06:18.810  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 18:06:20.452  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99003 pid 6010: No such file or directory

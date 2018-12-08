@@ -1,0 +1,54 @@
+--------- beginning of system
+12-07 19:23:34.049  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of crash
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 8874
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.exists()' on a null object reference
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:56)
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:24:27.005  8874  9006 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 19:24:34.071  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9013
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.exists()' on a null object reference
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:56)
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 19:24:51.690  9013  9108 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 19:25:34.125  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 19:26:34.199  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:27:03.567 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 19:27:06.141  9269  9269 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 19:27:08.469  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 19:27:08.469  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 19:27:22.442  9110  9303 E SQLiteLog: (1) no such table: fillups
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 19:27:22.482  9110  9303 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 19:27:26.235  2420  9300 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 19:27:27.258  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 19:27:27.338  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 19:27:34.254  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 19:27:38.877  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

@@ -1,0 +1,106 @@
+--------- beginning of system
+--------- beginning of main
+12-08 03:16:08.251  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:16:08.251  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:16:08.251  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:16:09.178  7714  7714 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:16:09.587  2448  7014 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:16:09.920  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:16:09.944  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:16:10.371  7714  7714 E DocsApplication: [main] No default account found during application creation.
+12-08 03:16:11.082  1730  1755 E         : Couldn't opendir /data/app/vmdl2050517282.tmp: No such file or directory
+12-08 03:16:11.082  1730  1755 E installd: Failed to delete /data/app/vmdl2050517282.tmp: No such file or directory
+12-08 03:16:11.974  7782  7782 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:16:13.756  2463  3017 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 03:16:14.547  1881  1894 E AutofillSession: Error notifying client to finish session
+12-08 03:16:14.547  1881  1894 E AutofillSession: android.os.DeadObjectException
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.BinderProxy.transactNative(Native Method)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.view.autofill.IAutoFillManagerClient$Stub$Proxy.setSessionFinished(IAutoFillManagerClient.java:512)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2751)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2738)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.AutofillManagerServiceImpl.destroySessionsLocked(AutofillManagerServiceImpl.java:1042)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:579)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:569)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.access$400(AutofillManagerService.java:100)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService$2.onSomePackagesChanged(AutofillManagerService.java:215)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at com.android.internal.content.PackageMonitor.onReceive(PackageMonitor.java:451)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1391)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA.run(Unknown Source:2)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:16:14.547  1881  1894 E AutofillSession: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:16:14.737  2692  3033 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 03:16:15.419  1730  1755 E         : Couldn't opendir /data/app/vmdl1351054999.tmp: No such file or directory
+12-08 03:16:15.420  1730  1755 E installd: Failed to delete /data/app/vmdl1351054999.tmp: No such file or directory
+12-08 03:16:15.514  1881  1896 E AutofillSession: No assist structure - app might have crashed providing it
+12-08 03:16:15.537  7831  7831 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:16:17.283  2475  7706 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:16:17.734  1730  1755 E         : Couldn't opendir /data/app/vmdl1669917788.tmp: No such file or directory
+12-08 03:16:17.734  1730  1755 E installd: Failed to delete /data/app/vmdl1669917788.tmp: No such file or directory
+12-08 03:16:18.971  2475  7701 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage.test flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:16:24.708  7974  7974 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:16:26.140  2314  2314 E adbd    : failed to connect to socket 'tcp:7102': Connection refused
+12-08 03:16:26.157  2314  2314 E adbd    : failed to connect to socket 'tcp:7102': Connection refused
+12-08 03:16:33.406  1611  8014 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:16:36.508  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:16:37.591  1626  1626 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 03:16:37.594  1626  1626 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 03:16:37.702  1739  1739 E wificond: No Offload Service available
+12-08 03:16:38.030  1881  1966 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:16:38.130  1881  1966 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:16:38.158  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:16:38.186  8025  8025 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 03:16:38.188  8025  8025 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 03:16:38.188  8025  8025 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 03:16:38.188  8025  8025 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 03:16:38.296  8025  8025 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 03:16:38.296  8025  8025 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 03:16:38.401  8025  8025 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 03:16:38.407  8025  8025 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 03:16:38.444  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:16:38.444  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:16:38.628  1626  1626 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 03:16:38.628  1626  1626 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 03:16:38.628  1626  1626 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 03:16:38.914  1881  1966 E WifiP2pService: Unhandled message { when=-5ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:16:38.977  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:16:39.320  1626  1626 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 03:16:39.325  1626  1626 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 03:16:39.398  1739  1739 E wificond: No Offload Service available
+12-08 03:16:39.400  1881  1964 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 03:16:39.469  1881  1965 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 03:16:39.540  1881  1966 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:16:39.633  1881  1966 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:16:39.653  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:16:39.723  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:16:39.960  1881  1967 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '206 interface setmtu radio0 1500' failed with '400 206 Failed to set MTU (Permission denied)'
+12-08 03:16:40.599  2448  8063 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 03:16:43.843  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:16:43.963  1881  1964 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 03:16:44.142  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:16:44.327  2448  8083 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 03:16:44.446  2448  8086 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 03:16:44.704  1736  1785 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 03:16:45.635  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99003 pid 7974: No such file or directory
+12-08 03:16:46.590  1725  1725 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-08 03:16:49.485  1881  1894 E memtrack: Couldn't load memtrack module

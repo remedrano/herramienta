@@ -1,0 +1,90 @@
+--------- beginning of system
+12-07 13:13:55.797  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 13:13:55.797  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 13:13:55.797  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 13:14:27.082  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:14:59.089  1883  3886 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.108  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.287  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.315  1883  1898 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.355  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.382  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:14:59.434  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of main
+12-07 13:15:07.939  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:15:07.941  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:15:12.723  2420 31064 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:15:13.153  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:15:13.192  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:15:19.012  1613 31466 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:15:26.720 31471 31471 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:15:27.102  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:15:48.994 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:15:49.306  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 13:15:49.321  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 13:15:49.416  1738  1738 E wificond: No Offload Service available
+12-07 13:15:49.534  1883  1967 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:15:49.563  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:15:49.597  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:15:49.622  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:15:53.690  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:15:54.503  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 13:15:54.531  2420 31552 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:15:57.055 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:16:06.674  1883  1954 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.702  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.723  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.740  1883  5685 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.766  1883  3299 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.791  1883  2164 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.846  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.868  1883  3974 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.897  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.915  1883  3974 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.952  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.975  1883  2164 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:06.999  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:07.044  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:07.069  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:07.093  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:07.113  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:07.958  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:16:07.962  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:16:08.014  2420 31555 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:16:08.472  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:16:08.586  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:16:07.442  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 13:16:18.947 31586 31586 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:16:18.988 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71afc4b VFE...CL. ...P.... 0,-5-1038,142 #ab} because the view is not tagged for visual element logging.
+12-07 13:16:19.020 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{728af41 VFE...CL. ...P.... 0,289-1038,436 #ad} because the view is not tagged for visual element logging.
+12-07 13:16:19.268 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{efe9ce6 VFE...CL. ...P.... 0,436-1038,583 #ae} because the view is not tagged for visual element logging.
+12-07 13:16:27.135  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:16:28.004  1613 31624 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:16:28.120 28976 28985 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 13:16:26.153]
+12-07 13:16:44.647 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:16:52.763 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{3957f80 VFE...CL. ...P.... 0,583-1038,730 #c1} because the view is not tagged for visual element logging.
+12-07 13:16:53.311 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9e061fe VFE...CL. ...P.... 0,142-1038,289 #be} because the view is not tagged for visual element logging.
+12-07 13:16:53.577 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{3957f80 VFE...CL. ...P.... 0,583-1038,730 #c1} because the view is not tagged for visual element logging.
+12-07 13:16:53.994 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8079b9 VFE...CL. ...P.... 0,-5-1038,142 #bd} because the view is not tagged for visual element logging.
+12-07 13:16:55.083  1613 31639 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:17:07.973  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:17:07.973  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:17:16.901  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99155 pid 31586: No such file or directory

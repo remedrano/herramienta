@@ -1,0 +1,74 @@
+--------- beginning of system
+12-07 11:58:55.743  1883  5682 E NotificationService: Package enqueue rate is 7.387107. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-07 11:59:18.500  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:59:27.603  1883  5877 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.638  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.729  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.744  1883  2148 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.771  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.797  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 11:59:27.874  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of main
+12-07 11:59:53.576  2759  2975 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 11:59:54.258  2420 19342 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:59:54.476  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:59:54.546  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:00:00.409  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:00:03.466 19387 19387 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:00:03.610  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1261013 VFE...CL. ...P.... 0,583-1038,730 #24c} because the view is not tagged for visual element logging.
+12-07 12:00:03.819  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1261013 VFE...CL. ...P.... 0,583-1038,730 #24c} because the view is not tagged for visual element logging.
+12-07 12:00:03.823  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{42a1c49 VFE...CL. ...P.... 0,142-1038,289 #249} because the view is not tagged for visual element logging.
+12-07 12:00:04.964  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6579a6f VFE...CL. ...P.... 0,436-1038,583 #24b} because the view is not tagged for visual element logging.
+12-07 12:00:07.135  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:00:07.135  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:00:18.529  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:00:20.783  2420 19342 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:00:21.260  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:00:21.369  1613 19428 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:00:30.945 19202 19202 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19202
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.initContentView(Editor.java:3589)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.widget.Editor$PinnedPopupWindow.<init>(Editor.java:3271)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.<init>(Editor.java:3555)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.widget.Editor.replace(Editor.java:439)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.widget.-$$Lambda$DZXn7FbDDFyBvNjI-iG9_hfa7kw.run(Unknown Source:2)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 12:00:30.972 19202 19202 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 12:00:31.344 19446 19446 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:00:48.993  2420 19271 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:00:49.197  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:00:49.286  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:00:55.899  1613 19499 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:00:56.208 19502 19502 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:00:56.258  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{223594c VFE...CL. ...P..ID 0,-5-1038,142 #24d} because the view is not tagged for visual element logging.
+12-07 12:00:56.302  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{22b6eaa VFE...CL. ...P.... 0,289-1038,436 #24f} because the view is not tagged for visual element logging.
+12-07 12:00:56.578  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9b21a9b VFE...CL. ...P.... 0,436-1038,583 #250} because the view is not tagged for visual element logging.
+12-07 12:01:04.765  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:00:59.442]
+12-07 12:01:07.140  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:01:07.140  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:01:13.201  1613 19542 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:01:17.617  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:01:18.563  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:01:23.294  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a1e422 VFE...CL. ...P.... 0,583-1038,730 #263} because the view is not tagged for visual element logging.
+12-07 12:01:23.878  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a031c70 VFE...CL. ........ 0,142-1038,289 #260} because the view is not tagged for visual element logging.
+12-07 12:01:24.051  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a1e422 VFE...CL. ...P.... 0,583-1038,730 #263} because the view is not tagged for visual element logging.
+12-07 12:01:24.456  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7bcaeb3 VFE...CL. ...P.... 0,-5-1038,142 #25f} because the view is not tagged for visual element logging.
+12-07 12:01:25.379  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7bcaeb3 VFE...CL. ...P.... 0,-5-1038,142 #25f} because the view is not tagged for visual element logging.
+12-07 12:01:25.438  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d1e206e VFE...CL. ...P.... 0,436-1038,583 #262} because the view is not tagged for visual element logging.
+12-07 12:01:26.031  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d1e206e VFE...CL. ...P.... 0,436-1038,583 #262} because the view is not tagged for visual element logging.
+12-07 12:01:26.217  1613 19553 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:01:38.361  1613 19575 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:01:48.424  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99083 pid 19502: No such file or directory

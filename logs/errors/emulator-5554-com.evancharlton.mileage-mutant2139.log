@@ -1,0 +1,90 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:11:32.940  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:11:32.940  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:11:32.940  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:11:33.824  5821  5821 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:11:33.963  5852  5852 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:11:34.205  2448  5428 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:11:34.522  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:11:34.564  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:11:34.943  5852  5852 E DocsApplication: [main] No default account found during application creation.
+12-08 03:11:35.602  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:36.097  1730  1755 E         : Couldn't opendir /data/app/vmdl903349327.tmp: No such file or directory
+12-08 03:11:36.098  1730  1755 E installd: Failed to delete /data/app/vmdl903349327.tmp: No such file or directory
+12-08 03:11:36.150  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:37.299  5924  5924 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:11:38.427  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 03:11:38.427  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 03:11:39.408  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:40.101  2494  2716 E PlayCommon: [101] com.google.android.play.b.w.a(20): Failed to connect to server for server timestamp: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 03:11:40.102  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 03:11:40.205  2494  5948 E Finsky  : [199] com.google.android.finsky.splitinstallservice.az.a(3): Can't schedule deferred install. No modules found.
+12-08 03:11:40.218  2494  2494 E Finsky  : [2] com.google.android.finsky.wear.ae.a(3): onConnectionFailed: ConnectionResult{statusCode=API_UNAVAILABLE, resolution=null, message=null}
+12-08 03:11:41.992  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:44.118  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:11:44.587  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:45.765  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:47.736  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:50.648  2448  5338 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:11:50.965  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:11:51.000  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:11:52.891  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:53.689  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:11:54.120  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:54.212  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:54.872  1611  5995 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:11:55.636  6001  6001 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:11:55.639  1881  1894 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 03:11:55.825  6001  6001 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 03:11:55.825  6001  6001 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 03:11:55.825  6001  6001 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 03:11:56.411  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:56.720  6029  6029 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:11:59.259  1626  1626 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 03:11:59.262  1626  1626 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 03:11:59.312  1739  1739 E wificond: No Offload Service available
+12-08 03:11:59.322  1881  1964 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 03:11:59.372  1881  1965 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 03:11:59.412  1881  1966 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:11:59.420  1881  1966 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 03:11:59.436  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:11:59.443  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 03:11:59.564  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:11:59.769  6055  6055 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:12:00.733  5119  5119 E Dialer  : VvmStatusSmsFetcher - Request SMS send failed: RESULT_ERROR_GENERIC_FAILURE
+12-08 03:12:00.774  5119  5384 E Dialer  : VvmActivationTask - Unable to send status request SMS

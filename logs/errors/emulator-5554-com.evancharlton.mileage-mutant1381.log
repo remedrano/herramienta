@@ -1,0 +1,124 @@
+--------- beginning of system
+12-07 12:54:35.622  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 12:54:35.622  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:54:35.622  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of crash
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 28390
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at com.evancharlton.mileage.FieldListActivity.setupEmptyView(FieldListActivity.java:57)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at com.evancharlton.mileage.BaseListActivity.onResume(BaseListActivity.java:68)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-07 12:55:21.425 28390 28390 E AndroidRuntime: 	... 11 more
+12-07 12:55:26.663  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:56:09.793  1883  2449 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.825  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.855  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.875  1883  3299 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.894  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.946  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:09.985  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.001  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.053  1883  1898 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.088  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.117  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.184  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.204  1883  3983 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.254  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.291  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.315  1883  5877 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.336  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:10.408  1883  1935 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 12:56:26.699  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 12:56:40.873  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{42c5208 VFE...CL. ...P.... 0,436-1038,583 #414} because the view is not tagged for visual element logging.
+12-07 12:56:42.026 28710 28710 E .android.video: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:56:46.060 28730 28730 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:56:48.125  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:56:44.354]
+12-07 12:56:54.627 28794 28794 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:56:57.432 28818 28818 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:57:00.575 28835 28835 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:57:04.079  2420 28651 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:57:04.566  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:57:04.701  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:57:07.793  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:57:07.793  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:57:11.383  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:57:15.722  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:57:15.951  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 12:57:21.962  2420 28651 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:57:22.319  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:57:22.374  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:57:26.729  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:57:29.506 28885 28885 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:57:29.846 28901 28901 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:57:30.192  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7e59c14 VFE...CL. ...p.... 0,142-1038,289 #417} because the view is not tagged for visual element logging.
+12-07 12:57:30.281  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7e59c14 VFE...CL. ...P.... 0,142-1038,289 #417} because the view is not tagged for visual element logging.
+12-07 12:57:30.372  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{dc9bcbd VFE...CL. ...P.... 0,-5-1038,142 #416} because the view is not tagged for visual element logging.
+12-07 12:57:31.456  2759  2975 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 12:57:34.684 28933 28933 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:57:36.282  1613 28950 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:57:47.592  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:57:52.104  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:57:30.958]
+12-07 12:57:56.491  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:57:59.066  1613 28966 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:58:02.146  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{eb14f15 VFE...CL. ...P.... 0,583-1038,730 #41f} because the view is not tagged for visual element logging.
+12-07 12:58:02.598  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{91159a5 VFE...CL. ...P.... 0,142-1038,289 #41c} because the view is not tagged for visual element logging.
+12-07 12:58:03.041  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{eb14f15 VFE...CL. ...P.... 0,583-1038,730 #41f} because the view is not tagged for visual element logging.
+12-07 12:58:03.440  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{bd77b9c VFE...CL. ...P.... 0,-5-1038,142 #41b} because the view is not tagged for visual element logging.
+12-07 12:58:04.342  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{bd77b9c VFE...CL. ...P.... 0,-5-1038,142 #41b} because the view is not tagged for visual element logging.
+12-07 12:58:04.384  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{511d2b VFE...CL. ...P.... 0,436-1038,583 #41e} because the view is not tagged for visual element logging.
+12-07 12:58:04.807  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{511d2b VFE...CL. ...P.... 0,436-1038,583 #41e} because the view is not tagged for visual element logging.
+12-07 12:58:07.800  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:58:07.800  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:58:11.777  1632  1632 E lowmemorykiller: Error opening /proc/28818/oom_score_adj; errno=2
+12-07 12:58:11.826  1632  1632 E lowmemorykiller: Error opening /proc/28818/oom_score_adj; errno=2
+12-07 12:58:12.146  1632  1632 E lowmemorykiller: Error writing /proc/28901/oom_score_adj; errno=22
+12-07 12:58:16.133 29001 29001 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:58:16.871  1724  2165 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 12:58:16.965 29027 29027 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:58:17.643  1724  1876 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 12:58:18.004  1724  1766 E BufferQueueProducer: [com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#1] cancelBuffer: BufferQueue has been abandoned
+12-07 12:58:18.672 29062 29062 E webview_servic: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:58:21.058  2420 28983 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:58:21.505  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:58:21.678  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:58:26.749  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

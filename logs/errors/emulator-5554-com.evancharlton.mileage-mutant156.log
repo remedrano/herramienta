@@ -1,0 +1,78 @@
+--------- beginning of main
+12-07 16:45:08.876 16506 28459 E NetworkScheduler: Unknown result code received: 4
+12-07 16:45:08.922 16506 16506 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.checkin.EventLogService{u=0 tag="AggregationTaskTag" trigger=window{period=1800s,flex=600s,earliest=-16s,latest=583s} requirements=[NET_ANY] attributes=[PERSISTED,RECURRING] scheduled=-1216s last_run=0s jid=N/A status=PENDING retries=0 client_lib=MANCHEGO_GCM-14799000} :INVALID_START
+--------- beginning of system
+12-07 16:45:09.051 28507 28507 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 16:45:09.051 28507 28507 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 16:45:09.051 28507 28507 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 16:45:09.051 28507 28507 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 16:45:09.100 28563 28563 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:45:09.160 28507 28507 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 16:45:09.160 28507 28507 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 16:45:09.260 28507 28507 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 16:45:09.260 28507 28507 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 16:45:09.461  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 16:45:09.461  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 16:45:09.461  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 16:45:09.680 15976 16055 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 16:45:09.729 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:45:10.035  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 16:45:10.037  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 16:45:10.105 15926 15926 E wificond: No Offload Service available
+12-07 16:45:10.173 15976 16056 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '446 interface setmtu radio0 1500' failed with '400 446 Failed to set MTU (Permission denied)'
+12-07 16:45:10.239 15976 16055 E WifiP2pService: Unhandled message { when=-3ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 16:45:10.266 15976 16055 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 16:45:10.317 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:45:10.362 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:45:10.718 16506 28609 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 16:45:11.295 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:45:11.295 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:45:11.295 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:45:11.523 16485 16529 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-07 16:45:12.058 15927 28644 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:45:14.249 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 16:45:14.429  1729  2328 E         : Couldn't opendir /data/app/vmdl603043422.tmp: No such file or directory
+12-07 16:45:14.429  1729  2328 E installd: Failed to delete /data/app/vmdl603043422.tmp: No such file or directory
+12-07 16:45:14.691 16506 28674 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 16:45:14.836 16506 28682 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 16:45:15.118 15925 15942 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 16:45:15.813 28693 28693 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:45:21.845 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-07 16:45:21.859 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-07 16:45:23.108 15976 19332 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateSystemUiLocked:2331 due to an invalid token. uid:10060 token:android.os.Binder@7337bf0
+12-07 16:45:23.115 15976 19332 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@7337bf0
+12-07 16:45:23.204 16085 16085 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-07 16:45:25.986 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:45:26.409 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:45:26.423 16506 28143 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.gms/com.google.android.gms.checkin.EventLogService}
+12-07 16:45:26.525  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:45:26.623 16506 28393 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:45:27.030  1739  1739 E OMXNodeInstance: getConfig(0xee326b40:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-07 16:45:27.114 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:45:27.208 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:45:29.880 15927 28767 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:45:30.295 15976 16054 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-07 16:45:30.304 15976 16054 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-07 16:45:31.643  1724  1767 E SurfaceFlinger: getLayerUser(name=0xe556b6a0) is dead
+12-07 16:45:31.643  1724  1767 E SurfaceFlinger: getLayerUser(name=0xe556b6a0) is dead
+12-07 16:45:32.364 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:45:33.174 15927 28782 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:45:36.028 15976 15989 E memtrack: Couldn't load memtrack module

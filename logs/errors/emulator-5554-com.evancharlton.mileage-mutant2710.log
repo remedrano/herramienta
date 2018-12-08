@@ -1,0 +1,54 @@
+--------- beginning of main
+--------- beginning of system
+12-08 13:14:54.817  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:14:54.817  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:14:54.817  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:14:55.765  2429  9000 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:14:56.242  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:14:56.274  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:14:57.434  1732  1935 E         : Couldn't opendir /data/app/vmdl1650602663.tmp: No such file or directory
+12-08 13:14:57.434  1732  1935 E installd: Failed to delete /data/app/vmdl1650602663.tmp: No such file or directory
+12-08 13:14:58.073  2608  9019 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 13:14:58.472  9078  9078 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:15:04.857  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:15:04.857  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:15:06.659  9078  9078 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:15:06.659  9078  9078 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:15:09.166  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:15:10.127  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:15:15.517  2429  8791 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:15:15.913  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:15:15.965  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:15:17.968  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 13:15:18.874  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:15:20.336  1614  9142 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:15:23.966  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 13:15:23.972  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 13:15:24.046  1741  1741 E wificond: No Offload Service available
+12-08 13:15:24.058  1885  1968 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 13:15:24.206  1885  1970 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 13:15:24.283  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 13:15:24.316  1885  1971 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 13:15:24.368  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 13:15:24.383  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 13:15:28.322  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 13:15:28.385  1885  1968 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 13:15:28.587  9182  9182 E android.youtub: Not starting debugger since process cannot load the jdwp agent.

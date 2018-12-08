@@ -1,0 +1,100 @@
+--------- beginning of system
+12-07 02:37:28.903  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 02:37:28.903  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 02:37:28.903  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 02:37:53.947  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 02:38:00.004  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 02:38:00.015  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 02:38:00.118  1736  1736 E wificond: No Offload Service available
+12-07 02:38:01.456  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 02:38:01.456  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 02:38:01.456  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 02:38:03.864  6679  6679 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 02:38:03.864  6679  6679 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 02:38:03.864  6679  6679 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 02:38:53.955  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 02:39:53.965  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 02:40:06.297  7121  7121 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 02:40:09.646  6558  6558 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 02:40:09.646  6558  6558 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 02:40:26.546  6805  6805 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 02:40:26.546  6805  6805 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 02:40:32.944  1992  9017 E putmethod.lati: Invalid ID 0x00000003.
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x3
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 02:40:32.957  1992  9017 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 02:40:38.935  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 02:40:38.954  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 02:40:39.089  1736  1736 E wificond: No Offload Service available
+12-07 02:40:39.345  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 02:40:39.372  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 02:40:39.396  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 02:40:39.441  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 02:40:40.303  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 02:40:40.366  7170  7170 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 02:40:40.370  7170  7170 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 02:40:40.372  7170  7170 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 02:40:40.372  7170  7170 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 02:40:40.472  7170  7170 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 02:40:40.472  7170  7170 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 02:40:40.562  7170  7170 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 02:40:40.562  7170  7170 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 02:40:40.783  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 02:40:40.797  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 02:40:40.797  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 02:40:40.797  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 02:40:40.807  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 02:40:41.061  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 02:40:41.131  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 02:40:41.143  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 02:40:42.012  2378  6946 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 02:40:42.575  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 02:40:46.082  1992  9017 E putmethod.lati: Invalid ID 0x00000003.
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x3
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 02:40:46.082  1992  9017 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 02:40:51.701  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 02:40:53.969  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

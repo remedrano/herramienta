@@ -1,0 +1,73 @@
+--------- beginning of system
+12-08 10:47:16.633  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 10:47:16.633  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 10:47:16.633  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 10:47:37.308 29004 29004 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:47:38.089 29004 29004 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 10:47:38.490  1740  2118 E OMXNodeInstance: getConfig(0xf4fa6b40:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 10:47:42.939  2448 28806 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 10:47:43.098  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 10:47:43.212  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 10:47:44.138  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:47:44.138  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:47:45.910  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:47:51.456 29048 29048 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:47:51.928 29068 29068 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:48:01.715  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 10:48:03.151  1881  4115 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.178  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.241  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.302  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.339  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.387  1881  5791 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.440  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:03.518  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:48:41.237  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:48:44.148  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:48:44.149  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:48:45.911  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:48:54.697  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:48:57.061  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:49:02.892  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:49:06.318  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:49:26.138  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:49:38.288  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:49:44.207  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:49:44.207  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:49:45.914  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:49:48.298  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:49:58.319  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:50:07.661 29119 29119 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:50:08.329  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:50:13.044  1881  4164 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.177  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.223  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.270  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.318  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.355  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.385  1881  2225 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.426  1881  5791 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.457  1881  4492 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.481  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.667  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.709  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:50:13.773  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping

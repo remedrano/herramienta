@@ -1,0 +1,72 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:39:02.144 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 16:38:55.282]
+12-07 16:39:03.344 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:39:03.344 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:39:03.344 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:39:03.360 15976 16042 E InputDispatcher: channel '4f178d5 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:39:03.360 15976 16042 E InputDispatcher: channel '9894592 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:39:03.361 15976 16042 E InputDispatcher: channel 'c496847 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 16:39:04.627 16506 25429 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:39:04.781 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:39:05.075  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 16:39:05.076  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 16:39:06.709  1729  2328 E         : Couldn't opendir /data/app/vmdl1236070590.tmp: No such file or directory
+12-07 16:39:06.709  1729  2328 E installd: Failed to delete /data/app/vmdl1236070590.tmp: No such file or directory
+12-07 16:39:06.887 16410 24047 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_b1169f15-ee39-49d3-bff4-c52ecd107d16)
+12-07 16:39:08.332 26443 26443 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:39:09.457 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 16:39:09.468 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:39:12.237 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 16:39:12.237 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:39:12.434 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:39:13.436 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 16:39:16.149 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 16:39:16.149 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 16:39:17.126 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:39:17.340 15976 15993 E libprocessgroup: Error encountered killing process cgroup uid 99015 pid 26259: No such file or directory
+12-07 16:39:19.544 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:39:20.534 16506 25351 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:39:20.710 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:39:20.772 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:39:22.563 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:39:24.825 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:39:26.071 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 16:39:26.383  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 16:39:28.653  1724  1724 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}

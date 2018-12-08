@@ -1,0 +1,600 @@
+--------- beginning of system
+--------- beginning of main
+12-07 14:57:36.334  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 14:57:36.335  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 14:57:36.369  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:57:38.963  1727  1777 E         : Couldn't opendir /data/app/vmdl1432230188.tmp: No such file or directory
+12-07 14:57:38.964  1727  1777 E installd: Failed to delete /data/app/vmdl1432230188.tmp: No such file or directory
+12-07 14:58:10.176  3348  3348 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 14:58:13.127  3348  3348 E SQLiteLog: (1) near "null": syntax error
+12-07 14:58:13.141  3348  3348 E SQLiteLog: (1) near "null": syntax error
+--------- beginning of crash
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 3348
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	... 11 more
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 14:58:13.147  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: CREATE TABLE fillups (_id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp INTEGER, null DOUBLE, is_partial INTEGER, restart INTEGER, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, vehicle_id INTEGER, null DOUBLE);
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:113)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 14:58:13.148  3348  3348 E AndroidRuntime: 	... 37 more
+12-07 14:58:13.176  1629  1629 E lowmemorykiller: Error writing /proc/3348/oom_score_adj; errno=22
+12-07 14:58:44.611  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 14:58:44.612  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 14:58:44.613  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 14:59:00.727  2780  2915 E PlayCommon: [145] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-07 14:59:13.905  2068  2085 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 14:59:45.666  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 14:59:45.667  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 14:59:45.675  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:00:09.924  3388  3388 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:00:17.718  3388  3388 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:17.745  3388  3388 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 3388
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	... 11 more
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: CREATE TABLE fillups (_id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp INTEGER, null DOUBLE, is_partial INTEGER, restart INTEGER, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, vehicle_id INTEGER, null DOUBLE);
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:113)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 15:00:17.759  3388  3388 E AndroidRuntime: 	... 37 more
+12-07 15:00:17.941  1629  1629 E lowmemorykiller: Error writing /proc/3388/oom_score_adj; errno=22
+12-07 15:00:31.358  3412  3412 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:00:33.842  3412  3412 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:33.861  3412  3412 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 3412
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	... 11 more
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:33.874  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: CREATE TABLE fillups (_id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp INTEGER, null DOUBLE, is_partial INTEGER, restart INTEGER, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, vehicle_id INTEGER, null DOUBLE);
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:113)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 15:00:33.878  3412  3412 E AndroidRuntime: 	... 37 more
+12-07 15:00:33.945  1629  1629 E lowmemorykiller: Error writing /proc/3412/oom_score_adj; errno=22
+12-07 15:00:44.591  3438  3438 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:00:57.760  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:00:57.760  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:00:57.773  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:00:57.926  3438  3438 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:57.938  3438  3438 E SQLiteLog: (1) near "null": syntax error
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 3438
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	... 11 more
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:57.943  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: CREATE TABLE fillups (_id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp INTEGER, null DOUBLE, is_partial INTEGER, restart INTEGER, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, vehicle_id INTEGER, null DOUBLE);
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:113)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 15:00:57.944  3438  3438 E AndroidRuntime: 	... 37 more
+12-07 15:00:57.994  1629  1629 E lowmemorykiller: Error writing /proc/3438/oom_score_adj; errno=22
+12-07 15:01:27.112  2259  2259 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-07 15:01:37.610  1722  1959 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 15:01:37.731  3471  3471 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:01:37.803  1737  2084 E OMXNodeInstance: getConfig(0xea126c60:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-07 15:01:42.912  1722  2117 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-07 15:01:45.800  3471  3471 E SQLiteLog: (1) near "null": syntax error
+12-07 15:01:45.803  1737  1737 E OMXNodeInstance: setConfig(0xe9a2c120:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+12-07 15:01:45.804  1737  2058 E OMXNodeInstance: getConfig(0xe9a2c120:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-07 15:01:45.808  3471  3471 E SQLiteLog: (1) near "null": syntax error
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 3471
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	... 11 more
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:01:45.812  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: CREATE TABLE fillups (_id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp INTEGER, null DOUBLE, is_partial INTEGER, restart INTEGER, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, null DOUBLE, vehicle_id INTEGER, null DOUBLE);
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:113)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 15:01:45.813  3471  3471 E AndroidRuntime: 	... 37 more
+12-07 15:01:56.228  2068  2085 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:01:56.309  1722  1749 E IPCThreadState: binder thread pool (4 threads) starved for 10310 ms
+12-07 15:01:58.873  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:01:58.891  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:01:58.897  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:02:09.351  2068  2085 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:02:27.868  1880  1896 E system_server: libdebuggerd_client: timeout expired
+12-07 15:02:27.870  1880  1896 E system_server: libdebuggerd_client: received packet of unexpected length from tombstoned: expected 128, received -1
+12-07 15:02:27.871  2068  2085 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:02:30.503  1880  1896 E system_server: libdebuggerd_client: received packet of unexpected length from tombstoned: expected 128, received -1
+12-07 15:02:30.524  1880  1896 E ActivityManager: Aborting stack trace dump (current firstPid=19845); deadline exceeded.
+12-07 15:02:30.654  1880  1896 E ActivityManager: ANR in com.evancharlton.mileage (com.evancharlton.mileage/.Mileage)
+12-07 15:02:30.654  1880  1896 E ActivityManager: PID: 3471
+12-07 15:02:30.654  1880  1896 E ActivityManager: Reason: Input dispatching timed out (Waiting because no window has focus but there is a focused application that may eventually add a window when it finishes starting up.)
+12-07 15:02:30.654  1880  1896 E ActivityManager: Load: 3.36 / 3.78 / 4.63
+12-07 15:02:30.654  1880  1896 E ActivityManager: CPU usage from 0ms to 47278ms later (2018-12-07 15:01:43.247 to 2018-12-07 15:02:30.524):
+12-07 15:02:30.654  1880  1896 E ActivityManager:   148% 1880/system_server: 75% user + 72% kernel / faults: 6964 minor 131 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   23% 1722/surfaceflinger: 9.7% user + 14% kernel / faults: 31 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   5.5% 2068/android.hardware.audio@2.0-service: 2.2% user + 3.2% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   6% 2259/com.android.systemui:screenshot: 4.8% user + 1.2% kernel / faults: 8381 minor 11 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   5.9% 19845/com.google.android.googlequicksearchbox:search: 2.3% user + 3.5% kernel / faults: 2746 minor 42 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   5.5% 1745/android.hardware.graphics.composer@2.1-service: 0.5% user + 5% kernel / faults: 52 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   5.2% 396/kworker/u8:0: 0% user + 5.2% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.6% 2008/com.android.systemui: 0.2% user + 0.3% kernel / faults: 218 minor 6 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.5% 1732/mediaserver: 0.5% user + 0% kernel / faults: 167 minor 2 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.4% 2300/adbd: 0% user + 0.3% kernel / faults: 41120 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2065/audioserver: 0% user + 0% kernel / faults: 27 minor 3 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.2% 646/kswapd0: 0% user + 0.2% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.2% 1553/logd: 0% user + 0.2% kernel / faults: 3 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.2% 1737/media.codec: 0% user + 0.2% kernel / faults: 73 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.2% 26518/com.google.android.apps.nexuslauncher: 0% user + 0.1% kernel / faults: 216 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.1% 3/ksoftirqd/0: 0% user + 0.1% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0.1% 3135/com.android.chrome:sandboxed_process19: 0.1% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2318/logcat: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1619/android.hardware.gnss@1.0-service: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1624/android.hardware.sensors@1.0-service: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1620/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 21 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1715/jbd2/dm-1-8: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1744/kworker/u8:3: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2183/com.google.android.ext.services: 0% user + 0% kernel / faults: 46 minor 1 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2378/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 28 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2590/kworker/u8:2: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2780/com.android.vending: 0% user + 0% kernel / faults: 34 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 32186/kworker/u9:1: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 32698/kworker/u9:3: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 19/migration/3: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1554/servicemanager: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 1643/traced: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 2715/kworker/2:1: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 3131/kworker/0:2: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 3336/com.android.commands.monkey: 0% user + 0% kernel / faults: 22 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 18700/kworker/u9:4: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   0% 31747/kworker/u9:2: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:  +0% 3522/kworker/3:1: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:  +0% 3526/crash_dump32: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:  +0% 3529/system_server: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:  +0% 3535/crash_dump32: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:  +0% 3538/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager: 11% TOTAL: 3% user + 5% kernel + 3.2% iowait + 0.2% softirq
+12-07 15:02:30.654  1880  1896 E ActivityManager: CPU usage from 2529ms to 13305ms later (2018-12-07 15:01:45.775 to 2018-12-07 15:01:56.551):
+12-07 15:02:30.654  1880  1896 E ActivityManager:   99% 1880/system_server: 53% user + 46% kernel / faults: 766 minor 6 major
+12-07 15:02:30.654  1880  1896 E ActivityManager:     96% 1896/ActivityManager: 52% user + 44% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     1.7% 1889/HeapTaskDaemon: 1.7% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.1% 3002/Binder:1880_D: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.1% 3227/Binder:1880_E: 0% user + 0.1% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 1880/system_server: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 1934/android.anim: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 1954/InputDispatcher: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 2569/Binder:1880_A: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 4134/RenderThread: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:   1.6% 1722/surfaceflinger: 0.2% user + 1.3% kernel / faults: 14 minor
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.9% 1722/surfaceflinger: 0.4% user + 0.4% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.2% 1749/Binder:1722_2: 0% user + 0.2% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.1% 1750/DispSync: 0% user + 0.1% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0.1% 1959/Binder:1722_4: 0% user + 0.1% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 1748/Binder:1722_1: 0% user + 0% kernel
+12-07 15:02:30.654  1880  1896 E ActivityManager:     0% 1751/appEventThread: 0% user +
+12-07 15:02:41.348  2068  2085 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:02:41.363  1880  2033 E system_server: libdebuggerd_client: received packet of unexpected length from tombstoned: expected 128, received -1
+12-07 15:02:41.623  1741  1741 E /system/bin/tombstoned: Traces for pid 19845 written to: /data/anr/trace_28
+12-07 15:02:41.655  3526  3526 E crash_dump32: failed to notify tombstoned of completion
+12-07 15:02:49.342  1880  2033 E system_server: libdebuggerd_client: received packet of unexpected length from tombstoned: expected 128, received -1
+12-07 15:02:49.343  1880  2033 E ActivityManager: Aborting stack trace dump (current native pid=2068); deadline exceeded.
+12-07 15:02:49.566  1741  1741 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_00
+12-07 15:02:49.592  1741  1741 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_01
+12-07 15:02:49.628  1741  1741 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_02
+12-07 15:02:49.673  1741  1741 E /system/bin/tombstoned: Traces for pid 1880 written to: /data/anr/trace_29
+12-07 15:02:59.852  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:02:59.852  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:02:59.854  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:02:59.923  3581  3581 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:03:02.661  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:02.777  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:02.873  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:13.486  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:13.575  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:18.583  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:18.688  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:18.769  1880  5556 E memtrack: Couldn't load memtrack module
+12-07 15:03:18.836  1880  5556 E memtrack: Couldn't load memtrack module

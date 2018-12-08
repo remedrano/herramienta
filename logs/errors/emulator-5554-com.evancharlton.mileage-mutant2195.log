@@ -1,0 +1,47 @@
+--------- beginning of main
+--------- beginning of system
+12-08 03:28:41.015  1881  1965 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-08 03:28:42.258  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 03:28:42.258  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 03:28:42.258  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 03:28:42.287  1881  1953 E InputDispatcher: channel '5e79d9b com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:28:42.287  1881  1953 E InputDispatcher: channel 'e6941c3 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 03:28:43.642  2448 10824 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:28:43.811  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 03:28:44.027  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:28:44.054  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:28:45.437  1730  1730 E         : Couldn't opendir /data/app/vmdl286056151.tmp: No such file or directory
+12-08 03:28:45.437  1730  1730 E installd: Failed to delete /data/app/vmdl286056151.tmp: No such file or directory
+12-08 03:28:46.045  2475 11627 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 03:28:46.407 11691 11691 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 03:28:47.422  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:28:47.513  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:28:57.483  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:29:02.259  1881  1953 E InputDispatcher: Received spurious receive callback for unknown input channel.  fd=103, events=0x1
+12-08 03:29:03.324  2448 10936 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 03:29:03.783  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 03:29:03.843  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 03:29:06.702  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:29:07.037  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 03:29:07.448  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:29:07.511  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 03:29:08.224  1611 11745 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 03:29:26.720  1881  1894 E memtrack: Couldn't load memtrack module

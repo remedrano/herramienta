@@ -1,0 +1,113 @@
+--------- beginning of main
+--------- beginning of system
+12-07 21:27:45.587 15976 16042 E InputDispatcher: channel '6d16001 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:27:45.679 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 21:27:45.679 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:27:45.679 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 21:27:45.787 16485 19321 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-07 21:27:46.008 15927 19334 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:27:48.660  1729  1931 E         : Couldn't opendir /data/app/vmdl268637663.tmp: No such file or directory
+12-07 21:27:48.660  1729  1931 E installd: Failed to delete /data/app/vmdl268637663.tmp: No such file or directory
+12-07 21:27:48.925 16216 16216 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+12-07 21:27:49.496 19393 19393 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:27:50.959 15976 15993 E libprocessgroup: Error encountered killing process cgroup uid 99000 pid 19024: No such file or directory
+12-07 21:27:53.559 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 21:27:55.460 19393 19393 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:27:55.460 19393 19393 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 21:27:56.530 15976 15989 E memtrack: Couldn't load memtrack module
+--------- beginning of crash
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19393
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: java.lang.NullPointerException: println needs a message
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.util.Log.println_native(Native Method)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.util.Log.d(Log.java:145)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:66)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:27:58.414 19393 19426 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:27:58.487 15976 16042 E InputDispatcher: channel '20bea39 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:27:58.487 15976 16042 E InputDispatcher: channel 'caacc13 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:27:58.496 15976 16042 E InputDispatcher: channel '2864e86 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:27:58.677 19441 19441 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19441
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: java.lang.NullPointerException: println needs a message
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.util.Log.println_native(Native Method)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.util.Log.d(Log.java:145)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:66)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:28:01.285 19441 19464 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:28:01.369 15976 16042 E InputDispatcher: channel '7f02ee com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:28:01.893 19471 19471 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:28:02.163 16561 16708 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19471
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: java.lang.NullPointerException: println needs a message
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.util.Log.println_native(Native Method)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.util.Log.d(Log.java:145)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:66)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:28:02.389 19471 19492 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:28:02.459  1632  1632 E lowmemorykiller: Error writing /proc/19471/oom_score_adj; errno=22
+12-07 21:28:02.462 16506 16641 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 21:28:02.497 15976 16042 E InputDispatcher: channel '8be5bd5 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:28:03.010 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 21:28:03.242 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 21:28:03.576 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-07 21:28:03.711 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{47f55e0 VFE...CL. ...P.... 21,436-1059,583 #2f} because the view is not tagged for visual element logging.
+12-07 21:28:03.753 19505 19505 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:28:04.213 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 21:28:04.408 19531 19531 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:28:04.691 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{39cc412 VFE...CL. ...P.... 21,142-1059,289 #2d} because the view is not tagged for visual element logging.
+12-07 21:28:05.860  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 21:28:05.860  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19531
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: java.lang.NullPointerException: println needs a message
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.util.Log.println_native(Native Method)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.util.Log.d(Log.java:145)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:66)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:28:06.027 19531 19552 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:28:06.129 15976 16042 E InputDispatcher: channel '23f9796 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 21:28:07.173 19562 19562 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: FATAL EXCEPTION: IntentService[AutomaticBackupService]
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19562
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: java.lang.NullPointerException: println needs a message
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.util.Log.println_native(Native Method)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.util.Log.d(Log.java:145)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:66)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 21:28:07.425 19562 19577 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 21:28:07.461 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 21:28:06.454]
+12-07 21:28:07.501 15927 19581 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 21:28:07.578 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:28:08.672 16485 16485 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 21:28:09.040 19592 19592 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.

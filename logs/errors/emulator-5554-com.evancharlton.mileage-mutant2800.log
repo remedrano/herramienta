@@ -1,0 +1,54 @@
+--------- beginning of system
+12-08 13:45:20.757  1885  3260 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:20.775  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:20.830  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:21.024  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:21.041  1885  3788 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:21.075  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 13:45:21.149  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of main
+12-08 13:45:22.833  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:45:22.833  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:45:22.833  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:45:23.957 19013 19013 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:45:25.065  2429 18967 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:45:25.318  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:45:25.400  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:45:26.200 19013 19013 E DocsApplication: [main] No default account found during application creation.
+12-08 13:45:27.130  1732  1759 E         : Couldn't opendir /data/app/vmdl902544656.tmp: No such file or directory
+12-08 13:45:27.130  1732  1759 E installd: Failed to delete /data/app/vmdl902544656.tmp: No such file or directory
+12-08 13:45:28.773 19093 19093 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:45:32.524  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 13:45:46.090  2429 19119 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:45:46.393  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:45:46.494  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:45:49.555  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:45:50.389 19093 19093 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:45:50.389 19093 19093 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:45:52.533  1614 19155 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:45:53.562 19160 19160 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:46:00.053  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:46:04.633  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:46:04.633  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:46:10.083  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:46:10.160  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:46:14.113 19093 19093 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 13:46:14.113 19093 19093 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

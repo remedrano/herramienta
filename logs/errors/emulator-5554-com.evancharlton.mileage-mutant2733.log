@@ -1,0 +1,588 @@
+--------- beginning of main
+--------- beginning of system
+12-08 18:21:29.645  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 18:21:29.645  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 18:21:29.645  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 18:21:30.920  2429 11115 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:21:31.100  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 18:21:31.160  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 18:21:32.527  1732  1935 E         : Couldn't opendir /data/app/vmdl1418606632.tmp: No such file or directory
+12-08 18:21:32.527  1732  1935 E installd: Failed to delete /data/app/vmdl1418606632.tmp: No such file or directory
+12-08 18:21:33.630 11544 11544 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11544
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	... 11 more
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:34.352 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:34.355 11544 11544 E AndroidRuntime: 	... 29 more
+12-08 18:21:34.389  1633  1633 E lowmemorykiller: Error writing /proc/11544/oom_score_adj; errno=22
+12-08 18:21:34.787  1614 11565 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:21:37.640 11569 11569 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:43.910 11600 11600 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11600
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	... 11 more
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:44.879 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:44.889 11600 11600 E AndroidRuntime: 	... 29 more
+12-08 18:21:44.957  1633  1633 E lowmemorykiller: Error writing /proc/11600/oom_score_adj; errno=22
+12-08 18:21:45.628 11627 11627 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11627
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	... 11 more
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:46.023 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:46.024 11627 11627 E AndroidRuntime: 	... 29 more
+12-08 18:21:47.410 11646 11646 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11646
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	... 11 more
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:47.962 11646 11646 E AndroidRuntime: 	... 29 more
+12-08 18:21:49.143 11667 11667 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11667
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	... 11 more
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:49.588 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:49.590 11667 11667 E AndroidRuntime: 	... 29 more
+12-08 18:21:49.677  1633  1633 E lowmemorykiller: Error writing /proc/11667/oom_score_adj; errno=22
+12-08 18:21:52.103  1996  1996 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:21:52.103  1996  1996 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:21:54.127 11697 11697 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11697
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	... 11 more
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:54.614 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:54.622 11697 11697 E AndroidRuntime: 	... 29 more
+12-08 18:21:54.654  1633  1633 E lowmemorykiller: Error writing /proc/11697/oom_score_adj; errno=22
+12-08 18:21:54.979  1614 11718 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:21:59.537 11727 11727 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11727
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	... 11 more
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:21:59.839 11727 11727 E AndroidRuntime: 	... 29 more
+12-08 18:21:59.893  1633  1633 E lowmemorykiller: Error writing /proc/11727/oom_score_adj; errno=22
+12-08 18:22:00.614  1614 11752 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:22:04.310 11760 11760 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:22:04.338  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 18:22:04.338  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 18:22:04.557  1614 11776 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:22:06.046  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:22:06.046  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:22:06.101  2540  3068 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 18:22:06.752  1614 11784 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 18:22:08.049  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 18:22:09.646  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 18:22:12.000 11787 11787 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 11787
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	... 11 more
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #2: Error inflating class com.evancharlton.mileage.views.FieldView
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 18:22:12.421 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.view.ViewConfiguration.get(ViewConfiguration.java:447)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.view.View.<init>(View.java:4806)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.view.View.<init>(View.java:4948)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.widget.TextView.<init>(TextView.java:875)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:88)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:84)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at android.widget.EditText.<init>(EditText.java:80)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	at com.evancharlton.mileage.views.FieldView.<init>(FieldView.java:12)
+12-08 18:22:12.422 11787 11787 E AndroidRuntime: 	... 29 more
+12-08 18:22:12.445  1633  1633 E lowmemorykiller: Error writing /proc/11787/oom_score_adj; errno=22
+12-08 18:22:12.762  1614 11815 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000

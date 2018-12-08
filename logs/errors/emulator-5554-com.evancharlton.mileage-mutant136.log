@@ -1,0 +1,222 @@
+--------- beginning of system
+--------- beginning of crash
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22345
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	... 11 more
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #5: Error inflating class com.evancharlton.mileage.views.CursorSpinner
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "null": syntax error (code 1 SQLITE_ERROR): , while compiling: INSERT INTO service_interval_templates (null,distance,description,vehicle_type,title) VALUES ('64800000000','4022500000','Replace transmission fluid','1','Transmission fluid');
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.initTables(FillUpsProvider.java:136)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider$DatabaseHelper.onCreate(FillUpsProvider.java:122)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:393)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:298)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.query(FillUpsProvider.java:240)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1055)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentProvider.query(ContentProvider.java:1147)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:240)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:802)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.filter(CursorSpinner.java:38)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	at com.evancharlton.mileage.views.CursorSpinner.<init>(CursorSpinner.java:32)
+12-07 12:17:41.906 22345 22345 E AndroidRuntime: 	... 37 more
+12-07 12:18:19.294  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 12:18:50.486  2420 21000 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:18:50.913  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:18:50.960  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:18:56.135  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 12:19:02.256 22572 22572 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:19:04.007  1613 22601 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:19:07.241  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:19:07.242  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:19:12.055  2528 22391 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_16d28fd3-98e2-4b67-a34b-b114f3316b3b)
+12-07 12:19:18.011  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:19:19.319  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:19:19.686  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 12:19:19.689  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 12:19:19.735  1738  1738 E wificond: No Offload Service available
+12-07 12:19:19.905  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 12:19:19.923  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 12:19:19.960  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 12:19:19.981  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 12:19:24.388  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 12:19:24.977  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 12:19:25.430  2420 22664 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 12:19:25.766 22667 22667 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:19:29.196 22667 22696 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-07 12:19:29.609  1883  2164 E NotificationService: Package enqueue rate is 8.683431. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: Backup failed!
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:19:35.117 22426 22795 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: No such file or directory
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:19:35.121 22426 22795 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: Backup failed!
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:19:37.115 22426 22814 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: No such file or directory
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:19:37.116 22426 22814 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:19:40.746  2420 22477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:19:41.040  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:19:41.108  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:19:49.031 22827 22827 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:19:49.133  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{367d437 VFE...CL. ...P.... 0,142-1038,289 #2f5} because the view is not tagged for visual element logging.
+12-07 12:19:49.306  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f684da4 VFE...CL. ...P.... 0,-5-1038,142 #2f4} because the view is not tagged for visual element logging.
+12-07 12:19:49.323  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7e9370d VFE...CL. ...P.... 0,289-1038,436 #2f6} because the view is not tagged for visual element logging.
+12-07 12:19:49.682  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e2096c2 VFE...CL. ...P.... 0,436-1038,583 #2f7} because the view is not tagged for visual element logging.
+12-07 12:19:50.552  1613 22851 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:19:52.585  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:19:49.666]
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: Backup failed!
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:20:06.884 22426 22875 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: No such file or directory
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:20:06.889 22426 22875 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:20:07.248  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:20:07.249  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:20:14.073  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:20:18.311  1613 22893 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:20:19.364  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:20:29.113  2420 22477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:20:29.846  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:20:38.773  1613 22916 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:20:38.948  2420 22477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:20:39.045  2420 22477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 12:20:39.240  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:20:46.037  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: Backup failed!
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:20:46.130 22426 22925 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: No such file or directory
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: java.io.IOException: No such file or directory
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively0(Native Method)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:281)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at java.io.File.createNewFile(File.java:1008)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:59)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:20:46.132 22426 22925 E Mileage.ABS: 	at android.os.HandlerThread.run(HandlerThread.java:65)

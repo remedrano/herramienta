@@ -1,0 +1,236 @@
+--------- beginning of main
+12-07 15:07:10.507  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:07:10.507  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+--------- beginning of system
+12-07 15:07:10.529  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:07:10.677  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:13.477  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:13.622  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:29.113  2065  2094 F         : TimeCheck timeout for IAudioFlinger
+--------- beginning of crash
+12-07 15:07:29.113  2065  2094 F libc    : Fatal signal 6 (SIGABRT), code -6 (SI_TKILL) in tid 2094 (TimeCheckThread), pid 2065 (audioserver)
+12-07 15:07:29.188  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:29.252  3830  3830 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+12-07 15:07:29.253  3830  3830 F DEBUG   : Build fingerprint: 'google/sdk_gphone_x86/generic_x86:9/PSR1.180720.075/5124027:user/release-keys'
+12-07 15:07:29.253  3830  3830 F DEBUG   : Revision: '0'
+12-07 15:07:29.253  3830  3830 F DEBUG   : ABI: 'x86'
+12-07 15:07:29.253  3830  3830 F DEBUG   : pid: 2065, tid: 2094, name: TimeCheckThread  >>> /system/bin/audioserver <<<
+12-07 15:07:29.253  3830  3830 F DEBUG   : signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+12-07 15:07:29.253  3830  3830 F DEBUG   : Abort message: 'TimeCheck timeout for IAudioFlinger'
+12-07 15:07:29.253  3830  3830 F DEBUG   :     eax 00000000  ebx 00000811  ecx 0000082e  edx 00000006
+12-07 15:07:29.253  3830  3830 F DEBUG   :     edi 00000811  esi eb6813fc
+12-07 15:07:29.253  3830  3830 F DEBUG   :     ebp eb6813c8  esp eb681358  eip ef898b39
+12-07 15:07:29.256  3830  3830 F DEBUG   : 
+12-07 15:07:29.256  3830  3830 F DEBUG   : backtrace:
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #00 pc 00000b39  [vdso:ef898000] (__kernel_vsyscall+9)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #01 pc 0001fdf8  /system/lib/libc.so (syscall+40)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #02 pc 00022ed3  /system/lib/libc.so (abort+115)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #03 pc 00006c84  /system/lib/liblog.so (__android_log_assert+292)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #04 pc 00010d8c  /system/lib/libmedia_helper.so (android::TimeCheck::TimeCheckThread::threadLoop()+428)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #05 pc 0000e5ae  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+222)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #06 pc 0000df76  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+246)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #07 pc 0008f065  /system/lib/libc.so (__pthread_start(void*)+53)
+12-07 15:07:29.257  3830  3830 F DEBUG   :     #08 pc 0002485b  /system/lib/libc.so (__start_thread+75)
+12-07 15:07:31.774  1741  1741 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_03
+12-07 15:07:31.785  1880  1978 E AudioService: Audioserver died.
+12-07 15:07:31.788  1880  1978 E AudioService: Audioserver died.
+12-07 15:07:31.797  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.832  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.833  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.834  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.835  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.842  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.848  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.856  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.861  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.871  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.883  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.891  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.898  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.911  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.924  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.943  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.952  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.959  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.967  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.976  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.986  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:31.994  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.001  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.012  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.019  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.029  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.039  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:32.045  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.336  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.340  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.353  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.355  1880  1978 E AudioService: Audioserver died.
+12-07 15:07:47.360  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.370  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.398  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.501  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.522  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.539  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.549  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.565  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.588  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.603  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.627  3842  3842 E audiohalservice: Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+12-07 15:07:47.635  3842  3842 E SoundTriggerHalImpl: couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+12-07 15:07:47.639  3842  3842 E audiohalservice: Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+12-07 15:07:47.650  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:47.676  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.073  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.089  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.090  1880  1978 E AudioService: Audioserver died.
+12-07 15:07:50.102  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.115  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.121  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.140  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.148  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.158  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.163  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.172  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.188  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.191  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.195  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.199  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.205  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.209  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.214  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.218  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.222  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.249  3841  3841 E SoundTriggerHwService: could not read implementation properties
+12-07 15:07:50.284  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.284  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.285  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.288  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.292  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.296  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.300  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:07:50.306  1880  3620 E memtrack: Couldn't load memtrack module
+12-07 15:08:05.754  1880  1978 E AudioService: Audioserver started.
+12-07 15:08:05.771  1880  1895 E AutofillSession: Error notifying client to finish session
+12-07 15:08:05.771  1880  1895 E AutofillSession: android.os.DeadObjectException
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.BinderProxy.transactNative(Native Method)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.view.autofill.IAutoFillManagerClient$Stub$Proxy.setSessionFinished(IAutoFillManagerClient.java:512)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2751)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.Session.forceRemoveSelfLocked(Session.java:2738)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerServiceImpl.destroySessionsLocked(AutofillManagerServiceImpl.java:1042)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:579)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.updateCachedServiceLocked(AutofillManagerService.java:569)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService.access$400(AutofillManagerService.java:100)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.server.autofill.AutofillManagerService$2.onSomePackagesChanged(AutofillManagerService.java:215)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at com.android.internal.content.PackageMonitor.onReceive(PackageMonitor.java:451)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1391)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA.run(Unknown Source:2)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.Looper.loop(Looper.java:193)
+12-07 15:08:05.771  1880  1895 E AutofillSession: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 15:08:23.994  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:08:23.995  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:08:24.011  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:08:43.107  1727  1777 E         : Couldn't opendir /data/app/vmdl427881949.tmp: No such file or directory
+12-07 15:08:43.107  1727  1777 E installd: Failed to delete /data/app/vmdl427881949.tmp: No such file or directory
+12-07 15:09:04.020  2780  2915 E PlayCommon: [145] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-07 15:09:35.699  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:09:35.700  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:09:35.734  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:09:38.457  3930  3930 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 15:09:56.764  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 15:09:59.401  3841  3866 E AudioFlinger: no wake lock to update, but system ready!
+12-07 15:10:20.135  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 15:10:38.880  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:10:38.880  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:10:38.958  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:11:02.473  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:11:26.227  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:11:26.245  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 15:11:49.980  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:11:49.982  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:11:50.006  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:11:50.009  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:12:13.839  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:12:40.194  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:13:03.736  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:13:03.746  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 15:13:03.747  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 15:13:03.748  2378  3058 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.gms/com.google.android.gms.learning.training.background.TrainingGcmTaskService}
+12-07 15:13:03.751  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 15:13:03.789  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 15:13:03.808  2378  2960 E NetworkScheduler: Unknown result code received: 4
+12-07 15:13:03.810  2378  2378 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-635s,latest=-35s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-935s last_run=-23s jid=N/A status=PENDING retries=0 client_lib=MANCHEGO_GCM-14799000} :INVALID_START
+12-07 15:13:04.037  1880  1896 E ActivityManager: ANR in com.google.android.gms.learning
+12-07 15:13:04.037  1880  1896 E ActivityManager: PID: 1212
+12-07 15:13:04.037  1880  1896 E ActivityManager: Reason: executing service com.google.android.gms/.learning.training.background.TrainingGcmTaskService
+12-07 15:13:04.037  1880  1896 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+12-07 15:13:04.037  1880  1896 E ActivityManager: CPU usage from 239824ms to -2ms ago (2018-12-07 15:09:03.964 to 2018-12-07 15:13:03.790):
+12-07 15:13:04.037  1880  1896 E ActivityManager:   40% 1880/system_server: 21% user + 19% kernel / faults: 5534 minor 165 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   20% 1722/surfaceflinger: 8.8% user + 12% kernel / faults: 80 minor 1 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   18% 2008/com.android.systemui: 10% user + 8.2% kernel / faults: 338 minor 41 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   17% 2378/com.google.android.gms.persistent: 9.6% user + 7.8% kernel / faults: 490 minor 101 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   7.8% 1992/com.google.android.inputmethod.latin: 4% user + 3.8% kernel / faults: 5086 minor 105 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   9.1% 19845/com.google.android.googlequicksearchbox:search: 4.7% user + 4.3% kernel / faults: 10772 minor 301 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   8.7% 1745/android.hardware.graphics.composer@2.1-service: 0.8% user + 7.9% kernel / faults: 77 minor
+12-07 15:13:04.037  1880  1896 E ActivityManager:   8.7% 31747/kworker/u9:2: 0% user + 8.7% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   8.6% 646/kswapd0: 0% user + 8.6% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   7.6% 3574/kworker/u8:1: 0% user + 7.6% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   7.6% 32698/kworker/u9:3: 0% user + 7.6% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   6.6% 32186/kworker/u9:1: 0% user + 6.6% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   6.5% 3918/sh: 2% user + 4.4% kernel / faults: 7947 minor 354 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   5.5% 3841/audioserver: 2.2% user + 3.3% kernel / faults: 125 minor 2 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   1.2% 3842/android.hardware.audio@2.0-service: 0.6% user + 0.6% kernel / faults: 19 minor
+12-07 15:13:04.037  1880  1896 E ActivityManager:   1% 1553/logd: 0.1% user + 0.9% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0.6% 1619/android.hardware.gnss@1.0-service: 0% user + 0.6% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0.3% 2300/adbd: 0% user + 0.2% kernel / faults: 117451 minor
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0.1% 2482/com.google.android.gms: 0.1% user + 0% kernel / faults: 4015 minor 58 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 26518/com.google.android.apps.nexuslauncher: 0% user + 0% kernel / faults: 409 minor 43 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1624/android.hardware.sensors@1.0-service: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 3548/kworker/u9:0: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 3/ksoftirqd/0: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 3753/kworker/u8:5: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 396/kworker/u8:0: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 7/rcu_preempt: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 2125/com.android.phone: 0% user + 0% kernel / faults: 13 minor 4 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 2318/logcat: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 3792/kworker/0:0: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 32532/kworker/u8:4: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1744/kworker/u8:3: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1622/android.hardware.health@2.0-service.goldfish: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 20/ksoftirqd/3: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1677/dmcrypt_write: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1554/servicemanager: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1608/healthd: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1715/jbd2/dm-1-8: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 2715/kworker/2:1: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 2780/com.android.vending: 0% user + 0% kernel / faults: 174 minor 12 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1602/com.google.android.inputmethod.latin:train: 0% user + 0% kernel / faults: 1 minor
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1620/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 43 minor 4 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1723/zygote: 0% user + 0% kernel / faults: 163 minor 3 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1724/cameraserver: 0% user + 0% kernel / faults: 3 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1733/netd: 0% user + 0% kernel / faults: 21 minor 30 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:   0% 1865/ipv6proxy: 0% user + 0% kernel / faults: 6 major
+12-07 15:13:04.037  1880  1896 E ActivityManager:  +0% 3930/com.evancharlton.mileage: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager:  +0% 3958/kworker/u9:4: 0% user + 0% kernel
+12-07 15:13:04.037  1880  1896 E ActivityManager: 14% TOTAL: 1.7% user + 2.6% kernel + 10% iowait + 0.1% softirq
+12-07 15:13:04.037  1880  1896 E ActivityManager: CPU usage from 35795175ms to 35795175ms ago (1970-01-01 00:00:00.000 to 1970-01-01 00:00:00.000) with 0% awake:
+12-07 15:13:04.037  1880  1896 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+12-07 15:13:27.570  3842  3858 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 15:13:27.777  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:27.894  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:30.200  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:30.267  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:30.360  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:30.442  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.626  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.688  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.785  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.848  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.917  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:48.988  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:59.119  1880  2579 E memtrack: Couldn't load memtrack module
+12-07 15:13:59.188  1880  2579 E memtrack: Couldn't load memtrack module

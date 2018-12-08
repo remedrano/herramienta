@@ -1,0 +1,77 @@
+--------- beginning of system
+12-07 12:08:06.442  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 12:08:06.442  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 12:08:06.442  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 12:08:19.039  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 12:09:19.059  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:09:28.336  2420 20577 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:09:28.399  2420 20577 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 12:09:29.244  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:09:29.349  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:09:36.590  2420 20581 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:09:36.979  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:09:36.984  2420  3201 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544220569000, Current: 1544202573584. Skipping this Position.
+12-07 12:09:39.419  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:09:42.435 20649 20649 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:09:42.530  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d9482c5 VFE...CL. ...P.... 0,583-1038,730 #2bc} because the view is not tagged for visual element logging.
+12-07 12:09:42.573  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71a3b4b VFE...CL. ...P.... 0,142-1038,289 #2b9} because the view is not tagged for visual element logging.
+12-07 12:09:43.469  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{bf8641 VFE...CL. ...P.... 0,436-1038,583 #2bb} because the view is not tagged for visual element logging.
+12-07 12:09:49.406  2759  2975 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 12:09:51.453  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:09:49.310]
+12-07 12:09:57.611  2420 20688 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:09:58.355  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:10:07.187  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:10:07.188  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:10:07.268  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:10:16.592  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:10:19.073  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:10:26.580  2420 20711 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:10:26.836  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 12:10:26.925  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:10:33.679  1613 20742 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:10:34.432 20746 20746 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 12:10:36.169  1613 20770 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:10:48.720  2759  2759 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 12:10:51.237  1613 20785 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:10:54.265  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e447f17 VFE...CL. ...P.... 0,583-1038,730 #2db} because the view is not tagged for visual element logging.
+12-07 12:10:54.654  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{afc8429 VFE...CL. ...P.... 0,142-1038,289 #2d8} because the view is not tagged for visual element logging.
+12-07 12:10:55.108  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e447f17 VFE...CL. ...P.... 0,583-1038,730 #2db} because the view is not tagged for visual element logging.
+12-07 12:10:55.360  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f0a6db0 VFE...CL. ...P.... 0,-5-1038,142 #2d7} because the view is not tagged for visual element logging.
+12-07 12:10:55.494  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f0a6db0 VFE...CL. .F....ID 0,-5-1038,142 #2d7} because the view is not tagged for visual element logging.
+12-07 12:10:56.238  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f0a6db0 VFE...CL. ...P.... 0,-5-1038,142 #2d7} because the view is not tagged for visual element logging.
+12-07 12:10:56.291  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e0f54f VFE...CL. ...P.... 0,436-1038,583 #2da} because the view is not tagged for visual element logging.
+12-07 12:10:56.880  2759  2759 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{e0f54f VFE...CL. ...P.... 0,436-1038,583 #2da} because the view is not tagged for visual element logging.
+12-07 12:10:59.810  2759  2766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 12:10:57.376]
+12-07 12:11:04.868  2420  4007 E SynchronizedLE: asynchronous call timed out or was interrupted
+12-07 12:11:06.905  2420 20789 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 12:11:07.200  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 12:11:07.200  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 12:11:08.071  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 12:11:12.322  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:12.599  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:15.834  1613 20818 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 12:11:19.091  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 12:11:19.870  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:19.985  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:20.082  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:20.191  1883  1896 E memtrack: Couldn't load memtrack module
+12-07 12:11:21.555  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99092 pid 20746: No such file or directory

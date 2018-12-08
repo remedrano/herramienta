@@ -1,0 +1,94 @@
+--------- beginning of system
+12-07 13:37:13.414  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 13:37:13.414  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 13:37:13.414  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 13:37:27.444  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:37:44.261  2391  2391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 13:37:45.946  2391  2391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 13:38:27.460  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:39:04.317  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 13:39:04.327  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 13:39:04.417  1738  1738 E wificond: No Offload Service available
+12-07 13:39:04.617  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:39:04.654  1883  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 13:39:04.685  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:39:04.697  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+--------- beginning of main
+12-07 13:39:08.137  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:39:08.137  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:39:08.707  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 13:39:09.541  1735  1813 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 13:39:09.805  2420  2506 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 13:39:10.386  2518  2518 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:39:10.504  2544  2544 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:39:13.033 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:39:13.087  1613  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 13:39:13.356  2420  1645 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-179s,latest=420s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-479s last_run=-3s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-07 13:39:25.563  2420  1645 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 13:39:25.834  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 13:39:25.859  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:39:27.505  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:39:36.490 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d82ac9e VFE...CL. ...P.... 0,289-1038,436 #164} because the view is not tagged for visual element logging.
+12-07 13:39:36.519  2632  2632 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 13:39:37.133 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{16fd37f VFE...CL. ...P.... 0,436-1038,583 #165} because the view is not tagged for visual element logging.
+12-07 13:39:43.447  1613  2686 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:39:44.005 28976 28985 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 13:39:42.317]
+12-07 13:40:06.773 28976 28976 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 13:40:08.139  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 13:40:08.139  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 13:40:15.122 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f42b15a VFE...CL. ...P.... 0,583-1038,730 #178} because the view is not tagged for visual element logging.
+12-07 13:40:15.550 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ad3bac6 VFE...CL. ...P.... 0,142-1038,289 #175} because the view is not tagged for visual element logging.
+12-07 13:40:16.014 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f42b15a VFE...CL. ...P.... 0,583-1038,730 #178} because the view is not tagged for visual element logging.
+12-07 13:40:16.371 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8a18a1 VFE...CL. ...P.... 0,-5-1038,142 #174} because the view is not tagged for visual element logging.
+12-07 13:40:17.301 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8a18a1 VFE...CL. ...P.... 0,-5-1038,142 #174} because the view is not tagged for visual element logging.
+12-07 13:40:17.324 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5acdb4 VFE...CL. ...P.... 0,436-1038,583 #177} because the view is not tagged for visual element logging.
+12-07 13:40:17.774 28976 28976 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5acdb4 VFE...CL. ...P.... 0,436-1038,583 #177} because the view is not tagged for visual element logging.
+12-07 13:40:19.312 28976 29013 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 13:40:27.063  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 13:40:27.557  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 13:40:36.528  1613  2742 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 13:40:43.351  2092  2092 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 2092
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.initContentView(Editor.java:3589)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.widget.Editor$PinnedPopupWindow.<init>(Editor.java:3271)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.widget.Editor$SuggestionsPopupWindow.<init>(Editor.java:3555)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.widget.Editor.replace(Editor.java:439)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.widget.-$$Lambda$DZXn7FbDDFyBvNjI-iG9_hfa7kw.run(Unknown Source:2)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 13:40:43.382  2092  2092 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 13:40:43.514  1883  1954 E InputDispatcher: channel '2bebd5f com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 13:40:43.514  1883  1954 E InputDispatcher: channel '85e0dfa com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 13:40:43.514  1883  1954 E InputDispatcher: channel 'c3e2905 AtchDlg:com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 13:40:43.514  1883  1954 E InputDispatcher: channel 'b639a3 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-07 13:40:43.707  2763  2763 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.

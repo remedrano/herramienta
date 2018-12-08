@@ -1,0 +1,108 @@
+--------- beginning of main
+--------- beginning of system
+12-08 08:08:49.942  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 08:08:49.942  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 08:08:49.942  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 08:08:51.111  2448  2878 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 08:08:51.280  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 08:08:51.929  2448  2881 E AsyncOperation: serviceID=65, operation=GetPlaceById
+12-08 08:08:51.929  2448  2881 E AsyncOperation: OperationException[Status{statusCode=NETWORK_ERROR, resolution=null}]
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at bcmj.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):3)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at bcmc.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):29)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at ybc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at beyi.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at rbx.run(Unknown Source:7)
+12-08 08:08:51.929  2448  2881 E AsyncOperation: 	at java.lang.Thread.run(Thread.java:764)
+12-08 08:08:52.459  1730  1755 E         : Couldn't opendir /data/app/vmdl181700149.tmp: No such file or directory
+12-08 08:08:52.459  1730  1755 E installd: Failed to delete /data/app/vmdl181700149.tmp: No such file or directory
+12-08 08:08:52.655  2119  2119 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+12-08 08:08:53.021  2475  4401 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 08:08:53.334  4446  4446 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 08:08:56.013  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 08:08:56.751  1725  1725 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-08 08:09:03.891  1881  1894 E memtrack: Couldn't load memtrack module
+--------- beginning of crash
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #3
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 4446
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.trim()' on a null object reference
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at com.evancharlton.mileage.io.BaseExportActivity$ExportTask.doInBackground(BaseExportActivity.java:88)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at com.evancharlton.mileage.io.BaseExportActivity$ExportTask.doInBackground(BaseExportActivity.java:72)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 08:09:03.931  4446  4473 E AndroidRuntime: 	... 3 more
+12-08 08:09:04.080  1881  1953 E InputDispatcher: channel 'b174f89 com.evancharlton.mileage/com.evancharlton.mileage.io.DbExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 08:09:04.080  1881  1953 E InputDispatcher: channel 'f5fb8c7 com.evancharlton.mileage/com.evancharlton.mileage.ImportExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 08:09:04.088  1881  1953 E InputDispatcher: channel '55f0487 com.evancharlton.mileage/com.evancharlton.mileage.ExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 08:09:04.088  1881  1953 E InputDispatcher: channel '91966ba com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 08:09:04.241  4494  4494 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 08:09:07.166  2463  3017 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-8eEjY3rnIxcK5-XDtEaMZA==/base.apk' I/O error
+12-08 08:09:07.166  2463  3017 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-8eEjY3rnIxcK5-XDtEaMZA==/base.apk
+12-08 08:09:07.775  2448  2878 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 08:09:07.913  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:08.004  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:08.234  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 08:09:08.293  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 08:09:08.918  4494  4520 E SQLiteLog: (1) no such table: fillups
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 08:09:08.926  4494  4520 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 08:09:10.458  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 08:09:11.554  1611  4528 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 08:09:12.000  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 08:09:12.606  1611  4534 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 08:09:12.800  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:13.117  4546  4546 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 08:09:13.125  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:13.218  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:13.827  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:13.840  2692  4569 E BluetoothAdapter: Bluetooth binder is null
+12-08 08:09:14.491  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 08:09:18.730  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99000 pid 4546: No such file or directory
+12-08 08:09:18.734  1881  1899 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)

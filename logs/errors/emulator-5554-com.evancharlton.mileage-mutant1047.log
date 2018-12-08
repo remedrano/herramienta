@@ -1,0 +1,126 @@
+--------- beginning of system
+12-07 05:58:37.571  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:58:37.571  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:58:37.571  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 05:58:45.216  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:58:49.182  1880  4500 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@f464c89
+--------- beginning of main
+12-07 05:59:26.920 13072 13072 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:59:27.877  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 6
+12-07 05:59:39.873  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:59:39.873  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:59:40.301  2378 13025 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:59:40.671  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:59:40.740  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:59:45.233  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:59:48.565 13115 13115 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:59:51.204  1610 13143 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 06:00:02.694  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 06:00:02.704  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 06:00:02.785  1736  1736 E wificond: No Offload Service available
+12-07 06:00:02.996  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:03.019  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:03.058  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:03.081  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:04.308  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 06:00:04.325 13154 13154 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:04.325 13154 13154 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:04.328 13154 13154 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:04.328 13154 13154 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:04.388 13154 13154 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:04.388 13154 13154 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:04.512 13154 13154 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:04.512 13154 13154 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:04.726  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 06:00:04.726  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 06:00:04.726  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 06:00:04.965  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:04.981  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:04.989  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:05.297  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 06:00:05.300  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 06:00:05.346  1736  1736 E wificond: No Offload Service available
+12-07 06:00:05.486  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:05.498  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:05.526  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:05.536  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 06:00:05.550 13167 13167 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:05.550 13167 13167 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:05.550 13167 13167 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:05.550 13167 13167 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:05.628 13167 13167 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:05.628 13167 13167 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:05.719 13167 13167 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 06:00:05.720 13167 13167 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 06:00:05.812  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 06:00:05.812  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 06:00:05.812  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 06:00:06.030  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:00:06.034  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:06.042  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:00:15.515  2378 13066 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 06:00:15.588  2378 13066 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 06:00:15.807  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 06:00:15.916  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 06:00:24.107  1610 13208 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 06:00:24.233  2378 13025 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 06:00:24.532  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 06:00:30.732 13217 13217 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 06:00:39.882  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 06:00:39.882  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 06:00:45.254  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 06:00:49.081 13256 13256 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 06:00:50.818  1610 13281 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 06:00:59.351  1992  9017 E putmethod.lati: Invalid ID 0x00000005.
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x5
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 06:00:59.380  1992  9017 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 06:01:04.133  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 06:01:04.134  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 06:01:04.227  1736  1736 E wificond: No Offload Service available
+12-07 06:01:04.334  1880  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:01:04.356  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 06:01:04.376  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:01:04.410  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:01:06.305  1610 13299 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 06:01:06.615  2378 13202 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 06:01:06.939  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 06:01:08.420  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 06:01:08.532  1880  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-07 06:01:09.072  2378 13323 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 06:01:09.153 13324 13324 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-07 06:01:09.214  1733  1824 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 06:01:10.293  1992  9017 E putmethod.lati: Invalid ID 0x00000005.
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x5
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 06:01:10.293  1992  9017 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 06:01:10.681 13324 13342 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-07 06:01:11.566  1880  5556 E NotificationService: Package enqueue rate is 8.34048. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-07 06:01:15.137 12965 12965 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 06:01:15.137 12965 12965 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

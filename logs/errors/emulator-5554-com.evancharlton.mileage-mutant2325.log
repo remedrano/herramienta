@@ -1,0 +1,59 @@
+--------- beginning of main
+--------- beginning of system
+12-08 04:23:36.144  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 04:23:36.144  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 04:23:36.144  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 04:23:37.568  2448 18924 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 04:23:37.715  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 04:23:39.720  1730  1944 E         : Couldn't opendir /data/app/vmdl262684045.tmp: No such file or directory
+12-08 04:23:39.721  1730  1944 E installd: Failed to delete /data/app/vmdl262684045.tmp: No such file or directory
+12-08 04:23:39.935  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 04:23:39.935  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 04:23:40.442  2475 20008 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 04:23:41.635 20061 20061 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 04:23:44.562  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 04:23:57.327  2463 18121 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-3RPSJDftIo_aSvoss4h73A==/base.apk' I/O error
+12-08 04:23:57.334  2463 18121 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-3RPSJDftIo_aSvoss4h73A==/base.apk
+12-08 04:23:58.164  2448 20088 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 04:23:58.300  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 04:23:58.337  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 04:24:05.014  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 04:24:28.044  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:24:39.944  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 04:24:39.945  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 04:24:42.684  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:24:44.565  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 04:24:55.156  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:25:07.566  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:25:16.543  1881  4164 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.571  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.597  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.640  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.669  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.700  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.802  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.834  1881  1892 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.856  1881  2150 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.891  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.955  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:16.994  1881  4164 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:17.024  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:25:17.574  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

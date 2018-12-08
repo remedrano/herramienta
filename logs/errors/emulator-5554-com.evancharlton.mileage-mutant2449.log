@@ -1,0 +1,47 @@
+--------- beginning of system
+12-08 06:32:10.534  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 06:32:10.534  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 06:32:10.534  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 06:32:21.877  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-08 06:33:13.185  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:33:13.186  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:33:20.057 32470 32470 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:33:22.049  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:34:05.283  2448 31796 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:34:07.089  2448 31796 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 06:34:07.310  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:34:07.371  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:34:13.848  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:34:13.848  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:34:14.088  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 06:34:20.517  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:34:20.952  2448 32460 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:34:22.965  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:34:25.252  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:34:25.377  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:34:29.726 32536 32536 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:34:47.972  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:34:59.540  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:35:10.539  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:35:15.061  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:35:15.074  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:35:21.823  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

@@ -1,0 +1,34 @@
+
+
+<div id="contenido-vrt" class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            Random Testing
+        </div>
+        <div class="card-body">
+            <form data-toggle="validator" role="form" id="form-random" >
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-12  mb-4">
+                        <label for="exampleInputEmail1">Ruta de carpeta de las apks</label>
+                        <input type="text" class="form-control" id="ruta" aria-describedby="ruta" placeholder="Ejemplo D:\Users\crmedran1\Downloads." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">Número de eventos</label>
+                        <input type="number" class="form-control" id="eventos" aria-describedby="eventos" placeholder="Ejemplo 100" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputEmail1">Semilla</label>
+                        <input type="number" class="form-control" id="semilla" aria-describedby="semilla" placeholder="Ingrese número de semilla que será compartido por todas las apks" required>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">Correr parcial</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>

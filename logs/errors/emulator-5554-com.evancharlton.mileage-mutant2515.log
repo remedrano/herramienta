@@ -1,0 +1,55 @@
+--------- beginning of system
+12-08 13:13:46.594  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:13:46.594  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:13:46.594  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:14:27.276  1881  1896 E AutofillSession: No assist structure - app might have crashed providing it
+--------- beginning of main
+12-08 13:14:44.245  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:15:20.390  7255  7255 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:15:22.837  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 13:15:32.399  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:15:32.400  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:15:42.462  1992  1992 E RecyclerView: No adapter attached; skipping layout
+12-08 13:15:44.564  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:16:16.436  2448  7126 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:16:19.087  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 13:16:21.386  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 13:16:31.057  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:16:33.459  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:16:33.460  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:16:33.821  7311  7311 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:16:41.033  2448  7126 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:16:45.946  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:16:46.058  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 13:16:46.176  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 13:16:51.268  7344  7344 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:17:08.161 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 13:17:18.285 29746 29746 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 13:17:26.026  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:17:33.486  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:17:33.492  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:17:36.057  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:17:40.935  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 13:17:47.748  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:17:48.088  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:18:00.134  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 13:18:02.199  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:18:14.301  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

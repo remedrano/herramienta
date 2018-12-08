@@ -1,0 +1,86 @@
+--------- beginning of system
+12-08 10:26:59.388  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 10:26:59.388  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 10:26:59.388  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 10:27:03.908  2475 26335 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 10:27:05.128 26431 26431 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:27:06.326  1992 20735 E putmethod.lati: Invalid ID 0x00000001.
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 10:27:06.337  1992 20735 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 10:27:06.443 26451 26451 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:27:13.087  1881  5179 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@1279c35
+12-08 10:27:13.107  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 10:27:13.158  1992  1992 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 10:27:15.023  2692  3033 E AttachedClient: Dropping clientEvent = STOP_LISTENING coming from client[11841085464322637]
+12-08 10:27:15.591  2692  3033 E PBSessionCacheImpl: sessionId[11841085464322637] not persisted.
+12-08 10:27:15.605  2692  3033 E PBSessionCacheImpl: sessionId[11841085464322637] not persisted.
+12-08 10:27:16.086  2448 26308 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 10:27:16.194  2448 26308 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 10:27:16.340  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 10:27:16.416  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 10:27:21.323  1611 26517 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 10:27:25.511  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 10:27:28.526  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 10:27:32.254 26539 26539 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:27:43.064  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:27:43.065  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:27:45.512  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:27:53.895 26588 26588 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:27:58.316  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:28:00.888  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:28:23.455  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:28:24.590  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 10:28:43.096  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:28:43.097  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:28:45.516  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:29:22.980  2463  2463 E Launcher: Error: appWidgetId (EXTRA_APPWIDGET_ID) was not returned from the widget configuration activity.
+12-08 10:29:34.004 26607 26607 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 10:29:35.314  2448 26585 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-639s,latest=-39s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-939s last_run=-1s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 10:29:43.157  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 10:29:43.157  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 10:29:45.517  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 10:29:56.245  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 10:29:58.154  1881  2381 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.216  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.249  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.286  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.320  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.482  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.516  1881  1993 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.554  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.587  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.620  1881  1993 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.648  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:29:58.728  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.346  1881  1993 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.375  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.439  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.475  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.524  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.552  1881  1993 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.597  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 10:30:02.731  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping

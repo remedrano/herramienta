@@ -1,0 +1,72 @@
+--------- beginning of system
+12-07 03:49:13.323  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 03:49:13.323  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 03:49:13.323  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 03:50:00.370  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:51:00.452  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 03:51:41.399  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 03:51:41.434  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 03:51:45.986 17458 17458 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-07 03:52:00.508  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:52:07.417  2378 16969 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:52:07.476  2378 16969 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 03:52:08.814  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 03:52:09.021  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:52:37.216  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 03:52:41.240  2378 17505 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:52:41.414  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 03:52:41.436  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 03:52:41.647  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 03:52:41.735  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:52:56.520 17521 17521 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-07 03:52:57.485 17544 17544 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 03:53:00.545  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:53:00.763  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5b28501 VFE...CL. ...P.... 0,583-1038,730 #1f8} because the view is not tagged for visual element logging.
+12-07 03:53:00.876  1610 17577 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 03:53:02.115  6805  6813 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 03:52:59.073]
+12-07 03:53:25.954  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b486580 VFE...CL. ...P.... 0,306-1038,453 #1fb} because the view is not tagged for visual element logging.
+12-07 03:53:33.648  6805  6832 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 03:53:35.199  2378 17505 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:53:35.505  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 03:53:35.535  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:53:41.417  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 03:53:41.439  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 03:53:46.376  6805  6805 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 03:53:51.036  1610 17605 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 03:53:56.336 17608 17608 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 03:53:57.523  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8e2fff7 VFE...CL. ...P.... 0,583-1038,730 #20f} because the view is not tagged for visual element logging.
+12-07 03:53:58.143  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f3fa8cd VFE...CL. ...P.... 0,142-1038,289 #20c} because the view is not tagged for visual element logging.
+12-07 03:53:59.023  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8e2fff7 VFE...CL. ...P.... 0,583-1038,730 #20f} because the view is not tagged for visual element logging.
+12-07 03:53:59.117 17626 17626 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-07 03:53:59.810  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2ae6e64 VFE...CL. ...P.... 0,-5-1038,142 #20b} because the view is not tagged for visual element logging.
+12-07 03:54:00.576  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:54:01.263  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2ae6e64 VFE...CL. ...P.... 0,-5-1038,142 #20b} because the view is not tagged for visual element logging.
+12-07 03:54:01.346  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c3da493 VFE...CL. ...P.... 0,436-1038,583 #20e} because the view is not tagged for visual element logging.
+12-07 03:54:02.338  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c3da493 VFE...CL. ...P.... 0,436-1038,583 #20e} because the view is not tagged for visual element logging.
+12-07 03:54:13.702  1610 17670 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 03:54:14.464  2378 17505 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:54:14.994  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 03:54:15.418  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:54:20.192  6805  6805 E PSAC    : Bitmap height 167 is less than first row height for pixel search
+12-07 03:54:34.289  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99155 pid 17544: No such file or directory
+12-07 03:54:41.422  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 03:54:41.440  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

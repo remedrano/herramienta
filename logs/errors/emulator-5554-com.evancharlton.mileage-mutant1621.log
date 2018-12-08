@@ -1,0 +1,65 @@
+--------- beginning of main
+--------- beginning of system
+12-07 16:56:40.207 16085 16085 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-07 16:56:42.649 15976 15990 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 16:56:42.649 15976 15990 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 16:56:42.649 15976 15990 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 16:56:42.784 16485 16498 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-07 16:56:44.391 16506 32302 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:56:44.534 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:56:44.608 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:56:46.003  1729  1752 E         : Couldn't opendir /data/app/vmdl2066248340.tmp: No such file or directory
+12-07 16:56:46.003  1729  1752 E installd: Failed to delete /data/app/vmdl2066248340.tmp: No such file or directory
+12-07 16:56:47.860 32557 32557 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:56:58.630 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 16:56:59.684 15976 16042 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.710 15976 16269 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.730 15976 18809 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.771 15976 17388 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.806 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.842 15976 16269 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.868 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.892 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.912 15976 17636 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:56:59.953 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.009 15976 15991 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.043 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.080 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.102 15976 16269 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.150 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.206 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.307 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.327 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.490 15976 16026 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 16:57:00.817 16506 32584 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 16:57:01.151 16506 16506 E BeaconBle: Missing BluetoothAdapter
+12-07 16:57:01.200 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 16:57:03.266 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 16:57:04.401 15927 32621 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 16:57:05.208  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 16:57:05.208  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 16:57:05.714 32624 32624 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 16:57:06.622 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{fbea059 VFE...CL. ...P.... 0,21-207,279 #da} because the view is not tagged for visual element logging.
+12-07 16:57:06.789 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1f726e8 VFE...CL. ...P.... 0,289-1038,436 #d8} because the view is not tagged for visual element logging.
+12-07 16:57:06.859 16561 16561 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a9d09e7 VFE...CL. ...P.... 0,436-1038,583 #d9} because the view is not tagged for visual element logging.
+12-07 16:57:07.247 16085 16085 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-07 16:57:11.964 16561 16708 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 16:57:17.875 16561 16570 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-07 16:57:11.784]

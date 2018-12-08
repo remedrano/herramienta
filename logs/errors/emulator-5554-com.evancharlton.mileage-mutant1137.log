@@ -1,0 +1,108 @@
+--------- beginning of system
+12-07 07:52:02.925  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 07:52:02.925  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 07:52:02.925  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-07 07:52:33.033  9098  9098 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:52:40.438  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:52:40.438  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:52:43.091  2482  8552 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_71aae973-ef1f-4585-a65d-96a85469ed25)
+12-07 07:52:49.119  9037  9126 E SQLiteLog: (1) no such table: fillups
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 07:52:49.141  9037  9126 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 07:52:53.952  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:52:57.050  2378  8995 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:52:57.237  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 07:52:57.320  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:52:59.645  9137  9137 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:53:09.841  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-07 07:53:12.133  2378  2937 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544169094554, Current: 1544151192000. Skipping this Position.
+12-07 07:53:12.282  2378  9166 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:53:12.423  2378  9166 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 07:53:12.423  2378  9166 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 07:53:12.677  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 07:53:12.787  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:53:23.046  9184  9184 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:53:37.638  1992  1992 E RecyclerView: No adapter attached; skipping layout
+12-07 07:53:40.447  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:53:40.453  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:53:41.677  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:53:53.967  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:53:59.883  2378  8847 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:54:00.144  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 07:54:00.230  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:54:09.313  9246  9246 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:54:34.844  9288  9288 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-07 07:54:36.950  1610  9304 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:54:40.454  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 07:54:40.455  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 07:54:44.994  9037  9319 E SQLiteLog: (1) no such table: fillups
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 07:54:45.047  9037  9319 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 07:54:46.655  2378  9134 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 07:54:47.204  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 07:54:51.066  1610  9332 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:54:52.635  6805  6805 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:54:52.635  6805  6805 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 07:54:52.707  6805  6832 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 07:54:54.015  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 07:54:55.759  1610  9338 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 07:55:03.505  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99114 pid 9288: No such file or directory
+12-07 07:55:05.400  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 07:55:05.434  1880  1895 E memtrack: Couldn't load memtrack module

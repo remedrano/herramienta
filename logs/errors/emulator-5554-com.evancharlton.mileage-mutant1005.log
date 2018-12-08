@@ -1,0 +1,83 @@
+--------- beginning of system
+12-07 05:24:35.063  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:24:35.063  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:24:35.063  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 05:24:44.746  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 05:24:57.335  1610  6094 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:25:06.638  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:25:16.382  2768  2768 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 05:25:17.828  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:25:17.828  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:25:18.126  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2d8be84 VFE...CL. ...P.... 0,583-1038,730 #2e} because the view is not tagged for visual element logging.
+12-07 05:25:18.284  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2d8be84 VFE...CL. ...P.... 0,583-1038,730 #2e} because the view is not tagged for visual element logging.
+12-07 05:25:18.289  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c9fcb33 VFE...CL. ...P.... 0,142-1038,289 #2b} because the view is not tagged for visual element logging.
+12-07 05:25:18.965  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{de91c69 VFE...CL. ...P.... 0,436-1038,583 #2d} because the view is not tagged for visual element logging.
+12-07 05:25:19.794  1610  6130 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:25:39.562  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:25:39.562  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:25:44.747  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:25:56.709  2378  5597 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:25:56.861  2378  5597 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-07 05:25:57.057  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-07 05:25:57.103  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:25:58.855  5668  5763 E Bugle   : Get mms config failed: invalid subId. subId=1, real subId=1, map={ }
+12-07 05:25:58.987  1610  6197 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:25:59.054  6201  6201 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:25:59.250  6217  6217 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:26:02.212  1610  6249 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:26:07.022  6015  6015 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:26:07.023  6015  6015 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:26:11.781  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d6a7220 VFE...CL. ...P.... 0,-5-1038,142 #3c} because the view is not tagged for visual element logging.
+12-07 05:26:11.922  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8b6587f VFE...CL. ...P.... 0,436-1038,583 #3f} because the view is not tagged for visual element logging.
+12-07 05:26:12.060  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d6a7220 VFE...CL. ...P.... 0,-5-1038,142 #3c} because the view is not tagged for visual element logging.
+12-07 05:26:13.503  1610  6277 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:26:23.672  1610  6287 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:26:24.551  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:26:24.552  2768  2768 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-07 05:26:24.568  2768  2935 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 05:26:27.679  1610  6291 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+--------- beginning of crash
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: FATAL EXCEPTION: main
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6015
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: java.lang.NumberFormatException: For input string: "t "
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:594)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(ServiceIntervalTemplateActivity.java:83)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 05:26:31.801  6015  6015 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 05:26:31.992  6305  6305 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:26:37.363  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99006 pid 6217: No such file or directory
+12-07 05:26:39.570  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 05:26:39.570  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 05:26:42.357  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:26:42.414  1880  1895 E memtrack: Couldn't load memtrack module

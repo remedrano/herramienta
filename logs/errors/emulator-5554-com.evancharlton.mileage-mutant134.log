@@ -1,0 +1,77 @@
+--------- beginning of system
+12-07 11:52:39.765  1883  1897 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 11:52:39.765  1883  1897 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 11:52:39.765  1883  1897 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 11:53:18.301  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 11:53:49.943  2420 17605 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:53:50.404  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:53:50.492  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:53:56.902 17805 17805 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:54:07.059  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:54:07.060  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:54:13.266  2420 17842 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:54:13.760  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:54:18.337  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:54:18.889  1738  1738 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 11:54:19.030 17286 17286 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:54:19.030 17286 17286 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:54:19.060 17286 17286 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:54:19.060 17286 17286 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:54:19.195 17286 17286 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:54:19.196 17286 17286 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:54:19.196 17286 17286 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:54:19.196 17286 17286 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:54:19.273 17286 17286 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 11:54:19.273 17286 17286 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 11:54:19.609  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 11:54:19.609  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 11:54:19.609  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 11:54:19.921  1883  1967 E WifiP2pService: Unhandled message { when=-2ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 11:54:19.959  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:54:19.988  1883  1901 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 11:54:20.046  2420 17308 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:54:20.059  2420 17308 E GCM     : Connection closed with errorCode 20
+12-07 11:54:20.080  2420 17308 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 11:54:24.813  2420 17875 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:54:24.840  2420 17875 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 11:54:34.853  2420 17891 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:54:34.859  2420 17891 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 11:54:41.938  2420 17771 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 11:54:42.109  2420  2420 E BeaconBle: Missing BluetoothAdapter
+12-07 11:54:42.171  2420  2420 E BeaconBle: Scan couldn't start for Places
+12-07 11:54:48.459 17908 17908 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:54:48.743  1613 17923 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:54:51.026  1613 17941 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:54:52.732  1883  2952 E NotificationService: Package enqueue rate is 6.619453. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-07 11:54:55.018  2420 17947 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:54:55.276  2420 17947 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 11:55:07.067 17957 17957 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-07 11:55:07.103  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 11:55:07.103  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 11:55:08.747  1613 17980 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:55:09.695  1632  1632 E lowmemorykiller: Error writing /proc/17908/oom_score_adj; errno=22
+12-07 11:55:18.388  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 11:55:22.559  1613 17997 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:55:24.838  1613 18001 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 11:55:33.655  1883  1900 E libprocessgroup: Error encountered killing process cgroup uid 99079 pid 17957: No such file or directory
+12-07 11:55:35.311  2420 18010 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 11:55:35.329  2420 18010 E WakeLock: GCM_CONN_ALARM release without a matched acquire!

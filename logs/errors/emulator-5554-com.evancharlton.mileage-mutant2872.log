@@ -1,0 +1,83 @@
+--------- beginning of main
+--------- beginning of system
+12-08 13:59:13.657  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:59:13.657  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:59:13.657  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:59:15.622  2429 21877 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:59:15.875  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 13:59:15.901  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:59:17.583  1732  1759 E         : Couldn't opendir /data/app/vmdl2029350244.tmp: No such file or directory
+12-08 13:59:17.583  1732  1759 E installd: Failed to delete /data/app/vmdl2029350244.tmp: No such file or directory
+12-08 13:59:19.117 21993 21993 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21993
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.BaseListActivity.setupEmptyView()' on a null object reference
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.BaseListActivity.setupEmptyView()' on a null object reference
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at com.evancharlton.mileage.BaseListActivity.onResume(BaseListActivity.java:68)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 13:59:25.116 21993 21993 E AndroidRuntime: 	... 11 more
+12-08 13:59:25.169  1633  1633 E lowmemorykiller: Error writing /proc/21993/oom_score_adj; errno=22
+12-08 13:59:25.240  1885  1957 E InputDispatcher: channel 'b590dc0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 13:59:26.473  2429 21711 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:59:26.665  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 13:59:27.681 22035 22035 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:59:32.459  1614 22065 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 13:59:37.421  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:59:39.815  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:59:40.202  2429 21326 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:59:40.530  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:00:01.323 22035 22052 E SQLiteLog: (1) no such table: fillups
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 14:00:01.338 22035 22052 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)

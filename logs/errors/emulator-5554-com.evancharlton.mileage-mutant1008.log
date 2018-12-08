@@ -1,0 +1,108 @@
+--------- beginning of system
+12-07 05:28:48.762  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 05:28:48.762  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 05:28:48.762  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 05:29:44.754  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 05:30:08.756  1736  1736 E wificond: Receive ERROR message in response to 'stop scheduled scan' request: Operation not supported on transport endpoint
+12-07 05:30:09.344  1625  1625 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 05:30:09.344  1625  1625 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 05:30:09.344  1625  1625 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 05:30:44.755  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 05:30:49.146  2768  2768 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{1585036 VFE...CL. ...P.... 0,21-207,279 #82} because the view is not tagged for visual element logging.
+12-07 05:30:53.536  2125  2125 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-07 05:30:53.897  2125  2125 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-07 05:30:53.911  7066  7066 E ndroid.setting: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:54.475  7082  7082 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:54.951  2125  2125 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-07 05:30:55.013  2125  2125 E PhoneInterfaceManager: [PhoneIntfMgr] getIccId: No UICC
+12-07 05:30:55.087  7113  7113 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:55.727  2008  2008 E StatusBarSignalPolicy: Unexpected subscription 1
+12-07 05:30:56.161  7147  7147 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:56.459  7171  7171 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:56.554  7171  7171 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 05:30:56.554  7171  7171 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 05:30:56.554  7171  7171 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 05:30:56.827  1880  1970 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '56 interface setmtu radio0 1500' failed with '400 56 Failed to set MTU (Permission denied)'
+12-07 05:30:56.993  7147  7147 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-07 05:30:57.834  7233  7233 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:58.032  7250  7250 E oadcastreceive: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:58.329  7268  7268 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:58.501  7285  7285 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:30:59.038  2780  7281 E Finsky  : [236] com.google.android.finsky.setup.am.a(77): Error prefetching preloads, using account=null, preloads=NULL, preloadGroups=NULL
+12-07 05:30:59.038  2780  7281 E Finsky  : com.google.android.finsky.setup.fetchers.RawDocumentsFetchException[reason=pai_config, account=null]
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at com.google.android.finsky.setup.am.a(SourceFile:50)
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at com.google.android.finsky.setup.ao.call(Unknown Source:4)
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 05:30:59.038  2780  7281 E Finsky  : 	at java.lang.Thread.run(Thread.java:764)
+12-07 05:30:59.302  7312  7312 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:31:01.982  2378  7365 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:31:01.988  2378  7329 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:31:02.962  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:31:03.229  7379  7379 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:31:05.078  1625  1625 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 05:31:05.082  1625  1625 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 05:31:05.162  1736  1736 E wificond: No Offload Service available
+12-07 05:31:05.499  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:31:05.507  1880  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 05:31:05.612  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:31:05.665  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:31:05.750  7412  7412 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-07 05:31:06.099  2378  7426 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 05:31:06.278  2378  7426 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:31:06.914  1880  1970 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '86 interface setmtu radio0 1500' failed with '400 86 Failed to set MTU (Permission denied)'
+12-07 05:31:07.952  2378  6932 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 05:31:08.121  2378  7448 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:31:08.206  1610  7454 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 05:31:08.932  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 05:31:09.572  1880  1900 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 05:31:09.668  1880  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-07 05:31:10.156  2378  7473 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 05:31:10.309  2378  7475 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 05:31:10.440  1733  1824 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 05:31:14.160  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:14.238  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:31:15.155  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-07 05:31:16.525  1992  1992 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-07 05:31:16.716  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:18.147  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:19.582  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:21.647  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:21.709  1880  1895 E memtrack: Couldn't load memtrack module
+12-07 05:31:22.085  1880  1895 E memtrack: Couldn't load memtrack module

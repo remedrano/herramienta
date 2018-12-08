@@ -1,0 +1,105 @@
+--------- beginning of system
+--------- beginning of main
+12-07 17:26:47.732 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 17:26:51.835  1729  2327 E         : Couldn't opendir /data/app/vmdl1406644050.tmp: No such file or directory
+12-07 17:26:51.835  1729  2327 E installd: Failed to delete /data/app/vmdl1406644050.tmp: No such file or directory
+12-07 17:26:55.772  5162  5162 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:26:58.009 16085 24146 E putmethod.lati: Invalid ID 0x00000001.
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: 	at emn.a(PG:12)
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: 	at emk.run(PG:5)
+12-07 17:26:58.019 16085 24146 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-07 17:27:05.469  5162  5182 E SQLiteLog: (1) no such table: fillups
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: Couldn't upgrade database!
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-07 17:27:05.486  5162  5182 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-07 17:27:05.976  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 17:27:05.978  1829  1829 E netmgr  : Poller found past due deadline, setting to zero
+12-07 17:27:05.979  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 17:27:10.582 16506  5058 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544221630578, start=1544238227857
+12-07 17:27:10.595 16506  5058 E ctxmgr  : [AppIntervalImpl]closeInterval: stopTimeMillis invalid, stop=1544221630595, start=1544238227858
+12-07 17:27:11.890 16506 16506 E BeaconBle: Scan couldn't start for Places
+12-07 17:27:27.913  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 17:27:28.184 16561 16561 E ContextIntentStarter: No activity found for any of the 0 intents
+12-07 17:27:28.690  4240  4240 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:27:28.690  4240  4240 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:27:28.724  4240  4240 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:27:28.725  4240  4240 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:27:28.822  4240  4240 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:27:28.822  4240  4240 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:27:28.822  4240  4240 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:27:28.822  4240  4240 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:27:28.918  4240  4240 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-07 17:27:28.918  4240  4240 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-07 17:27:29.055  5227  5227 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:29.223  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-07 17:27:29.223  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-07 17:27:29.223  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-07 17:27:29.529 15976 16055 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:27:29.578 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:27:29.650 16506  4388 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-07 17:27:29.659 16506  4388 E GCM     : Connection closed with errorCode 20
+12-07 17:27:29.725 16506  4388 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 17:27:30.103  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-07 17:27:30.107  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-07 17:27:30.234  5251  5251 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:30.303 15926 15926 E wificond: No Offload Service available
+12-07 17:27:30.500 15976 16055 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:27:30.569 15976 16055 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-07 17:27:30.604 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:27:30.626 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:27:30.736  5270  5270 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:30.847  5270  5270 E LoadedApk: Unable to instantiate appComponentFactory
+12-07 17:27:30.847  5270  5270 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-07 17:27:30.847  5270  5270 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-07 17:27:31.346  5298  5298 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:34.513 15976 15994 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-07 17:27:35.287 16506  5333 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-07 17:27:35.436 15925 15942 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-07 17:27:35.455  5334  5334 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:36.268  5354  5354 E .android.video: Not starting debugger since process cannot load the jdwp agent.
+12-07 17:27:39.596 15927  5413 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-07 17:28:05.978  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 17:28:05.979  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 17:28:27.917  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 17:29:05.987  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 17:29:05.987  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 17:29:20.285 15976 15989 E memtrack: Couldn't load memtrack module
+12-07 17:29:27.922  1737  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

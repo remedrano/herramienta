@@ -1,0 +1,193 @@
+--------- beginning of main
+--------- beginning of system
+12-08 13:55:40.072  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 13:55:40.072  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 13:55:40.072  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 13:55:45.301  9559  9559 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:55:52.501  2448  9281 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:55:52.741  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 13:55:54.947  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 13:55:55.223  9559  9559 E DocsApplication: [main] No default account found during application creation.
+12-08 13:56:07.322  1730  6463 E         : Couldn't opendir /data/app/vmdl155547719.tmp: No such file or directory
+12-08 13:56:07.322  1730  6463 E installd: Failed to delete /data/app/vmdl155547719.tmp: No such file or directory
+12-08 13:56:11.865  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:56:11.865  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:56:12.133  2475  9646 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 13:56:16.823  9662  9662 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:56:24.283  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:56:26.629  1881  1896 E AutofillSession: No assist structure - app might have crashed providing it
+12-08 13:56:26.764  1992  6060 E putmethod.lati: Invalid ID 0x00000001.
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 13:56:26.773  1992  6060 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:56:31.633  1739  1739 E wificond: NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+12-08 13:57:06.550  1992  6060 E putmethod.lati: Invalid ID 0x00000001.
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 13:57:06.550  1992  6060 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 13:57:11.518  9688  9688 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:57:13.773  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:57:13.773  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:57:21.391  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:57:26.173  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:57:31.423  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:57:41.443  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:57:48.784  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 13:57:51.472  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:58:01.416  2448  9281 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:58:03.992  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:58:04.038  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 13:58:04.102  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 13:58:13.976  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 13:58:13.983  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 13:58:14.033  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:58:16.403  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 13:58:21.511  9175  9175 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 13:58:21.511  9175  9175 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 13:58:21.559  9175  9175 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 13:58:21.559  9175  9175 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 13:58:21.669  9175  9175 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 13:58:21.669  9175  9175 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 13:58:21.743  9175  9175 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 13:58:21.743  9175  9175 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 13:58:24.077  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 13:58:24.108  1881  1901 E NetdConnector: NDC event {600 Iface linkstate wlan0 down} took too long: 2289ms
+12-08 13:58:24.111  1881  1901 E NetdConnector: NDC event {600 Iface linkstate wlan0 down} processed too late: 2286ms
+12-08 13:58:24.136  9748  9748 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 13:58:24.318  1626  1626 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 13:58:24.323  1626  1626 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 13:58:24.325  1626  1626 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 13:58:26.531  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 13:58:26.569  1881  1964 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 13:58:26.572  1881  1964 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 13:58:26.588  1881  1964 E HalDevMgr: Should have at least 1 chip!
+12-08 13:58:26.588  1881  1964 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 13:58:26.673  1881  1964 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 13:58:26.673  1881  1964 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 13:58:26.673  1881  1964 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 13:58:26.673  1881  1966 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 13:58:26.730  1881  1965 E WificondControl: No valid wificond scanner interface handler
+12-08 13:58:26.731  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 13:58:26.751  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 13:58:31.727  2448  8709 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 13:58:31.892  2448  8709 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 13:58:34.324  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 13:58:34.400  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 13:58:34.430  1881  1895 E ActivityManager: ANR in com.android.carrierdefaultapp
+12-08 13:58:34.430  1881  1895 E ActivityManager: PID: 9748
+12-08 13:58:34.430  1881  1895 E ActivityManager: Reason: Broadcast of Intent { act=com.android.internal.telephony.CARRIER_SIGNAL_RESET flg=0x10000010 cmp=com.android.carrierdefaultapp/.CarrierDefaultBroadcastReceiver (has extras) }
+12-08 13:58:34.430  1881  1895 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+12-08 13:58:34.430  1881  1895 E ActivityManager: CPU usage from 60444ms to 0ms ago (2018-12-08 13:57:31.242 to 2018-12-08 13:58:31.686):
+12-08 13:58:34.430  1881  1895 E ActivityManager:   51% 1881/system_server: 25% user + 25% kernel / faults: 1619 minor 190 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   33% 2692/com.google.android.googlequicksearchbox:search: 16% user + 16% kernel / faults: 14012 minor 506 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   30% 1725/surfaceflinger: 12% user + 17% kernel / faults: 167 minor 1 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   23% 2448/com.google.android.gms.persistent: 12% user + 10% kernel / faults: 1812 minor 208 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   20% 2314/adbd: 1% user + 19% kernel / faults: 203287 minor
+12-08 13:58:34.430  1881  1895 E ActivityManager:   16% 9662/com.evancharlton.mileage: 6.4% user + 10% kernel / faults: 27121 minor 57 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   12% 2004/com.android.systemui: 6.8% user + 5.9% kernel / faults: 1082 minor 78 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   12% 645/kswapd0: 0% user + 12% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   8.7% 29746/com.google.android.apps.nexuslauncher: 5.1% user + 3.6% kernel / faults: 1900 minor 104 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   8.1% 1611/android.hardware.audio@2.0-service: 2.2% user + 5.9% kernel / faults: 33 minor 12 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   4.2% 30638/com.google.android.apps.photos: 1.4% user + 2.7% kernel / faults: 1007 minor 160 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   4.1% 2119/com.android.phone: 1.3% user + 2.7% kernel / faults: 220 minor 61 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   3.9% 1553/logd: 0.5% user + 3.4% kernel / faults: 2 minor 1 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   3.9% 2508/kworker/u9:3: 0% user + 3.9% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   3.8% 9451/kworker/u9:0: 0% user + 3.8% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   3.7% 1992/com.google.android.inputmethod.latin: 2.2% user + 1.4% kernel / faults: 3975 minor 1 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   3.6% 9635/com.android.commands.monkey: 2.1% user + 1.5% kernel / faults: 230 minor 8 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.9% 1629/audioserver: 0.4% user + 0.5% kernel / faults: 183 minor 25 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.8% 1747/android.hardware.graphics.composer@2.1-service: 0% user + 0.8% kernel / faults: 97 minor
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.4% 5536/kworker/u9:1: 0% user + 0.4% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.4% 5249/kworker/u9:2: 0% user + 0.4% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.3% 1625/android.hardware.sensors@1.0-service: 0% user + 0.3% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.3% 2475/com.google.android.gms: 0% user + 0.3% kernel / faults: 3169 minor 3 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.2% 9462/kworker/u8:2: 0% user + 0.2% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.2% 7948/kworker/u8:5: 0% user + 0.2% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.2% 4075/android.process.media: 0.1% user + 0% kernel / faults: 196 minor 8 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 6776/kworker/u8:4: 0% user + 0.1% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 9688/com.google.android.inputmethod.latin:train: 0.1% user + 0% kernel / faults: 645 minor 2 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 2330/logcat: 0.1% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 7141/kworker/u8:3: 0% user + 0.1% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 1554/servicemanager: 0% user + 0.1% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0.1% 2494/com.android.vending: 0% user + 0.1% kernel / faults: 97 minor 35 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 9287/kworker/0:2: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1//init: 0% user + 0% kernel / faults: 19 minor 15 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1620/android.hardware.gnss@1.0-service: 0% user + 0% kernel / faults: 1 minor 4 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1621/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 44 minor
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 8663/kworker/u8:0: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 30602/com.android.systemui:screenshot: 0% user + 0% kernel / faults: 45 minor
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 3/ksoftirqd/0: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 7/rcu_preempt: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1555/hwservicemanager: 0% user + 0% kernel / faults: 65 minor 14 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1623/android.hardware.health@2.0-service.goldfish: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1626/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 13 minor 22 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1630/lmkd: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1672/dmcrypt_write: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1718/jbd2/dm-1-8: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1737/statsd: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 2321/mdnsd: 0% user + 0% kernel / faults: 6 minor 10 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1624/android.hardware.power@1.1-service.ranchu: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1704/kworker/u9:4: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1714/kworker/0:1H: 0% user + 0% kernel
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1726/zygote: 0% user + 0% kernel / faults: 134 minor 3 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1734/media.metrics: 0% user + 0% kernel / faults: 9 minor 7 major
+12-08 13:58:34.430  1881  1895 E ActivityManager:   0% 1739
+12-08 13:58:41.697  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:41.803  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 13:58:41.812  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:41.895  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:44.061  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:44.177  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:44.263  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:44.366  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.291  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.355  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.431  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.498  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.563  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.627  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:46.688  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:48.857  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:48.936  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:49.005  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:49.073  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:49.147  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.231  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.291  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.360  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.435  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.502  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:51.567  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:53.780  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:53.867  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:53.951  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:54.014  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:54.088  1881  5791 E memtrack: Couldn't load memtrack module
+12-08 13:58:56.062  1881  5791 E memtrack: Couldn't load memtrack module

@@ -1,0 +1,55 @@
+--------- beginning of system
+12-07 03:02:53.553  1880  1896 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-07 03:02:53.553  1880  1896 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-07 03:02:53.553  1880  1896 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-07 03:02:54.314  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:03:31.209  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 03:03:34.777  2422  2422 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-07 03:03:54.336  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:03:56.073  1880  1891 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.122  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.404  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.552  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.591  1880  1891 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.630  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:03:56.764  1880  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-07 03:04:54.378  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-07 03:05:46.525  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a24b4cd VFE...CL. ...P.... 0,289-1038,453 #d4} because the view is not tagged for visual element logging.
+12-07 03:05:46.818  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a24b4cd VFE...CL. ...P.... 0,289-1038,453 #d4} because the view is not tagged for visual element logging.
+12-07 03:05:48.052  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{fd788d0 VFE...CL. .F....ID 0,142-1038,289 #d3} because the view is not tagged for visual element logging.
+12-07 03:05:54.393  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-07 03:06:11.564  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{48d8286 VFE...CL. ...P.... 0,583-1038,730 #e8} because the view is not tagged for visual element logging.
+12-07 03:06:12.272  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a99747 VFE...CL. ...P.... 0,-5-1038,142 #e4} because the view is not tagged for visual element logging.
+12-07 03:06:14.340  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{7a99747 VFE...CL. ...P.... 0,-5-1038,142 #e4} because the view is not tagged for visual element logging.
+12-07 03:06:14.482  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{aaf4112 VFE...CL. ...P.... 0,436-1038,583 #e7} because the view is not tagged for visual element logging.
+12-07 03:06:15.018  6805  6805 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{aaf4112 VFE...CL. ...P.... 0,436-1038,583 #e7} because the view is not tagged for visual element logging.
+12-07 03:06:19.639  6805  6832 E MicroDetectionWorker: Stale runnable..ignoring
+12-07 03:06:27.325  2378 10680 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:06:28.388  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:06:38.167  1880  1899 E libprocessgroup: Error encountered killing process cgroup uid 99121 pid 10616: No such file or directory
+12-07 03:06:40.287  1829  1829 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-07 03:06:40.287  1829  1829 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-07 03:06:41.290  2378 10593 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-07 03:06:41.787  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-07 03:06:43.896  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 03:06:53.918  1610  1692 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-07 03:06:54.408  1735  1809 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

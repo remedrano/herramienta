@@ -1,0 +1,55 @@
+--------- beginning of system
+12-08 04:08:23.251  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 04:08:23.251  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 04:08:23.251  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 04:08:39.246  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 04:08:39.247  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 04:08:42.710  2448 16609 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 04:08:42.809  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 04:08:44.431  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 04:08:50.974  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 04:08:52.692  1881  2002 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:08:52.715  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:08:52.759  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:08:52.776  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:08:52.808  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:08:56.009  1611 18570 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 04:09:03.255  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:09:19.006  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:09:33.565  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:09:39.307  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 04:09:39.308  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 04:09:44.435  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 04:09:47.425  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:09:57.434  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:10:07.704  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:10:18.244  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:10:28.255  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 04:10:28.623  1881  2150 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.643  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.680  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.711  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.742  1881  3671 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.810  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.841  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:28.985  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 04:10:32.680  1992  1992 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

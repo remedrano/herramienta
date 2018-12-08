@@ -1,0 +1,72 @@
+--------- beginning of system
+12-08 06:19:35.109  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 06:19:35.109  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 06:19:35.109  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 06:19:40.011  2448 31329 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:19:42.119  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:19:42.155  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:19:46.216  1730  1755 E         : Couldn't opendir /data/app/vmdl849791585.tmp: No such file or directory
+12-08 06:19:46.216  1730  1755 E installd: Failed to delete /data/app/vmdl849791585.tmp: No such file or directory
+12-08 06:19:48.385  2475 31370 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+12-08 06:19:50.520 31435 31435 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:20:03.778  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:20:03.778  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:20:12.405  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:21:05.762  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:21:05.762  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:21:12.410  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:21:12.475  2448 31455 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:21:12.520  2448 31455 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 06:21:12.527  2448 31455 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 06:21:12.530  2448 31455 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 06:21:14.863  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:21:14.925  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:21:26.088  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 06:21:35.449  2448 31329 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 06:21:35.509 31514 31514 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:21:37.983  2448  2448 E BeaconBle: Missing BluetoothAdapter
+12-08 06:21:38.103  2448  2448 E BeaconBle: Scan couldn't start for Places
+12-08 06:21:40.240 31514 31514 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.dialer failed
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at fas.a(Unknown Source:77)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at fpa.a(Unknown Source:3)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at edu.a(PG:7)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at bcc.c(PG:14)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at bcd.run(Unknown Source:2)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 06:21:42.348 31514 31543 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:764)
+12-08 06:21:42.425 31547 31547 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 06:21:53.538  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:22:04.958  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:22:07.084  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 06:22:07.085  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 06:22:09.717  1725  1725 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=63, front.active.{w=1080, h=1920}
+12-08 06:22:13.872  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 06:22:15.907  1611  1695 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 06:22:16.364  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 06:22:18.661  2494  2716 E PlayCommon: [101] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 06:22:23.072  1881  1894 E memtrack: Couldn't load memtrack module
