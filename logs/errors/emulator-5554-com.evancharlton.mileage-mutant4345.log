@@ -1,0 +1,77 @@
+--------- beginning of main
+--------- beginning of system
+12-09 03:37:56.545  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 03:37:56.545  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:37:56.545  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 03:37:57.202 27328 27328 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:57.227 27340 27340 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:57.287 27357 27357 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:58.063 27401 27401 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:59.144 27426 27426 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:00.578 27401 27401 E DocsApplication: [main] No default account found during application creation.
+12-09 03:38:01.608  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:38:01.676  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:38:02.796  1731  1935 E         : Couldn't opendir /data/app/vmdl1914548136.tmp: No such file or directory
+12-09 03:38:02.796  1731  1935 E installd: Failed to delete /data/app/vmdl1914548136.tmp: No such file or directory
+12-09 03:38:03.068  2378 26744 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 03:38:03.083  2378 26744 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 03:38:06.555 27495 27495 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:08.314  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 03:38:08.343  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 03:38:10.379 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:38:10.379 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:38:11.321  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 03:38:11.321  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 03:38:11.900 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:38:11.900 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:38:12.876  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:38:12.878  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:38:19.471 27527 27527 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:19.880 27527 27527 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 03:38:20.181  1741  2074 E OMXNodeInstance: getConfig(0xe97a6e40:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:38:20.308  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:38:21.112  2524  2836 E PlayCommon: [104] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-09 03:38:22.792 27557 27557 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:23.763  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:38:23.817  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:38:33.453 27588 27588 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:33.487  2509 27587 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+12-09 03:38:42.451  2378 26744 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 03:38:42.458  2378 26744 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 03:38:43.586  1726  1751 E SurfaceFlinger: getLayerUser(name=0xe7d62280) is dead
+12-09 03:38:43.586  1726  1751 E SurfaceFlinger: getLayerUser(name=0xe7d62280) is dead
+12-09 03:38:45.244 10557 10557 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 03:38:50.939 27642 27642 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:51.467 27656 27656 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:01.187 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:39:01.187 27495 27495 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

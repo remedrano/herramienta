@@ -1,0 +1,72 @@
+--------- beginning of main
+--------- beginning of system
+12-09 02:03:53.357  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 02:03:53.357  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 02:03:53.357  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 02:03:53.792  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:03:54.455 28224 28224 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:03:55.877 28224 28224 E DocsApplication: [main] No default account found during application creation.
+12-09 02:03:58.000  1733  1931 E         : Couldn't opendir /data/app/vmdl612974943.tmp: No such file or directory
+12-09 02:03:58.000  1733  1931 E installd: Failed to delete /data/app/vmdl612974943.tmp: No such file or directory
+12-09 02:04:00.568 28296 28296 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:04:02.685  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:04:02.691  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:04:05.844  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:04:05.844  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:04:06.500 28296 28296 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:04:06.501 28296 28296 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:04:16.177  2438 28124 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 02:04:16.258  2438 28124 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 02:04:16.553  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 02:04:16.678  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 02:04:26.893 28346 28346 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:04:40.219  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 02:04:46.872  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:04:46.872  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:04:50.701  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:04:53.793  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:05:02.038 28382 28382 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:05:04.574  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 02:05:09.856  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 02:05:10.810  1881  3213 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:10.816  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:05:10.843  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:10.876  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:10.918  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:10.952  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:10.976  1881  3210 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:11.021  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:11.057  1881  3769 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:11.092  1881  3986 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:11.138  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:05:11.199  1881  3213 E WindowManager: Performed 6 layouts in a row. Skipping

@@ -1,0 +1,56 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:44:34.649  1881  1953 E InputDispatcher: channel 'b88a688 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 19:44:34.649  1881  1953 E InputDispatcher: channel '5a1399c com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 19:44:34.657  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:44:34.657  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:44:34.657  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:44:36.444  2438 16401 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:44:36.458  2438 16401 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:44:36.701  2438 16401 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:44:36.706  2438 16401 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:44:36.722  2438 16401 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:44:36.911  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:44:37.006  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:44:37.792  1881  1966 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-08 19:44:39.022  1733  1752 E         : Couldn't opendir /data/app/vmdl1981319333.tmp: No such file or directory
+12-08 19:44:39.022  1733  1752 E installd: Failed to delete /data/app/vmdl1981319333.tmp: No such file or directory
+12-08 19:44:40.821 18841 18841 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:44:42.511  1991  9248 E putmethod.lati: Invalid ID 0x00000001.
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 19:44:42.512  1991  9248 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:44:45.323  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:44:45.323  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:44:51.553  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:44:51.609  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:44:55.780  2438 16401 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:44:55.824  2438 16401 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:44:56.334  2438 16401 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:44:56.347  2438 16401 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:44:56.352  2438 16401 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:44:57.051  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:44:57.195  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:44:58.931  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents

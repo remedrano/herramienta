@@ -1,0 +1,84 @@
+--------- beginning of main
+--------- beginning of system
+12-09 03:07:55.632  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 03:07:55.632  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:07:55.632  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 03:07:55.841  2342  6359 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 03:07:56.312 21110 21110 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:07:56.522 21126 21126 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:07:56.582 21140 21140 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:07:57.060  2378 20930 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 03:07:57.740 21185 21185 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:07:57.914  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:07:58.210  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:07:58.866 21214 21214 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:07:59.716 21185 21185 E DocsApplication: [main] No default account found during application creation.
+12-09 03:08:00.816  1731  1776 E         : Couldn't opendir /data/app/vmdl2134661495.tmp: No such file or directory
+12-09 03:08:00.816  1731  1776 E installd: Failed to delete /data/app/vmdl2134661495.tmp: No such file or directory
+12-09 03:08:04.288 21273 21273 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:06.195  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 03:08:06.203  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 03:08:12.479  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:08:12.479  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:08:16.278 21301 21301 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:16.934 21301 21301 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 03:08:17.376  1741  2075 E OMXNodeInstance: getConfig(0xe93910c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:08:19.579  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:08:30.157 21343 21343 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:31.149 21363 21363 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:35.485 10557 10557 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 03:08:42.090 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{7d6f24 VFE...CL. ...P.... 0,21-207,279 #2b} because the view is not tagged for visual element logging.
+12-09 03:08:42.265 21410 21410 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:43.364 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{7d6f24 VFE...CL. ...P.... 0,21-207,279 #2b} because the view is not tagged for visual element logging.
+12-09 03:08:43.723 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c771576 VFE...CL. ...P.... 0,289-1038,436 #29} because the view is not tagged for visual element logging.
+12-09 03:08:43.761 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{596fc4d VFE...CL. ...P.... 0,436-1038,583 #2a} because the view is not tagged for visual element logging.
+12-09 03:08:43.885 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{badc826 VFE...CL. ...P.... 207,21-414,279 #2c} because the view is not tagged for visual element logging.
+12-09 03:08:44.805 21427 21427 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:46.259 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{596fc4d VFE...CL. ...P.... 0,436-1038,583 #2a} because the view is not tagged for visual element logging.
+12-09 03:08:46.469 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c771576 VFE...CL. ...P.... 0,289-1038,436 #29} because the view is not tagged for visual element logging.
+12-09 03:08:48.841 21449 21449 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:08:52.090 21476 21476 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:09:12.479  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:09:12.480  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:09:19.587  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:09:24.078  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:09:27.056  2378 20170 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 03:09:31.968  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:09:32.643  1885  1997 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.685  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.748  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.772  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.818  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.836  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.873  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.944  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:32.963  1885  3512 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:33.019  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:33.042  1885  3512 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:33.072  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:33.159  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 03:09:35.888  1885  1898 E memtrack: Couldn't load memtrack module

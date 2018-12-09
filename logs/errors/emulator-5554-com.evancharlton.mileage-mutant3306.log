@@ -1,0 +1,109 @@
+--------- beginning of system
+--------- beginning of main
+12-08 23:10:35.937 30575 30649 E SQLiteLog: (1) no such table: fillups
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 23:10:35.959 30575 30649 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 23:10:37.829  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:10:37.829  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:10:37.829  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:10:41.647  1731  1771 E         : Couldn't opendir /data/app/vmdl176633248.tmp: No such file or directory
+12-08 23:10:41.647  1731  1771 E installd: Failed to delete /data/app/vmdl176633248.tmp: No such file or directory
+12-08 23:10:43.733  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:10:43.734  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:10:43.783 30721 30721 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:10:45.302  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 23:10:45.309  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 23:10:45.675 30745 30745 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:10:50.956  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:10:53.353  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 23:11:04.105  2439 30617 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:11:04.151  2439 30617 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 23:11:04.250  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 23:11:04.270  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 23:11:16.208  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:11:17.265  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 23:11:17.269  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 23:11:17.337  1740  1740 E wificond: No Offload Service available
+12-08 23:11:17.541  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 23:11:17.554  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 23:11:17.599  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 23:11:17.670  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 23:11:21.630  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 23:11:22.340  2439 30829 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 23:11:22.438  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 23:11:22.619 30832 30832 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:11:23.654  2439 28887 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.measurement.PackageMeasurementTaskService{u=0 tag="Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG" trigger=window{start=1082s,end=2166s,earliest=-132s,latest=951s} requirements=[NET_CONNECTED] attributes=[PERSISTED] scheduled=-1214s last_run=0s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 23:11:25.135  2439 30866 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-293s,latest=306s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-593s last_run=-2s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 23:11:37.220 30871 30871 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:11:37.253 30881 30881 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:11:38.894 30938 30938 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:11:39.003 30938 30938 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 23:11:39.003 30938 30938 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 23:11:39.003 30938 30938 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 23:11:39.785 30971 30971 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:11:43.743  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:11:43.743  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:11:50.995  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:12:43.754  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:12:43.755  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:12:45.118  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:12:50.998  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

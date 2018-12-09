@@ -1,0 +1,316 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:41:51.552  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:41:53.702  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:41:53.702  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:41:53.702  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:41:55.181  2438 17034 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:41:55.239  2438 17034 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:41:55.553  2438 17034 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:41:55.565  2438 17034 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:41:55.579  2438 17034 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:41:55.726  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:41:55.782  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:41:57.453  1733  1752 E         : Couldn't opendir /data/app/vmdl370740794.tmp: No such file or directory
+12-08 19:41:57.453  1733  1752 E installd: Failed to delete /data/app/vmdl370740794.tmp: No such file or directory
+12-08 19:41:59.127 18195 18195 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18195
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	... 11 more
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:00.042 18195 18195 E AndroidRuntime: 	... 17 more
+12-08 19:42:00.118  1633  1633 E lowmemorykiller: Error writing /proc/18195/oom_score_adj; errno=22
+12-08 19:42:00.180  2337  6295 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-6RUEeyrWtMdTcORYR3m_0g==/base.apk' I/O error
+12-08 19:42:00.182  2337  6295 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-6RUEeyrWtMdTcORYR3m_0g==/base.apk
+12-08 19:42:05.026 18223 18223 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:10.806 18254 18254 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18254
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	... 11 more
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:11.631 18254 18254 E AndroidRuntime: 	... 17 more
+12-08 19:42:11.673  1633  1633 E lowmemorykiller: Error writing /proc/18254/oom_score_adj; errno=22
+12-08 19:42:12.565 18280 18280 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18280
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	... 11 more
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:12.925 18280 18280 E AndroidRuntime: 	... 17 more
+12-08 19:42:12.968  1633  1633 E lowmemorykiller: Error writing /proc/18280/oom_score_adj; errno=22
+12-08 19:42:13.151  2337  6240 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-6RUEeyrWtMdTcORYR3m_0g==/base.apk' I/O error
+12-08 19:42:13.154  2337  6240 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-6RUEeyrWtMdTcORYR3m_0g==/base.apk
+12-08 19:42:14.460 18302 18302 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18302
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	... 11 more
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:14.918 18302 18302 E AndroidRuntime: 	... 17 more
+12-08 19:42:16.793 18324 18324 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18324
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	... 11 more
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:17.249 18324 18324 E AndroidRuntime: 	... 17 more
+12-08 19:42:17.282  1633  1633 E lowmemorykiller: Error writing /proc/18324/oom_score_adj; errno=22
+12-08 19:42:22.002 18357 18357 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18357
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	... 11 more
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:22.431 18357 18357 E AndroidRuntime: 	... 17 more
+12-08 19:42:22.523  1633  1633 E lowmemorykiller: Error writing /proc/18357/oom_score_adj; errno=22
+12-08 19:42:26.657  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:42:27.667  2438 17034 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-605s,latest=-5s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-905s last_run=0s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 19:42:28.263  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:42:29.338 18395 18395 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18395
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	... 11 more
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:29.674 18395 18395 E AndroidRuntime: 	... 17 more
+12-08 19:42:29.722  1633  1633 E lowmemorykiller: Error writing /proc/18395/oom_score_adj; errno=22
+12-08 19:42:45.305  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:42:45.305  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:42:48.357 18431 18431 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18431
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	... 11 more
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.database.sqlite.SQLiteCursor.getColumnIndex(SQLiteCursor.java:183)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.database.CursorWrapper.getColumnIndex(CursorWrapper.java:81)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:116)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:42:48.649 18431 18431 E AndroidRuntime: 	... 17 more
+12-08 19:42:48.689  1633  1633 E lowmemorykiller: Error writing /proc/18431/oom_score_adj; errno=22
+12-08 19:42:51.564  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

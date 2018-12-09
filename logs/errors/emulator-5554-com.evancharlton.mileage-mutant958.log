@@ -1,0 +1,170 @@
+--------- beginning of system
+--------- beginning of main
+12-09 14:00:44.848  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 14:00:44.848  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 14:00:44.848  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 14:00:45.964 28022 28022 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:45.975 28030 28030 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:45.981 28017 28017 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:47.278 28092 28092 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:47.287  2378 27774 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 14:00:47.505  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 14:00:47.573  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 14:00:48.644 28120 28120 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:49.275  1633  1633 E lowmemorykiller: Error writing /proc/27846/oom_score_adj; errno=22
+12-09 14:00:49.452 28092 28092 E DocsApplication: [main] No default account found during application creation.
+12-09 14:00:50.295  1731  1949 E         : Couldn't opendir /data/app/vmdl754270788.tmp: No such file or directory
+12-09 14:00:50.295  1731  1949 E installd: Failed to delete /data/app/vmdl754270788.tmp: No such file or directory
+12-09 14:00:52.952 28175 28175 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:00:55.207  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 14:00:55.214  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 14:00:58.969  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 14:00:59.006  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 14:00:59.624 28175 28175 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 14:00:59.626 28175 28175 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 14:01:09.825 28208 28208 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:01:11.273 28208 28208 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 14:01:11.538  1726  1750 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 14:01:11.663  1741  2075 E OMXNodeInstance: getConfig(0xe93913c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 14:01:11.740  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 14:01:15.786  2378 27507 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 14:01:16.486  2378  3140 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544363891000, Current: 1544346051000. Skipping this Position.
+12-09 14:01:16.492  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 14:01:16.647  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 14:01:17.220  2378 27320 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=18
+12-09 14:01:18.429  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 14:01:18.430  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 14:01:25.150 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 14:01:26.798 28262 28262 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:01:26.847 28273 28273 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:01:27.851 28294 28294 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 14:01:29.230  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 14:02:01.348  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:02.466  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:12.921  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:12.989  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:13.034  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.640  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.647  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.647  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.649  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.649  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.652  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.656  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.659  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.661  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.667  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.680  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.686  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.690  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.709  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.722  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.730  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.753  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.769  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.780  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.789  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.792  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.799  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.804  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.814  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.822  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.829  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.837  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.841  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.848  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.850  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.865  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.869  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.879  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.882  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.886  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.901  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.956  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.968  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.981  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.987  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:16.993  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.003  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.011  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.031  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.047  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.063  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.073  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.090  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.096  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.110  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.142  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.159  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.173  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.175  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.180  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.214  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.218  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.222  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.224  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.228  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.232  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.236  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.238  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.240  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.289  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.293  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.297  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.299  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.342  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.344  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.351  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.422  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.482  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.534  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.605  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.668  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.727  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.772  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.831  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.886  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.931  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:17.986  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.033  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.077  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.119  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.161  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.202  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.250  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.302  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.366  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 14:02:18.487  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 14:02:18.487  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 14:02:19.898  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 14:02:21.081  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

@@ -1,0 +1,248 @@
+--------- beginning of main
+--------- beginning of system
+12-09 06:07:39.920  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 06:07:39.920  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:07:39.920  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 06:07:40.645 23342 23342 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:40.658 23353 23353 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:40.751 23369 23369 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:41.763 23416 23416 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:42.683 23433 23433 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:42.889 23452 23452 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:43.159 23476 23476 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:07:44.685 23416 23416 E DocsApplication: [main] No default account found during application creation.
+12-09 06:07:44.760 23416 23429 E JavaBinder: *** Uncaught remote exception!  (Exceptions are not yet supported across processes.)
+12-09 06:07:44.760 23416 23429 E JavaBinder: android.database.StaleDataException: Attempted to access a cursor after it has been closed.
+12-09 06:07:44.760 23416 23429 E JavaBinder: 	at android.database.CursorToBulkCursorAdaptor.throwIfCursorIsClosed(CursorToBulkCursorAdaptor.java:121)
+12-09 06:07:44.760 23416 23429 E JavaBinder: 	at android.database.CursorToBulkCursorAdaptor.getBulkCursorDescriptor(CursorToBulkCursorAdaptor.java:139)
+12-09 06:07:44.760 23416 23429 E JavaBinder: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:111)
+12-09 06:07:44.760 23416 23429 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:731)
+12-09 06:07:45.704  1731  6658 E         : Couldn't opendir /data/app/vmdl377357291.tmp: No such file or directory
+12-09 06:07:45.704  1731  6658 E installd: Failed to delete /data/app/vmdl377357291.tmp: No such file or directory
+12-09 06:07:48.819 23528 23528 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:02.079  1745  1745 E /system/bin/tombstoned: Traces for pid 2342 written to: /data/anr/trace_00
+12-09 06:08:04.989 23557 23557 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:05.547 23557 23557 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 06:08:05.811  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:08:05.969  1741  2074 E OMXNodeInstance: getConfig(0xe97a6c00:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 06:08:06.019  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+--------- beginning of crash
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: Process: com.google.android.apps.nexuslauncher, PID: 2342
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: java.util.concurrent.TimeoutException: android.view.ThreadedRenderer.finalize() timed out after 10 seconds
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at android.view.ThreadedRenderer.nDeleteProxy(Native Method)
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at android.view.ThreadedRenderer.finalize(ThreadedRenderer.java:967)
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+12-09 06:08:06.447  2342  2351 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+12-09 06:08:06.804  1885  2487 E WindowManager: Failed to notify cancel
+12-09 06:08:06.804  1885  2487 E WindowManager: android.os.DeadObjectException
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-09 06:08:06.804  1885  2487 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-09 06:08:06.811  1885  2487 E WindowManager: Failed to notify cancel
+12-09 06:08:06.811  1885  2487 E WindowManager: android.os.DeadObjectException
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-09 06:08:06.811  1885  2487 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-09 06:08:06.864 23591 23591 E s.nexuslaunche: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:07.210 23617 23617 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:08.601 23643 23643 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:10.753 23668 23668 E earchbox:searc: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:10.854  1726  1750 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:08:11.141  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:08:12.042 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:08:12.666 23668 23668 E OverlaySController: Calling with an invalid UID, the interface will not work
+12-09 06:08:13.157 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:08:13.679 23707 23707 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:13.934 23668 23701 E BluetoothAdapter: Bluetooth binder is null
+12-09 06:08:13.986 23730 23730 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:14.103  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:08:14.313 23750 23750 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:14.913  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:08:14.913  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:08:15.243 23591 23612 E ActivityThread: Failed to find provider info for com.google.android.as.allapps.actionsettingprovider
+12-09 06:08:15.244 23591 23612 E ActionsController: write setting failed
+12-09 06:08:15.244 23591 23612 E ActionsController: java.lang.IllegalArgumentException: Unknown URL content://com.google.android.as.allapps.actionsettingprovider
+12-09 06:08:15.244 23591 23612 E ActionsController: 	at android.content.ContentResolver.insert(ContentResolver.java:1583)
+12-09 06:08:15.244 23591 23612 E ActionsController: 	at com.google.android.apps.nexuslauncher.allapps.d.handleMessage(SourceFile:268)
+12-09 06:08:15.244 23591 23612 E ActionsController: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 06:08:15.244 23591 23612 E ActionsController: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:08:15.244 23591 23612 E ActionsController: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:08:15.284 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:08:15.334 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:08:15.678  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:08:15.899  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-09 06:08:15.903  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-09 06:08:15.931  1740  1740 E wificond: No Offload Service available
+12-09 06:08:15.932  1885  1969 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-09 06:08:15.951 23781 23781 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:15.998  1885  1970 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-09 06:08:16.014  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 06:08:16.062 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:08:16.140  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 06:08:16.194  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 06:08:16.203  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 06:08:16.985 23806 23806 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:17.214 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:08:17.868  2378 23103 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:08:18.079  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 06:08:18.121  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:08:18.652 23882 23882 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:18.734 23882 23882 E LoadedApk: Unable to instantiate appComponentFactory
+12-09 06:08:18.734 23882 23882 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:08:18.734 23882 23882 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:08:19.583 23924 23924 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:20.009  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.013  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.014  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.014  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.015  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.020  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.023  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.027  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.030  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.035  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.045  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.054  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.059  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.065  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.079  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.084  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.099  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.103  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.109  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.114  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.119  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.126  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.134  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.138  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.147  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.152  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.155  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.160  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.165  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.171  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.207  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.209  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.219  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.222  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.227  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.255  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.280  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 06:08:20.303  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.316  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.331  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.342  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.354  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.365  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.372  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.386  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.395  1885  1969 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-09 06:08:20.395  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.422  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.432  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.437  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.443  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.450  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.468  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.473  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.481  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.489  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.497  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.512  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.517  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.519  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.522  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.525  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.528  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.530  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.539  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.542  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.643  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.651  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.653  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.656  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.734  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.756  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.890  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:20.981  2378 23972 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 06:08:21.004  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.097  1737  1820 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-09 06:08:21.150  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.255  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.325  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.508 23989 23989 E .android.video: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:21.517  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.619  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.701  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.782  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.859  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:21.942  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.010  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.028  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 06:08:22.084  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.135  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.207  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.285  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.371  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.434  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.479  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.516  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.547 23668 23668 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 06:08:22.547 23668 23668 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 06:08:22.564  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.630  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.648  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:08:22.703  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.777  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:08:22.976 24036 24036 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:23.561 23668 24084 E BluetoothAdapter: Bluetooth binder is null
+12-09 06:08:24.177 23668 23668 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{be4e72d VFE...CL. ...P.... 0,142-1038,289 #7} because the view is not tagged for visual element logging.
+12-09 06:08:25.304 23668 23668 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8b45462 VFE...CL. ...P.... 0,-5-1038,142 #6} because the view is not tagged for visual element logging.
+12-09 06:08:27.093 23668 23701 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 06:08:27.287 24112 24112 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:08:28.674 23668 23677 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 06:08:27.050]

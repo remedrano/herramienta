@@ -1,0 +1,77 @@
+--------- beginning of main
+--------- beginning of system
+12-09 05:36:40.903  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 05:36:40.903  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 05:36:40.903  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 05:36:44.809  1731  1935 E         : Couldn't opendir /data/app/vmdl1387222130.tmp: No such file or directory
+12-09 05:36:44.809  1731  1935 E installd: Failed to delete /data/app/vmdl1387222130.tmp: No such file or directory
+12-09 05:36:46.953 26457 26457 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:36:57.297  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 05:37:04.853  2342  2587 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-Z_pkeNG8GX4_4imZ5s1mGA==/base.apk' I/O error
+12-09 05:37:04.877  2342  2587 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-Z_pkeNG8GX4_4imZ5s1mGA==/base.apk
+12-09 05:37:06.314  2378 26436 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 05:37:06.354  2378 26436 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 05:37:06.468  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 05:37:06.529  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 05:37:10.588  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 05:37:10.588  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 05:37:16.851  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 05:37:20.173  1885  4766 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.189  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.210  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.251  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.286  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.323  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.375  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.400  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.438  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.474  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.561  1885  5349 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.580  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.678  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.703  1885  2488 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.736  1885  4357 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.769  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.803  1885  2488 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.843  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.886  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:20.933  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:21.013  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:21.045  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:21.081  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:21.114  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:37:22.007  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 05:37:25.427  1726  2181 E SurfaceFlinger: getLayerUser(name=0xe7aba5b0) is dead
+12-09 05:37:27.984 26530 26530 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:37:28.260 26545 26545 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:37:28.775  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6e58e61 VFE...CL. ...P.... 0,289-1038,436 #d7} because the view is not tagged for visual element logging.
+12-09 05:37:28.869  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{13e0e74 VFE...CL. ...P.... 0,436-1038,583 #d8} because the view is not tagged for visual element logging.
+12-09 05:37:30.866  2720  2728 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 05:37:29.225]
+12-09 05:37:33.986 26593 26593 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:38:10.605  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 05:38:10.606  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 05:38:17.080  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 05:38:19.485  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 05:38:19.581  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 05:38:27.946  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-09 05:38:29.976  1633  1633 E lowmemorykiller: Error opening /proc/22584/oom_score_adj; errno=2
+12-09 05:38:29.976  1633  1633 E lowmemorykiller: Error opening /proc/4175/oom_score_adj; errno=2
+12-09 05:38:29.984  1633  1633 E lowmemorykiller: Error opening /proc/4175/oom_score_adj; errno=2

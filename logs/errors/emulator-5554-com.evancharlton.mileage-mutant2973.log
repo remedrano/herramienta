@@ -1,0 +1,72 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:55:42.256  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:55:42.256  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:55:42.256  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:55:46.993  1732  1935 E         : Couldn't opendir /data/app/vmdl1870397770.tmp: No such file or directory
+12-08 19:55:46.993  1732  1935 E installd: Failed to delete /data/app/vmdl1870397770.tmp: No such file or directory
+12-08 19:55:50.097 31538 31538 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:55:51.723  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 19:55:51.739  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:55:54.683 31538 31538 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:55:54.683 31538 31538 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:55:56.065  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 19:55:56.065  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:56:04.909  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:56:04.909  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:56:10.685  2429 31345 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:56:10.853  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:56:10.894  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:56:11.081  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:56:30.669  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:56:44.264 31608 31608 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:56:44.964  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{98bbf84 VFE...CL. ...P.... 0,21-207,279 #fb} because the view is not tagged for visual element logging.
+12-08 19:56:45.589  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:56:45.590  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:56:45.829  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:56:45.829  2540  2540 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:56:46.442  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{98bbf84 VFE...CL. ...P.... 0,21-207,279 #fb} because the view is not tagged for visual element logging.
+12-08 19:56:46.775  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{600552d VFE...CL. ...P.... 0,289-1038,436 #f9} because the view is not tagged for visual element logging.
+12-08 19:56:46.910  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ac66cb0 VFE...CL. ...P.... 0,436-1038,583 #fa} because the view is not tagged for visual element logging.
+12-08 19:56:47.465  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 19:56:49.363  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ac66cb0 VFE...CL. ...P.... 0,436-1038,583 #fa} because the view is not tagged for visual element logging.
+12-08 19:56:49.430  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{600552d VFE...CL. ...P.... 0,289-1038,436 #f9} because the view is not tagged for visual element logging.
+12-08 19:56:49.626  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{db617f3 VFE...CL. ...P.... 0,142-1038,289 #f8} because the view is not tagged for visual element logging.
+12-08 19:56:49.983  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{600552d VFE...CL. ...P.... 0,289-1038,436 #f9} because the view is not tagged for visual element logging.
+12-08 19:56:50.022  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{600552d VFE...CL. ...P.... 0,289-1038,436 #f9} because the view is not tagged for visual element logging.
+12-08 19:56:50.739  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{98bbf84 VFE...CL. ...P.... 0,21-207,279 #fb} because the view is not tagged for visual element logging.
+12-08 19:56:50.782  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{db617f3 VFE...CL. ...P.... 0,142-1038,289 #f8} because the view is not tagged for visual element logging.
+12-08 19:56:51.831  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5e62a62 VFE...CL. ...P.... 0,-5-1038,142 #f7} because the view is not tagged for visual element logging.
+12-08 19:56:54.138  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:56:54.643  2540  2548 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 19:56:52.429]
+12-08 19:56:55.147  2540  2540 E GsaWebChromeClient: WebView=com.google.android.apps.gsa.search.core.webview.s@4ab7959, Url=https://www.google.com/search?oe=utf-8&safe=images&gcc=us&ctzn=GMT&ctf=0&v=8.59.7.21.x86&ntyp=1&ram_mb=1494&action=devloc&gs_lp=EhNxc2ItYW5kcm9pZC1hc2JsLXBiGgIYACIFIyMjIyMqDggAEAAYgwEg4SsoAVoAMg4IABAAGIMBIOErKAFaADILCAEQACDgKygBWgAyDggCEAAYgwEgsCsoAVoAMhQIAxAAGMcBGKMCGIMBIK8rKAFaADINCAQQVBjfASAAKBNaADINCAUQVBjfASAAKBNaAEAASKlHUMo9WMo9YAFoAXAAeACAAQCIAQGQAQCYAecFoAHnBaoBAzYtMbABlSi4AQHIAQD4AQX4AQGQAgCYAgGgAvwGqAIAsAIA0gILcm1PUlE4SlJCQmfgAgDoAgDwAgD4AgCAAwCIAwCQAwygAwC6AwgSBhAAGAAiAOIDBAgRGAHiAwQIEhgJ8AMA-AMAgAQAkAQHmAQBogQAsASvBrgErwbCBAM2LTHaBAwIABAAGAAgACgAMADiBAYIABABGAGCBQCgBesCsgUA&source=and.gsa.launcher.homescreen.appssearch&ar=0&noj=1&client=ms-unknown&wf=pp1&padt=200&padb=684&hl=en-US&qsubts=1544299012627&q=google%20translate, Source=https://www.google.com/search?oe=utf-8&safe=images&gcc=us&ctzn=GMT&ctf=0&v=8.59.7.21.x86&ntyp=1&ram_mb=1494&action=devloc&gs_lp=EhNxc2ItYW5kcm9pZC1hc2JsLXBiGgIYACIFIyMjIyMqDggAEAAYgwEg4SsoAVoAMg4IABAAGIMBIOErKAFaADILCAEQACDgKygBWgAyDggCEAAYgwEgsCsoAVoAMhQIAxAAGMcBGKMCGIMBIK8rKAFaADINCAQQVBjfASAAKBNaADINCAUQVBjfASAAKBNaAEAASKlHUMo9WMo9YAFoAXAAeACAAQCIAQGQAQCYAecFoAHnBaoBAzYtMbABlSi4AQHIAQD4AQX4AQGQAgCYAgGgAvwGqAIAsAIA0gILcm1PUlE4SlJCQmfgAgDoAgDwAgD4AgCAAwCIAwCQAwygAwC6AwgSBhAAGAAiAOIDBAgRGAHiAwQIEhgJ8AMA-AMAgAQAkAQHmAQBogQAsASvBrgErwbCBAM2LTHaBAwIABAAGAAgACgAMADiBAYIABABGAGCBQCgBesCsgUA&source=and.gsa.launcher.homescreen.appssearch&ar=0&noj=1&client=ms-unknown&wf=pp1&padt=200&padb=684&hl=en-US&qsubts=1544299012627&q=google%20translate, Line=1, Message=Uncaught ReferenceError: google is not defined

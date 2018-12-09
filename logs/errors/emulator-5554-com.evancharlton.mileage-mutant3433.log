@@ -1,0 +1,51 @@
+--------- beginning of main
+--------- beginning of system
+12-09 00:08:58.099  8121  8121 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:08:59.013  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 00:08:59.013  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 00:08:59.013  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 00:08:59.028  1881  1953 E InputDispatcher: channel '1af115a com.evancharlton.mileage/com.evancharlton.mileage.ImportExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 00:08:59.029  1881  1953 E InputDispatcher: channel 'ca5dad5 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 00:08:59.268  2337  2403 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 00:08:59.963  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 00:09:00.109  1881  1965 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-09 00:09:00.672  2438  8194 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 00:09:00.745  1739  1788 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-09 00:09:00.802  2438  8199 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 00:09:02.035  1733  1733 E         : Couldn't opendir /data/app/vmdl1016751933.tmp: No such file or directory
+12-09 00:09:02.035  1733  1733 E installd: Failed to delete /data/app/vmdl1016751933.tmp: No such file or directory
+12-09 00:09:03.159  8225  8225 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:09:04.263  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99006 pid 8028: No such file or directory
+12-09 00:09:11.803  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:09:18.210  2438  7261 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:09:18.542  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 00:09:18.588  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:09:20.355  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:09:22.915  8283  8283 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:09:23.248  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{a1db757 VFE...CL. ...P.... 0,21-207,279 #25} because the view is not tagged for visual element logging.
+12-09 00:09:23.289  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a252447 VFE...CL. ...P.... 0,289-1038,436 #23} because the view is not tagged for visual element logging.
+12-09 00:09:23.351  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{95f212 VFE...CL. ...P.... 0,436-1038,583 #24} because the view is not tagged for visual element logging.
+12-09 00:09:23.578  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 00:09:32.031  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:09:32.218  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 00:09:32.536  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-09 00:09:34.069  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:09:34.195  2570  2584 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 00:09:26.455]

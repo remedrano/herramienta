@@ -1,0 +1,291 @@
+--------- beginning of main
+--------- beginning of system
+12-09 13:38:27.210  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 13:38:27.210  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 13:38:27.210  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 13:38:28.589  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 13:38:29.023  1633  1633 E lowmemorykiller: Error writing /proc/21718/oom_score_adj; errno=22
+12-09 13:38:30.466  2378 21558 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 13:38:30.955  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 13:38:31.004  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 13:38:31.854 22273 22273 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:38:32.951  1731  1949 E         : Couldn't opendir /data/app/vmdl393498812.tmp: No such file or directory
+12-09 13:38:32.951  1731  1949 E installd: Failed to delete /data/app/vmdl393498812.tmp: No such file or directory
+12-09 13:38:34.919  2378 21558 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-605s,latest=-5s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-905s last_run=-3s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-09 13:38:35.381 22317 22317 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:38:37.859  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 13:38:37.864  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 13:38:41.459  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 13:38:41.471  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 13:38:54.504  2378 21558 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 13:38:55.017  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 13:38:55.090  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 13:38:59.264 22317 22317 E harlton.mileag: Invalid ID 0x00000000.
+12-09 13:38:59.268 22317 22317 E InputEventReceiver: Exception dispatching input event.
+12-09 13:38:59.268 22317 22317 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: android.content.res.Resources$NotFoundException: String resource ID #0x0
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.content.res.Resources.getText(Resources.java:348)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.content.Context.getText(Context.java:565)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.AlertDialog$Builder.setTitle(AlertDialog.java:517)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.evancharlton.mileage.BaseFormActivity.onCreateDialog(BaseFormActivity.java:113)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.Activity.onCreateDialog(Activity.java:3978)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.Activity.createDialog(Activity.java:1201)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.Activity.showDialog(Activity.java:4071)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.Activity.showDialog(Activity.java:4030)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.evancharlton.mileage.BaseFormActivity.onOptionsItemSelected(BaseFormActivity.java:103)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.app.Activity.onMenuItemSelected(Activity.java:3543)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1237)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:776)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:148)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:923)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:913)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.IconMenuView.invokeItem(IconMenuView.java:468)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.IconMenuItemView.performClick(IconMenuItemView.java:140)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.View.onKeyUp(View.java:13216)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.widget.TextView.onKeyUp(TextView.java:7768)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2716)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.View.dispatchKeyEvent(View.java:12450)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.view.menu.IconMenuView.dispatchKeyEvent(IconMenuView.java:558)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:343)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.331 22317 22317 E MessageQueue-JNI: 	at androi
+--------- beginning of crash
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 22317
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: android.content.res.Resources$NotFoundException: String resource ID #0x0
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.content.res.Resources.getText(Resources.java:348)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.content.Context.getText(Context.java:565)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.AlertDialog$Builder.setTitle(AlertDialog.java:517)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onCreateDialog(BaseFormActivity.java:113)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.Activity.onCreateDialog(Activity.java:3978)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.Activity.createDialog(Activity.java:1201)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.Activity.showDialog(Activity.java:4071)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.Activity.showDialog(Activity.java:4030)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onOptionsItemSelected(BaseFormActivity.java:103)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.app.Activity.onMenuItemSelected(Activity.java:3543)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1237)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:776)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:148)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:923)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:913)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.IconMenuView.invokeItem(IconMenuView.java:468)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.IconMenuItemView.performClick(IconMenuItemView.java:140)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.View.onKeyUp(View.java:13216)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.widget.TextView.onKeyUp(TextView.java:7768)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2716)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.View.dispatchKeyEvent(View.java:12450)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.view.menu.IconMenuView.dispatchKeyEvent(IconMenuView.java:558)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:343)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 13:38:59.361 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:7092)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:7061)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:7022)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:7195)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:186)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:160)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:38:59.362 22317 22317 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:38:59.811 22373 22373 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:39:01.105 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 13:39:03.527 22401 22401 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:39:05.476 22373 22373 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 13:39:05.477 22373 22373 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 13:39:07.383  2378 21744 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 13:39:07.509 23668 23701 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 13:39:08.711  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 13:39:08.905  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 13:39:15.666  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:17.813  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 13:39:17.813  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 13:39:26.008  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:28.809  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 13:39:34.688  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 13:39:35.084  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.100  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.101  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.102  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.102  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.111  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.117  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.126  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.132  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.139  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.150  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.155  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.159  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.188  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.200  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.211  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.225  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.238  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.249  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.255  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.259  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.273  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.281  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.286  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.293  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.297  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.302  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.306  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.313  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.321  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.353  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.356  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.360  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.364  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.366  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.389  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.441  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.452  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.462  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.468  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.474  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.482  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.489  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.503  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.511  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.526  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.535  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.540  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.546  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.551  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.565  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.572  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.577  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.580  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.584  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.599  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.603  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.605  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.608  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.611  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.614  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.617  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.621  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.623  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.672  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.676  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.679  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.682  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.683  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.723  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.811  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.882  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:35.944  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.008  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.097  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.161  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.264  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.342  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.389  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.434  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.484  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.537  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.584  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.644  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.715  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.770  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.815  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.860  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.896  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:36.951  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:37.024  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:37.086  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:37.151  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 13:39:37.214  1885  1898 E memtrack: Couldn't load memtrack module

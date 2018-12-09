@@ -1,0 +1,111 @@
+--------- beginning of system
+--------- beginning of main
+12-09 11:24:48.902  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 11:24:48.902  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 11:24:48.902  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 11:24:50.017  2378 28690 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 11:24:50.401  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 11:24:52.325  1731  6658 E         : Couldn't opendir /data/app/vmdl834810343.tmp: No such file or directory
+12-09 11:24:52.325  1731  6658 E installd: Failed to delete /data/app/vmdl834810343.tmp: No such file or directory
+12-09 11:24:53.593 28755 28755 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 11:24:55.166  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 11:24:55.199  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+--------- beginning of crash
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 28755
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: java.lang.NullPointerException: null receiver
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at java.lang.reflect.Field.get(Native Method)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.validate(Dao.java:230)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:301)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 11:25:03.722 28755 28755 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 11:25:03.761  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 11:25:03.802  1885  1957 E InputDispatcher: channel '96634d9 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:03.802  1885  1957 E InputDispatcher: channel '1de905c com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:03.804  1885  1957 E InputDispatcher: channel 'f56c486 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:03.888 28793 28793 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 11:25:11.299  2378 28537 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 11:25:11.632  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 11:25:11.703  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 11:25:14.797 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 11:25:14.996  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 11:25:14.997  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 28793
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: java.lang.NullPointerException: null receiver
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at java.lang.reflect.Field.get(Native Method)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.validate(Dao.java:230)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:301)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 11:25:15.369 28793 28793 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 11:25:15.451  1885  1957 E InputDispatcher: channel 'aa3b192 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:15.451  1885  1957 E InputDispatcher: channel '197b96e com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:15.529 28844 28844 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 11:25:18.524 23668 23668 E PSAC    : Bitmap height 115 is less than first row height for pixel search
+12-09 11:25:22.693  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 28844
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: java.lang.NullPointerException: null receiver
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at java.lang.reflect.Field.get(Native Method)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.validate(Dao.java:230)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.save(Dao.java:301)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:54)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 11:25:29.096 28844 28844 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 11:25:29.179  1885  1957 E InputDispatcher: channel 'b002de9 com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:29.181  1885  1957 E InputDispatcher: channel 'b224a51 PopupWindow:4bae1e5 (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:29.182  1885  1957 E InputDispatcher: channel '59e1f6f com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 11:25:29.273 28890 28890 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.

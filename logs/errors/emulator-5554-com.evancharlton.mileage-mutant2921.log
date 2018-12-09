@@ -1,0 +1,64 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:16:01.113  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:16:01.113  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:16:01.113  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:16:03.249  2429 25532 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:16:03.418  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:16:03.473  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:16:05.151  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:16:05.151  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:16:05.182 25624 25624 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:16:05.300  1732  1934 E         : Couldn't opendir /data/app/vmdl873916646.tmp: No such file or directory
+12-08 19:16:05.301  1732  1934 E installd: Failed to delete /data/app/vmdl873916646.tmp: No such file or directory
+12-08 19:16:06.281 25624 25649 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-08 19:16:07.590 25765 25765 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:16:11.288  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:16:16.185  1885  2503 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@a2d521b
+12-08 19:16:16.364  1996  1996 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 19:16:18.331  1614 25813 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 19:16:18.352  2429 25800 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:16:18.865  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:16:18.894  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: Exception in upload method
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 262182
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.ay.nextChunk(SourceFile:12)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.p.read(SourceFile:11)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at org.chromium.net.impl.cu.read(SourceFile:4)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at org.chromium.net.impl.r.run(SourceFile:18)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.as.run(Unknown Source:2)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.runner.a.b.run(Unknown Source:3)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.cq.bsW(SourceFile:2)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.cp.run(SourceFile:5)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.i.run(Unknown Source:4)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:16:19.079  2540 24373 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.o.run(SourceFile:6)
+12-08 19:16:23.114  1614 25843 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
+12-08 19:16:26.951  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:16:28.050  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:16:52.380  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:16:58.032  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:17:05.158  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:17:05.158  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

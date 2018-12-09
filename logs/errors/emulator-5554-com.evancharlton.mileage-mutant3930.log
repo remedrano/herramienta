@@ -1,0 +1,152 @@
+--------- beginning of main
+--------- beginning of system
+12-09 04:38:38.535 20409 20409 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-09 04:38:38.656 20409 20409 E LoadedApk: Unable to instantiate appComponentFactory
+12-09 04:38:38.656 20409 20409 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 04:38:38.656 20409 20409 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 04:38:39.368 20443 20443 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-09 04:38:40.077  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 04:38:40.077  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 04:38:40.077  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 04:38:40.241  2342  2769 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 04:38:42.060  2378 19886 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 04:38:42.218  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 04:38:44.139  1731  1731 E         : Couldn't opendir /data/app/vmdl30958016.tmp: No such file or directory
+12-09 04:38:44.139  1731  1731 E installd: Failed to delete /data/app/vmdl30958016.tmp: No such file or directory
+12-09 04:38:45.719 20534 20534 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 04:38:47.448  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 04:38:47.458  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 04:38:49.466 20534 20534 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:38:49.466 20534 20534 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:38:53.256  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 04:38:53.409  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 04:38:54.895  1885  4630 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateSystemUiLocked:2331 due to an invalid token. uid:10060 token:android.os.Binder@3652801
+12-09 04:38:54.900  1885  4630 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@3652801
+12-09 04:38:55.016  1994  1994 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-09 04:38:58.150  2378 20564 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 04:38:58.226  2378  3140 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544330290000, Current: 1544312337000. Skipping this Position.
+12-09 04:38:58.260  1741  2074 E OMXNodeInstance: getConfig(0xe93912a0:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 04:38:58.551  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 04:38:58.622  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: Exception in upload method
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 262182
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.io.bn.abort(SourceFile:12)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.ay.abort(SourceFile:28)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.bq.e(SourceFile:22)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.a.disconnect(SourceFile:25)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.b.run(SourceFile:5)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ar.execute(SourceFile:3)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:262)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:223)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.a.afterDone(SourceFile:42)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ay.cancel(SourceFile:2)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.l(SourceFile:48)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.exit(SourceFile:51)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.dQ(SourceFile:8)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.taskgraph.stream.a.e.end(SourceFile:10)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.kg(SourceFile:73)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.bGq(SourceFile:19)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.a(SourceFile:57)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.s.aws(SourceFile:24)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.u.run(SourceFile:21)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.i.run(Unknown Source:4)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:764)
+12-09 04:38:58.959  2720 18359 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.o.run(SourceFile:6)
+12-09 04:39:09.689  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 04:39:09.689  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 04:39:12.526  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 04:39:13.090 20534 20534 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:39:13.090 20534 20534 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:39:14.048  2378 20564 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 04:39:14.355  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 04:39:15.990  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 04:39:16.651 20637 20637 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 04:39:16.713  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8ec7b6c VFE...CL. ...P.... 0,142-1038,289 #aa} because the view is not tagged for visual element logging.
+12-09 04:39:17.308  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 04:39:17.402  2509 19819 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_25ac3293-68e3-409a-919f-b1810e6c9ac7)
+12-09 04:39:18.180  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{358cc04 VFE...CL. ...P.... 0,21-207,279 #ab} because the view is not tagged for visual element logging.
+12-09 04:39:18.467  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{66226fd VFE...CL. ...P.... 0,289-1038,436 #ad} because the view is not tagged for visual element logging.
+12-09 04:39:18.512  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{459dff2 VFE...CL. ...P.... 0,436-1038,583 #ae} because the view is not tagged for visual element logging.
+12-09 04:39:18.726  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 04:39:20.497  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{459dff2 VFE...CL. ...P.... 0,436-1038,583 #ae} because the view is not tagged for visual element logging.
+12-09 04:39:20.503  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{66226fd VFE...CL. ...P.... 0,289-1038,436 #ad} because the view is not tagged for visual element logging.
+12-09 04:39:20.537  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8ec7b6c VFE...CL. ...P.... 0,142-1038,289 #aa} because the view is not tagged for visual element logging.
+12-09 04:39:20.799  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 04:39:20.865  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{66226fd VFE...CL. ...p.... 0,289-1038,436 #ad} because the view is not tagged for visual element logging.
+12-09 04:39:20.946  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{66226fd VFE...CL. ...P.... 0,289-1038,436 #ad} because the view is not tagged for visual element logging.
+12-09 04:39:20.974  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 04:39:21.375  2720  2720 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:39:21.375  2720  2720 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 04:39:21.485  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 04:39:21.490  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 04:39:21.591  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{358cc04 VFE...CL. ...P.... 0,21-207,279 #ab} because the view is not tagged for visual element logging.
+12-09 04:39:21.593  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8ec7b6c VFE...CL. ...P.... 0,142-1038,289 #aa} because the view is not tagged for visual element logging.
+12-09 04:39:24.821  2720  2728 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 04:39:22.980]
+12-09 04:39:25.482  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 04:39:26.043  1885  2494 E NotificationService: Package enqueue rate is 13.88526. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox

@@ -1,297 +1,301 @@
 --------- beginning of system
-12-08 08:06:29.159  1563  1568 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
-12-08 08:06:29.159  1563  1568 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
-12-08 08:06:29.159  1563  1568 E vold    : Failed to chmod /data/media/0: No such file or directory
-12-08 08:06:40.317  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for telephony
-12-08 08:06:40.322  1881  1899 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
-12-08 08:06:40.351  1881  1899 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
-12-08 08:06:40.566  1881  1903 E LocalDisplayAdapter: Default and active color mode is no longer available! Reverting to first available mode.
-12-08 08:06:41.141  1738  1772 E storaged: getService package_native failed
-12-08 08:06:41.150  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
-12-08 08:06:42.496  1881  1893 E SystemServer: Unable to preload default resources
-12-08 08:06:43.707  1563  1563 E vold    : Failed to read field SystemLocale: No such file or directory
-12-08 08:06:43.708  1881  1956 E StorageManagerService: Failed to read field SystemLocale
-12-08 08:06:43.708  1881  1956 E StorageManagerService: android.os.ServiceSpecificException: Failed to read field SystemLocale (code 2)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.Parcel.createException(Parcel.java:1956)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.Parcel.readException(Parcel.java:1910)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.Parcel.readException(Parcel.java:1860)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.IVold$Stub$Proxy.fdeGetField(IVold.java:1094)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at com.android.server.StorageManagerService.getField(StorageManagerService.java:2408)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at com.android.server.StorageManagerService.copyLocaleFromMountService(StorageManagerService.java:982)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at com.android.server.StorageManagerService.handleDaemonConnected(StorageManagerService.java:975)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at com.android.server.StorageManagerService.access$900(StorageManagerService.java:171)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at com.android.server.StorageManagerService$StorageManagerServiceHandler.handleMessage(StorageManagerService.java:572)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.Looper.loop(Looper.java:193)
-12-08 08:06:43.708  1881  1956 E StorageManagerService: 	at android.os.HandlerThread.run(HandlerThread.java:65)
-12-08 08:06:44.266  1881  1881 E UsbDeviceManager: failed to write to /sys/class/android_usb/android0/f_rndis/ethaddr
-12-08 08:06:44.275  1881  1881 E UsbDeviceManager: Failed to open control for mtp
-12-08 08:06:44.275  1881  1881 E UsbDeviceManager: Failed to open control for mtp
-12-08 08:06:44.305  1881  1881 E UsbPortManager: connectToProxy: usb hal service not found. Did the service fail to start?
-12-08 08:06:44.305  1881  1881 E UsbPortManager: java.util.NoSuchElementException
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at android.os.HwBinder.getService(Native Method)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at android.os.HwBinder.getService(HwBinder.java:91)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at android.hardware.usb.V1_0.IUsb.getService(IUsb.java:48)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at android.hardware.usb.V1_0.IUsb.getService(IUsb.java:52)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.usb.UsbPortManager.connectToProxy(UsbPortManager.java:531)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.usb.UsbPortManager.<init>(UsbPortManager.java:137)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.usb.UsbService.<init>(UsbService.java:142)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.usb.UsbService$Lifecycle.onStart(UsbService.java:73)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:126)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:113)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:72)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1299)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServer.run(SystemServer.java:431)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.server.SystemServer.main(SystemServer.java:294)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at java.lang.reflect.Method.invoke(Native Method)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
-12-08 08:06:44.305  1881  1881 E UsbPortManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:838)
-12-08 08:06:44.438  1881  1881 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
-12-08 08:06:44.486  1881  1881 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.password.key: open failed: ENOENT (No such file or directory)
-12-08 08:06:44.486  1881  1881 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/password.key: open failed: ENOENT (No such file or directory)
-12-08 08:06:44.487  1881  1881 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.pattern.key: open failed: ENOENT (No such file or directory)
-12-08 08:06:44.487  1881  1881 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.gesture.key: open failed: ENOENT (No such file or directory)
-12-08 08:06:44.488  1881  1881 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gesture.key: open failed: ENOENT (No such file or directory)
-12-08 08:06:44.860  1881  1899 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
-12-08 08:06:45.173  1881  1881 E WallpaperManagerService: Unable to apply new wallpaper
-12-08 08:06:45.216  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
-12-08 08:06:45.216  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for telephony
-12-08 08:06:45.915  1881  1899 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
-12-08 08:06:46.337  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:46.337  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:46.497  1881  1881 E AutofillManagerServiceImpl: Bad AutofillService name: com.google.android.gms/.autofill.service.AutofillService
-12-08 08:06:46.497  1881  1881 E AutofillManagerServiceImpl: Bad AutofillService name: com.google.android.gms/.autofill.service.AutofillService
-12-08 08:06:46.892  2119  2254 E ActivityThread: Failed to find provider info for com.android.contacts
-12-08 08:06:47.029  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:47.029  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:48.935  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:48.936  1881  1973 E ActivityThread: Failed to find provider info for com.android.calendar
-12-08 08:06:49.155  2258  2258 E LoadedApk: Unable to instantiate appComponentFactory
-12-08 08:06:49.155  2258  2258 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
-12-08 08:06:49.155  2258  2258 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
-12-08 08:06:49.190  2004  2249 E ActivityThread: Failed to find provider info for com.android.contacts
-12-08 08:06:49.403  2004  2250 E ActivityThread: Failed to find provider info for com.android.contacts
-12-08 08:06:49.444  2004  2249 E ActivityThread: Failed to find provider info for com.android.contacts
-12-08 08:06:49.622  2258  2290 E ActivityThread: Failed to find provider info for com.google.android.gsf.gservices
-12-08 08:06:52.394  1881  2339 E BackupPasswordManager: Unable to read backup pw version
-12-08 08:06:52.394  1881  2339 E BackupPasswordManager: Unable to read saved backup pw hash
-12-08 08:07:00.940  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
-12-08 08:07:01.660  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
-12-08 08:07:03.688  1881  1895 E ActivityManager: ANR in com.google.android.googlequicksearchbox:search
-12-08 08:07:03.688  1881  1895 E ActivityManager: PID: 2428
-12-08 08:07:03.688  1881  1895 E ActivityManager: Reason: Broadcast of Intent { act=com.google.android.systemui.smartspace.EXPIRE_EVENT flg=0x10000010 pkg=com.google.android.googlequicksearchbox cmp=com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.PixelLauncherBroadcastReceiver }
-12-08 08:07:03.688  1881  1895 E ActivityManager: Load: 0.0 / 0.0 / 0.0
-12-08 08:07:03.688  1881  1895 E ActivityManager: CPU usage from 11119ms to 0ms ago (2018-12-08 08:06:51.627 to 2018-12-08 08:07:02.745):
-12-08 08:07:03.688  1881  1895 E ActivityManager:   34% 1881/system_server: 14% user + 19% kernel / faults: 4074 minor 109 major
-12-08 08:07:03.688  1881  1895 E ActivityManager:   18% 1725/surfaceflinger: 7.1% user + 11% kernel / faults: 34 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   8.7% 1992/com.google.android.inputmethod.latin: 4.1% user + 4.5% kernel / faults: 5214 minor 122 major
-12-08 08:07:03.688  1881  1895 E ActivityManager:   8.4% 2127/com.android.settings: 3.5% user + 4.8% kernel / faults: 61 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   4.7% 2004/com.android.systemui: 1.9% user + 2.7% kernel / faults: 2493 minor 11 major
-12-08 08:07:03.688  1881  1895 E ActivityManager:   4.2% 1683/kworker/u9:2: 0% user + 4.2% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   3.6% 1670/kworker/u9:0: 0% user + 3.6% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   3.6% 1703/kworker/u9:3: 0% user + 3.6% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   3.4% 1682/kworker/u9:1: 0% user + 3.4% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   2.8% 1704/kworker/u9:4: 0% user + 2.8% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   2.8% 1747/android.hardware.graphics.composer@2.1-service: 0.1% user + 2.6% kernel / faults: 28 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   1.6% 93/kworker/u8:2: 0% user + 1.6% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   1.4% 1//init: 0% user + 1.4% kernel / faults: 168 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   1.2% 1726/zygote: 0% user + 1.2% kernel / faults: 1926 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   1% 282/kworker/u8:4: 0% user + 1% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.6% 1730/installd: 0.2% user + 0.4% kernel / faults: 2 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.8% 6/kworker/u8:0: 0% user + 0.8% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.8% 15/kworker/0:1: 0% user + 0.8% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.8% 1625/android.hardware.sensors@1.0-service: 0% user + 0.7% kernel / faults: 5 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.7% 1553/logd: 0% user + 0.6% kernel / faults: 37 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.3% 108/kworker/u8:3: 0% user + 0.3% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.1% 1738/storaged: 0.1% user + 0% kernel / faults: 588 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.2% 1718/jbd2/dm-1-8: 0% user + 0.2% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.2% 2119/com.android.phone: 0.1% user + 0% kernel / faults: 123 minor 1 major
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.1% 1554/servicemanager: 0% user + 0.1% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0.1% 2258/com.google.android.deskclock: 0.1% user + 0% kernel / faults: 130 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 3/ksoftirqd/0: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 7/rcu_preempt: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 1555/hwservicemanager: 0% user + 0% kernel / faults: 16 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 1620/android.hardware.gnss@1.0-service: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 1621/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 18 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 1672/dmcrypt_write: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 1736/netd: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:   0% 2188/com.google.android.ext.services: 0% user + 0% kernel / faults: 204 minor
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2314/adbd: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2321/mdnsd: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2330/logcat: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2340/com.google.android.setupwizard: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2356/com.google.android.googlequicksearchbox:interactor: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2376/com.android.se: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2391/android.process.media: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2415/com.android.smspush: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2428/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2448/com.google.android.gms.persistent: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2463/com.google.android.apps.nexuslauncher: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2475/com.google.android.gms: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2494/com.android.vending: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2506/com.google.process.gservices: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2548/com.google.android.apps.photos: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2579/com.android.printspooler: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2615/com.android.keychain: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager:  +0% 2660/android.process.acore: 0% user + 0% kernel
-12-08 08:07:03.688  1881  1895 E ActivityManager: 95% TOTAL: 16% user + 24% kernel + 53% iowait + 1.4% softirq
-12-08 08:07:03.688  1881  1895 E ActivityManager: CPU usage from 35930ms to 35930ms ago (1970-01-01 00:00:00.000 to 1970-01-01 00:00:00.000) with 0% awake:
-12-08 08:07:03.688  1881  1895 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
-12-08 08:07:05.306  2463  2530 E ActivityThread: Failed to find provider info for com.google.android.as.allapps.actionsettingprovider
-12-08 08:07:05.413  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
-12-08 08:07:07.600  1881  2785 E BootReceiver: Can't log boot events
-12-08 08:07:07.600  1881  2785 E BootReceiver: java.io.FileNotFoundException: /dev/fscklogs/log (Permission denied)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at java.io.FileInputStream.open0(Native Method)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at java.io.FileInputStream.open(FileInputStream.java:231)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at java.io.FileInputStream.<init>(FileInputStream.java:165)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at android.os.FileUtils.readTextFile(FileUtils.java:514)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at com.android.server.BootReceiver.addFsckErrorsToDropBoxAndLogFsStat(BootReceiver.java:370)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at com.android.server.BootReceiver.logBootEvents(BootReceiver.java:245)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at com.android.server.BootReceiver.access$000(BootReceiver.java:66)
-12-08 08:07:07.600  1881  2785 E BootReceiver: 	at com.android.server.BootReceiver$1.run(BootReceiver.java:127)
-12-08 08:07:08.437  1881  1894 E PackageManager: Optimistic bind failed.
-12-08 08:07:08.437  1881  1894 E PackageManager: java.util.concurrent.TimeoutException: [Optimistic Bind] Didn't bind to resolver in time!
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.waitForBindLocked(InstantAppResolverConnection.java:160)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.bind(InstantAppResolverConnection.java:225)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.lambda$optimisticBind$0(InstantAppResolverConnection.java:255)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at com.android.server.pm.-$$Lambda$InstantAppResolverConnection$D-JKXi4qrYjnPQMOwj8UtfZenps.run(Unknown Source:2)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at android.os.Handler.handleCallback(Handler.java:873)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at android.os.Looper.loop(Looper.java:193)
-12-08 08:07:08.437  1881  1894 E PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:36:59.986  1561  1568 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+12-09 03:36:59.986  1561  1568 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+12-09 03:36:59.986  1561  1568 E vold    : Failed to chmod /data/media/0: No such file or directory
+12-09 03:37:12.339  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for telephony
+12-09 03:37:12.342  1885  1903 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:37:12.372  1885  1903 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:37:12.612  1885  1907 E LocalDisplayAdapter: Default and active color mode is no longer available! Reverting to first available mode.
+12-09 03:37:13.077  1739  1762 E storaged: getService package_native failed
+12-09 03:37:13.086  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:37:14.781  1885  1897 E SystemServer: Unable to preload default resources
+12-09 03:37:15.812  1561  1570 E vold    : Failed to read field SystemLocale: Success
+12-09 03:37:15.815  1885  1961 E StorageManagerService: Failed to read field SystemLocale
+12-09 03:37:15.815  1885  1961 E StorageManagerService: android.os.ServiceSpecificException: Failed to read field SystemLocale (code 0)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.Parcel.createException(Parcel.java:1956)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.Parcel.readException(Parcel.java:1910)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.Parcel.readException(Parcel.java:1860)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.IVold$Stub$Proxy.fdeGetField(IVold.java:1094)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at com.android.server.StorageManagerService.getField(StorageManagerService.java:2408)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at com.android.server.StorageManagerService.copyLocaleFromMountService(StorageManagerService.java:982)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at com.android.server.StorageManagerService.handleDaemonConnected(StorageManagerService.java:975)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at com.android.server.StorageManagerService.access$900(StorageManagerService.java:171)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at com.android.server.StorageManagerService$StorageManagerServiceHandler.handleMessage(StorageManagerService.java:572)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:37:15.815  1885  1961 E StorageManagerService: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:37:16.404  1885  1885 E UsbDeviceManager: failed to write to /sys/class/android_usb/android0/f_rndis/ethaddr
+12-09 03:37:16.408  1885  1885 E UsbDeviceManager: Failed to open control for mtp
+12-09 03:37:16.408  1885  1885 E UsbDeviceManager: Failed to open control for mtp
+12-09 03:37:16.430  1885  1885 E UsbPortManager: connectToProxy: usb hal service not found. Did the service fail to start?
+12-09 03:37:16.430  1885  1885 E UsbPortManager: java.util.NoSuchElementException
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at android.os.HwBinder.getService(Native Method)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at android.os.HwBinder.getService(HwBinder.java:91)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at android.hardware.usb.V1_0.IUsb.getService(IUsb.java:48)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at android.hardware.usb.V1_0.IUsb.getService(IUsb.java:52)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.usb.UsbPortManager.connectToProxy(UsbPortManager.java:531)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.usb.UsbPortManager.<init>(UsbPortManager.java:137)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.usb.UsbService.<init>(UsbService.java:142)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.usb.UsbService$Lifecycle.onStart(UsbService.java:73)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:126)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:113)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:72)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1299)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServer.run(SystemServer.java:431)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.server.SystemServer.main(SystemServer.java:294)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:37:16.430  1885  1885 E UsbPortManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:838)
+12-09 03:37:16.511  1885  1885 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:37:16.544  1885  1885 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.password.key: open failed: ENOENT (No such file or directory)
+12-09 03:37:16.544  1885  1885 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/password.key: open failed: ENOENT (No such file or directory)
+12-09 03:37:16.545  1885  1885 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.pattern.key: open failed: ENOENT (No such file or directory)
+12-09 03:37:16.545  1885  1885 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gatekeeper.gesture.key: open failed: ENOENT (No such file or directory)
+12-09 03:37:16.545  1885  1885 E LockSettingsStorage: Cannot read file java.io.FileNotFoundException: /data/system/gesture.key: open failed: ENOENT (No such file or directory)
+12-09 03:37:16.772  1885  1903 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:37:16.962  1885  1885 E WallpaperManagerService: Unable to apply new wallpaper
+12-09 03:37:17.028  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 03:37:17.028  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for telephony
+12-09 03:37:17.907  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-09 03:37:17.912  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-09 03:37:17.926  1740  1740 E wificond: No Offload Service available
+12-09 03:37:18.064  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 03:37:18.086  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 03:37:18.086  1885  1903 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:37:18.259  1885  1971 E WifiP2pService: Unexpected disable request when WifiChannel is null
+12-09 03:37:18.276  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:18.277  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:18.361  1885  1885 E AutofillManagerServiceImpl: Bad AutofillService name: com.google.android.gms/.autofill.service.AutofillService
+12-09 03:37:18.361  1885  1885 E AutofillManagerServiceImpl: Bad AutofillService name: com.google.android.gms/.autofill.service.AutofillService
+12-09 03:37:18.818  2118  2260 E ActivityThread: Failed to find provider info for com.android.contacts
+12-09 03:37:18.950  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:20.627  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:20.643  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:20.650  1885  1978 E ActivityThread: Failed to find provider info for com.android.calendar
+12-09 03:37:20.846  2266  2266 E LoadedApk: Unable to instantiate appComponentFactory
+12-09 03:37:20.846  2266  2266 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:37:20.846  2266  2266 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:37:21.061  2266  2292 E ActivityThread: Failed to find provider info for com.google.android.gsf.gservices
+12-09 03:37:21.157  2013  2250 E ActivityThread: Failed to find provider info for com.android.contacts
+12-09 03:37:21.367  2013  2251 E ActivityThread: Failed to find provider info for com.android.contacts
+12-09 03:37:21.406  2013  2250 E ActivityThread: Failed to find provider info for com.android.contacts
+12-09 03:37:23.482  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 03:37:24.738  1885  2341 E BackupPasswordManager: Unable to read backup pw version
+12-09 03:37:24.738  1885  2341 E BackupPasswordManager: Unable to read saved backup pw hash
+12-09 03:37:32.196  1885  1905 E NetdConnector: NDC event {600 Iface linkstate wlan0 up} processed too late: 4900ms
+12-09 03:37:32.197  1885  1905 E NetdConnector: NDC event {600 Iface linkstate wlan0 up} processed too late: 4899ms
+12-09 03:37:32.197  1885  1905 E NetdConnector: NDC event {616 Route updated fe80::/64 dev wlan0} processed too late: 4848ms
+12-09 03:37:32.198  1885  1905 E NetdConnector: NDC event {614 Address updated fe80::ff:fe00:0/64 wlan0 196 253} processed too late: 4837ms
+12-09 03:37:32.198  1885  1905 E NetdConnector: NDC event {614 Address updated 192.168.232.2/21 wlan0 128 0} processed too late: 4772ms
+12-09 03:37:32.198  1885  1905 E NetdConnector: NDC event {614 Address updated fe80::ff:fe00:0/64 wlan0 128 253} processed too late: 3861ms
+12-09 03:37:32.199  1885  1905 E NetdConnector: NDC event {616 Route updated ::/0 via fe80::ff:fe00:100 dev wlan0} processed too late: 3856ms
+12-09 03:37:32.199  1885  1905 E NetdConnector: NDC event {616 Route updated fec0::/64 dev wlan0} processed too late: 3857ms
+12-09 03:37:32.199  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::4889:eff:fe27:d21/64 radio0 0 200} processed too late: 3857ms
+12-09 03:37:32.200  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::411:70ce:e027:6c38/64 radio0 1 200} processed too late: 3857ms
+12-09 03:37:32.200  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::ff:fe00:0/64 wlan0 68 200} processed too late: 3858ms
+12-09 03:37:32.200  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::a83d:701a:f546:382a/64 wlan0 69 200} processed too late: 3858ms
+12-09 03:37:32.200  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::a83d:701a:f546:382a/64 wlan0 1 200} processed too late: 2862ms
+12-09 03:37:32.201  1885  1905 E NetdConnector: NDC event {614 Address updated fec0::ff:fe00:0/64 wlan0 0 200} processed too late: 2862ms
+12-09 03:37:32.266  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 03:37:34.868  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 03:37:35.659  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 03:37:36.278  1885  1899 E ActivityManager: ANR in com.google.android.googlequicksearchbox:search
+12-09 03:37:36.278  1885  1899 E ActivityManager: PID: 2469
+12-09 03:37:36.278  1885  1899 E ActivityManager: Reason: Broadcast of Intent { act=com.google.android.systemui.smartspace.EXPIRE_EVENT flg=0x10000010 pkg=com.google.android.googlequicksearchbox cmp=com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.PixelLauncherBroadcastReceiver }
+12-09 03:37:36.278  1885  1899 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+12-09 03:37:36.278  1885  1899 E ActivityManager: CPU usage from 12106ms to 0ms ago (2018-12-09 03:37:23.455 to 2018-12-09 03:37:35.561):
+12-09 03:37:36.278  1885  1899 E ActivityManager:   23% 1885/system_server: 11% user + 11% kernel / faults: 5696 minor 230 major
+12-09 03:37:36.278  1885  1899 E ActivityManager:   21% 1726/surfaceflinger: 8.3% user + 13% kernel / faults: 42 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   7.6% 2123/com.android.settings: 4.7% user + 2.8% kernel / faults: 61 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   5% 1994/com.google.android.inputmethod.latin: 2.3% user + 2.6% kernel / faults: 3249 minor 121 major
+12-09 03:37:36.278  1885  1899 E ActivityManager:   4.9% 2013/com.android.systemui: 3.5% user + 1.4% kernel / faults: 3354 minor 11 major
+12-09 03:37:36.278  1885  1899 E ActivityManager:   3.5% 1687/kworker/u9:2: 0% user + 3.5% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   2.8% 1754/android.hardware.graphics.composer@2.1-service: 0.1% user + 2.7% kernel / faults: 30 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   1.5% 1701/kworker/u9:4: 0% user + 1.5% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   2.2% 1685/kworker/u9:1: 0% user + 2.2% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   2% 1690/kworker/u9:3: 0% user + 2% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   2% 1727/zygote: 0.5% user + 1.4% kernel / faults: 1872 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   1.9% 1678/kworker/u9:0: 0% user + 1.9% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.8% 1731/installd: 0.3% user + 0.4% kernel / faults: 3 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   1% 1//init: 0% user + 1% kernel / faults: 223 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.8% 525/kworker/0:1: 0% user + 0.8% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.6% 1367/kworker/u8:7: 0% user + 0.6% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.5% 6/kworker/u8:0: 0% user + 0.5% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.5% 1555/logd: 0% user + 0.5% kernel / faults: 47 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.4% 1739/storaged: 0% user + 0.3% kernel / faults: 723 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.5% 2118/com.android.phone: 0.3% user + 0.2% kernel / faults: 148 minor 1 major
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.1% 1628/android.hardware.sensors@1.0-service: 0% user + 0.1% kernel / faults: 30 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.2% 3/ksoftirqd/0: 0.2% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.2% 1737/netd: 0% user + 0.1% kernel / faults: 118 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.1% 7/rcu_preempt: 0.1% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 12/ksoftirqd/1: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.1% 1347/kworker/u8:6: 0% user + 0.1% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0.1% 1719/jbd2/dm-1-8: 0% user + 0.1% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 20/ksoftirqd/3: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 1556/servicemanager: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 1624/android.hardware.graphics.allocator@2.0-service: 0% user + 0% kernel / faults: 16 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 1712/kworker/2:1H: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 1732/keystore: 0% user + 0% kernel / faults: 10 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 1874/dhcpserver: 0% user + 0% kernel / faults: 3 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 2191/com.google.android.ext.services: 0% user + 0% kernel / faults: 205 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:   0% 2266/com.google.android.deskclock: 0% user + 0% kernel / faults: 134 minor
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2318/adbd: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2326/mdnsd: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2331/logcat: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2342/com.google.android.apps.nexuslauncher: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2357/com.google.android.googlequicksearchbox:interactor: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2378/com.google.android.gms.persistent: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2396/com.google.process.gservices: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2415/com.android.se: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2428/android.process.media: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2440/com.google.android.setupwizard: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2455/com.android.smspush: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2469/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2509/com.google.android.gms: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2524/com.android.vending: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2545/com.google.android.apps.photos: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2593/com.android.printspooler: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager:  +0% 2629/com.android.keychain: 0% user + 0% kernel
+12-09 03:37:36.278  1885  1899 E ActivityManager: 93% TOTAL: 15% user + 18% kernel + 56% iowait + 1.3% softirq
+12-09 03:37:36.278  1885  1899 E ActivityManager: CPU usage from 37886ms to 37886ms ago (1970-01-01 00:00:00.000 to 1970-01-01 00:00:00.000) with 0% awake:
+12-09 03:37:36.278  1885  1899 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+12-09 03:37:37.828  1885  2751 E BootReceiver: Can't log boot events
+12-09 03:37:37.828  1885  2751 E BootReceiver: java.io.FileNotFoundException: /dev/fscklogs/log (Permission denied)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at java.io.FileInputStream.open0(Native Method)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at java.io.FileInputStream.open(FileInputStream.java:231)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at java.io.FileInputStream.<init>(FileInputStream.java:165)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at android.os.FileUtils.readTextFile(FileUtils.java:514)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at com.android.server.BootReceiver.addFsckErrorsToDropBoxAndLogFsStat(BootReceiver.java:370)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at com.android.server.BootReceiver.logBootEvents(BootReceiver.java:245)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at com.android.server.BootReceiver.access$000(BootReceiver.java:66)
+12-09 03:37:37.828  1885  2751 E BootReceiver: 	at com.android.server.BootReceiver$1.run(BootReceiver.java:127)
+12-09 03:37:38.786  1885  1898 E PackageManager: Optimistic bind failed.
+12-09 03:37:38.786  1885  1898 E PackageManager: java.util.concurrent.TimeoutException: [Optimistic Bind] Didn't bind to resolver in time!
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.waitForBindLocked(InstantAppResolverConnection.java:160)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.bind(InstantAppResolverConnection.java:225)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.lambda$optimisticBind$0(InstantAppResolverConnection.java:255)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at com.android.server.pm.-$$Lambda$InstantAppResolverConnection$D-JKXi4qrYjnPQMOwj8UtfZenps.run(Unknown Source:2)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:37:38.786  1885  1898 E PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:37:39.606  2342  2377 E ActivityThread: Failed to find provider info for com.google.android.as.allapps.actionsettingprovider
+12-09 03:37:39.767  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
 --------- beginning of main
-12-08 08:07:09.745  2954  2954 E droid.apps.map: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.dialer failed
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at fas.a(Unknown Source:77)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at fpa.a(Unknown Source:3)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at edu.a(PG:7)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at bcc.c(PG:14)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at bcd.run(Unknown Source:2)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-12-08 08:07:10.005  2786  2820 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:764)
-12-08 08:07:10.438  2448  2448 E BaseAppContext: Tried to stop global GMSCore RequestQueue. This is likely unintended, so ignoring.
-12-08 08:07:10.445  2692  2692 E OverlaySController: Calling with an invalid UID, the interface will not work
-12-08 08:07:10.957  2993  2993 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:11.948  3040  3040 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:12.030  2692  3033 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:14.218  2448  3100 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:15.547  2494  3128 E Finsky  : [135] com.google.android.finsky.as.c.a(27): Unable to build selector: /storage/emulated/0/Download/marketenvs.csv (No such file or directory)
-12-08 08:07:15.853  2692  3033 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:16.761  2448  2448 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:16.762  2448  2448 E BeaconBle: Missing BluetoothAdapter
-12-08 08:07:17.061  2448  2448 E BeaconBle: Scan couldn't start for Places
-12-08 08:07:17.150  3156  3156 E .apps.messagin: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:23.317  3156  3228 E Bugle   : BuglePhoneNumberUtils: Not able to parse phone number MSISDN{x_x_x!x} for country US
-12-08 08:07:23.317  3156  3228 E Bugle   : Error type: NOT_A_NUMBER. The string supplied did not seem to be a phone number.
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at owd.b(SourceFile:269)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at fdr.e(SourceFile:53)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at fdr.d(SourceFile:37)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at fdr.a(SourceFile:78)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at fdr.a(SourceFile:74)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at dkt.a(SourceFile:90)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at eoe.b(SourceFile:21)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at eoe.a(SourceFile:8)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.a(SourceFile:21)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.executeAction(SourceFile:4)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at ddp.a(SourceFile:9)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at dcx.run(SourceFile:8)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-12-08 08:07:23.317  3156  3228 E Bugle   : 	at java.lang.Thread.run(Thread.java:764)
-12-08 08:07:23.471  3231  3231 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:23.757  3231  3231 E CarrierServices: [2] mff.b: Package not found: android.content.pm.PackageManager$NameNotFoundException: com.google.android.ims
-12-08 08:07:23.758  3231  3231 E CarrierServices: [2] AutoStartReceiver.onReceive: JibeService cant be started... Neither Bugle is whitelisted,  nor cs apk is installed
-12-08 08:07:23.859  3258  3258 E .apps.wallpape: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:24.089  3156  3236 E Bugle   : RcsUtils. Error getting default configuration value for fallback setting
-12-08 08:07:24.089  3156  3236 E Bugle   : pgn: Jibe SDK Service not available. Is the Jibe SDK service running? Did you call connect() and wait for the notification before calling an API function?
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at pgj.b(SourceFile:74)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at com.google.android.rcs.client.profile.RcsProfileService.getRcsConfig(SourceFile:54)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at ffx.a(SourceFile:3)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at cju.getAppRcsSettings(SourceFile:1892)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at com.google.android.apps.messaging.shared.analytics.RecurringTelemetryUploaderAction.doBackgroundWork(SourceFile:242)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at ddn.a(SourceFile:9)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at dcx.run(SourceFile:8)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-12-08 08:07:24.089  3156  3236 E Bugle   : 	at java.lang.Thread.run(Thread.java:764)
-12-08 08:07:24.642  3276  3276 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:26.793  3324  3324 E d.configupdate: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:26.945  3324  3324 E ConfigUpdater: ignoring update request
-12-08 08:07:26.951  3324  3324 E ConfigUpdater: ignoring update request
-12-08 08:07:27.045  3324  3324 E ConfigUpdater: ignoring update request
-12-08 08:07:27.119  3362  3362 E ogle.android.g: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:29.079  3156  3236 E Bugle   : Get mms config failed: invalid subId. subId=-1, real subId=1, map={ }
-12-08 08:07:29.608  2448  2448 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:29.678  2448  3417 E EasyUnlock: [EasyUnlockSupportReporterIntentOperation] Invalid account list.
-12-08 08:07:29.689  3432  3432 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:29.720  2475  3430 E BaseAppContext: Tried to stop global GMSCore RequestQueue. This is likely unintended, so ignoring.
-12-08 08:07:29.998  2475  3413 E RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Failed to initialize recovery service.
-12-08 08:07:30.554  2692  3033 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:30.885  3486  3486 E timeinitialize: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:31.108  3506  3506 E ackageinstalle: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:31.819  3567  3567 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:32.043  3599  3599 E .android.video: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:32.220  2448  3449 E WorkSourceUtil: Could not find package: com.google.android.gms.stats.eastworld
-12-08 08:07:32.572  3633  3633 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:32.602  2475  3625 E MDM     : [209] aeso.a: Couldn't connect to Google API client: pkz{statusCode=API_UNAVAILABLE, resolution=null, message=null}
-12-08 08:07:32.919  2475  3413 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
-12-08 08:07:32.921  2475  3413 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
-12-08 08:07:32.986  2448  2448 E BluetoothAdapter: Bluetooth binder is null
-12-08 08:07:34.116  3721  3721 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:34.766  2475  3147 E CheckinRequestProcessor: CheckinNowTaskTag : Checkin failed: https://android.googleapis.com/checkin (fragment #0): java.net.UnknownHostException: Unable to resolve host "android.googleapis.com": No address associated with hostname
-12-08 08:07:35.392  3721  3756 E YouTube : Failed delayed event dispatch, no dispatchers.
-12-08 08:07:36.855  3852  3852 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:37.652  3885  3885 E droid.apps.map: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:38.276  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
-12-08 08:07:38.276  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
-12-08 08:07:38.640  3937  3937 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:39.300  3975  3975 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:39.333  3988  3988 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:39.423  2475  3147 E WorkSourceUtil: Could not find package: com.evancharlton.mileage
-12-08 08:07:40.548  4036  4036 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:40.730  4052  4052 E externalstorag: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:41.081  4075  4075 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:41.332  4100  4100 E com.android.mt: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:41.576  4117  4117 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:07:43.317  4117  4117 E DocsApplication: [main] No default account found during application creation.
-12-08 08:07:44.103  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
-12-08 08:08:22.188  1730  1755 E         : Couldn't opendir /data/app/vmdl355068244.tmp: No such file or directory
-12-08 08:08:22.188  1730  1755 E installd: Failed to delete /data/app/vmdl355068244.tmp: No such file or directory
-12-08 08:08:22.380  2119  2119 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
-12-08 08:08:22.868  2475  4174 E ChromeSync: [Sync,SyncIntentOperation] Error handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
-12-08 08:08:32.932  4238  4238 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:08:33.021  4238  4238 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
-12-08 08:08:33.172  1740  1771 E OMXNodeInstance: getConfig(0xf48ac000:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
-12-08 08:08:36.349  2448  2881 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
-12-08 08:08:36.549  2448  2448 E BeaconBle: Missing BluetoothAdapter
-12-08 08:08:36.639  2448  2448 E BeaconBle: Scan couldn't start for Places
-12-08 08:08:38.336  1828  1828 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
-12-08 08:08:38.336  1828  1828 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
-12-08 08:08:38.839  2692  2692 E ContextIntentStarter: No activity found for any of the 0 intents
-12-08 08:08:39.936  1611  4294 E audio_hw_generic: pcm_open(in) failed: cannot open device '/dev/snd/pcmC0D0c': Device or resource busy: channels 2 format 0 rate 16000
-12-08 08:08:41.386  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
-12-08 08:08:42.349  2463  2463 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
-12-08 08:08:43.244  4303  4303 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
-12-08 08:08:44.105  1738  1772 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
-12-08 08:08:45.630  4324  4324 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:54.058  3127  3219 E Bugle   : BuglePhoneNumberUtils: Not able to parse phone number MSISDN{x_x_x!x} for country US
+12-09 03:37:54.058  3127  3219 E Bugle   : Error type: NOT_A_NUMBER. The string supplied did not seem to be a phone number.
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at owd.b(SourceFile:269)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at fdr.e(SourceFile:53)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at fdr.d(SourceFile:37)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at fdr.a(SourceFile:78)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at fdr.a(SourceFile:74)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at dkt.a(SourceFile:90)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at eoe.b(SourceFile:21)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at eoe.a(SourceFile:8)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.a(SourceFile:21)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.executeAction(SourceFile:4)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at ddp.a(SourceFile:9)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at dcx.run(SourceFile:8)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 03:37:54.058  3127  3219 E Bugle   : 	at java.lang.Thread.run(Thread.java:764)
+12-09 03:37:54.257  3225  3225 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:54.530  3225  3225 E BugleRcsEngine: [2] mff.b: Package not found: android.content.pm.PackageManager$NameNotFoundException: com.google.android.ims
+12-09 03:37:54.532  3225  3225 E BugleRcsEngine: [2] AutoStartReceiver.onReceive: JibeService cant be started... Neither Bugle is whitelisted,  nor cs apk is installed
+12-09 03:37:54.725  3251  3251 E .apps.wallpape: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:55.152  3272  3272 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:56.552  3323  3323 E d.configupdate: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:56.757  3323  3323 E ConfigUpdater: ignoring update request
+12-09 03:37:56.824  3323  3323 E ConfigUpdater: ignoring update request
+12-09 03:37:56.859  3366  3366 E ogle.android.g: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:58.415  3421  3421 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:58.465  2720  3047 E BluetoothAdapter: Bluetooth binder is null
+12-09 03:37:58.483  3439  3439 E timeinitialize: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:58.654  3466  3466 E ackageinstalle: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:59.505  3523  3523 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:37:59.670  3551  3551 E .android.video: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:00.486  3127  3224 E Bugle   : Get mms config failed: invalid subId. subId=-1, real subId=1, map={ }
+12-09 03:38:02.137  2509  3699 E MDM     : [213] aeso.a: Couldn't connect to Google API client: pkz{statusCode=API_UNAVAILABLE, resolution=null, message=null}
+12-09 03:38:02.656  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-09 03:38:02.690  2509  3518 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+12-09 03:38:02.699  2509  3518 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+12-09 03:38:02.717  2378  3418 E aqna    : Error retrieving account [CONTEXT service_id=79 ]
+12-09 03:38:02.717  2378  3418 E aqna    : java.lang.IllegalStateException: No current tap-and-pay account
+12-09 03:38:02.717  2378  3418 E aqna    : 	at apsz.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):4)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at apsz.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at aqna.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):26)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.b(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at aqcm.f(:com.google.android.gms@14799040@14.7.99 (100700-223214910):6)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at aqcm.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):1)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at com.google.android.gms.tapandpay.init.TapAndPayInitIntentOperation.onHandleIntent(:com.google.android.gms@14799040@14.7.99 (100700-223214910):4)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at dtf.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):12)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at dtc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):9)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 03:38:02.717  2378  3418 E aqna    : 	at java.lang.Thread.run(Thread.java:764)
+12-09 03:38:03.430  3756  3756 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:05.440  3756  3776 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-09 03:38:08.155  3898  3898 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:09.137  3934  3934 E droid.apps.map: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:10.084  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:38:10.084  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:38:10.677  4006  4006 E s.messaging:rc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:12.712  2378  2378 E BluetoothAdapter: Bluetooth binder is null
+12-09 03:38:16.010  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:38:19.755  4104  4104 E d.configupdate: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:45.431  4147  4147 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:45.527  4161  4161 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:45.552  4175  4175 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:45.764  2509  3290 E WorkSourceUtil: Could not find package: com.evancharlton.mileage
+12-09 03:38:45.779  4213  4213 E externalstorag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:47.491  4253  4253 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:47.649  4271  4271 E com.android.mt: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:47.919  4290  4290 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:38:49.008  4290  4290 E DocsApplication: [main] No default account found during application creation.
+12-09 03:39:00.617  1731  1776 E         : Couldn't opendir /data/app/vmdl1968887188.tmp: No such file or directory
+12-09 03:39:00.617  1731  1776 E installd: Failed to delete /data/app/vmdl1968887188.tmp: No such file or directory
+12-09 03:39:00.924  2118  2118 E VvmPkgInstalledRcvr: cannot create TelephonyManager from ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0}
+12-09 03:39:10.086  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:39:10.089  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:39:14.487  4419  4419 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:14.624  4419  4419 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 03:39:14.842  1741  1787 E OMXNodeInstance: getConfig(0xe93912a0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:39:16.013  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:39:17.609  2378  2881 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 03:39:18.223  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:39:18.429  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:39:20.576  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 03:39:23.766  4491  4491 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:23.871  4508  4508 E webview_servic: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:24.148  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 03:39:24.357  4532  4532 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:25.724  2720  4557 E BluetoothAdapter: Bluetooth binder is null
+12-09 03:39:25.970  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:39:26.019  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:39:26.089  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 03:39:26.420  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:39:27.291  4577  4577 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:28.029  4597  4597 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:39:28.171  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:39:28.223  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:39:29.175  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99000 pid 4532: No such file or directory
+12-09 03:39:29.197  1885  1903 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-09 03:39:30.910  1885  1898 E memtrack: Couldn't load memtrack module

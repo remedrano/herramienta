@@ -1,0 +1,69 @@
+--------- beginning of main
+--------- beginning of system
+12-08 14:46:00.471  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 14:46:00.471  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 14:46:00.471  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 14:46:02.913  2429 25129 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:46:03.191  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:46:05.306  1732  1935 E         : Couldn't opendir /data/app/vmdl1220664295.tmp: No such file or directory
+12-08 14:46:05.306  1732  1935 E installd: Failed to delete /data/app/vmdl1220664295.tmp: No such file or directory
+12-08 14:46:05.573  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:46:05.573  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:46:07.805 30383 30383 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:46:11.758  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:46:25.740  2429 29860 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:46:25.890  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:46:30.670  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:46:45.612  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 14:46:47.165  2429 29860 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:46:47.606  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:47:05.579  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:47:05.579  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:47:11.760  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:48:05.584  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:48:05.584  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:48:11.762  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:49:05.585  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:49:05.585  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:49:11.764  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:50:05.586  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:50:05.586  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:50:11.765  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:50:13.870  1885  3788 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:13.944  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:13.988  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.023  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.082  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.193  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.228  1885  3357 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.272  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:14.374  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.748  1885  3357 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.770  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.832  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.862  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.894  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.926  1885  1995 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:17.962  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:18.187  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:18.220  1885  1995 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:18.258  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:50:18.325  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping

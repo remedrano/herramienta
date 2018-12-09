@@ -1,0 +1,75 @@
+--------- beginning of system
+--------- beginning of main
+12-08 14:20:33.714  1732  1759 E         : Couldn't opendir /data/app/vmdl71183430.tmp: No such file or directory
+12-08 14:20:33.714  1732  1759 E installd: Failed to delete /data/app/vmdl71183430.tmp: No such file or directory
+12-08 14:20:35.573 26643 26643 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:20:36.855  2742 26575 E PackageStatsO: Invalid UUID format: '0BE7-1C06'
+12-08 14:20:37.310  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 14:20:37.330  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+--------- beginning of crash
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 26643
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupListActivity: com.evancharlton.mileage.dao.Vehicle com.evancharlton.mileage.FillupListActivity.getVehicle() failed to verify: com.evancharlton.mileage.dao.Vehicle com.evancharlton.mileage.FillupListActivity.getVehicle(): [0x20] wide register v3 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupListActivity' appears in base.apk)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 14:20:40.123 26643 26643 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 14:20:40.172  1633  1633 E lowmemorykiller: Error writing /proc/26643/oom_score_adj; errno=22
+12-08 14:20:40.360  2407  6694 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-I_lGUXDzAa-8sliEBR2gtw==/base.apk' I/O error
+12-08 14:20:40.363  2407  6694 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-I_lGUXDzAa-8sliEBR2gtw==/base.apk
+12-08 14:20:46.076 26670 26670 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:20:50.968  2407  6694 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-I_lGUXDzAa-8sliEBR2gtw==/base.apk' I/O error
+12-08 14:20:50.971  2407  6694 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-I_lGUXDzAa-8sliEBR2gtw==/base.apk
+12-08 14:20:53.412  2429 26067 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:20:53.761  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 14:20:53.798  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:21:05.180  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:21:05.181  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:21:06.092  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 14:21:09.165  2540  3068 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 14:21:09.910  2429 26019 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:21:10.043  2429 26019 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 14:21:10.451  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 14:21:10.581  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:21:11.452  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:21:11.777 26738 26738 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:21:12.230 26753 26753 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:21:13.326  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{952ff48 VFE...CL. ...P.... 0,289-1038,436 #c7} because the view is not tagged for visual element logging.
+12-08 14:21:13.421  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{85385c7 VFE...CL. ...P.... 0,436-1038,583 #c8} because the view is not tagged for visual element logging.
+12-08 14:21:16.073  2540  2548 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 14:21:14.261]
+12-08 14:21:16.272  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{85385c7 VFE...CL. ...P.... 0,436-1038,583 #c8} because the view is not tagged for visual element logging.
+12-08 14:21:16.322  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{952ff48 VFE...CL. ...P.... 0,289-1038,436 #c7} because the view is not tagged for visual element logging.
+12-08 14:21:16.536  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{81b06 VFE...CL. ...P.... 0,142-1038,289 #c6} because the view is not tagged for visual element logging.
+12-08 14:21:16.892  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{952ff48 VFE...CL. ...P.... 0,289-1038,436 #c7} because the view is not tagged for visual element logging.
+12-08 14:21:16.937  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{952ff48 VFE...CL. ...P.... 0,289-1038,436 #c7} because the view is not tagged for visual element logging.
+12-08 14:21:17.528  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d3cc7f4 VFE...CL. ...P.... 0,583-1038,730 #c9} because the view is not tagged for visual element logging.
+12-08 14:21:20.580  2540 25827 E native  : offline_action_builder.cc:402 GetActionV2() returns nullptr ActionV2
+12-08 14:21:20.581  2540 25827 E native  : offline_action_builder_jni.cc:194 Action building failed. Error code: 601
+12-08 14:21:21.476  1633  1633 E lowmemorykiller: Error writing /proc/25189/oom_score_adj; errno=22
+12-08 14:21:21.477  1633  1633 E lowmemorykiller: Error writing /proc/26392/oom_score_adj; errno=22
+12-08 14:21:21.605  1633  1633 E lowmemorykiller: Error writing /proc/25189/oom_score_adj; errno=22
+12-08 14:21:24.073  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

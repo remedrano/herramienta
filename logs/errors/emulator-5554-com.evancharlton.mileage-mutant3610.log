@@ -1,0 +1,301 @@
+--------- beginning of system
+--------- beginning of main
+12-09 01:00:05.962  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 01:00:05.962  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 01:00:05.962  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 01:00:08.102  2438 21392 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 01:00:08.201  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 01:00:08.253  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 01:00:10.450  1733  1947 E         : Couldn't opendir /data/app/vmdl163095045.tmp: No such file or directory
+12-09 01:00:10.450  1733  1947 E installd: Failed to delete /data/app/vmdl163095045.tmp: No such file or directory
+12-09 01:00:12.599 21605 21605 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21605
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:13.426 21605 21605 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:00:13.479  1633  1633 E lowmemorykiller: Error writing /proc/21605/oom_score_adj; errno=22
+12-09 01:00:24.544 21635 21635 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:28.266  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{43d875c VFE...CL. ...P.... 0,289-1038,436 #9f} because the view is not tagged for visual element logging.
+12-09 01:00:29.328  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d7b81cf VFE...CL. .F....ID 0,142-1038,289 #9e} because the view is not tagged for visual element logging.
+12-09 01:00:29.420  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d7b81cf VFE...CL. ...P..I. 0,142-1038,289 #9e} because the view is not tagged for visual element logging.
+12-09 01:00:33.032  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d7b81cf VFE...CL. .F....ID 0,142-1038,289 #9e} because the view is not tagged for visual element logging.
+12-09 01:00:33.164  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 01:00:33.874  2570  2584 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 01:00:32.078]
+12-09 01:00:34.490 21681 21681 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:35.665 21698 21698 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21681
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:35.855 21681 21681 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:00:36.205 21717 21717 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21717
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:36.868 21717 21717 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:00:36.891  1633  1633 E lowmemorykiller: Error writing /proc/21717/oom_score_adj; errno=22
+12-09 01:00:40.208 21760 21760 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21760
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:41.805 21760 21760 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:00:41.871  1633  1633 E lowmemorykiller: Error writing /proc/21760/oom_score_adj; errno=22
+12-09 01:00:43.165  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.190  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.291  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.322  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.350  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.362  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.367  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.398  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.407  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.427  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.455  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.486  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.496  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.512  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.525  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.533  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.552  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.564  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.570  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.576  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.585  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.596  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.599  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.618  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.635  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.645  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.648  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.658  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.663  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.667  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.752  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.771  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.779  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.791  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.791  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.807  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.807  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.807  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.807  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:43.923  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.104  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.260  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.361  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.425  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.487  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.560  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.646  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.733  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.799  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:44.881  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:45.558  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:45.895  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 01:00:45.895  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 01:00:46.951 21790 21790 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21790
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:48.529 21790 21790 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:00:48.601  1633  1633 E lowmemorykiller: Error writing /proc/21790/oom_score_adj; errno=22
+12-09 01:00:51.974  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 01:00:52.161  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 01:00:58.951  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 01:00:59.021 21833 21833 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21833
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:00:59.831 21833 21833 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:01:07.008 21870 21870 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 21870
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.math.Calculator: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double) failed to verify: double com.evancharlton.mileage.math.Calculator.getEconomy(com.evancharlton.mileage.dao.Vehicle, double, double): [0x57] wide register v2 has type Double (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.math.Calculator' appears in base.apk)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnits(Calculator.java:342)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:01:07.442 21870 21870 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:01:07.480  1633  1633 E lowmemorykiller: Error writing /proc/21870/oom_score_adj; errno=22

@@ -1,0 +1,162 @@
+--------- beginning of main
+--------- beginning of system
+12-08 15:43:18.998  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 15:43:18.998  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:43:18.998  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 15:43:19.121  2413  6895 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 15:43:20.302  2439  7394 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:43:20.593  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:43:21.861  1731  1934 E         : Couldn't opendir /data/app/vmdl803230239.tmp: No such file or directory
+12-08 15:43:21.861  1731  1934 E installd: Failed to delete /data/app/vmdl803230239.tmp: No such file or directory
+12-08 15:43:22.700  7474  7474 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:43:28.805  1884  2549 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@646039f
+12-08 15:43:28.882  1993  1993 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 15:43:29.638  2439  7442 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:43:30.031  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:43:30.350  1741  1812 E OMXNodeInstance: getConfig(0xe4b12000:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: Exception in upload method
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 262182
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.io.bn.abort(SourceFile:12)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.ay.abort(SourceFile:28)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.bq.e(SourceFile:22)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.a.disconnect(SourceFile:25)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.d.a.b.run(SourceFile:5)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ar.execute(SourceFile:3)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:262)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:223)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.q.afterDone(SourceFile:27)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.m(SourceFile:235)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.a.afterDone(SourceFile:42)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.a(SourceFile:207)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.d.cancel(SourceFile:121)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.common.r.a.ay.cancel(SourceFile:2)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.l(SourceFile:48)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.exit(SourceFile:51)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.t.dQ(SourceFile:8)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.taskgraph.stream.a.e.end(SourceFile:10)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.kg(SourceFile:73)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.bGq(SourceFile:19)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.n.a.d.a(SourceFile:57)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.s.aws(SourceFile:24)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.u.run(SourceFile:21)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.i.run(Unknown Source:4)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.bs.run(SourceFile:3)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:764)
+12-08 15:43:32.955  2826  3123 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.concurrent.b.o.run(SourceFile:6)
+12-08 15:43:40.367  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:43:42.054  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 15:43:42.054  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 15:43:42.221  2439  7261 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:43:42.694  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 15:43:42.834  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:43:43.769  7474  7474 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:43:43.769  7474  7474 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:43:44.404  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 15:43:44.404  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:43:44.764  7179  7179 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:43:44.765  7179  7179 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:43:44.765  7179  7179 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:43:44.765  7179  7179 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:43:44.887  7179  7179 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:43:44.887  7179  7179 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:43:44.893  7179  7179 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:43:44.895  7179  7179 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:43:44.970  7179  7179 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:43:44.970  7179  7179 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:43:45.040  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: readPacket error: 
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.system.Os.read(Os.java:414)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.readPacket(PacketReader.java:137)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.handleInput(PacketReader.java:207)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.access$100(PacketReader.java:70)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader$1.onFileDescriptorEvents(PacketReader.java:189)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.dispatchEvents(MessageQueue.java:285)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.os.Looper.loop(Looper.java:160)
+12-08 15:43:45.040  1884  7182 E ConnectivityPacketTracker.wlan0: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:43:45.041  1884  7187 E DhcpClient: Read error
+12-08 15:43:45.041  1884  7187 E DhcpClient: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 15:43:45.041  1884  7187 E DhcpClient: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 15:43:45.041  1884  7187 E DhcpClient: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 15:43:45.041  1884  7187 E DhcpClient: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 15:43:45.041  1884  7187 E DhcpClient: 	at android.system.Os.read(Os.java:414)
+12-08 15:43:45.041  1884  7187 E DhcpClient: 	at android.net.dhcp.DhcpClient$ReceiveThread.run(DhcpClient.java:364)
+12-08 15:43:45.215  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 15:43:45.215  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 15:43:45.215  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 15:43:45.511  1884  1967 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 15:43:45.512  1884  1967 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 15:43:45.519  1884  1967 E HalDevMgr: Should have at least 1 chip!
+12-08 15:43:45.519  1884  1967 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 15:43:45.533  1884  1967 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 15:43:45.533  1884  1967 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 15:43:45.533  1884  1967 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 15:43:45.562  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:43:45.569  1884  1968 E WificondControl: No valid wificond scanner interface handler
+12-08 15:43:45.594  2439  7201 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 15:43:45.597  2439  7201 E GCM     : Connection closed with errorCode 20
+12-08 15:43:45.601  2439  7201 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 15:43:45.746  1884  1969 E WifiP2pService: Unhandled message { when=-213ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:43:46.318  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 15:43:46.319  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 15:43:46.404  1740  1740 E wificond: No Offload Service available
+12-08 15:43:46.434  1884  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 15:43:46.584  1884  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 15:43:46.652  1884  1969 E WifiP2pService: Unhandled message { when=-5ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:43:46.702  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:43:46.779  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:43:46.928  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:43:48.583  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 15:43:50.888  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:43:51.069  1884  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 15:43:51.606  2439  7593 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 15:43:51.648  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 15:43:56.126  7474  7474 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:43:56.127  7474  7474 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:43:56.481  1726  1726 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-08 15:43:58.582  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 15:44:00.018  1884  1897 E memtrack: Couldn't load memtrack module

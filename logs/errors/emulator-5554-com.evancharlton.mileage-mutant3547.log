@@ -1,0 +1,52 @@
+--------- beginning of main
+12-08 19:36:00.760  1881  1966 E WificondScannerImpl: Timed out waiting for scan result from wificond
+--------- beginning of system
+12-08 19:36:03.007  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:36:03.007  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:36:03.007  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:36:04.654  2438 14759 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:36:04.672  2438 14759 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:36:04.874  2438 14759 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:36:04.901  2438 14759 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:36:04.911  2438 14759 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:36:05.075  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:36:05.123  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:36:06.895  1733  1733 E         : Couldn't opendir /data/app/vmdl408979317.tmp: No such file or directory
+12-08 19:36:06.895  1733  1733 E installd: Failed to delete /data/app/vmdl408979317.tmp: No such file or directory
+12-08 19:36:08.610 16685 16685 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:36:20.471  2858  3026 E PlayCommon: [148] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 19:36:25.023  2438 16060 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:36:25.127  2438 16060 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:36:25.310  2438 16060 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:36:25.339  2438 16060 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:36:25.350  2438 16060 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:36:25.579  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:36:25.677  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:36:28.573  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:36:29.600 16685 16685 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:36:29.601 16685 16685 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:36:32.923 16757 16757 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:36:45.222  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:36:45.222  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:36:48.269  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99021 pid 16757: No such file or directory
+12-08 19:36:50.643 16685 16685 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:36:50.643 16685 16685 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:36:51.483  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

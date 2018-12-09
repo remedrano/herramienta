@@ -1,0 +1,82 @@
+--------- beginning of main
+--------- beginning of system
+12-09 00:06:22.906  1881  1953 E InputDispatcher: channel '66c4d19 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 00:06:22.906  1881  1953 E InputDispatcher: channel '2b1373a com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 00:06:22.982  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 00:06:22.982  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 00:06:22.982  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 00:06:24.170  2438  6273 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:06:24.873  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:06:25.946  1733  1931 E         : Couldn't opendir /data/app/vmdl827460634.tmp: No such file or directory
+12-09 00:06:25.947  1733  1931 E installd: Failed to delete /data/app/vmdl827460634.tmp: No such file or directory
+12-09 00:06:26.813  7222  7222 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:06:27.891  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99003 pid 7106: No such file or directory
+12-09 00:06:29.810  1728  1728 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-09 00:06:37.141  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:06:38.776  2534  5801 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_eb7d5978-88cc-4cd3-9ecc-0affb243ad7a)
+12-09 00:06:39.751  2438  6209 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:06:40.353  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 00:06:40.569  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:06:42.332  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:06:43.151  7222  7240 E SQLiteLog: (1) no such table: fillups
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: Couldn't upgrade database!
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 00:06:43.157  7222  7240 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-09 00:06:43.617  1881  1953 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.646  1881  2213 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.717  1881  4077 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.772  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.806  1881  2213 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.832  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.867  1881  1896 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.897  1881  2387 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.924  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.967  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:43.989  1881  2387 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.018  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.036  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.064  1881  2213 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.092  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.117  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.180  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.241  1881  1953 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:44.271  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 00:06:45.031  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:06:45.031  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:06:51.078  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:06:53.016  1881  1894 E memtrack: Couldn't load memtrack module

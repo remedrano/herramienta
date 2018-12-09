@@ -1,0 +1,127 @@
+--------- beginning of main
+--------- beginning of system
+12-09 07:31:20.096  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 07:31:20.096  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 07:31:20.096  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 07:31:22.335  2378  8267 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 07:31:22.586  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 07:31:22.685  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 07:31:25.240  1731  6658 E         : Couldn't opendir /data/app/vmdl292704218.tmp: No such file or directory
+12-09 07:31:25.240  1731  6658 E installd: Failed to delete /data/app/vmdl292704218.tmp: No such file or directory
+12-09 07:31:25.856  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 07:31:27.901  9325  9325 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 07:31:30.301  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 07:31:30.306  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 07:31:33.932  1726  1726 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=63, front.active.{w=1080, h=1920}
+12-09 07:31:34.084  9325  9325 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:31:34.084  9325  9325 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:31:44.400  2378  8073 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 07:31:44.992  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 07:31:45.057  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 07:31:52.536  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 07:31:52.914  9325  9325 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:31:52.915  9325  9325 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:31:54.641 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 07:31:55.020  1885  4139 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.059  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.154  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.210  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.234  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.261  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.288  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.314  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.351  1885  4232 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.382  1745  1745 E /system/bin/tombstoned: Traces for pid 23591 written to: /data/anr/trace_01
+12-09 07:31:55.386  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.420  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.451  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.485  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.521  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.561  1885  2488 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.613  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 07:31:55.779  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+--------- beginning of crash
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: Process: com.google.android.apps.nexuslauncher, PID: 23591
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: java.util.concurrent.TimeoutException: android.view.ThreadedRenderer.finalize() timed out after 10 seconds
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at android.view.ThreadedRenderer.nDeleteProxy(Native Method)
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at android.view.ThreadedRenderer.finalize(ThreadedRenderer.java:967)
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+12-09 07:31:59.537 23591 23600 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+12-09 07:31:59.638  1633  1633 E lowmemorykiller: Error writing /proc/23591/oom_score_adj; errno=22
+12-09 07:31:59.734  1885  1957 E InputDispatcher: channel 'e74b11b com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 07:31:59.786  1885  4289 E WindowManager: Failed to notify cancel
+12-09 07:31:59.786  1885  4289 E WindowManager: android.os.DeadObjectException
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-09 07:31:59.786  1885  4289 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-09 07:31:59.793  1885  4289 E WindowManager: Failed to notify cancel
+12-09 07:31:59.793  1885  4289 E WindowManager: android.os.DeadObjectException
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-09 07:31:59.793  1885  4289 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-09 07:32:00.084  9391  9391 E s.nexuslaunche: Not starting debugger since process cannot load the jdwp agent.
+12-09 07:32:00.200 23668 23668 E OverlaySController: Failed to send status update
+12-09 07:32:00.200 23668 23668 E OverlaySController: android.os.DeadObjectException
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.google.android.a.a.c(SourceFile:20)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.google.android.libraries.m.f.PB(SourceFile:7)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.r.a(SourceFile:90)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.p.handleMessage(SourceFile:122)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.q.handleMessage(SourceFile:9)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at android.os.Looper.loop(Looper.java:193)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 07:32:00.200 23668 23668 E OverlaySController: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 07:32:01.676 23668 23668 E OverlaySController: Calling with an invalid UID, the interface will not work
+12-09 07:32:01.727  9423  9423 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 07:32:01.739  1726  1911 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 07:32:01.903  1726  1911 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 07:32:02.497  9391  9391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 07:32:03.078  9391  9391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 07:32:07.979  9391  9411 E ActivityThread: Failed to find provider info for com.google.android.as.allapps.actionsettingprovider
+12-09 07:32:07.980  9391  9411 E ActionsController: write setting failed
+12-09 07:32:07.980  9391  9411 E ActionsController: java.lang.IllegalArgumentException: Unknown URL content://com.google.android.as.allapps.actionsettingprovider
+12-09 07:32:07.980  9391  9411 E ActionsController: 	at android.content.ContentResolver.insert(ContentResolver.java:1583)
+12-09 07:32:07.980  9391  9411 E ActionsController: 	at com.google.android.apps.nexuslauncher.allapps.d.handleMessage(SourceFile:268)
+12-09 07:32:07.980  9391  9411 E ActionsController: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:32:07.980  9391  9411 E ActionsController: 	at android.os.Looper.loop(Looper.java:193)
+12-09 07:32:07.980  9391  9411 E ActionsController: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 07:32:08.432  9391  9391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted

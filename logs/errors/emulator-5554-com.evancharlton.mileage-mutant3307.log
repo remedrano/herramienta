@@ -1,0 +1,153 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:13:04.786  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:13:04.786  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:13:04.786  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:13:07.645  2439 31012 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:13:08.022  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 23:13:09.537  1731  1771 E         : Couldn't opendir /data/app/vmdl926415880.tmp: No such file or directory
+12-08 23:13:09.537  1731  1771 E installd: Failed to delete /data/app/vmdl926415880.tmp: No such file or directory
+12-08 23:13:12.818 31091 31091 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:13:14.297  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 23:13:14.309  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 23:13:31.928  2439 30866 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:13:31.976  2439 30866 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 23:13:32.116  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 23:13:32.121  2439  3087 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544328666000, Current: 1544310811000. Skipping this Position.
+12-08 23:13:32.159  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 23:13:42.867  2439 30823 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 23:13:43.758  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:13:43.758  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:13:50.266  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:13:51.037  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:13:57.729 31161 31161 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:13:58.153 31177 31177 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:14:00.166  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8d327a VFE...CL. ...P.... 0,289-1038,436 #d2} because the view is not tagged for visual element logging.
+12-08 23:14:00.255  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{87c7021 VFE...CL. ...P.... 0,436-1038,583 #d3} because the view is not tagged for visual element logging.
+12-08 23:14:00.646  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-08 23:14:02.343  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 23:14:01.014]
+12-08 23:14:03.075  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{87c7021 VFE...CL. ...P.... 0,436-1038,583 #d3} because the view is not tagged for visual element logging.
+12-08 23:14:03.177  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8d327a VFE...CL. ...P.... 0,289-1038,436 #d2} because the view is not tagged for visual element logging.
+12-08 23:14:03.368  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6572e88 VFE...CL. ...P.... 0,142-1038,289 #d1} because the view is not tagged for visual element logging.
+12-08 23:14:04.164  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8d327a VFE...CL. ...P.... 0,289-1038,436 #d2} because the view is not tagged for visual element logging.
+12-08 23:14:04.217  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b8d327a VFE...CL. ...P.... 0,289-1038,436 #d2} because the view is not tagged for visual element logging.
+12-08 23:14:04.648  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1abfc46 VFE...CL. ...P.... 0,583-1038,730 #d4} because the view is not tagged for visual element logging.
+12-08 23:14:05.344  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-08 23:14:05.419  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6572e88 VFE...CL. ...P.... 0,142-1038,289 #d1} because the view is not tagged for visual element logging.
+12-08 23:14:07.662  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4dbda2b VFE...CL. ...P.... 0,-5-1038,142 #d0} because the view is not tagged for visual element logging.
+12-08 23:14:11.922  1632  1632 E lowmemorykiller: Error opening /proc/30283/oom_score_adj; errno=2
+12-08 23:14:11.922  1632  1632 E lowmemorykiller: Error opening /proc/30504/oom_score_adj; errno=2
+12-08 23:14:11.922  1632  1632 E lowmemorykiller: Error opening /proc/28698/oom_score_adj; errno=2
+12-08 23:14:11.923  1632  1632 E lowmemorykiller: Error opening /proc/30881/oom_score_adj; errno=2
+12-08 23:14:11.970  1632  1632 E lowmemorykiller: Error opening /proc/28698/oom_score_adj; errno=2
+12-08 23:14:11.981  1632  1632 E lowmemorykiller: Error opening /proc/30504/oom_score_adj; errno=2
+12-08 23:14:13.906  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 23:14:15.488 31231 31231 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:14:17.579  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.587  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.591  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.591  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.592  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.596  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.603  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.616  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.621  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.626  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.638  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.647  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.662  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.671  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.699  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.747  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.766  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.777  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.808  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.819  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.835  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.866  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.895  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.920  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:17.992  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.021  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.025  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.038  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.048  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.054  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.101  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.104  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.119  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.123  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.126  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.195  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.305  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.328  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.336  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.345  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.365  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.389  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.398  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.440  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.458  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.469  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.488  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99061 pid 31177: No such file or directory
+12-08 23:14:18.488  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.494  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.499  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.504  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.521  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.526  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.531  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.535  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.538  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.540  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.542  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.552  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.555  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.558  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.559  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.561  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.567  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.569  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.610  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.611  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.614  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.616  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.616  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.620  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.620  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.621  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.668  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.718  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.756  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.812  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.861  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.901  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:18.964  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:19.000  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:19.036  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:19.070  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 23:14:19.103  1884  1897 E memtrack: Couldn't load memtrack module

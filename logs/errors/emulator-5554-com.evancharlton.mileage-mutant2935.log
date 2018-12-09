@@ -1,0 +1,62 @@
+--------- beginning of main
+--------- beginning of system
+12-08 14:23:17.874  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 14:23:17.874  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 14:23:17.874  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 14:23:19.434 27217 27217 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:23:21.004 27260 27260 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:23:22.027 27217 27217 E DocsApplication: [main] No default account found during application creation.
+12-08 14:23:22.662  1732  1732 E         : Couldn't opendir /data/app/vmdl1343750247.tmp: No such file or directory
+12-08 14:23:22.662  1732  1732 E installd: Failed to delete /data/app/vmdl1343750247.tmp: No such file or directory
+12-08 14:23:24.565 27315 27315 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:23:26.493  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 14:23:26.510  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 14:23:37.249 27345 27345 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:23:37.784 27345 27345 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 14:23:38.153  1742  2247 E OMXNodeInstance: getConfig(0xed99d240:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 14:23:41.046  2429 27148 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:23:41.695  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 14:23:41.888  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:23:46.810  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:23:54.241  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 14:23:55.846  2429 27391 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:23:56.127  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:23:56.181  2429  3197 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544315021000, Current: 1544297032637. Skipping this Position.
+12-08 14:24:04.582 27413 27413 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:24:05.194  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:24:05.194  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:24:06.840  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:24:11.517  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:24:13.302  2407  2407 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 14:24:15.228  2407  2407 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 14:24:20.600  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:24:23.383  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 14:24:26.383  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 14:24:30.346  1633  1633 E lowmemorykiller: Error opening /proc/27413/oom_score_adj; errno=2
+12-08 14:24:30.396  1633  1633 E lowmemorykiller: Error opening /proc/27413/oom_score_adj; errno=2
+12-08 14:24:30.400  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99054 pid 27413: No such file or directory
+12-08 14:24:30.640  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

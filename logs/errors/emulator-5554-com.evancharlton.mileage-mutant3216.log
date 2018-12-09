@@ -1,0 +1,87 @@
+--------- beginning of main
+--------- beginning of system
+12-08 21:49:13.499  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 21:49:13.499  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 21:49:13.499  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 21:49:14.828  2439 21489 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:49:15.123  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:49:17.305  1731 11051 E         : Couldn't opendir /data/app/vmdl543580843.tmp: No such file or directory
+12-08 21:49:17.305  1731 11051 E installd: Failed to delete /data/app/vmdl543580843.tmp: No such file or directory
+12-08 21:49:19.217 21848 21848 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:49:28.170  1884  1895 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateSystemUiLocked:2331 due to an invalid token. uid:10060 token:android.os.Binder@3660501
+12-08 21:49:28.186  1884  5707 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@3660501
+12-08 21:49:28.269  1993  1993 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 21:49:31.126  2439 21704 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:49:31.437  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:49:40.058  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 21:49:41.382  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 21:49:41.391  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 21:49:41.540  1740  1740 E wificond: No Offload Service available
+12-08 21:49:41.808  1884  1969 E WifiP2pService: Unhandled message { when=-3ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 21:49:41.815  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 21:49:41.848  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:49:41.880  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:49:42.421 21935 21935 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:49:42.645 21935 21935 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 21:49:42.645 21935 21935 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 21:49:42.645 21935 21935 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 21:49:42.899  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 21:49:42.899  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 21:49:43.253 21962 21962 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:49:45.883  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:49:46.759  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 21:49:46.880  2439 22006 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 21:49:47.063 22007 22007 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:49:47.685 22025 22025 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:49:49.745  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 21:49:59.989  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 21:50:00.176  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 21:50:04.101  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 21:50:42.863  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 21:50:42.863  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 21:50:49.702  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 21:51:08.997 21848 21848 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 21:51:08.997 21848 21848 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 21:51:09.652  1884  4824 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.674  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.716  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.733  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.770  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.848  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.867  1884  4824 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:09.898  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:51:10.023  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping

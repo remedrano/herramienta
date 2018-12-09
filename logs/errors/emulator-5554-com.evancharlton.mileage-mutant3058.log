@@ -1,0 +1,88 @@
+--------- beginning of main
+--------- beginning of system
+12-08 15:53:19.820 10026 10104 E SQLiteLog: (1) no such table: fillups
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 15:53:21.578  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 15:53:21.578  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:53:21.578  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 15:53:22.179  2439  9427 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:53:22.825  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:53:24.401  1731  1933 E         : Couldn't opendir /data/app/vmdl177530147.tmp: No such file or directory
+12-08 15:53:24.401  1731  1933 E installd: Failed to delete /data/app/vmdl177530147.tmp: No such file or directory
+12-08 15:53:25.247 10181 10181 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:53:26.288  1993  2612 E putmethod.lati: Invalid ID 0x00000001.
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 15:53:26.289  1993  2612 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 15:53:26.378 10201 10201 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:53:30.122  1884  1968 E WificondScannerImpl: Timed out waiting for scan result from wificond
+12-08 15:53:32.826  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:36.369  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:39.422  2439  9901 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:53:39.717  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 15:53:39.780  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:53:42.559  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 15:53:42.611  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 15:53:42.611  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 15:53:43.789  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 15:53:43.795  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 15:53:44.065  1740  1740 E wificond: No Offload Service available
+12-08 15:53:44.072  1884  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 15:53:44.161  1884  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 15:53:44.206  1884  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:44.243  1884  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:44.355  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:44.456  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:48.362  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:48.461  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:48.532  1884  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 15:53:49.280  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 15:53:49.281  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 15:53:49.284  2439 10278 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 15:53:49.704  2439  9427 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.gms/com.google.android.gms.checkin.EventLogService}
+12-08 15:53:49.713  2439  9479 E NetworkScheduler: Unknown result code received: 4
+12-08 15:53:49.731  2439  2439 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.checkin.EventLogService{u=0 tag="AggregationTaskTag" trigger=window{period=1800s,flex=600s,earliest=-4s,latest=595s} requirements=[NET_ANY] attributes=[PERSISTED,RECURRING] scheduled=-1204s last_run=0s jid=N/A status=PENDING retries=0 client_lib=MANCHEGO_GCM-14799000} :INVALID_START
+12-08 15:53:53.001  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:58.324  1993  1993 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

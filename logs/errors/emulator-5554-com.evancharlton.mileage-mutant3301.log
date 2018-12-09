@@ -1,0 +1,99 @@
+--------- beginning of main
+--------- beginning of system
+12-08 18:03:21.024  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 18:03:21.024  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 18:03:21.024  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 18:03:22.899  2439 29248 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:03:23.223  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 18:03:25.421  1731  1771 E         : Couldn't opendir /data/app/vmdl1401510591.tmp: No such file or directory
+12-08 18:03:25.421  1731  1771 E installd: Failed to delete /data/app/vmdl1401510591.tmp: No such file or directory
+12-08 18:03:28.467 30075 30075 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:03:30.621  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 18:03:30.637  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 18:03:34.290  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 18:03:34.339  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 18:03:34.831 30075 30075 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:03:34.831 30075 30075 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:03:40.457  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 18:03:40.472  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 18:03:43.698  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 18:03:43.699  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 18:03:44.622  2413  4628 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-BgWXmCMAzncdgWGiiIqEBA==/base.apk' I/O error
+12-08 18:03:44.648  2413  4628 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-BgWXmCMAzncdgWGiiIqEBA==/base.apk
+12-08 18:03:46.688  2439 30043 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 18:03:46.902  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 18:03:50.172  2439 29948 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 18:03:50.327 30119 30119 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:03:50.875  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 18:04:05.525  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 18:04:06.035 29796 29796 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 18:04:06.035 29796 29796 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 18:04:06.050 29796 29796 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 18:04:06.050 29796 29796 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 18:04:06.164 29796 29796 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 18:04:06.164 29796 29796 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 18:04:06.164 29796 29796 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 18:04:06.164 29796 29796 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 18:04:06.246 29796 29796 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 18:04:06.246 29796 29796 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 18:04:06.589  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 18:04:06.589  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 18:04:06.589  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 18:04:07.010  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 18:04:07.137  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 18:04:07.189  2439 29953 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 18:04:07.625  2439 29953 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 18:04:08.010  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 18:04:08.016  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 18:04:08.075  1740  1740 E wificond: No Offload Service available
+12-08 18:04:08.565  1884  1969 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 18:04:08.699  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 18:04:08.739  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 18:04:08.775  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 18:04:11.288  2439 30210 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 18:04:11.315  2439 30210 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 18:04:11.335 30212 30212 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 18:04:12.687  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 18:04:13.562  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 18:04:13.594  2439 30241 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 18:04:43.706  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 18:04:43.706  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 18:04:50.886  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 18:05:38.904 30075 30075 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 18:05:38.905 30075 30075 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

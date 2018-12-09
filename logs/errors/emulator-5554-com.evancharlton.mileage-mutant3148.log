@@ -1,0 +1,61 @@
+--------- beginning of main
+--------- beginning of system
+12-08 21:18:36.639  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 21:18:36.639  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 21:18:36.639  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 21:18:38.164  2439 16298 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:18:38.284  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 21:18:38.289  2439  3087 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544321894000, Current: 1544303912251. Skipping this Position.
+12-08 21:18:38.333  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:18:40.204  1731  1933 E         : Couldn't opendir /data/app/vmdl1037156066.tmp: No such file or directory
+12-08 21:18:40.204  1731  1933 E installd: Failed to delete /data/app/vmdl1037156066.tmp: No such file or directory
+12-08 21:18:41.815 16413 16413 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:18:42.995  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 21:18:42.996  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 21:18:49.529  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 21:18:53.103  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 21:18:54.300  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 21:18:56.241  1884  1956 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.279  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.307  1884  2129 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.334  1884  4835 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.367  1884  5059 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.390  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.431  1884  5059 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.477  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.529  1884  2548 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.559  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.580  1884  5059 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.618  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.653  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.704  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:56.750  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:57.046  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:18:57.835  2826  3095 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 21:18:58.317  2439 16335 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:18:58.585  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 21:18:58.733  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:18:59.716  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 21:19:01.980 16467 16467 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:19:02.886 16485 16485 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:19:03.214  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{ea3abf7 VFE...CL. ...P.... 0,21-207,279 #6f} because the view is not tagged for visual element logging.
+12-08 21:19:05.003  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{16cc34 VFE...CL. ...P.... 0,289-1038,436 #6d} because the view is not tagged for visual element logging.
+12-08 21:19:16.639  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99029 pid 16485: No such file or directory

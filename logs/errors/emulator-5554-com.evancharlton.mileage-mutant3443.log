@@ -1,0 +1,320 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:12:17.650  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:12:17.650  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:12:21.929  1733  1931 E         : Couldn't opendir /data/app/vmdl1083424212.tmp: No such file or directory
+12-08 19:12:21.930  1733  1931 E installd: Failed to delete /data/app/vmdl1083424212.tmp: No such file or directory
+12-08 19:12:23.316  9682  9682 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:23.847  9682  9682 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9682
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	... 11 more
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:23.853  9682  9682 E AndroidRuntime: 	... 17 more
+12-08 19:12:23.887  1633  1633 E lowmemorykiller: Error writing /proc/9682/oom_score_adj; errno=22
+12-08 19:12:23.952  2534  8897 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_4e744bac-46ef-4ef0-88fe-f5284bff0a12)
+12-08 19:12:29.106  9706  9706 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:29.518  9706  9706 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9706
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	... 11 more
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:29.520  9706  9706 E AndroidRuntime: 	... 17 more
+12-08 19:12:29.557  1633  1633 E lowmemorykiller: Error writing /proc/9706/oom_score_adj; errno=22
+12-08 19:12:30.511  9733  9733 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:30.898  9733  9733 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9733
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	... 11 more
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:30.900  9733  9733 E AndroidRuntime: 	... 17 more
+12-08 19:12:32.449  9756  9756 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:32.866  9756  9756 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9756
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	... 11 more
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:32.871  9756  9756 E AndroidRuntime: 	... 17 more
+12-08 19:12:32.904  1633  1633 E lowmemorykiller: Error writing /proc/9756/oom_score_adj; errno=22
+12-08 19:12:34.666  1991  8777 E AppIndexingFetcher: fls: Query Query{query=, package=com.bitstrips.imoji, corpus=[internal.3p:StickerPack, internal.3p:StickerPack_cross_device], start=0, limit=100, prefix=false, filter=false, timeoutMs=15000} failed with status Status{statusCode=INTERRUPTED, resolution=null}
+12-08 19:12:35.262  9790  9790 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:35.638  9790  9790 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9790
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	... 11 more
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:35.646  9790  9790 E AndroidRuntime: 	... 17 more
+12-08 19:12:35.673  1633  1633 E lowmemorykiller: Error writing /proc/9790/oom_score_adj; errno=22
+12-08 19:12:37.999  1991  8781 E AppIndexingFetcher: fls: Query Query{query=**, package=null, corpus=[internal.3p:Sticker, internal.3p:Sticker_cross_device], start=0, limit=100, prefix=true, filter=true, timeoutMs=15000} failed with status Status{statusCode=INTERRUPTED, resolution=null}
+12-08 19:12:40.296  9815  9815 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:40.639  9815  9815 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9815
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	... 11 more
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:40.661  9815  9815 E AndroidRuntime: 	... 17 more
+12-08 19:12:40.690  1633  1633 E lowmemorykiller: Error writing /proc/9815/oom_score_adj; errno=22
+12-08 19:12:44.740  9846  9846 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:45.064  9846  9846 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9846
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	... 11 more
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:45.068  9846  9846 E AndroidRuntime: 	... 17 more
+12-08 19:12:45.089  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:12:45.090  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:12:45.097  1633  1633 E lowmemorykiller: Error writing /proc/9846/oom_score_adj; errno=22
+12-08 19:12:51.014  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 19:12:51.105  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:12:51.837  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 19:12:56.200  9876  9876 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:56.639  9876  9876 E harlton.mileag: Invalid ID 0x00000000.
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9876
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	... 11 more
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:216)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2155)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.content.res.Resources.getLayout(Resources.java:1155)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:117)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:12:56.640  9876  9876 E AndroidRuntime: 	... 17 more
+12-08 19:12:56.678  1633  1633 E lowmemorykiller: Error writing /proc/9876/oom_score_adj; errno=22
+12-08 19:12:57.759  9907  9907 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:12:58.704  1728  1728 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}

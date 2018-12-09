@@ -1,0 +1,291 @@
+--------- beginning of main
+--------- beginning of system
+12-09 03:24:35.808 24249 24249 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:24:35.836  1731  1776 E         : Couldn't opendir /data/app/vmdl467465854.tmp: No such file or directory
+12-09 03:24:35.836  1731  1776 E installd: Failed to delete /data/app/vmdl467465854.tmp: No such file or directory
+12-09 03:24:36.686 24275 24275 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:24:38.186 24301 24301 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24301
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:24:38.513 24301 24301 E AndroidRuntime: 	... 11 more
+12-09 03:24:38.641  1633  1633 E lowmemorykiller: Error opening /proc/24301/oom_score_adj; errno=2
+12-09 03:24:49.449  2378 20170 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 03:25:12.704  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:25:12.704  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:25:19.772  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:25:22.989 24326 24326 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:23.182 24343 24343 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:23.519 24358 24358 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:30.676 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ab14c9a VFE...CL. ...P.... 0,436-1038,583 #41} because the view is not tagged for visual element logging.
+12-09 03:25:32.890 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ab14c9a VFE...CL. ...P.... 0,436-1038,583 #41} because the view is not tagged for visual element logging.
+12-09 03:25:33.326 10557 10557 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:25:33.369 10557 10557 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:25:34.469 24385 24385 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:35.171 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ab14c9a VFE...CL. ...P.... 0,436-1038,583 #41} because the view is not tagged for visual element logging.
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24385
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:35.503 24385 24385 E AndroidRuntime: 	... 11 more
+12-09 03:25:35.614  1633  1633 E lowmemorykiller: Error writing /proc/24385/oom_score_adj; errno=22
+12-09 03:25:36.967 24411 24411 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24411
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:38.826 24411 24411 E AndroidRuntime: 	... 11 more
+12-09 03:25:38.868 10557 10622 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 03:25:39.026 24429 24429 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:39.053  1633  1633 E lowmemorykiller: Error writing /proc/24411/oom_score_adj; errno=22
+12-09 03:25:40.246 24450 24450 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:40.609 24464 24464 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:40.993 24450 24450 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 03:25:41.223  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24464
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:41.305 24464 24464 E AndroidRuntime: 	... 11 more
+12-09 03:25:41.427  1741  1741 E OMXNodeInstance: getConfig(0xe97a6e40:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:25:41.431  1633  1633 E lowmemorykiller: Error writing /proc/24464/oom_score_adj; errno=22
+12-09 03:25:41.488  1726  1911 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 03:25:42.437 10557 10561 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 03:25:38.797]
+12-09 03:25:44.937 24499 24499 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:44.965 24504 24504 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24504
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:46.236 24504 24504 E AndroidRuntime: 	... 11 more
+12-09 03:25:46.361  1633  1633 E lowmemorykiller: Error writing /proc/24504/oom_score_adj; errno=22
+12-09 03:25:50.361 24538 24538 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:51.259 24554 24554 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:51.740 10557 10557 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24538
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:51.827 24538 24538 E AndroidRuntime: 	... 11 more
+12-09 03:25:51.866  1633  1633 E lowmemorykiller: Error writing /proc/24538/oom_score_adj; errno=22
+12-09 03:25:52.944 24577 24577 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24577
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:25:53.349 24577 24577 E AndroidRuntime: 	... 11 more
+12-09 03:25:53.388  1633  1633 E lowmemorykiller: Error writing /proc/24577/oom_score_adj; errno=22
+12-09 03:25:54.390  1994  1994 E RecyclerView: No adapter attached; skipping layout
+12-09 03:25:56.353 24599 24599 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:56.854 24614 24614 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:25:57.436 24637 24637 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:26:12.708  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:26:12.708  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:26:19.779  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:26:22.787  1726  2181 E SurfaceFlinger: getLayerUser(name=0xe7d60240) is dead
+12-09 03:26:22.787  1726  2181 E SurfaceFlinger: getLayerUser(name=0xe7d60240) is dead
+12-09 03:26:24.489 10557 10557 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:26:24.489 10557 10557 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:26:24.584  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 03:26:25.755 24694 24694 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24694
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}; have you declared this activity in your AndroidManifest.xml?
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2005)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread.resolveActivityInfo(ActivityThread.java:2690)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:304)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 03:26:26.589 24694 24694 E AndroidRuntime: 	... 11 more
+12-09 03:26:26.660  1633  1633 E lowmemorykiller: Error writing /proc/24694/oom_score_adj; errno=22
+12-09 03:26:28.568 24720 24720 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:26:29.535 24738 24738 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:27:10.285  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:27:12.681 10557 10557 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-09 03:27:12.716  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:27:12.716  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:27:19.785  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:27:22.501  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 03:27:22.575  1885  1898 E memtrack: Couldn't load memtrack module

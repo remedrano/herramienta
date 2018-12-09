@@ -1,0 +1,70 @@
+--------- beginning of main
+--------- beginning of system
+12-08 16:32:59.203  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 16:32:59.203  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 16:32:59.203  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 16:33:00.906  2439 18882 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:33:01.159  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 16:33:01.271  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:33:03.520  1731  1934 E         : Couldn't opendir /data/app/vmdl613851308.tmp: No such file or directory
+12-08 16:33:03.520  1731  1934 E installd: Failed to delete /data/app/vmdl613851308.tmp: No such file or directory
+12-08 16:33:05.189 19213 19213 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19213
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: java.lang.NumberFormatException: For input string: "o90 a"
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:594)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at java.lang.Long.parseLong(Long.java:636)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:63)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at com.evancharlton.mileage.ServiceIntervalActivity.setFields(ServiceIntervalActivity.java:166)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 16:33:18.739 19213 19213 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 16:33:19.176 19260 19260 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:33:23.092  2439 19167 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:33:23.247  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 16:33:23.295  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:33:31.306  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 16:33:31.684  1884  1956 E InputDispatcher: Received spurious receive callback for unknown input channel.  fd=192, events=0x1
+12-08 16:33:33.891  2439 19167 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:33:34.493  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:33:34.863  2614 19308 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+12-08 16:33:36.298 19318 19318 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:33:43.369  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 16:33:43.369  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 16:33:50.156  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 16:33:53.319  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:33:55.092 19343 19343 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:33:55.826 19359 19359 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:33:56.979  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99034 pid 19318: No such file or directory
+12-08 16:33:57.763 19343 19388 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-08 16:34:00.722  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 16:34:01.175  1993  1993 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 16:34:02.538  1993  1993 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

@@ -1,0 +1,171 @@
+--------- beginning of main
+--------- beginning of system
+12-08 15:52:48.421  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 15:52:48.421  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:52:48.421  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 15:52:49.281  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 15:52:50.045  2439  9479 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:52:50.265  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:52:51.977  1731  1933 E         : Couldn't opendir /data/app/vmdl654624087.tmp: No such file or directory
+12-08 15:52:51.977  1731  1933 E installd: Failed to delete /data/app/vmdl654624087.tmp: No such file or directory
+12-08 15:52:53.250  9977  9977 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:52:53.763  2614  9106 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_f78e1c26-ca87-4247-ba2f-a3560808f2e1)
+12-08 15:52:54.558  1993  2612 E putmethod.lati: Invalid ID 0x00000001.
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 15:52:54.564  1993  2612 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 15:53:00.459  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:04.515  1884  1897 E memtrack: Couldn't load memtrack module
+--------- beginning of crash
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #2
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9977
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at android.os.AsyncTask$3.done(AsyncTask.java:354)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from null array
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at com.evancharlton.mileage.io.BaseExportActivity$ExportTask.doInBackground(BaseExportActivity.java:86)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at com.evancharlton.mileage.io.BaseExportActivity$ExportTask.doInBackground(BaseExportActivity.java:72)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 15:53:06.954  9977  9995 E AndroidRuntime: 	... 3 more
+12-08 15:53:07.077  1884  1956 E InputDispatcher: channel 'a74bd1c PopupWindow:aefba89 (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 15:53:07.078  1884  1956 E InputDispatcher: channel '18835c9 com.evancharlton.mileage/com.evancharlton.mileage.ImportExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 15:53:07.078  1884  1956 E InputDispatcher: channel '36432a com.evancharlton.mileage/com.evancharlton.mileage.io.DbExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 15:53:07.080  1884  1956 E InputDispatcher: channel 'ecd5389 com.evancharlton.mileage/com.evancharlton.mileage.ExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 15:53:07.080  1884  1956 E InputDispatcher: channel 'aebac43 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 15:53:07.206 10026 10026 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:53:08.983  2439  9901 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:53:09.090  2413  2413 E InputEventSender: channel 'ClientState{263b38b uid 10040 pid 2413} (server)' ~ Failed to consume finished signals.  status=-32
+12-08 15:53:09.450  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 15:53:09.553  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:53:12.130  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 15:53:12.508  9564  9564 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:12.509  9564  9564 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:12.540  9564  9564 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:12.540  9564  9564 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:12.643 10057 10057 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:53:12.704  9564  9564 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:12.704  9564  9564 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:12.710  9564  9564 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:12.711  9564  9564 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:12.806  9564  9564 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:12.806  9564  9564 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: readPacket error: 
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.system.Os.read(Os.java:414)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.readPacket(PacketReader.java:137)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.handleInput(PacketReader.java:207)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.access$100(PacketReader.java:70)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader$1.onFileDescriptorEvents(PacketReader.java:189)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.dispatchEvents(MessageQueue.java:285)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.os.Looper.loop(Looper.java:160)
+12-08 15:53:12.909  1884  9571 E ConnectivityPacketTracker.wlan0: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:53:12.910  1884  9575 E DhcpClient: Read error
+12-08 15:53:12.910  1884  9575 E DhcpClient: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 15:53:12.910  1884  9575 E DhcpClient: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 15:53:12.910  1884  9575 E DhcpClient: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 15:53:12.910  1884  9575 E DhcpClient: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 15:53:12.910  1884  9575 E DhcpClient: 	at android.system.Os.read(Os.java:414)
+12-08 15:53:12.910  1884  9575 E DhcpClient: 	at android.net.dhcp.DhcpClient$ReceiveThread.run(DhcpClient.java:364)
+12-08 15:53:13.097  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 15:53:13.098  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 15:53:13.099  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 15:53:13.356  1884  1967 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 15:53:13.358  1884  1967 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 15:53:13.465  1884  1967 E HalDevMgr: Should have at least 1 chip!
+12-08 15:53:13.465  1884  1967 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 15:53:13.476  1884  1967 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 15:53:13.476  1884  1967 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 15:53:13.476  1884  1967 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 15:53:13.486  1884  1969 E WifiP2pService: Unhandled message { when=-10ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:13.583  2439  9590 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 15:53:13.599  2439  9590 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 15:53:13.603  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:13.610  1884  1968 E WificondControl: No valid wificond scanner interface handler
+12-08 15:53:14.104  2745  2958 E PlayCommon: [132] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 15:53:14.243  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 15:53:14.244  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 15:53:14.273  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:53:14.327  1740  1740 E wificond: No Offload Service available
+12-08 15:53:14.329  1884  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 15:53:14.622  1884  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 15:53:14.877  1884  1969 E WifiP2pService: Unhandled message { when=-7ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:15.019  1884  1969 E WifiP2pService: Unhandled message { when=-28ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:15.175  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:15.283 10079 10079 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:15.283 10079 10079 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:15.283 10079 10079 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:15.283 10079 10079 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:15.357 10079 10079 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:15.357 10079 10079 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:15.451 10079 10079 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 15:53:15.451 10079 10079 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 15:53:15.740  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 15:53:15.740  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 15:53:15.740  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 15:53:15.948  1884  1967 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 15:53:15.948  1884  1967 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 15:53:15.952  1884  1967 E HalDevMgr: Should have at least 1 chip!
+12-08 15:53:15.952  1884  1967 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 15:53:15.983  1884  1967 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 15:53:15.983  1884  1967 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 15:53:15.983  1884  1967 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 15:53:15.984  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:53:15.990  1884  1968 E WificondControl: No valid wificond scanner interface handler
+12-08 15:53:15.998  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:16.024  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:53:16.650  1884  1967 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-08 15:53:19.820 10026 10104 E SQLiteLog: (1) no such table: fillups
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 15:53:19.822 10026 10104 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)

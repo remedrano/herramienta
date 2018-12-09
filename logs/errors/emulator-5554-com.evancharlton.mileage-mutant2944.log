@@ -1,0 +1,68 @@
+--------- beginning of main
+--------- beginning of system
+12-08 14:28:29.775  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 14:28:29.775  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 14:28:29.775  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 14:28:30.660 28081 28081 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:28:30.684 28087 28087 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:28:31.656  2429 28041 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:28:31.976  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 14:28:32.033  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:28:33.918  1732  1759 E         : Couldn't opendir /data/app/vmdl1266649843.tmp: No such file or directory
+12-08 14:28:33.918  1732  1759 E installd: Failed to delete /data/app/vmdl1266649843.tmp: No such file or directory
+12-08 14:28:35.641 28170 28170 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:28:37.444  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 14:28:37.458  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 14:28:50.783  2429 27844 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:28:51.164  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 14:28:51.258  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:29:02.945  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 14:29:04.581  2429 27666 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:29:04.925  2429  3197 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544315330000, Current: 1544297340839. Skipping this Position.
+12-08 14:29:04.929  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:29:05.245  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:29:05.246  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:29:11.591  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:29:12.340  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{16143db VFE...CL. ...P.... 0,21-207,279 #de} because the view is not tagged for visual element logging.
+12-08 14:29:12.441 28234 28234 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:29:12.625  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{466b743 VFE...CL. ...P.... 0,289-1038,436 #dc} because the view is not tagged for visual element logging.
+12-08 14:29:12.659  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{defee3e VFE...CL. ...P.... 0,436-1038,583 #dd} because the view is not tagged for visual element logging.
+12-08 14:29:12.900  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{393f733 VFE...CL. ...P.... 207,21-414,279 #df} because the view is not tagged for visual element logging.
+12-08 14:29:13.385  2429 26551 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 14:29:14.293 28254 28254 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:29:14.551  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{defee3e VFE...CL. ...P.... 0,436-1038,583 #dd} because the view is not tagged for visual element logging.
+12-08 14:29:14.676  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{466b743 VFE...CL. ...P.... 0,289-1038,436 #dc} because the view is not tagged for visual element logging.
+12-08 14:29:14.829  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{aa18ef9 VFE...CL. ...P.... 0,142-1038,289 #db} because the view is not tagged for visual element logging.
+12-08 14:29:15.054  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{466b743 VFE...CL. ...P.... 0,289-1038,436 #dc} because the view is not tagged for visual element logging.
+12-08 14:29:15.206  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{466b743 VFE...CL. ...P.... 0,289-1038,436 #dc} because the view is not tagged for visual element logging.
+12-08 14:29:15.320  2540 19756 E native  : offline_action_builder.cc:402 GetActionV2() returns nullptr ActionV2
+12-08 14:29:15.321  2540 19756 E native  : offline_action_builder_jni.cc:194 Action building failed. Error code: 601
+12-08 14:29:15.979  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{16143db VFE...CL. ...P.... 0,21-207,279 #de} because the view is not tagged for visual element logging.
+12-08 14:29:16.001  2540  2540 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{aa18ef9 VFE...CL. ...P.... 0,142-1038,289 #db} because the view is not tagged for visual element logging.
+12-08 14:29:17.653  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 14:29:20.393  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:29:23.384  2540  2548 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 14:29:20.875]

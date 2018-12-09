@@ -1,0 +1,350 @@
+--------- beginning of main
+--------- beginning of system
+12-09 06:29:00.727  1731  1731 E         : Couldn't opendir /data/app/vmdl639851145.tmp: No such file or directory
+12-09 06:29:00.727  1731  1731 E installd: Failed to delete /data/app/vmdl639851145.tmp: No such file or directory
+12-09 06:29:02.115 30025 30025 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30025
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	... 11 more
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:02.682 30025 30025 E AndroidRuntime: 	... 17 more
+12-09 06:29:02.750  1633  1633 E lowmemorykiller: Error writing /proc/30025/oom_score_adj; errno=22
+12-09 06:29:09.822 30047 30047 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30047
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	... 11 more
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:10.241 30047 30047 E AndroidRuntime: 	... 17 more
+12-09 06:29:10.304  1633  1633 E lowmemorykiller: Error writing /proc/30047/oom_score_adj; errno=22
+12-09 06:29:11.685 30075 30075 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30075
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	... 11 more
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:12.009 30075 30075 E AndroidRuntime: 	... 17 more
+12-09 06:29:12.068  1633  1633 E lowmemorykiller: Error writing /proc/30075/oom_score_adj; errno=22
+12-09 06:29:13.796 30094 30094 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30094
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	... 11 more
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:14.264 30094 30094 E AndroidRuntime: 	... 17 more
+12-09 06:29:14.298  1633  1633 E lowmemorykiller: Error writing /proc/30094/oom_score_adj; errno=22
+12-09 06:29:15.007  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:29:15.007  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:29:15.775 30120 30120 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30120
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	... 11 more
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:16.241 30120 30120 E AndroidRuntime: 	... 17 more
+12-09 06:29:16.280  1633  1633 E lowmemorykiller: Error writing /proc/30120/oom_score_adj; errno=22
+12-09 06:29:21.623 30149 30149 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30149
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	... 11 more
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:22.175 30149 30149 E AndroidRuntime: 	... 17 more
+12-09 06:29:22.221  1633  1633 E lowmemorykiller: Error writing /proc/30149/oom_score_adj; errno=22
+12-09 06:29:22.307 23591 25430 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk' I/O error
+12-09 06:29:22.308 23591 25430 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk
+12-09 06:29:22.736  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:29:26.772 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:29:27.170 30177 30177 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30177
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	... 11 more
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:27.562 30177 30177 E AndroidRuntime: 	... 17 more
+12-09 06:29:27.608  1633  1633 E lowmemorykiller: Error writing /proc/30177/oom_score_adj; errno=22
+12-09 06:29:27.702 23591 25430 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk' I/O error
+12-09 06:29:27.702 23591 25430 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk
+12-09 06:29:27.718  1726  2181 E SurfaceFlinger: getLayerUser(name=0xe3d9eab0) is dead
+12-09 06:29:41.456 30208 30208 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 30208
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	... 11 more
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:66)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:44)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.<init>(Vehicle.java:91)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Vehicle.loadById(Vehicle.java:100)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.getVehicle(FillupActivity.java:79)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 06:29:41.931 30208 30208 E AndroidRuntime: 	... 17 more
+12-09 06:29:41.987  1633  1633 E lowmemorykiller: Error writing /proc/30208/oom_score_adj; errno=22

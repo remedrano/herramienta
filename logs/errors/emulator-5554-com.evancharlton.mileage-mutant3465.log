@@ -1,0 +1,112 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:19:35.333  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:19:35.333  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:19:35.333  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:19:36.801  2438 11869 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:19:37.027  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:19:37.160  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:19:38.496  1733  1930 E         : Couldn't opendir /data/app/vmdl641008955.tmp: No such file or directory
+12-08 19:19:38.496  1733  1930 E installd: Failed to delete /data/app/vmdl641008955.tmp: No such file or directory
+12-08 19:19:39.801 12153 12153 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:19:40.949  1991  9248 E putmethod.lati: Invalid ID 0x00000001.
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 19:19:40.956  1991  9248 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 19:19:45.115  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:19:45.115  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:19:45.521  1881  4898 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@595f7a0
+12-08 19:19:45.652  1991  1991 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 19:19:46.952  1743  1743 E OMXNodeInstance: getConfig(0xee2ac4e0:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 19:19:51.251  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:19:58.866  2438 11719 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:19:59.283  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:19:59.342  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:20:01.122  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:20:01.537  9129  9129 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:20:01.537  9129  9129 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:20:01.564  9129  9129 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:20:01.564  9129  9129 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:20:01.752 12240 12240 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:20:01.929  9129  9129 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:20:01.929  9129  9129 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:20:01.930  9129  9129 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:20:01.930  9129  9129 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:20:02.027  9129  9129 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:20:02.028  9129  9129 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:20:02.109  1881  9201 E DhcpClient: Read error
+12-08 19:20:02.109  1881  9201 E DhcpClient: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 19:20:02.109  1881  9201 E DhcpClient: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 19:20:02.109  1881  9201 E DhcpClient: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 19:20:02.109  1881  9201 E DhcpClient: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 19:20:02.109  1881  9201 E DhcpClient: 	at android.system.Os.read(Os.java:414)
+12-08 19:20:02.109  1881  9201 E DhcpClient: 	at android.net.dhcp.DhcpClient$ReceiveThread.run(DhcpClient.java:364)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: readPacket error: 
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: android.system.ErrnoException: read failed: ENETDOWN (Network is down)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.readBytes(Native Method)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at libcore.io.Linux.read(Linux.java:184)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:254)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.system.Os.read(Os.java:414)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.readPacket(PacketReader.java:137)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.handleInput(PacketReader.java:207)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader.access$100(PacketReader.java:70)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.net.util.PacketReader$1.onFileDescriptorEvents(PacketReader.java:189)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.dispatchEvents(MessageQueue.java:285)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.os.Looper.loop(Looper.java:160)
+12-08 19:20:02.111  1881  9137 E ConnectivityPacketTracker.wlan0: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:20:02.208  1629  1629 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 19:20:02.209  1629  1629 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 19:20:02.209  1629  1629 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 19:20:02.538  1881  1965 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 19:20:02.538  1881  1965 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 19:20:02.575  1881  1965 E HalDevMgr: Should have at least 1 chip!
+12-08 19:20:02.576  1881  1965 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 19:20:02.647  2438  9214 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:20:02.659  2438  9214 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:20:02.684  1881  1965 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 19:20:02.684  1881  1965 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 19:20:02.684  1881  1965 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 19:20:02.685  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:20:02.885  1881  1966 E WificondControl: No valid wificond scanner interface handler
+12-08 19:20:02.891  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:20:03.293  1881  1968 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '161 interface setmtu radio0 1500' failed with '400 161 Failed to set MTU (Permission denied)'
+12-08 19:20:03.656  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 19:20:03.662  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 19:20:03.997  1742  1742 E wificond: No Offload Service available
+12-08 19:20:04.002  1881  1965 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 19:20:04.127  1881  1966 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 19:20:04.152  1881  1967 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:20:04.175  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:20:04.191  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:20:04.199  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:20:04.361  2438 12288 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:20:08.143  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:20:08.190  1881  1965 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 19:20:08.685  2438 12300 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:20:08.903  2438 12302 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:20:09.062  1739  1788 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 19:20:14.965  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

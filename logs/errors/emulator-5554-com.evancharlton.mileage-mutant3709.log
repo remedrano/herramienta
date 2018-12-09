@@ -1,0 +1,72 @@
+--------- beginning of main
+--------- beginning of system
+12-09 02:44:20.846  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 02:44:20.846  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 02:44:20.846  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 02:44:21.812   601   601 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:44:22.079  2438   576 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 02:44:22.526  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 02:44:23.847   601   601 E DocsApplication: [main] No default account found during application creation.
+12-09 02:44:25.689  1733  1752 E         : Couldn't opendir /data/app/vmdl979995880.tmp: No such file or directory
+12-09 02:44:25.689  1733  1752 E installd: Failed to delete /data/app/vmdl979995880.tmp: No such file or directory
+12-09 02:44:28.668   682   682 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:44:30.036  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:44:30.064  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:44:32.325   682   682 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:44:32.325   682   682 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:44:33.491  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:44:33.492  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:44:34.853  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-09 02:44:41.264   714   714 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:44:41.725   714   714 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 02:44:42.001  1743  1743 E OMXNodeInstance: getConfig(0xee2ac180:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 02:44:44.430  2438 31222 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 02:44:44.791  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 02:44:44.919  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 02:44:48.018  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:44:48.018  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:44:54.512  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:44:59.483   756   756 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:45:00.455   682   682 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:45:00.456   682   682 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:45:02.273  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 02:45:48.021  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:45:48.021  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:45:54.516  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:46:26.099  2858  3026 E PlayCommon: [148] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-09 02:46:48.022  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:46:48.023  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:46:54.517  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:47:48.024  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:47:48.024  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:47:54.519  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

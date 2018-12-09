@@ -1,0 +1,76 @@
+--------- beginning of main
+--------- beginning of system
+12-08 21:42:24.812  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 21:42:24.812  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 21:42:24.812  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 21:42:26.263  2439 20501 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:42:26.429  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:42:28.550  1731 11051 E         : Couldn't opendir /data/app/vmdl598205359.tmp: No such file or directory
+12-08 21:42:28.550  1731 11051 E installd: Failed to delete /data/app/vmdl598205359.tmp: No such file or directory
+12-08 21:42:30.373 21045 21045 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:42:42.817  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 21:42:42.828  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 21:42:49.643  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 21:42:51.068  2439 20501 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:42:51.260  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 21:42:51.289  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:43:02.728  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 21:43:03.955  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 21:43:03.961  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 21:43:04.067  1740  1740 E wificond: No Offload Service available
+12-08 21:43:04.313  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 21:43:04.345  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 21:43:04.388  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:43:04.426  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:43:08.281  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 21:43:09.078  2439 21138 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 21:43:09.153  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: java.lang.InterruptedException
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1063)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1352)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:278)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at arhb.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):27)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at akeu.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):2)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at akeu.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):19)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at akeu.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):26)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.c(:com.google.android.gms@14799040@14.7.99 (100700-223214910):4)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):14)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.a(:com.google.android.gms@14799040@14.7.99 (100700-223214910):6)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at ynh.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):5)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at qwc.run(:com.google.android.gms@14799040@14.7.99 (100700-223214910):21)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at rbx.run(Unknown Source:7)
+12-08 21:43:17.358  2439 21140 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:764)
+12-08 21:43:29.117  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 21:43:29.784  1884  3279 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.812  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.857  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.883  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.902  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.932  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:29.962  1884  4210 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:30.004  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:30.074  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:30.105  1884  4210 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:30.142  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:43:30.231  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping

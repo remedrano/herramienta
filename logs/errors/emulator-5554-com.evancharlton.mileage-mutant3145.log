@@ -1,0 +1,61 @@
+--------- beginning of main
+--------- beginning of system
+12-08 16:17:05.382  1884  1956 E InputDispatcher: channel 'fe8719b com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 16:17:05.393  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 16:17:05.393  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 16:17:05.393  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 16:17:05.563  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:05.610  2413  2672 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 16:17:05.642  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:06.953  2439 15651 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:17:07.080  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:07.265  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:17:08.868  1731  1933 E         : Couldn't opendir /data/app/vmdl364412836.tmp: No such file or directory
+12-08 16:17:08.868  1731  1933 E installd: Failed to delete /data/app/vmdl364412836.tmp: No such file or directory
+12-08 16:17:10.466 16031 16031 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:17:20.703  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:25.763  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:25.849  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:25.915  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:26.732  2439 16008 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:17:26.737  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:27.003  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 16:17:27.055  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:17:30.657  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 16:17:38.011  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 16:17:39.411  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 16:17:42.986  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 16:17:42.986  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 16:17:45.152  2614 15760 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_0130c86a-d68d-4026-a0bf-d561d97fbe66)
+12-08 16:17:46.416  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:17:49.522  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 16:17:52.774  1884  4835 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.792  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.836  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.862  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.882  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.898  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.929  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:52.988  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:53.033  1884  2548 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:53.085  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:53.107  1884  1906 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 16:17:53.155  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping

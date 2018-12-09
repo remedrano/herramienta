@@ -1,0 +1,167 @@
+--------- beginning of main
+--------- beginning of system
+12-09 06:26:23.471  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 06:26:23.471  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:26:23.471  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 06:26:23.684  2342  2353 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 06:26:24.195  3714  3714 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:24.208  3722  3722 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:24.267  3737  3737 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:25.015  3786  3786 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:26.177  3786  3786 E DocsApplication: [main] No default account found during application creation.
+12-09 06:26:27.312  1731  6658 E         : Couldn't opendir /data/app/vmdl992819827.tmp: No such file or directory
+12-09 06:26:27.312  1731  6658 E installd: Failed to delete /data/app/vmdl992819827.tmp: No such file or directory
+12-09 06:26:29.797  2378  2985 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:26:29.857  2378  2985 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 06:26:30.005  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 06:26:30.010  2378  3140 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544336619845, Current: 1544318789000. Skipping this Position.
+12-09 06:26:30.105  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:26:30.822  3861  3861 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:38.919  1885  2149 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@8228a85
+12-09 06:26:39.011  1994  1994 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-09 06:26:44.626  3906  3906 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:26:45.323  3906  3906 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 06:26:45.632  1741  2074 E OMXNodeInstance: getConfig(0xe97a6e40:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 06:26:49.884  2378  3888 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:26:50.060  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 06:26:50.102  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:27:03.264  3861  3861 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 06:27:03.264  3861  3861 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 06:27:04.105  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:27:05.815  1885  2488 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.831  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.852  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.889  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.908  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.933  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.963  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:05.993  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:27:11.407  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:27:11.407  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:27:17.943  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:27:54.389  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:27:58.692  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:28:11.412  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:28:11.413  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:28:17.949  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:29:11.414  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:29:11.414  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:29:17.950  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:29:27.465  3970  3970 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:29:30.310  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.316  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.316  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.317  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.317  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.321  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.324  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.334  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.343  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.348  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.356  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.369  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.374  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.388  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.403  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.407  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.422  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.431  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.446  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.451  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.456  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.462  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.469  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.473  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.478  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.482  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.485  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.497  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.501  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.504  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.530  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.532  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.539  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.544  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.548  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.576  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.642  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.663  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.679  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.683  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.688  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.693  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.698  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.710  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.718  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.757  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.775  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.782  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.790  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.800  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.819  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.824  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.831  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.833  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.838  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.853  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.856  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.858  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.862  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.865  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.870  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.876  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.880  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.882  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.942  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.947  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.949  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:30.958  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.007  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.114  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.144  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 06:29:31.194  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.305  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.409  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.460  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.520  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.605  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.664  1885  4768 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.688  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.711  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.784  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.813  1885  1885 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.838  1885  5372 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.839  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.887  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.909  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:31.935  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:31.937  1885  4768 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:32.007  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:32.016  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.030  1885  4768 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:32.055  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:32.103  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.173  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.223  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.292  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.359  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:29:32.171  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 06:29:32.432  1885  1898 E memtrack: Couldn't load memtrack module

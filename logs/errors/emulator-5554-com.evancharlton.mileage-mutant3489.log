@@ -1,0 +1,390 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:24:03.104  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:24:03.104  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:24:03.104  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:24:05.072  2438 13266 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:24:05.326  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:24:05.360  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:24:06.612  1733  1930 E         : Couldn't opendir /data/app/vmdl1793808264.tmp: No such file or directory
+12-08 19:24:06.613  1733  1930 E installd: Failed to delete /data/app/vmdl1793808264.tmp: No such file or directory
+12-08 19:24:07.853 13347 13347 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13347
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	... 11 more
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:08.607 13347 13347 E AndroidRuntime: 	... 17 more
+12-08 19:24:08.661  1633  1633 E lowmemorykiller: Error writing /proc/13347/oom_score_adj; errno=22
+12-08 19:24:11.992 13375 13375 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:16.428  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2df2cde VFE...CL. ...P.... 0,436-1038,583 #5c} because the view is not tagged for visual element logging.
+12-08 19:24:17.697  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2df2cde VFE...CL. ...P.... 0,436-1038,583 #5c} because the view is not tagged for visual element logging.
+12-08 19:24:17.985  2438 13071 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.gms/com.google.android.gms.checkin.EventLogService}
+12-08 19:24:18.797 13409 13409 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:19.558  2570  2584 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 19:24:17.403]
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13409
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	... 11 more
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:19.691 13409 13409 E AndroidRuntime: 	... 17 more
+12-08 19:24:19.726  1633  1633 E lowmemorykiller: Error writing /proc/13409/oom_score_adj; errno=22
+12-08 19:24:20.511 13441 13441 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:20.612  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d2fbac3 VFE...CL. ...P.... 0,583-1038,730 #5d} because the view is not tagged for visual element logging.
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13441
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	... 11 more
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:21.188 13441 13441 E AndroidRuntime: 	... 17 more
+12-08 19:24:21.311  1633  1633 E lowmemorykiller: Error writing /proc/13441/oom_score_adj; errno=22
+12-08 19:24:21.349  2337  2403 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-8zi2HSpv5EhATHJ-NgIrJQ==/base.apk' I/O error
+12-08 19:24:21.354  2337  2403 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-8zi2HSpv5EhATHJ-NgIrJQ==/base.apk
+12-08 19:24:22.046 13467 13467 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13467
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	... 11 more
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:22.437 13467 13467 E AndroidRuntime: 	... 17 more
+12-08 19:24:22.541  1633  1633 E lowmemorykiller: Error writing /proc/13467/oom_score_adj; errno=22
+12-08 19:24:24.027 13493 13493 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13493
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	... 11 more
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:24.498 13493 13493 E AndroidRuntime: 	... 17 more
+12-08 19:24:24.583  1633  1633 E lowmemorykiller: Error writing /proc/13493/oom_score_adj; errno=22
+12-08 19:24:26.108 13518 13518 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13518
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	... 11 more
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:26.500 13518 13518 E AndroidRuntime: 	... 17 more
+12-08 19:24:26.550  1633  1633 E lowmemorykiller: Error writing /proc/13518/oom_score_adj; errno=22
+12-08 19:24:30.089 13542 13542 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13542
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	... 11 more
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:30.522 13542 13542 E AndroidRuntime: 	... 17 more
+12-08 19:24:30.551  1633  1633 E lowmemorykiller: Error writing /proc/13542/oom_score_adj; errno=22
+12-08 19:24:32.761  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:24:33.572  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 19:24:33.943  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 19:24:35.381  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:24:36.678 13576 13576 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13576
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	... 11 more
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:37.004 13576 13576 E AndroidRuntime: 	... 17 more
+12-08 19:24:37.031  1633  1633 E lowmemorykiller: Error writing /proc/13576/oom_score_adj; errno=22
+12-08 19:24:37.452 13604 13604 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13604
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	... 11 more
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:37.838 13604 13604 E AndroidRuntime: 	... 17 more
+12-08 19:24:37.875  1633  1633 E lowmemorykiller: Error writing /proc/13604/oom_score_adj; errno=22
+12-08 19:24:45.154  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:24:45.154  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:24:51.323  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:24:56.125 13631 13631 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 13631
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	... 11 more
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Cannot add a null child view to a ViewGroup
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4796)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.view.ViewGroup.addView(ViewGroup.java:4778)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:111)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:24:56.555 13631 13631 E AndroidRuntime: 	... 17 more
+12-08 19:24:56.604  1633  1633 E lowmemorykiller: Error writing /proc/13631/oom_score_adj; errno=22
+12-08 19:24:56.690  2337  2403 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-8zi2HSpv5EhATHJ-NgIrJQ==/base.apk' I/O error
+12-08 19:24:56.690  2337  2403 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-8zi2HSpv5EhATHJ-NgIrJQ==/base.apk
+12-08 19:24:59.508  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-08 19:24:59.680  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 19:24:59.687  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 19:24:59.687  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

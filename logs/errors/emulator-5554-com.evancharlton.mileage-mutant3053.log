@@ -1,0 +1,53 @@
+--------- beginning of system
+--------- beginning of main
+12-08 15:51:24.647  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 15:51:24.647  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 15:51:24.647  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 15:51:24.830  2413  4440 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 15:51:26.473  2439  9427 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:51:27.180  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:51:28.445  1731  1731 E         : Couldn't opendir /data/app/vmdl489817542.tmp: No such file or directory
+12-08 15:51:28.445  1731  1731 E installd: Failed to delete /data/app/vmdl489817542.tmp: No such file or directory
+12-08 15:51:29.699  9506  9506 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 15:51:38.668  9506  9506 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:51:38.668  9506  9506 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 15:51:40.484  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 15:51:42.103  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 15:51:42.103  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 15:51:47.341  2439  9427 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 15:51:47.531  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 15:51:47.590  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 15:51:48.737  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 15:51:50.600  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 15:51:51.926  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 15:51:51.931  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 15:51:51.974  1740  1740 E wificond: No Offload Service available
+12-08 15:51:51.991  1884  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 15:51:52.251  1884  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 15:51:52.330  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:51:52.383  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 15:51:52.428  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:51:52.564  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:51:56.409  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 15:51:56.455  1884  1967 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 15:51:57.115  2439  9590 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 15:51:57.275  1737  1805 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 15:52:07.444  1993  1993 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

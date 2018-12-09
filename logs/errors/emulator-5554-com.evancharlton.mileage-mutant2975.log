@@ -1,0 +1,61 @@
+--------- beginning of system
+12-08 20:01:27.407  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 20:01:27.407  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:01:27.407  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 20:01:52.868  2429 31927 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:01:52.961  2429 31927 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 20:01:52.962  2429 31927 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 20:01:53.082  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 20:01:53.125  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 20:02:01.427 31975 31975 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:02:05.015  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:02:05.016  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:02:11.261  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:02:12.383 31999 31999 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:02:12.817  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 20:02:15.809 31999 31999 E DocsApplication: [main] No default account found during application creation.
+12-08 20:02:20.438  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:02:27.187 32055 32055 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:02:36.250  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:02:46.288  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:02:56.308  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:03:05.018  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:03:05.018  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:03:11.267  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:03:15.838  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:03:25.848  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:03:39.238  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:03:50.333  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:04:00.358  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:04:05.021  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:04:05.021  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:04:11.269  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:04:12.328  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:04:28.018  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:04:39.308  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:04:51.428  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:05:05.026  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:05:05.026  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:05:06.968  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:05:11.270  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:05:29.828  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:05:32.009  1885  1898 E memtrack: Couldn't load memtrack module

@@ -1,0 +1,66 @@
+--------- beginning of main
+--------- beginning of system
+12-09 12:42:19.180 30523 11685 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_d53c6d32-1794-4a95-ab2f-5fb537ff268c)
+12-09 12:42:19.682  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 12:42:19.682  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 12:42:19.682  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 12:42:19.717  1885  1957 E InputDispatcher: channel '473d76e com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 12:42:19.717  1885  1957 E InputDispatcher: channel '50b6642 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 12:42:21.062  2378 11922 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:42:21.467  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:42:23.513  1731  1731 E         : Couldn't opendir /data/app/vmdl1062732060.tmp: No such file or directory
+12-09 12:42:23.513  1731  1731 E installd: Failed to delete /data/app/vmdl1062732060.tmp: No such file or directory
+12-09 12:42:25.359 12009 12009 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 12:42:25.872  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 12:42:26.724  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 12:42:26.730  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 12:42:29.570  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 12:42:29.571  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 12:42:30.038 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:42:30.038 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:42:33.759  1885  4289 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@2ab040b
+12-09 12:42:33.870  1994  1994 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-09 12:42:35.329 23668 23701 E AttachedClient: Dropping clientEvent = CANCEL coming from client[104094509178502230]
+12-09 12:42:35.329 23668 23701 E AttachedClient: Dropping clientEvent = QUERY_COMMIT coming from client[104094509178502230]
+12-09 12:42:35.336 23668 23701 E AttachedClient: Dropping clientEvent = CANCEL coming from client[104094509178502230]
+12-09 12:42:35.337 23668 23701 E AttachedClient: Dropping clientEvent = STOP_LISTENING coming from client[104094509178502230]
+12-09 12:42:35.476  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 12:42:35.570  2378 11975 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:42:35.673  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:42:41.595  2378 11570 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:42:42.439  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:42:45.047 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 12:42:45.684 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:42:45.684 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:42:59.529 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:42:59.529 12009 12009 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length

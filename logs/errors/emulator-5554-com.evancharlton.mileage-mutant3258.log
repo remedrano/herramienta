@@ -1,0 +1,89 @@
+--------- beginning of main
+--------- beginning of system
+12-08 22:23:12.592  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 22:23:12.592  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 22:23:12.592  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 22:23:13.706  1632  1632 E lowmemorykiller: Error writing /proc/24235/oom_score_adj; errno=22
+12-08 22:23:13.787  1632  1632 E lowmemorykiller: Error writing /proc/23887/oom_score_adj; errno=22
+12-08 22:23:13.787  1632  1632 E lowmemorykiller: Error writing /proc/24679/oom_score_adj; errno=22
+12-08 22:23:13.824  1632  1632 E lowmemorykiller: Error opening /proc/24679/oom_score_adj; errno=2
+12-08 22:23:17.302  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:23:17.950  1731  1771 E         : Couldn't opendir /data/app/vmdl1942989786.tmp: No such file or directory
+12-08 22:23:17.950  1731  1771 E installd: Failed to delete /data/app/vmdl1942989786.tmp: No such file or directory
+12-08 22:23:18.411 25775 25775 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:23:19.770 25775 25775 E DocsApplication: [main] No default account found during application creation.
+12-08 22:23:20.247 25816 25816 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:23:21.535  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 22:23:21.546  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 22:23:28.445  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 22:23:28.445  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 22:23:30.413 25845 25845 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:23:30.959 25845 25845 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 22:23:31.115  1726  1955 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 22:23:31.290  1726  1757 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 22:23:31.310  1741  2192 E OMXNodeInstance: getConfig(0xe4b12000:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 22:23:36.243  2439 24716 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 22:23:37.093 25884 25884 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:23:37.295  2439 25842 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:23:37.626  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 22:23:37.674  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:23:43.064  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:23:43.064  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:23:50.035  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:23:51.666  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:23:51.915 24554 24554 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 22:23:51.916 24554 24554 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 22:23:51.953 24554 24554 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 22:23:51.953 24554 24554 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 22:23:52.085 24554 24554 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 22:23:52.085 24554 24554 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 22:23:52.086 24554 24554 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 22:23:52.086 24554 24554 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 22:23:52.187 24554 24554 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 22:23:52.187 24554 24554 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 22:23:52.442 25936 25936 E rrierdefaultap: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:23:52.474  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 22:23:52.474  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 22:23:52.474  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 22:23:52.771  1884  1969 E WifiP2pService: Unhandled message { when=-2ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 22:23:52.799  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 22:23:52.813  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 22:23:53.061  2439 24720 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 22:23:53.112  2439 24720 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 22:24:29.023  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 22:24:35.866  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 22:24:43.098  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:24:43.098  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:24:50.039  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:25:43.166  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:25:43.166  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

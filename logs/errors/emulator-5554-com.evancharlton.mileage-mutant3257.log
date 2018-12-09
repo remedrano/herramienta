@@ -1,0 +1,55 @@
+--------- beginning of main
+--------- beginning of system
+12-08 22:21:19.404  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 22:21:19.404  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 22:21:19.404  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 22:21:21.073  2439 25394 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:21:21.421  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:21:23.627  1731  1771 E         : Couldn't opendir /data/app/vmdl1131359134.tmp: No such file or directory
+12-08 22:21:23.627  1731  1771 E installd: Failed to delete /data/app/vmdl1131359134.tmp: No such file or directory
+12-08 22:21:26.109 25456 25456 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:21:34.520  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 7
+12-08 22:21:39.738  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 22:20:17.316]
+12-08 22:21:43.055  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:21:43.055  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:21:45.953  2439 24716 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 22:21:46.132 25505 25505 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:21:48.079  2439 25493 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:21:48.317  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 22:21:48.334 25505 25524 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-08 22:21:48.369  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:21:50.001  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:22:00.210  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:22:08.873 25648 25648 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:22:09.811  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a9fe26a VFE...CL. ...P.... 0,289-1038,436 #b5} because the view is not tagged for visual element logging.
+12-08 22:22:09.869  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{21714d1 VFE...CL. ...P.... 0,436-1038,583 #b6} because the view is not tagged for visual element logging.
+12-08 22:22:12.076  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 22:22:10.802]
+12-08 22:22:43.061  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:22:43.061  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:22:50.015  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:23:08.777  1884  2552 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:08.805  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:08.913  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:08.929  1884  3640 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:08.962  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:08.981  1884  2552 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:09.009  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:23:09.109  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping

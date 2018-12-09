@@ -1,0 +1,60 @@
+--------- beginning of system
+--------- beginning of main
+12-08 19:03:53.430  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:03:53.430  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:03:53.430  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:03:55.511  2429 22432 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:03:55.698  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:03:55.755  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:03:57.467  1732  1934 E         : Couldn't opendir /data/app/vmdl676560623.tmp: No such file or directory
+12-08 19:03:57.468  1732  1934 E installd: Failed to delete /data/app/vmdl676560623.tmp: No such file or directory
+12-08 19:03:59.057 22944 22944 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:04:05.016  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:04:05.017  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:04:10.972  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:04:12.270  2429 22432 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:04:12.479  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:04:12.562  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:04:20.065  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:04:20.134  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 19:04:20.137  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 19:04:20.204  1741  1741 E wificond: No Offload Service available
+12-08 19:04:20.372  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:04:20.389  1885  1971 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:04:20.415  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:04:20.492  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:04:20.640  1885  1972 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '575 interface setmtu radio0 1500' failed with '400 575 Failed to set MTU (Permission denied)'
+12-08 19:04:21.804  2429 23025 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:04:22.610 23030 23030 E .android.video: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:04:22.619 23035 23035 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:04:24.665  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:04:25.400  1738  1800 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 19:04:25.448  2429 23124 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:04:25.627  2429 23129 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:04:30.058 23146 23146 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:04:41.298  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:04:42.952  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:04:44.234  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:04:44.298  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:04:44.997  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:04:51.042  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 19:04:52.976  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:04:56.163  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99042 pid 23146: No such file or directory

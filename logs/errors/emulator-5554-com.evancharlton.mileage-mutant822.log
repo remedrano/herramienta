@@ -1,0 +1,52 @@
+--------- beginning of main
+--------- beginning of system
+12-09 08:05:40.621  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:05:44.345  1731  1776 E         : Couldn't opendir /data/app/vmdl52131503.tmp: No such file or directory
+12-09 08:05:44.346  1731  1776 E installd: Failed to delete /data/app/vmdl52131503.tmp: No such file or directory
+12-09 08:05:47.096 16838 16838 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 16838
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List android.net.Uri.getPathSegments()' on a null object reference
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.content.UriMatcher.match(UriMatcher.java:219)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.update(FillUpsProvider.java:252)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:357)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.content.ContentResolver.update(ContentResolver.java:1720)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setFields(FillupActivity.java:432)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:53)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 08:05:57.189 16838 16838 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 08:05:57.309  1633  1633 E lowmemorykiller: Error writing /proc/16838/oom_score_adj; errno=22
+12-09 08:05:57.325  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:05:57.340  1885  1957 E InputDispatcher: channel '5867186 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 08:05:57.378  1726  2181 E SurfaceFlinger: getLayerUser(name=0xe40d02d0) is dead
+12-09 08:05:59.063  2378 15785 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:05:59.369  2378 15785 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 08:05:59.370  2378 15785 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 08:05:59.715  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:06:00.914 16873 16873 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:06:02.704  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 08:06:02.717  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 08:06:12.843  2378 16175 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:06:13.386  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:06:16.134  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 08:06:16.134  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 08:06:16.318 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 08:06:19.279  1885  1969 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-09 08:06:25.694  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:06:26.798  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

@@ -1,0 +1,45 @@
+--------- beginning of main
+--------- beginning of system
+12-09 08:00:03.034  1731  1776 E         : Couldn't opendir /data/app/vmdl835496951.tmp: No such file or directory
+12-09 08:00:03.035  1731  1776 E installd: Failed to delete /data/app/vmdl835496951.tmp: No such file or directory
+12-09 08:00:05.605 15743 15743 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:00:07.341  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 08:00:07.354  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 08:00:16.008  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:00:16.118  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 08:00:16.118  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 08:00:20.315 15743 15760 E SQLiteLog: (1) no such table: fillups
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: Couldn't upgrade database!
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 08:00:20.335 15743 15760 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-09 08:00:26.154  2378 14741 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:00:26.622  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 08:00:26.672  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:00:26.727  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:00:28.930 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 08:00:34.638  9391  9391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 08:00:37.182  9391  9391 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted

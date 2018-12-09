@@ -1,0 +1,76 @@
+--------- beginning of main
+--------- beginning of system
+12-08 22:05:05.727  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 22:05:05.727  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 22:05:05.727  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 22:05:06.128  2413  6895 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 22:05:10.048  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:05:10.981  1731 11051 E         : Couldn't opendir /data/app/vmdl978054965.tmp: No such file or directory
+12-08 22:05:10.981  1731 11051 E installd: Failed to delete /data/app/vmdl978054965.tmp: No such file or directory
+12-08 22:05:13.196 23839 23839 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:05:18.998  1884  3891 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@e61f42d
+12-08 22:05:19.090  1993  1993 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-08 22:05:20.934  1741  2192 E OMXNodeInstance: getConfig(0xe4b12000:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 22:05:23.915 23887 23887 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:05:24.771 23887 23887 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 22:05:25.081  1726  1757 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 22:05:25.095  1741  2180 E OMXNodeInstance: getConfig(0xe6a26ea0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 22:05:25.251  1726  1876 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 22:05:25.443 23839 23856 E SQLiteLog: (1) no such table: fillups
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 22:05:25.477 23839 23856 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-08 22:05:25.704  2826  7522 E native  : decoder_endpointer_stream.cc:24 Acoustic ep reader thread failed: *** Error status -73543: <no msg> ***
+12-08 22:05:25.704  2826  7522 E native  : 
+12-08 22:05:29.797  2439 23545 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:05:29.986  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:05:35.000  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:05:41.615 23951 23951 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:05:42.956  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:05:42.957  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:05:49.948  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:06:21.619  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 22:06:24.609  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 22:06:37.629 23977 23977 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:06:37.657  2439 21997 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 22:06:37.952 23993 23993 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:06:42.957  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:06:42.958  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:06:49.959  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:07:43.001  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:07:43.001  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

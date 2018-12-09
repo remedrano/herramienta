@@ -1,0 +1,96 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:52:20.882  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:52:20.882  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:52:20.882  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:52:23.218  2438 19494 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:23.240  2438 19494 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:23.513  2438 19494 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:23.529  2438 19494 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:52:23.563  2438 19494 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:23.726  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:52:23.796  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:52:25.483  1733  1752 E         : Couldn't opendir /data/app/vmdl339812503.tmp: No such file or directory
+12-08 19:52:25.483  1733  1752 E installd: Failed to delete /data/app/vmdl339812503.tmp: No such file or directory
+12-08 19:52:27.659 20121 20121 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:52:34.056 20121 20121 E harlton.mileag: Invalid ID 0x00000000.
+--------- beginning of crash
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 20121
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupListActivity}: android.content.res.Resources$NotFoundException: String resource ID #0x0
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTabByTag(TabHost.java:309)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.switchTo(Mileage.java:60)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.switchToHistoryTab(Mileage.java:56)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.saved(FillupActivity.java:197)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:56)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: String resource ID #0x0
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.content.res.Resources.getText(Resources.java:348)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.content.res.Resources.getString(Resources.java:441)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.content.Context.getString(Context.java:578)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.math.Calculator.getVolumeUnitsAbbr(Calculator.java:359)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.adapters.FillupAdapter.setVehicle(FillupAdapter.java:73)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.adapters.FillupAdapter.<init>(FillupAdapter.java:59)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.initUI(FillupListActivity.java:93)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.onCreate(FillupListActivity.java:55)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-08 19:52:34.077 20121 20121 E AndroidRuntime: 	... 21 more
+12-08 19:52:35.387 20156 20156 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:52:35.698  2438 18902 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:35.732  2438 18902 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:35.852  2438 18902 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:35.875  2438 18902 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:52:35.880  2438 18902 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:36.167  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:52:45.511  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:52:45.511  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:52:51.773  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:52:57.016  2438 18902 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:57.102  2438 18902 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:57.370  2438 18902 E ctxmgr  : [BaseServerTask]Failed network request due to no network connectivity: 
+12-08 19:52:57.402  2438 18902 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:52:57.409  2438 18902 E ctxmgr  : [DailyCheckinOperation]Failed daily get config: network status=1
+12-08 19:52:57.604  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 19:52:57.640  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 19:53:05.700  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:53:11.166 20215 20215 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:53:28.284  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:53:31.666  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:53:38.022  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99029 pid 20215: No such file or directory

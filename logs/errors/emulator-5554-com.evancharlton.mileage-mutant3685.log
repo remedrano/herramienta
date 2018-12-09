@@ -1,0 +1,50 @@
+--------- beginning of main
+--------- beginning of system
+12-09 02:10:49.365  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 02:10:49.365  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 02:10:49.365  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 02:10:51.520  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 02:10:53.806  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:10:54.259  1733  1733 E         : Couldn't opendir /data/app/vmdl681501221.tmp: No such file or directory
+12-09 02:10:54.259  1733  1733 E installd: Failed to delete /data/app/vmdl681501221.tmp: No such file or directory
+12-09 02:10:57.170 28961 28961 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:10:58.252  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:10:58.288  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:11:10.313  2438 28147 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 02:11:10.318  2438 28147 E ctxmgr  : [AppIntervalImpl]closeInterval: ongoing
+12-09 02:11:13.619  2337 16938 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-7wSneFazHkEF5SaYLm-dyw==/base.apk' I/O error
+12-09 02:11:13.620  2337 16938 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-7wSneFazHkEF5SaYLm-dyw==/base.apk
+12-09 02:11:14.305  2438 28987 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 02:11:14.485  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 02:11:24.487  2858  3026 E PlayCommon: [148] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-09 02:11:27.870  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:11:35.316  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 02:11:47.017  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:11:47.017  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:11:50.617 29021 29021 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:11:53.206  2570  2950 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 02:11:53.807  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

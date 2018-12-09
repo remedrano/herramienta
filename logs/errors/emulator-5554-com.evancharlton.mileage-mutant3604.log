@@ -1,0 +1,51 @@
+--------- beginning of main
+--------- beginning of system
+12-09 00:57:30.019  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 00:57:30.019  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 00:57:30.019  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 00:57:32.088  2438 21141 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:57:32.250  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 00:57:32.319  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:57:34.239  1733  1947 E         : Couldn't opendir /data/app/vmdl331702652.tmp: No such file or directory
+12-09 00:57:34.239  1733  1947 E installd: Failed to delete /data/app/vmdl331702652.tmp: No such file or directory
+12-09 00:57:35.826 21219 21219 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:57:44.067  1881  2387 E InputMethodManagerService: Ignoring com.android.server.InputMethodManagerService.updateStatusIcon:2188 due to an invalid token. uid:10060 token:android.os.Binder@4960df0
+12-09 00:57:44.196  1991  1991 E EmojiSearchExtension: com.google.android.apps.inputmethod.libs.search.emoji.EmojiSearchExtension: Cannot deactivate emoji search JNI; null locale
+12-09 00:57:45.885  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:57:45.886  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:57:48.391  2438 20822 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 00:57:52.084  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:57:54.053  2438 21246 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:57:54.283  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 00:57:54.370  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:58:02.490  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:58:04.578  2438 21246 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:58:04.661  2438 21246 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 00:58:04.863  2438  3009 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544334936000, Current: 1544317084000. Skipping this Position.
+12-09 00:58:04.885  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:58:11.248 21301 21301 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:58:20.113  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:58:21.702  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:58:24.803  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:58:32.076  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:58:33.055  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:58:37.389  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99031 pid 21301: No such file or directory
+12-09 00:58:39.626  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

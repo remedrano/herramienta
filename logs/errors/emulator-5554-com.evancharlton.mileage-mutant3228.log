@@ -1,0 +1,63 @@
+--------- beginning of system
+--------- beginning of main
+12-08 21:59:37.183  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 21:59:37.183  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 21:59:37.183  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 21:59:38.826  2439 22861 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 21:59:38.969  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 21:59:41.174  1731 11051 E         : Couldn't opendir /data/app/vmdl724106509.tmp: No such file or directory
+12-08 21:59:41.174  1731 11051 E installd: Failed to delete /data/app/vmdl724106509.tmp: No such file or directory
+12-08 21:59:42.936  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 21:59:42.936  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 21:59:43.455 22915 22915 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 21:59:49.815  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 21:59:50.317  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 7
+12-08 21:59:53.490  1884  5060 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.525  1884  5060 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.568  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.702  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.723  1884  5562 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.747  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.841  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.857  1884  4824 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.892  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 21:59:53.953  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:00:01.938 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:01.938 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:02.000 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:02.000 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:03.497  2439 22953 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:00:03.653  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 22:00:03.697  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:00:17.332 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:17.332 22915 22915 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:00:18.568  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:00:26.610  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 22:00:26.643 22995 22995 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:00:27.105  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{168df52 VFE...CL. ...P.... 0,436-1038,583 #91} because the view is not tagged for visual element logging.
+12-08 22:00:27.127  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{53444d9 VFE...CL. ...P.... 0,289-1038,436 #90} because the view is not tagged for visual element logging.
+12-08 22:00:27.232  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{41b0320 VFE...CL. ...P.... 0,142-1038,289 #8f} because the view is not tagged for visual element logging.
+12-08 22:00:27.573  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{53444d9 VFE...CL. ...p.... 0,289-1038,436 #90} because the view is not tagged for visual element logging.
+12-08 22:00:27.664  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{53444d9 VFE...CL. ......ID 0,289-1038,436 #90} because the view is not tagged for visual element logging.
+12-08 22:00:28.299  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d119e9e VFE...CL. ...P.... 0,583-1038,730 #92} because the view is not tagged for visual element logging.
+12-08 22:00:29.080  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{41b0320 VFE...CL. ...P.... 0,142-1038,289 #8f} because the view is not tagged for visual element logging.
+12-08 22:00:29.561  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 22:00:27.656]
+12-08 22:00:38.087  1993  1993 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

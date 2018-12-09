@@ -1,0 +1,188 @@
+--------- beginning of main
+--------- beginning of system
+12-09 08:50:46.340  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 08:50:46.340  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 08:50:46.340  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 08:50:47.033 25519 25519 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:50:47.116 25532 25532 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:50:47.279 25551 25551 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:50:48.667 25590 25590 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:50:49.348  2378 25198 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:50:49.750  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:50:49.783  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:50:51.087 25590 25590 E DocsApplication: [main] No default account found during application creation.
+12-09 08:50:52.401  1731  1949 E         : Couldn't opendir /data/app/vmdl300028417.tmp: No such file or directory
+12-09 08:50:52.402  1731  1949 E installd: Failed to delete /data/app/vmdl300028417.tmp: No such file or directory
+12-09 08:50:55.447 25661 25661 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:50:58.678  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 08:50:58.698  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 08:51:02.798 25661 25661 E InputEventSender: Exception dispatching finished signal.
+12-09 08:51:02.798 25661 25661 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.provider.Statistics$EconomyStatistic: java.lang.String com.evancharlton.mileage.provider.Statistics$EconomyStatistic.format(android.content.Context, com.evancharlton.mileage.dao.Vehicle, double) failed to verify: java.lang.String com.evancharlton.mileage.provider.Statistics$EconomyStatistic.format(android.content.Context, com.evancharlton.mileage.dao.Vehicle, double): [0x8] register v5 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.provider.Statistics$EconomyStatistic' appears in base.apk)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at com.evancharlton.mileage.provider.Statistics.<clinit>(Statistics.java:58)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at com.evancharlton.mileage.VehicleStatisticsActivity.<clinit>(VehicleStatisticsActivity.java:37)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at java.lang.Class.newInstance(Native Method)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.View.performClick(View.java:6597)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.View.onKeyUp(View.java:13216)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2716)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.View.dispatchKeyEvent(View.java:12450)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1891)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.widget.TabHost.dispatchKeyEvent(TabHost.java:346)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:428)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1820)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3360)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-09 08:51:02.812 25661 25661 E MessageQueue-JNI: 	at android.view.inputmethod.InputMet
+--------- beginning of crash
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 25661
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.provider.Statistics$EconomyStatistic: java.lang.String com.evancharlton.mileage.provider.Statistics$EconomyStatistic.format(android.content.Context, com.evancharlton.mileage.dao.Vehicle, double) failed to verify: java.lang.String com.evancharlton.mileage.provider.Statistics$EconomyStatistic.format(android.content.Context, com.evancharlton.mileage.dao.Vehicle, double): [0x8] register v5 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.provider.Statistics$EconomyStatistic' appears in base.apk)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.evancharlton.mileage.provider.Statistics.<clinit>(Statistics.java:58)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.evancharlton.mileage.VehicleStatisticsActivity.<clinit>(VehicleStatisticsActivity.java:37)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.View.onKeyUp(View.java:13216)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.KeyEvent.dispatch(KeyEvent.java:2716)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.View.dispatchKeyEvent(View.java:12450)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1891)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.widget.TabHost.dispatchKeyEvent(TabHost.java:346)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1896)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:428)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1820)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.Activity.dispatchKeyEvent(Activity.java:3360)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:342)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:160)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 08:51:02.820 25661 25661 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 08:51:02.908  1633  1633 E lowmemorykiller: Error writing /proc/25661/oom_score_adj; errno=22
+12-09 08:51:03.087  9391 10168 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-rnz4DaGltE0oxL0zVLip9w==/base.apk' I/O error
+12-09 08:51:03.098  9391 10168 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-rnz4DaGltE0oxL0zVLip9w==/base.apk
+12-09 08:51:04.400  2378 25477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:51:04.960  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:51:05.086  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:51:06.680  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 08:51:06.696  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 08:51:08.959 23668 23668 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:51:08.959 23668 23668 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:51:09.086  1994  7452 E native  : decoder-results-response-updater.cc:248 Unexpected empty result.
+12-09 08:51:10.178 25705 25705 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:51:13.218 25726 25726 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:51:13.962 25726 25726 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 08:51:14.269  1741  2074 E OMXNodeInstance: getConfig(0xe97a6cc0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 08:51:16.885 25757 25757 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:51:17.979  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 08:51:17.979  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 08:51:19.765  2378 25198 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:51:20.033  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:51:20.097  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:51:28.746  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 08:51:28.937 25785 25785 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:51:30.203 25802 25802 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:51:33.598 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 08:51:38.027  2378 25477 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:51:38.388  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:51:38.456  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:52:07.216  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:52:16.941  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:52:17.995  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 08:52:17.996  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

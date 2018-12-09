@@ -1,0 +1,74 @@
+--------- beginning of main
+--------- beginning of system
+12-09 09:24:49.194  1633  1633 E lowmemorykiller: Error opening /proc/5859/oom_score_adj; errno=2
+12-09 09:24:50.098  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 09:24:50.098  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 09:24:50.098  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 09:24:50.908  5955  5955 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:50.947  5971  5971 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:51.069  5986  5986 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:51.720  6026  6026 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:52.570  6050  6050 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:52.836  6074  6074 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:54.187  6026  6026 E DocsApplication: [main] No default account found during application creation.
+12-09 09:24:54.857  2378  5701 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 09:24:55.117  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 09:24:55.171  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 09:24:55.633  1731  1949 E         : Couldn't opendir /data/app/vmdl1642625414.tmp: No such file or directory
+12-09 09:24:55.633  1731  1949 E installd: Failed to delete /data/app/vmdl1642625414.tmp: No such file or directory
+12-09 09:24:58.466  6138  6138 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:24:59.904  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 09:24:59.929  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 09:25:10.132  6169  6169 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:25:10.667  6169  6169 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 09:25:11.036  1741  2075 E OMXNodeInstance: getConfig(0xe93910c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 09:25:13.429  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 09:25:13.429  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 09:25:14.624  2378  5308 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 09:25:14.903  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 09:25:14.959  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 09:25:21.391  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 09:25:24.068  6213  6213 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:25:33.142  4375  4375 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 09:25:44.364  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:25:50.320  6269  6269 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:25:50.558  6284  6284 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:25:50.789  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a805930 VFE...CL. ...P.... 0,289-1038,436 #a} because the view is not tagged for visual element logging.
+12-09 09:25:50.847  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1b276cf VFE...CL. ...P.... 0,436-1038,583 #b} because the view is not tagged for visual element logging.
+12-09 09:25:52.560  4375  4382 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 09:25:51.476]
+12-09 09:25:52.997  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1b276cf VFE...CL. ...P.... 0,436-1038,583 #b} because the view is not tagged for visual element logging.
+12-09 09:25:53.079  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a805930 VFE...CL. ...P.... 0,289-1038,436 #a} because the view is not tagged for visual element logging.
+12-09 09:25:53.271  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8878b2e VFE...CL. ...P.... 0,142-1038,289 #9} because the view is not tagged for visual element logging.
+12-09 09:25:53.712  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a805930 VFE...CL. ...P.... 0,289-1038,436 #a} because the view is not tagged for visual element logging.
+12-09 09:25:53.772  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{a805930 VFE...CL. ...P.... 0,289-1038,436 #a} because the view is not tagged for visual element logging.
+12-09 09:25:54.301  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{c49d85c VFE...CL. ...P.... 0,583-1038,730 #c} because the view is not tagged for visual element logging.
+12-09 09:25:55.106  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8878b2e VFE...CL. ...P.... 0,142-1038,289 #9} because the view is not tagged for visual element logging.
+12-09 09:25:55.464  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:25:57.342  4375  4375 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ef2c9a9 VFE...CL. ...P.... 0,-5-1038,142 #8} because the view is not tagged for visual element logging.
+12-09 09:25:59.081  4375  4962 E native  : offline_action_builder.cc:402 GetActionV2() returns nullptr ActionV2
+12-09 09:25:59.081  4375  4962 E native  : offline_action_builder_jni.cc:194 Action building failed. Error code: 601
+12-09 09:26:02.160  6323  6323 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.

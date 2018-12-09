@@ -1,0 +1,67 @@
+--------- beginning of system
+12-09 06:32:13.743  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 06:32:13.743  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:32:13.743  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 06:32:18.161  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+--------- beginning of main
+12-09 06:32:21.445  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 06:32:21.450  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 06:32:25.244  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 06:32:25.244  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 06:32:32.002  4776  4776 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:32:32.519  4776  4776 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 06:32:32.655  1726  1751 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:32:32.781  1726  1751 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:32:32.787  1741  2074 E OMXNodeInstance: getConfig(0xe97a6e40:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 06:32:40.217  2378  4536 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:32:40.234  2378  4536 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 06:32:40.329  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 06:32:40.411  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:32:45.443  4828  4828 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:32:46.192  4845  4845 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:32:55.668  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:33:11.649  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:33:11.650  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:33:18.167  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:34:06.197  2378  4526 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 06:34:06.329  4907  4907 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:34:07.293  4907  4927 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-09 06:34:07.742  2378  2378 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.youtube/com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator{u=0 tag="device_context_task" trigger=window{period=5400s,flex=600s,earliest=-217s,latest=382s} requirements=[NET_UNMETERED] attributes=[PERSISTED,RECURRING] scheduled=-5017s last_run=-1s jid=N/A status=PENDING retries=0 client_lib=MANCHEGO_GCM-13280000} :INVALID_START
+12-09 06:34:07.752  2378  4536 E NetworkScheduler: Unknown result code received: 4
+12-09 06:34:11.651  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:34:11.652  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:34:18.170  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:34:24.266  2378  4822 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.youtube/com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator}
+12-09 06:35:11.658  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:35:11.658  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:35:18.173  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

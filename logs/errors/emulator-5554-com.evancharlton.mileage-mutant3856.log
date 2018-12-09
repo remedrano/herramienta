@@ -1,0 +1,48 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:12:36.316  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:12:36.316  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:12:36.316  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:12:37.825  2378 14570 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:12:37.926  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-08 23:12:37.980  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:12:39.556  1731  6658 E         : Couldn't opendir /data/app/vmdl848199688.tmp: No such file or directory
+12-08 23:12:39.556  1731  6658 E installd: Failed to delete /data/app/vmdl848199688.tmp: No such file or directory
+12-08 23:12:40.680 14772 14772 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:12:47.631  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 23:12:47.633  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 23:12:51.481  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:12:55.847  2378 14570 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:12:56.267  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-08 23:12:56.415  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:12:59.744  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:13:02.017 14831 14831 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:13:09.729  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:13:09.729  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:13:15.651  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:13:15.972  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99027 pid 14831: No such file or directory
+12-08 23:13:18.566  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

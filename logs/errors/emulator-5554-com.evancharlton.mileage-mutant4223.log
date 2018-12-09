@@ -1,0 +1,70 @@
+--------- beginning of main
+--------- beginning of system
+12-09 06:56:00.998  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 06:56:00.998  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:56:00.998  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 06:56:01.356  2342  6611 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 06:56:01.760 10035 10035 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:01.869 10055 10055 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:01.907 10050 10050 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:02.591 10104 10104 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:03.528 10132 10132 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:04.759 10104 10104 E DocsApplication: [main] No default account found during application creation.
+12-09 06:56:05.753  1731  1731 E         : Couldn't opendir /data/app/vmdl2120123379.tmp: No such file or directory
+12-09 06:56:05.753  1731  1731 E installd: Failed to delete /data/app/vmdl2120123379.tmp: No such file or directory
+12-09 06:56:08.078 10193 10193 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:09.830  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 06:56:09.857  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 06:56:12.092  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:56:12.092  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:56:17.626  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 06:56:17.635  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 06:56:18.779 10220 10220 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:18.972  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:56:19.319 10220 10220 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 06:56:19.558  1726  2181 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:56:19.726  1741  1741 E OMXNodeInstance: getConfig(0xe9391180:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 06:56:19.891  1726  1751 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 06:56:24.724  2378  9133 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:56:24.923  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 06:56:25.009  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:56:32.330 10269 10269 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:33.001 10287 10287 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:56:40.358  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:56:52.159  2378  9425 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 06:57:12.100  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:57:12.101  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:57:18.976  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:58:12.104  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 06:58:12.104  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 06:58:18.980  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

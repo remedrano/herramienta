@@ -1,0 +1,53 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:20:05.519  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:20:05.519  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:20:05.519  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:20:05.650  2342  6668 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 23:20:06.536  2378 16163 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:20:07.080  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:20:08.117  1731  6658 E         : Couldn't opendir /data/app/vmdl51254005.tmp: No such file or directory
+12-08 23:20:08.117  1731  6658 E installd: Failed to delete /data/app/vmdl51254005.tmp: No such file or directory
+12-08 23:20:09.004 16325 16325 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:20:09.755  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:20:09.756  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:20:15.698  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:20:17.397  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:20:19.172  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:20:22.158  2378 15784 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:20:22.608  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-08 23:20:22.664  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:20:26.033  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:20:27.272  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 23:20:27.284  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 23:20:27.469  1740  1740 E wificond: No Offload Service available
+12-08 23:20:27.476  1885  1969 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 23:20:27.686  1885  1970 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 23:20:27.720  1885  1971 E WifiP2pService: Unhandled message { when=-7ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 23:20:27.803  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 23:20:27.848  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 23:20:27.929  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 23:20:28.786  1885  1972 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '597 interface setmtu radio0 1500' failed with '400 597 Failed to set MTU (Permission denied)'
+12-08 23:20:29.545 16399 16399 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:20:29.778  2378 16411 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 23:20:30.229 16415 16415 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:20:32.607  1885  1896 E NotificationService: Package enqueue rate is 7.8356414. Shedding 0|com.google.android.googlequicksearchbox|393216|h|10036. package=com.google.android.googlequicksearchbox
+12-08 23:20:33.723  2378 16446 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-569s,latest=30s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-869s last_run=-3s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED

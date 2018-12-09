@@ -1,0 +1,102 @@
+--------- beginning of main
+--------- beginning of system
+12-09 01:40:24.683  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 01:40:24.683  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 01:40:24.683  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 01:40:25.622 26115 26115 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:40:26.853 26157 26157 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:40:27.619 26115 26115 E DocsApplication: [main] No default account found during application creation.
+12-09 01:40:29.346  1733  1752 E         : Couldn't opendir /data/app/vmdl69809086.tmp: No such file or directory
+12-09 01:40:29.346  1733  1752 E installd: Failed to delete /data/app/vmdl69809086.tmp: No such file or directory
+12-09 01:40:32.356 26217 26217 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:40:33.550  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 01:40:33.578  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 01:40:45.611  2438 26016 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 01:40:45.821  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 01:40:46.290  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 01:40:46.290  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 01:40:52.805  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 01:41:10.307  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 01:41:11.919  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-09 01:41:11.925  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-09 01:41:12.027  1742  1742 E wificond: No Offload Service available
+12-09 01:41:12.327  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 01:41:12.344  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 01:41:12.394  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 01:41:12.455  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 01:41:12.979  1881  1968 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '470 interface setmtu radio0 1500' failed with '400 470 Failed to set MTU (Permission denied)'
+12-09 01:41:13.540  2570  2570 E TaskServiceHelper: Cannot execute TaskName.UNKNOWN (or data got corrupted).
+12-09 01:41:13.713  2438 26293 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 01:41:14.241 26300 26300 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:14.565 26315 26315 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:16.138  2438 26352 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-277s,latest=322s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-577s last_run=-1s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-09 01:41:16.411  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 01:41:16.951  2438 26366 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 01:41:16.951 26369 26369 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:17.048  2438 26379 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 01:41:17.257  1739  1788 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-09 01:41:17.351 26386 26386 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:18.160 26369 26409 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-09 01:41:18.238 26386 26386 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-09 01:41:19.036  2438 24920 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 01:41:19.245  2438  2438 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.youtube/com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator{u=0 tag="device_context_task" trigger=window{period=5400s,flex=600s,earliest=-1113s,latest=-513s} requirements=[NET_UNMETERED] attributes=[PERSISTED,RECURRING] scheduled=-5913s last_run=-2s jid=N/A status=PENDING retries=0 client_lib=MANCHEGO_GCM-13280000} :INVALID_START
+12-09 01:41:19.268  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 01:41:19.284  2438 24920 E NetworkScheduler: Unknown result code received: 4
+12-09 01:41:32.192 26539 26539 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:32.349 26555 26555 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:33.862 26605 26605 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:33.955 26605 26605 E LoadedApk: Unable to instantiate appComponentFactory
+12-09 01:41:33.955 26605 26605 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 01:41:33.955 26605 26605 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 01:41:34.714 26634 26634 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-09 01:41:35.224  2438 24920 E NetworkScheduler.TED: Dropping task as app's play services SDK version does not support Android O. Either update the SDK or lower your app's target SDK version. Canceling all tasks for the service: ComponentInfo{com.google.android.youtube/com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator}
+12-09 01:41:46.589  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 01:41:46.590  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 01:41:53.110  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 01:42:13.467  2534 26140 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_804969b0-f865-48c4-be93-5b3d88995c4e)
+12-09 01:42:46.594  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 01:42:46.594  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 01:42:53.114  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 01:43:07.516  2438 26366 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 01:43:46.598  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 01:43:46.599  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument

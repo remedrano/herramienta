@@ -1,0 +1,127 @@
+--------- beginning of main
+--------- beginning of system
+12-09 05:09:45.333  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 05:09:45.333  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 05:09:45.333  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 05:09:46.840  2378 23719 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 05:09:46.978  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 05:09:49.139  1731  1776 E         : Couldn't opendir /data/app/vmdl315331040.tmp: No such file or directory
+12-09 05:09:49.139  1731  1776 E installd: Failed to delete /data/app/vmdl315331040.tmp: No such file or directory
+12-09 05:09:50.987 24024 24024 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:09:52.141  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 05:09:52.150  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 05:10:08.546  2378 22250 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 05:10:08.723  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 05:10:08.785  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 05:10:10.129  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 05:10:10.129  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 05:10:16.313  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 05:10:20.839  1885  2488 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:20.878  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:20.935  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:20.953  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:20.985  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:21.040  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:21.060  1885  2487 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:21.097  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:21.183  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:10:21.730 24024 24024 E WindowManager: 
+12-09 05:10:21.730 24024 24024 E WindowManager: android.view.WindowLeaked: Activity com.evancharlton.mileage.FieldActivity has leaked window DecorView@65d16d3[FieldActivity] that was originally added here
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:511)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:346)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.policy.PhoneWindow.openPanel(PhoneWindow.java:887)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUpPanel(PhoneWindow.java:1104)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUp(PhoneWindow.java:2007)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:350)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.os.Looper.loop(Looper.java:160)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 05:10:21.730 24024 24024 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 05:10:22.546  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 05:10:23.629  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-09 05:10:23.634  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-09 05:10:23.667  1740  1740 E wificond: No Offload Service available
+12-09 05:10:23.802  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 05:10:23.809  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 05:10:23.828  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 05:10:23.882  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 05:10:24.317  1885  1972 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '849 interface setmtu radio0 1500' failed with '400 849 Failed to set MTU (Permission denied)'
+12-09 05:10:25.510  2378 24111 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 05:10:25.720 24112 24112 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:10:27.761  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 05:10:28.175  2378 24146 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 05:10:28.243 24151 24151 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:10:28.303  2378 24150 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 05:10:28.658  1737  1820 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-09 05:10:29.130 24151 24174 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-09 05:10:44.167 24284 24284 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:10:44.630 24305 24305 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-09 05:11:10.797  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 05:11:10.797  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 05:11:16.975  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 05:11:50.517  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 05:11:56.415  1885  2149 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.433  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.487  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.517  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.558  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.575  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.606  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.631  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.722  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.742  1885  2149 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.779  1885  2001 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.811  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.866  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.917  1885  2001 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 05:11:56.949  1885  1938 E WindowManager: Performed 6 layouts in a row. Skipping

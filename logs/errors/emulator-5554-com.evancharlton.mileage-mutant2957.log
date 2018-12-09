@@ -1,0 +1,87 @@
+--------- beginning of system
+12-08 14:37:21.497  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 14:37:21.497  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 14:37:21.497  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-08 14:37:44.681  2429 29457 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 14:37:44.966  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 14:37:52.845  1885  3260 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:52.891  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:52.995  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:53.032  1885  2248 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:53.070  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:53.098  1885  3260 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:53.148  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:53.350  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:54.639  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 14:37:55.929  1885  3260 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:55.997  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:56.026  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:56.074  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:56.116  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:37:56.142  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:38:01.470  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:38:05.428  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:38:05.428  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:38:11.680  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:38:23.774  2429 26551 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 14:38:24.032 29559 29559 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:38:24.360 29574 29574 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:38:25.274 29600 29600 E android.youtub: Not starting debugger since process cannot load the jdwp agent.
+12-08 14:38:26.493 29600 29629 E YouTube : Failed delayed event dispatch, no dispatchers.
+12-08 14:39:05.431  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:39:05.431  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:39:11.685  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:40:05.435  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:40:05.436  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:40:11.686  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:40:29.360  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:40:53.530  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:41:00.005  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 14:41:05.443  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 14:41:05.443  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 14:41:08.000  1885  4687 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.027  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.131  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.197  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.222  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.251  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.357  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.505  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.544  1885  2248 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.605  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.634  1885  2248 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.678  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:08.796  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:11.692  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 14:41:12.270  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 14:41:12.468  1885  4548 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.507  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.528  1885  1900 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.565  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.606  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.673  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.716  1885  4687 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.757  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.837  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.857  1885  4548 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.894  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 14:41:12.980  1885  1939 E WindowManager: Performed 6 layouts in a row. Skipping

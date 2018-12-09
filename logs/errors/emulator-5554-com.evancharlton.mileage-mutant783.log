@@ -1,0 +1,84 @@
+--------- beginning of main
+--------- beginning of system
+12-09 12:53:23.959  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 12:53:23.959  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 12:53:23.959  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 12:53:26.256  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 12:53:26.336  2378 14137 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:53:26.564  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 12:53:26.653  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:53:28.555  1731  6658 E         : Couldn't opendir /data/app/vmdl1544905062.tmp: No such file or directory
+12-09 12:53:28.555  1731  6658 E installd: Failed to delete /data/app/vmdl1544905062.tmp: No such file or directory
+12-09 12:53:30.752 14283 14283 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 12:53:39.248  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 7
+12-09 12:53:39.267  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 7
+12-09 12:53:41.479  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 12:53:48.215 14283 14283 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:53:48.215 14283 14283 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:53:50.752  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 12:53:52.732  2378 14219 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:53:53.140  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 12:53:53.320  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:53:55.723 14283 14283 E WindowManager: 
+12-09 12:53:55.723 14283 14283 E WindowManager: android.view.WindowLeaked: Activity com.evancharlton.mileage.FieldActivity has leaked window DecorView@bf5589f[FieldActivity] that was originally added here
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:511)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:346)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.policy.PhoneWindow.openPanel(PhoneWindow.java:887)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUpPanel(PhoneWindow.java:1104)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onKeyUp(PhoneWindow.java:2007)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:350)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5037)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4905)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4585)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4642)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4453)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4426)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4479)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4445)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4618)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4779)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2571)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2081)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2072)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2548)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.os.MessageQueue.next(MessageQueue.java:326)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.os.Looper.loop(Looper.java:160)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 12:53:55.723 14283 14283 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 12:53:56.489 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 12:54:00.264  2378 14137 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:54:00.605  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:54:16.085  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 12:54:16.085  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 12:54:16.639 14355 14355 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-09 12:54:19.843  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

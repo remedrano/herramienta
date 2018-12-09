@@ -1,0 +1,232 @@
+--------- beginning of main
+--------- beginning of system
+12-09 13:19:19.426  1885  1957 E InputDispatcher: channel '302e159 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 13:19:19.426  1885  1957 E InputDispatcher: channel '5deaf7b com.evancharlton.mileage/com.evancharlton.mileage.FieldActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 13:19:19.427  1885  1957 E InputDispatcher: channel 'c4a1916 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 13:19:19.690  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 13:19:19.690  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 13:19:19.690  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 13:19:21.901  2378 17048 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 13:19:22.150  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 13:19:22.208  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 13:19:24.714  1731  1935 E         : Couldn't opendir /data/app/vmdl701883887.tmp: No such file or directory
+12-09 13:19:24.714  1731  1935 E installd: Failed to delete /data/app/vmdl701883887.tmp: No such file or directory
+12-09 13:19:27.198  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 13:19:27.712 18974 18974 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 18974
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:28.256 18974 18974 E AndroidRuntime: 	... 13 more
+12-09 13:19:28.434  1633  1633 E lowmemorykiller: Error writing /proc/18974/oom_score_adj; errno=22
+12-09 13:19:28.530  9391 11645 E s.nexuslaunche: No package ID ff found for ID 0xffffffff.
+12-09 13:19:28.611  9391 11645 E IconLoader: Could not find icon drawable from resource
+12-09 13:19:28.611  9391 11645 E IconLoader: android.content.res.Resources$NotFoundException: Resource ID #0xffffffff
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:225)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at android.content.res.Resources.getDrawableForDensity(Resources.java:887)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at android.content.res.Resources.getDrawable(Resources.java:827)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.recents.model.IconLoader.createNewIconForTask(SourceFile:118)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.recents.model.IconLoader.getAndInvalidateIfModified(SourceFile:94)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.recents.model.RecentsTaskLoader.getAndUpdateActivityIcon(SourceFile:325)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.recents.model.RecentsTaskLoadPlan.executePlan(SourceFile:188)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.recents.model.RecentsTaskLoader.loadTasks(SourceFile:173)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.quickstep.RecentsModel.onTaskStackChangedBackground(SourceFile:214)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at com.android.systemui.shared.system.TaskStackChangeListeners.onTaskStackChanged(SourceFile:80)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at android.app.ITaskStackListener$Stub.onTransact(ITaskStackListener.java:50)
+12-09 13:19:28.611  9391 11645 E IconLoader: 	at android.os.Binder.execTransact(Binder.java:731)
+12-09 13:19:28.617  9391 11645 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-jJ2b_a7s5NiIhrvgibYRdQ==/base.apk' I/O error
+12-09 13:19:28.650  9391 11645 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-jJ2b_a7s5NiIhrvgibYRdQ==/base.apk
+12-09 13:19:35.681  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-09 13:19:37.973 19002 19002 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19002
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:39.092 19002 19002 E AndroidRuntime: 	... 13 more
+12-09 13:19:39.179  1633  1633 E lowmemorykiller: Error writing /proc/19002/oom_score_adj; errno=22
+12-09 13:19:40.612 19026 19026 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19026
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:41.593 19026 19026 E AndroidRuntime: 	... 13 more
+12-09 13:19:41.659  1633  1633 E lowmemorykiller: Error writing /proc/19026/oom_score_adj; errno=22
+12-09 13:19:43.231 19046 19046 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19046
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:44.414 19046 19046 E AndroidRuntime: 	... 13 more
+12-09 13:19:44.503  1633  1633 E lowmemorykiller: Error writing /proc/19046/oom_score_adj; errno=22
+12-09 13:19:47.201 19075 19075 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19075
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:48.509 19075 19075 E AndroidRuntime: 	... 13 more
+12-09 13:19:48.726  1633  1633 E lowmemorykiller: Error writing /proc/19075/oom_score_adj; errno=22
+12-09 13:19:50.733  1994 19095 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:51.259  1994 19097 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:51.511  1994 19098 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:51.606  1994 19099 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:52.052  1994 19095 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:52.471  1994 19097 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:52.547  1994 19098 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:52.790  1994 19099 E HttpClientWrapper: fid: Exception occurred while executing network request.
+12-09 13:19:54.540 19105 19105 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19105
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:19:55.431 19105 19105 E AndroidRuntime: 	... 13 more
+12-09 13:19:55.640  1633  1633 E lowmemorykiller: Error writing /proc/19105/oom_score_adj; errno=22
+12-09 13:20:03.408 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 13:20:03.474 19131 19131 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19131
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:20:04.348 19131 19131 E AndroidRuntime: 	... 13 more
+12-09 13:20:04.404  1633  1633 E lowmemorykiller: Error writing /proc/19131/oom_score_adj; errno=22
+12-09 13:20:16.666  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 13:20:16.666  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 13:20:26.468 19165 19165 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 13:20:27.209  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 19165
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: java.lang.ExceptionInInitializerError
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateProvider(AppComponentFactory.java:121)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6380)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5938)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5853)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 13:20:28.420 19165 19165 E AndroidRuntime: 	... 13 more
+12-09 13:20:28.606  1633  1633 E lowmemorykiller: Error writing /proc/19165/oom_score_adj; errno=22
+12-09 13:20:35.719 13690 13723 E PlayCommon: [6481] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname

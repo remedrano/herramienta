@@ -1,0 +1,60 @@
+--------- beginning of main
+--------- beginning of system
+12-09 08:58:08.436  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 08:58:08.436  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 08:58:08.436  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 08:58:09.333 27232 27232 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:09.363 27225 27225 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:09.571 27264 27264 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:10.955  2378 26819 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:58:11.106 27299 27299 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:11.701  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:58:12.073  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:58:12.116 27330 27330 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:12.515 27350 27350 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:13.257 27299 27299 E DocsApplication: [main] No default account found during application creation.
+12-09 08:58:13.733  1731  1949 E         : Couldn't opendir /data/app/vmdl117332859.tmp: No such file or directory
+12-09 08:58:13.733  1731  1949 E installd: Failed to delete /data/app/vmdl117332859.tmp: No such file or directory
+12-09 08:58:16.040 27398 27398 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:18.200  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 08:58:18.200  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 08:58:29.016  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 08:58:29.972 27428 27428 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:31.197 27428 27428 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 08:58:31.518  1741  1787 E OMXNodeInstance: getConfig(0xe93913c0:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 08:58:31.712  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 08:58:38.714  2378 27320 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:58:38.976  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 08:58:39.036  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:58:44.132  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:58:45.378 27469 27469 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 08:58:47.068  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 08:58:48.707 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 08:58:52.506 27398 27398 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:58:52.506 27398 27398 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:58:54.053 23668 23701 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 08:58:54.785  2378 27192 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 08:58:55.097  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 08:58:55.730 23668 23668 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{4cd6922 VFE...CL. ...P.... 207,21-414,279 #161} because the view is not tagged for visual element logging.
+12-09 08:58:57.865  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:59:05.021  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 08:59:05.280  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 08:59:05.378  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

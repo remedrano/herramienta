@@ -1,0 +1,98 @@
+--------- beginning of system
+--------- beginning of main
+12-08 19:08:27.226  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 19:08:27.226  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 19:08:27.226  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 19:08:29.376  2429 23986 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:08:29.952  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:08:30.279  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:08:31.288  1732  1934 E         : Couldn't opendir /data/app/vmdl1053348246.tmp: No such file or directory
+12-08 19:08:31.288  1732  1934 E installd: Failed to delete /data/app/vmdl1053348246.tmp: No such file or directory
+12-08 19:08:33.183 24067 24067 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 24067
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.FieldListActivity that attempts to sub-type erroneous class com.evancharlton.mileage.BaseListActivity (declaration of 'com.evancharlton.mileage.FieldListActivity' appears in base.apk)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.BaseListActivity: void com.evancharlton.mileage.BaseListActivity.onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu$ContextMenuInfo) failed to verify: void com.evancharlton.mileage.BaseListActivity.onCreateContextMenu(android.view.ContextMenu, android.view.View, android.view.ContextMenu$ContextMenuInfo): [0x11] register v0 has type Zero/null but expected Long (Low Half) (declaration of 'com.evancharlton.mileage.BaseListActivity' appears in base.apk)
+12-08 19:08:40.175 24067 24067 E AndroidRuntime: 	... 15 more
+12-08 19:08:40.254  1633  1633 E lowmemorykiller: Error writing /proc/24067/oom_score_adj; errno=22
+12-08 19:08:41.617  2429 23316 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:08:41.691  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:08:43.148 24106 24106 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:08:52.456  2429 23898 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:08:52.819  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:08:59.769  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:09:00.779 23937 23937 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:09:00.779 23937 23937 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:09:00.825 23937 23937 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:09:00.825 23937 23937 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:09:01.051 23937 23937 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:09:01.051 23937 23937 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:09:01.086 23937 23937 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:09:01.086 23937 23937 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:09:01.160 23937 23937 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 19:09:01.160 23937 23937 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 19:09:01.560  1629  1629 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 19:09:01.560  1629  1629 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 19:09:01.560  1629  1629 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 19:09:02.542  1738  1792 E Netd    : Interface index 3 was never in a currently-connected netId
+12-08 19:09:02.770  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:09:02.832  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:09:02.957  2429 24165 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:09:03.008  2429 24165 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:09:04.082  1885  1972 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '668 interface setmtu radio0 1500' failed with '400 668 Failed to set MTU (Permission denied)'
+12-08 19:09:04.084  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 19:09:04.100  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 19:09:04.274  1741  1741 E wificond: No Offload Service available
+12-08 19:09:04.649  1885  1970 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 19:09:04.749  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:09:04.765  1885  1971 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:09:04.863  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:09:04.910  2429 23898 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 19:09:04.952  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:09:05.103  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 19:09:05.104  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 19:09:05.217  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 19:09:05.288  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 19:09:05.353  2429 24188 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:09:09.372  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:09:09.592  1885  1968 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 19:09:09.912  1738  1800 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 19:09:10.256  2429 24201 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:09:10.356  2429 24204 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:09:10.510  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 19:09:11.125  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 19:09:20.530  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error

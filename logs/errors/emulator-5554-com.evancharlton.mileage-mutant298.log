@@ -1,0 +1,127 @@
+--------- beginning of main
+--------- beginning of system
+12-08 20:08:50.223  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 20:08:50.223  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:08:50.223  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 20:08:51.414 32562 32562 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:08:51.421 32567 32567 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:08:52.349 32619 32619 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:08:54.283 32619 32619 E DocsApplication: [main] No default account found during application creation.
+12-08 20:08:55.182  1732  1935 E         : Couldn't opendir /data/app/vmdl208540647.tmp: No such file or directory
+12-08 20:08:55.182  1732  1935 E installd: Failed to delete /data/app/vmdl208540647.tmp: No such file or directory
+12-08 20:08:58.284 32686 32686 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:09:05.095  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:09:05.095  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:09:08.142  1996  2601 E putmethod.lati: Invalid ID 0x00000001.
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 20:09:08.150  1996  2601 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 20:09:09.887 32714 32714 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:09:11.701  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:09:12.136 32714 32714 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-08 20:09:12.463  1742 31349 E OMXNodeInstance: getConfig(0xed99d240:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-08 20:09:22.308  2407  6403 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-U6606wg1hYj4P5jAxFlZJA==/base.apk' I/O error
+12-08 20:09:22.312  2407  6403 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-U6606wg1hYj4P5jAxFlZJA==/base.apk
+12-08 20:09:24.763  1614  1698 E audio_hw_generic: pcm_write failed cannot write stream data: I/O error
+12-08 20:09:32.303 32762 32762 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:09:34.615  2429 31706 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:09:36.889   310   310 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:09:37.053  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 20:09:39.231  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 20:10:06.858  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:10:06.863  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:10:11.708  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:10:30.434  1746  1746 E /system/bin/tombstoned: Traces for pid 2407 written to: /data/anr/trace_28
+--------- beginning of crash
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: FATAL EXCEPTION: FinalizerWatchdogDaemon
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: Process: com.google.android.apps.nexuslauncher, PID: 2407
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: java.util.concurrent.TimeoutException: android.view.ThreadedRenderer.finalize() timed out after 10 seconds
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at android.view.ThreadedRenderer.nDeleteProxy(Native Method)
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at android.view.ThreadedRenderer.finalize(ThreadedRenderer.java:967)
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+12-08 20:10:32.861  2407  2416 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+12-08 20:10:35.488  1885  2284 E WindowManager: Failed to notify cancel
+12-08 20:10:35.488  1885  2284 E WindowManager: android.os.DeadObjectException
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-08 20:10:35.488  1885  2284 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-08 20:10:35.498  1885  2284 E WindowManager: Failed to notify cancel
+12-08 20:10:35.498  1885  2284 E WindowManager: android.os.DeadObjectException
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at android.view.IRemoteAnimationRunner$Stub$Proxy.onAnimationCancelled(IRemoteAnimationRunner.java:117)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.invokeAnimationCancelled(RemoteAnimationController.java:210)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.cancelAnimation(RemoteAnimationController.java:143)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at com.android.server.wm.RemoteAnimationController.binderDied(RemoteAnimationController.java:247)
+12-08 20:10:35.498  1885  2284 E WindowManager: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:1193)
+12-08 20:10:37.443   373   373 E s.nexuslaunche: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:10:37.748  2540  2540 E OverlaySController: Failed to send status update
+12-08 20:10:37.748  2540  2540 E OverlaySController: android.os.DeadObjectException
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at android.os.BinderProxy.transactNative(Native Method)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at android.os.BinderProxy.transact(Binder.java:1127)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.google.android.a.a.c(SourceFile:20)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.google.android.libraries.m.f.PB(SourceFile:7)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.r.a(SourceFile:90)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.p.handleMessage(SourceFile:122)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.google.android.libraries.gsa.e.b.q.handleMessage(SourceFile:9)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 20:10:37.748  2540  2540 E OverlaySController: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 20:10:42.354  2540  2540 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 20:10:50.004 32686 32686 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:10:50.004 32686 32686 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:10:54.592  1727  1753 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 20:10:54.628  2540  2540 E OverlaySController: Calling with an invalid UID, the interface will not work
+12-08 20:10:54.837  1727  1755 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-08 20:10:54.839   429   429 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:11:04.111  2429   307 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:11:04.340  2429  2429 E BeaconBle: Missing BluetoothAdapter
+12-08 20:11:04.435  2429  2429 E BeaconBle: Scan couldn't start for Places
+12-08 20:11:06.435   373   373 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:11:08.843  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:11:08.843  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:11:13.578  1740  1805 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:11:25.853   373   408 E ActivityThread: Failed to find provider info for com.google.android.as.allapps.actionsettingprovider
+12-08 20:11:25.853   373   408 E ActionsController: write setting failed
+12-08 20:11:25.853   373   408 E ActionsController: java.lang.IllegalArgumentException: Unknown URL content://com.google.android.as.allapps.actionsettingprovider
+12-08 20:11:25.853   373   408 E ActionsController: 	at android.content.ContentResolver.insert(ContentResolver.java:1583)
+12-08 20:11:25.853   373   408 E ActionsController: 	at com.google.android.apps.nexuslauncher.allapps.d.handleMessage(SourceFile:268)
+12-08 20:11:25.853   373   408 E ActionsController: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-08 20:11:25.853   373   408 E ActionsController: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:11:25.853   373   408 E ActionsController: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:11:33.080   373   373 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:11:50.077  1996  1996 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 8
+12-08 20:11:57.542  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 20:11:59.379  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 20:12:01.887  1885  1900 E AutofillSession: No assist structure - app might have crashed providing it

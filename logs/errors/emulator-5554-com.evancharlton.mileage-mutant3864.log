@@ -1,0 +1,44 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:14:04.922  2720  2728 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 23:13:47.159]
+12-08 23:14:04.994  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:14:04.994  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:14:04.994  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:14:06.516  2378 14908 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:14:06.969  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:14:08.931  1731  1776 E         : Couldn't opendir /data/app/vmdl270849382.tmp: No such file or directory
+12-08 23:14:08.932  1731  1776 E installd: Failed to delete /data/app/vmdl270849382.tmp: No such file or directory
+12-08 23:14:09.731  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:14:09.731  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:14:10.497 15101 15101 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:14:15.659  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 23:14:17.482  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 7
+12-08 23:14:19.348 15101 15101 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:14:19.348 15101 15101 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:14:20.232  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99028 pid 14988: No such file or directory
+12-08 23:14:21.486  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:14:24.693  2378 14570 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:14:24.937  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-08 23:14:24.989  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:14:28.387  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:14:31.150 15158 15158 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:14:47.292  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99029 pid 15158: No such file or directory
+12-08 23:14:50.347  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

@@ -1,0 +1,322 @@
+--------- beginning of system
+12-09 02:30:05.835  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 02:30:05.835  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 02:30:05.835  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-09 02:30:06.505 14388 14388 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:06.526 14396 14396 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:06.686 14421 14421 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:07.298 14458 14458 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:09.002 14458 14458 E DocsApplication: [main] No default account found during application creation.
+12-09 02:30:09.790  1731  1949 E         : Couldn't opendir /data/app/vmdl980080832.tmp: No such file or directory
+12-09 02:30:09.790  1731  1949 E installd: Failed to delete /data/app/vmdl980080832.tmp: No such file or directory
+12-09 02:30:11.947  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:30:11.948  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:30:13.025 14531 14531 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14531
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	... 11 more
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:30:13.632 14531 14531 E AndroidRuntime: 	... 17 more
+12-09 02:30:13.670  1633  1633 E lowmemorykiller: Error writing /proc/14531/oom_score_adj; errno=22
+12-09 02:30:18.827  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:30:47.813 14572 14572 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:48.239 14589 14589 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:50.528 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71c39d0 VFE...CL. ...P.... 0,289-1038,436 #e} because the view is not tagged for visual element logging.
+12-09 02:30:53.972 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{71c39d0 VFE...CL. ...P.... 0,289-1038,436 #e} because the view is not tagged for visual element logging.
+12-09 02:30:54.704 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ed6ecce VFE...CL. ...P.... 0,142-1038,289 #d} because the view is not tagged for visual element logging.
+12-09 02:30:58.584 14623 14623 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:30:58.708 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fdc7ef VFE...CL. ...P.... 0,436-1038,583 #f} because the view is not tagged for visual element logging.
+12-09 02:31:00.572 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fdc7ef VFE...CL. ...P.... 0,436-1038,583 #f} because the view is not tagged for visual element logging.
+12-09 02:31:02.206 14653 14653 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:02.896 10557 10557 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fdc7ef VFE...CL. ...P.... 0,436-1038,583 #f} because the view is not tagged for visual element logging.
+12-09 02:31:03.258 10557 10561 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 02:30:58.408]
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14653
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	... 11 more
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:03.465 14653 14653 E AndroidRuntime: 	... 17 more
+12-09 02:31:03.576  1633  1633 E lowmemorykiller: Error writing /proc/14653/oom_score_adj; errno=22
+12-09 02:31:04.616 14678 14678 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14678
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	... 11 more
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:06.135 14678 14678 E AndroidRuntime: 	... 17 more
+12-09 02:31:06.204  1633  1633 E lowmemorykiller: Error writing /proc/14678/oom_score_adj; errno=22
+12-09 02:31:07.252 14703 14703 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:07.595 14717 14717 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:08.766 14703 14703 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 02:31:09.155  1741  2074 E OMXNodeInstance: getConfig(0xe9391180:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14717
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	... 11 more
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:09.465 14717 14717 E AndroidRuntime: 	... 17 more
+12-09 02:31:09.708  1633  1633 E lowmemorykiller: Error writing /proc/14717/oom_score_adj; errno=22
+12-09 02:31:11.473 14748 14748 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:11.736 10557 10622 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 02:31:11.953  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:31:11.954  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14748
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	... 11 more
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:13.197 14748 14748 E AndroidRuntime: 	... 17 more
+12-09 02:31:13.357  1633  1633 E lowmemorykiller: Error writing /proc/14748/oom_score_adj; errno=22
+12-09 02:31:16.824 14776 14776 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14776
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	... 11 more
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:17.776 14776 14776 E AndroidRuntime: 	... 17 more
+12-09 02:31:17.813  1633  1633 E lowmemorykiller: Error writing /proc/14776/oom_score_adj; errno=22
+12-09 02:31:18.860  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:31:19.467 10557 10557 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 02:31:19.985 14803 14803 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14803
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	... 11 more
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:31:20.593 14803 14803 E AndroidRuntime: 	... 17 more
+12-09 02:31:20.658  1633  1633 E lowmemorykiller: Error writing /proc/14803/oom_score_adj; errno=22
+12-09 02:31:22.821 14829 14829 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:31:52.534  2378 14345 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 02:32:01.533  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 02:32:11.956  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:32:11.956  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:32:04.764  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 02:32:18.873  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:32:51.425 14890 14890 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14890
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	... 11 more
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.LinearLayout.removeAllViews()' on a null object reference
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:96)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-09 02:32:52.285 14890 14890 E AndroidRuntime: 	... 17 more
+12-09 02:32:52.379  1633  1633 E lowmemorykiller: Error writing /proc/14890/oom_score_adj; errno=22
+12-09 02:32:53.365 14919 14919 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:33:11.959  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:33:11.959  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:33:18.875  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:34:11.979  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 02:34:11.979  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 02:34:18.879  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

@@ -1,0 +1,99 @@
+--------- beginning of main
+--------- beginning of system
+12-08 20:35:12.793  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 20:35:12.793  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:35:12.793  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 20:35:12.870  1884  1956 E InputDispatcher: channel '40d4202 com.evancharlton.mileage/com.evancharlton.mileage.ImportExportActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 20:35:12.871  1884  1956 E InputDispatcher: channel 'a0d8780 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 20:35:13.020  2413  2427 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 20:35:15.671  1731  1933 E         : Couldn't opendir /data/app/vmdl1176643785.tmp: No such file or directory
+12-08 20:35:15.671  1731  1933 E installd: Failed to delete /data/app/vmdl1176643785.tmp: No such file or directory
+12-08 20:35:16.670  4898  4898 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:17.705  1993  2612 E putmethod.lati: Invalid ID 0x00000001.
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 20:35:17.706  1993  2612 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 20:35:17.772  1884  1902 E KernelUidCpuFreqTimeReader: Failed to read /proc/uid_time_in_state: java.io.FileNotFoundException: /proc/uid_time_in_state (No such file or directory)
+12-08 20:35:17.772  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99000 pid 4770: No such file or directory
+12-08 20:35:20.507  1884  1897 E memtrack: Couldn't load memtrack module
+--------- beginning of crash
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 4898
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupListActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.intern()' on a null object reference
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:165)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.view.View.performClick(View.java:6597)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:6574)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.view.View.access$3100(View.java:778)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:25885)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.intern()' on a null object reference
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.content.IntentFilter.addAction(IntentFilter.java:704)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.content.IntentFilter.<init>(IntentFilter.java:416)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at com.evancharlton.mileage.FillupListActivity.onResume(FillupListActivity.java:62)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 20:35:20.520  4898  4898 E AndroidRuntime: 	... 17 more
+12-08 20:35:20.612  1884  1956 E InputDispatcher: channel '6308df7 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 20:35:21.241  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:21.246  2439  3093 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:35:21.375  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:21.430  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 20:35:21.650  4928  4928 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:23.200  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:25.598  4946  4946 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:25.632  4958  4958 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:26.002  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b43b6fa VFE...CL. ...P.... 0,436-1038,583 #4} because the view is not tagged for visual element logging.
+12-08 20:35:26.568  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:26.609  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:27.180  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{ce88708 VFE...CL. .F....ID 0,142-1038,289 #2} because the view is not tagged for visual element logging.
+12-08 20:35:27.531  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{b43b6fa VFE...CL. ...P.... 0,436-1038,583 #4} because the view is not tagged for visual element logging.
+12-08 20:35:28.912  2826  3095 E MicroDetectionWorker: Stale runnable..ignoring
+12-08 20:35:29.982  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 20:35:28.971]
+12-08 20:35:30.058  5005  5005 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:37.081  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:35:37.153  2439  2792 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:35:37.349  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:35:37.691  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 20:35:40.511  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 20:35:42.027  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:35:42.027  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:35:45.727  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:35:45.858  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:35:46.598  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:35:48.544  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:35:49.763  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99001 pid 4958: No such file or directory

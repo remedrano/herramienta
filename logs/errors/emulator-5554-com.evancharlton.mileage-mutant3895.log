@@ -1,0 +1,61 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:26:22.684  2378 17531 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 23:26:22.982 17820 17820 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:26:23.965  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:26:23.965  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:26:23.965  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:26:24.118  2342  5775 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 23:26:24.406  2378 17784 E NetworkScheduler.ATC: Called cancelTask for already completed task com.google.android.gms/.learning.training.background.TrainingGcmTaskService{u=0 tag="com.google.android.gms.learning.BACKGROUND_TRAINING_TASK" trigger=window{period=900s,flex=600s,earliest=-50s,latest=549s} requirements=[NET_ANY,CHARGING,DEVICE_IDLE] attributes=[PERSISTED,RECURRING] scheduled=-350s last_run=-1s jid=N/A status=ACTIVE retries=0 client_lib=MANCHEGO_GCM-14799000} :RESCHEDULED
+12-08 23:26:25.018  2378 17782 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:26:25.360  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:26:26.845  1731  1776 E         : Couldn't opendir /data/app/vmdl1908980565.tmp: No such file or directory
+12-08 23:26:26.845  1731  1776 E installd: Failed to delete /data/app/vmdl1908980565.tmp: No such file or directory
+12-08 23:26:27.764 17919 17919 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:26:34.626  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 23:26:34.626  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 23:26:35.019 17919 17919 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:26:35.019 17919 17919 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:26:38.425  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:26:44.044  2378 17855 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:26:44.263  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-08 23:26:44.331  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:26:44.797  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:26:47.673  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 23:26:48.965 17919 17919 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:26:48.965 17919 17919 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 23:26:51.199 17979 17979 E boxed_process3: Not starting debugger since process cannot load the jdwp agent.
+12-08 23:26:51.352  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.p{b4282f4 VFE...CL. ...P.... 207,21-414,279 #8a} because the view is not tagged for visual element logging.
+12-08 23:26:51.354  2720  2720 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{370b356 VFE...CL. ...P.... 0,-5-1038,142 #85} because the view is not tagged for visual element logging.
+12-08 23:26:53.169  2720  2728 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 23:26:51.872]
+12-08 23:26:56.438  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:27:04.831  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:27:09.383  1885  1898 E memtrack: Couldn't load memtrack module
+12-08 23:27:09.975  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 23:27:09.976  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 23:27:12.835  1885  1902 E libprocessgroup: Error encountered killing process cgroup uid 99036 pid 17979: No such file or directory
+12-08 23:27:15.946  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

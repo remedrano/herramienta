@@ -1,0 +1,422 @@
+--------- beginning of main
+--------- beginning of system
+12-09 06:27:22.404  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 06:27:22.404  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 06:27:22.404  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 06:27:22.709  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 06:27:23.811  2378 29321 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 06:27:24.053  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 06:27:25.841  1731  1731 E         : Couldn't opendir /data/app/vmdl1236415472.tmp: No such file or directory
+12-09 06:27:25.842  1731  1731 E installd: Failed to delete /data/app/vmdl1236415472.tmp: No such file or directory
+12-09 06:27:27.346 29464 29464 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29464
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	... 11 more
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:27.742 29464 29464 E AndroidRuntime: 	... 22 more
+12-09 06:27:27.855  1633  1633 E lowmemorykiller: Error writing /proc/29464/oom_score_adj; errno=22
+12-09 06:27:27.888 23591 24734 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk' I/O error
+12-09 06:27:27.931 23591 24734 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-3tPa4L2Qweef0ibhMFpOzQ==/base.apk
+12-09 06:27:36.151 29490 29490 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29490
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	... 11 more
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:36.416 29490 29490 E AndroidRuntime: 	... 22 more
+12-09 06:27:37.622 29516 29516 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29516
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	... 11 more
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:37.847 29516 29516 E AndroidRuntime: 	... 22 more
+12-09 06:27:37.936  1633  1633 E lowmemorykiller: Error writing /proc/29516/oom_score_adj; errno=22
+12-09 06:27:38.380 29533 29533 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29533
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	... 11 more
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:38.660 29533 29533 E AndroidRuntime: 	... 22 more
+12-09 06:27:38.704  1633  1633 E lowmemorykiller: Error writing /proc/29533/oom_score_adj; errno=22
+12-09 06:27:40.301 29551 29551 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29551
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	... 11 more
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:40.630 29551 29551 E AndroidRuntime: 	... 22 more
+12-09 06:27:40.648  1633  1633 E lowmemorykiller: Error writing /proc/29551/oom_score_adj; errno=22
+12-09 06:27:42.264 29575 29575 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29575
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	... 11 more
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:42.528 29575 29575 E AndroidRuntime: 	... 22 more
+12-09 06:27:42.600  1633  1633 E lowmemorykiller: Error writing /proc/29575/oom_score_adj; errno=22
+12-09 06:27:47.217 29601 29601 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29601
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	... 11 more
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:47.467 29601 29601 E AndroidRuntime: 	... 22 more
+12-09 06:27:47.486  1633  1633 E lowmemorykiller: Error writing /proc/29601/oom_score_adj; errno=22
+12-09 06:27:51.494 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 06:27:52.469 29631 29631 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29631
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	... 11 more
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:27:52.649 29631 29631 E AndroidRuntime: 	... 22 more
+12-09 06:27:52.689  1633  1633 E lowmemorykiller: Error writing /proc/29631/oom_score_adj; errno=22
+12-09 06:27:59.802 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:28:00.845  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:28:00.975  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 06:28:01.076 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 06:28:07.526 29664 29664 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 29664
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2843)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	... 11 more
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: Caused by: java.lang.NullPointerException
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at java.util.Objects.requireNonNull(Objects.java:203)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at java.lang.reflect.Field.getAnnotation(Field.java:891)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.load(Dao.java:141)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Dao.<init>(Dao.java:40)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.evancharlton.mileage.dao.Fillup.<init>(Fillup.java:102)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 06:28:07.810 29664 29664 E AndroidRuntime: 	... 22 more
+12-09 06:28:08.482 30523 27728 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_053c3743-42c2-4285-bd6a-e41c18864dc5)

@@ -1,0 +1,80 @@
+--------- beginning of system
+--------- beginning of main
+12-08 20:52:09.541  1884  1956 E InputDispatcher: channel '1afa48e com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 20:52:09.541  1884  1956 E InputDispatcher: channel '6eadd2f com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 20:52:09.562  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 20:52:09.562  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:52:09.562  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 20:52:10.773  2439  9479 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:52:11.205  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 20:52:11.262  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 20:52:12.230  9651  9651 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:12.464  9675  9675 E ndroid.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:13.604  9730  9730 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:13.724  9730  9730 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 20:52:13.724  9730  9730 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 20:52:13.724  9730  9730 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 20:52:13.970  1731  1933 E         : Couldn't opendir /data/app/vmdl1807195340.tmp: No such file or directory
+12-08 20:52:13.970  1731  1933 E installd: Failed to delete /data/app/vmdl1807195340.tmp: No such file or directory
+12-08 20:52:14.689  9762  9762 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:15.449  9795  9795 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:16.631  1993  2612 E putmethod.lati: Invalid ID 0x00000001.
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 20:52:16.640  1993  2612 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 20:52:26.373  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:52:28.632  2439  9479 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:52:29.008  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 20:52:29.053  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 20:52:31.784  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 20:52:33.782  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:52:35.046  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:52:35.092  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 20:52:35.703  1993  1993 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-08 20:52:35.703  1993  1993 E EGL_emulation: tid 1993: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-08 20:52:35.751  1993  1993 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-08 20:52:35.751  1993  1993 E EGL_emulation: tid 1993: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-08 20:52:36.084  9867  9867 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:52:36.174  1993  1993 E RecyclerView: No adapter attached; skipping layout
+12-08 20:52:42.605  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:52:42.606  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:52:45.304  1884  1901 E libprocessgroup: Error encountered killing process cgroup uid 99014 pid 9867: No such file or directory
+12-08 20:52:46.024  1993  1993 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3

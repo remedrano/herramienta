@@ -1,0 +1,59 @@
+--------- beginning of main
+--------- beginning of system
+12-09 00:54:58.085  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 00:54:58.085  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 00:54:58.085  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 00:54:58.267  2342  6611 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 00:54:58.752 29813 29813 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:54:58.805 29824 29824 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:54:59.640 29871 29871 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:55:00.364  2378 24639 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:55:00.807  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 00:55:01.674 29871 29871 E DocsApplication: [main] No default account found during application creation.
+12-09 00:55:02.504  1731  1776 E         : Couldn't opendir /data/app/vmdl1639097869.tmp: No such file or directory
+12-09 00:55:02.504  1731  1776 E installd: Failed to delete /data/app/vmdl1639097869.tmp: No such file or directory
+12-09 00:55:05.265 29939 29939 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:55:10.971  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:55:10.971  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:55:13.622  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 00:55:17.527  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:55:18.122  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:19.462  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:19.558  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:19.847  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:24.304  2378 28795 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:55:24.350  2378 28795 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 00:55:24.479  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 00:55:24.542  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 00:55:30.156  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:38.087  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:38.336  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:39.463  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:39.551  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:39.928  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:55:41.778  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:55:44.949  2378 29659 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:55:45.074  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 00:55:48.431  2720  2720 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 00:55:48.431  2720  2720 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 00:55:49.923 30003 30003 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:55:50.251 30020 30020 E boxed_process2: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:55:53.432  2509 29380 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_020ffae7-2d62-4b04-9d37-1631f9ee2f51)

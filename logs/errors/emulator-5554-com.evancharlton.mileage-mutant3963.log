@@ -1,0 +1,69 @@
+--------- beginning of main
+--------- beginning of system
+12-08 23:59:44.761  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 23:59:44.761  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 23:59:44.761  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 23:59:44.963  2342  8119 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-08 23:59:46.178  2378 20230 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 23:59:46.313  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-08 23:59:48.190  1731  6658 E         : Couldn't opendir /data/app/vmdl1754734925.tmp: No such file or directory
+12-08 23:59:48.190  1731  6658 E installd: Failed to delete /data/app/vmdl1754734925.tmp: No such file or directory
+12-08 23:59:50.580 23092 23092 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:00:06.312  2378 23125 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:00:06.463  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 00:00:10.087  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:00:10.087  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:00:16.227  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:00:21.173  2720  2720 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:00:22.152 22452 22452 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-09 00:00:22.152 22452 22452 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-09 00:00:22.172 22452 22452 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-09 00:00:22.172 22452 22452 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-09 00:00:22.313 22452 22452 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-09 00:00:22.316 22452 22452 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-09 00:00:22.316 22452 22452 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-09 00:00:22.317 22452 22452 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-09 00:00:22.433 22452 22452 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-09 00:00:22.433 22452 22452 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-09 00:00:22.608  1629  1629 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-09 00:00:22.608  1629  1629 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-09 00:00:22.608  1629  1629 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-09 00:00:22.881  1885  1905 E NetdConnector: NDC event {600 Iface linkstate radio0 down} took too long: 900ms
+12-09 00:00:22.881  1885  1905 E NetdConnector: NDC event {616 Route removed fe80::/64 dev radio0} processed too late: 898ms
+12-09 00:00:22.882  1885  1905 E NetdConnector: NDC event {616 Route removed fec0::/64 dev radio0} processed too late: 899ms
+12-09 00:00:22.882  1885  1905 E NetdConnector: NDC event {616 Route removed ::/0 via fe80::ec3e:ccff:fe53:3104 dev radio0} processed too late: 899ms
+12-09 00:00:22.883  1885  1905 E NetdConnector: NDC event {614 Address removed fec0::411:70ce:e027:6c38/64 radio0 1 200} processed too late: 892ms
+12-09 00:00:22.883  1885  1905 E NetdConnector: NDC event {614 Address removed fec0::4889:eff:fe27:d21/64 radio0 0 200} processed too late: 892ms
+12-09 00:00:22.883  1885  1905 E NetdConnector: NDC event {614 Address removed fe80::4889:eff:fe27:d21/64 radio0 128 253} processed too late: 891ms
+12-09 00:00:22.891  1885  1971 E WifiP2pService: Unhandled message { when=-5ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-09 00:00:22.894  1885  1905 E NetdConnector: NDC event {613 IfaceClass active 0 5005101437480 0} processed too late: 860ms
+12-09 00:00:22.895  1885  1905 E NetdConnector: NDC event {600 Iface linkstate wlan0 down} processed too late: 576ms
+12-09 00:00:22.943  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 00:00:22.995  1885  1903 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-09 00:00:23.185  2378 22552 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 00:00:23.228  2378 22552 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-09 00:00:41.040  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:00:48.686  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:01:10.090  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:01:10.090  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:01:10.307  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 00:01:16.231  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:01:29.997  1726  1726 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=63, front.active.{w=1080, h=1920}

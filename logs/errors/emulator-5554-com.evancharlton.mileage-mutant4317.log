@@ -1,0 +1,63 @@
+--------- beginning of main
+--------- beginning of system
+12-09 03:22:02.359  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 03:22:02.359  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 03:22:02.359  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 03:22:03.066 23718 23718 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:03.237 23736 23736 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:03.267 23744 23744 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:04.115 23794 23794 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:05.169  2378 23313 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 03:22:05.305  2378 23313 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 03:22:05.305  2378 23313 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 03:22:05.469  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:22:05.494  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:22:06.021 23794 23794 E DocsApplication: [main] No default account found during application creation.
+12-09 03:22:07.093  1731  1776 E         : Couldn't opendir /data/app/vmdl86775239.tmp: No such file or directory
+12-09 03:22:07.094  1731  1776 E installd: Failed to delete /data/app/vmdl86775239.tmp: No such file or directory
+12-09 03:22:09.707 23864 23864 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:12.655  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:22:12.656  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:22:12.761 23893 23893 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:12.991  1741  2075 E OMXNodeInstance: getConfig(0xe97a6e40:google.amrwb.encoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:22:17.556 10557 10622 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 03:22:18.186  2378 23822 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 03:22:18.461  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:22:19.763  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:22:22.576 23864 23864 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:22:22.576 23864 23864 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 03:22:27.694 23955 23955 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:28.361 23955 23955 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 03:22:28.585  1726  1751 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 03:22:28.648  1741  1741 E OMXNodeInstance: getConfig(0xe9391420:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 03:22:28.760  1726  1873 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 03:22:32.565  2378 23937 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 03:22:32.753  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 03:22:32.803  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 03:22:41.586 23999 23999 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 03:22:46.001 10557 10557 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 03:23:12.687  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:23:12.687  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:23:19.768  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:24:12.695  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 03:24:12.695  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 03:24:19.769  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 03:24:23.780  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

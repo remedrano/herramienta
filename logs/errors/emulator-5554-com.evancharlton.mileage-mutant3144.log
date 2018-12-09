@@ -1,0 +1,109 @@
+--------- beginning of main
+--------- beginning of system
+12-08 16:16:18.029  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 16:16:18.029  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 16:16:18.029  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 16:16:18.032  1884  1956 E InputDispatcher: channel '78dc5c0 com.evancharlton.mileage/com.evancharlton.mileage.FieldListActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 16:16:18.041  1884  1956 E InputDispatcher: channel '880c329 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-08 16:16:18.234  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:16:19.393  2439 15468 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:16:19.612  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 16:16:19.644  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:16:21.703  1731  1933 E         : Couldn't opendir /data/app/vmdl1105232424.tmp: No such file or directory
+12-08 16:16:21.703  1731  1933 E installd: Failed to delete /data/app/vmdl1105232424.tmp: No such file or directory
+12-08 16:16:23.174 15796 15796 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:16:31.127  1993  2612 E putmethod.lati: Invalid ID 0x00000001.
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 16:16:31.143  1993  2612 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 16:16:33.488  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:16:36.785  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:16:38.385  1884  1897 E memtrack: Couldn't load memtrack module
+12-08 16:16:38.392  2439 15719 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 16:16:38.672  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 16:16:38.788  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 16:16:41.966  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 16:16:42.978  1628  1628 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 16:16:42.984  1628  1628 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 16:16:42.984  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 16:16:42.984  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 16:16:43.097  1740  1740 E wificond: No Offload Service available
+12-08 16:16:43.133  1884  1967 E SupplicantStaIfaceHal: Can't call setupIface, ISupplicantStaIface is null
+12-08 16:16:43.233 15849 15849 E viders.calenda: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:16:43.559  1884  1968 E WifiVendorHal: getBgScanCapabilities(l.671) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+12-08 16:16:43.656  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 16:16:43.711  1884  1969 E WifiP2pService: Unhandled message { when=-1ms what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 16:16:43.729  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 16:16:43.774 15845 15845 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 16:16:43.774 15845 15845 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 16:16:43.775 15845 15845 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/p2p-dev-wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 16:16:43.775 15845 15845 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 16:16:43.842  1884  1897 E GnssLocationProvider: no AGPS interface in set_agps_server
+12-08 16:16:43.872 15845 15845 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 16:16:43.872 15845 15845 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 16:16:43.972 15845 15845 E wpa_supplicant: nl80211: Failed to open /proc/sys/net/ipv4/conf/wlan0/drop_unicast_in_l2_multicast: No such file or directory
+12-08 16:16:43.972 15845 15845 E wpa_supplicant: nl80211: Failed to set IPv4 unicast in multicast filter
+12-08 16:16:44.183  1628  1628 E android.hardware.wifi@1.0-service: Failed to open directory: Permission denied
+12-08 16:16:44.183  1628  1628 E android.hardware.wifi@1.0-service: Error occurred while deleting old tombstone files
+12-08 16:16:44.183  1628  1628 E android.hardware.wifi@1.0-service: Error writing files to flash
+12-08 16:16:44.268 15873 15873 E droid.deskcloc: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:16:44.417  1884  1967 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+12-08 16:16:44.418  1884  1967 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+12-08 16:16:44.444  1884  1967 E HalDevMgr: Should have at least 1 chip!
+12-08 16:16:44.444  1884  1967 E HalDevMgr: dispatchAvailableForRequestListeners: no chip info found
+12-08 16:16:44.454  1884  1967 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+12-08 16:16:44.454  1884  1967 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+12-08 16:16:44.454  1884  1967 E WifiStateMachine: Failed to remove networks on exiting connect mode
+12-08 16:16:44.470  1884  1969 E WifiP2pService: Unhandled message { when=-16ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 16:16:44.491  1884  1968 E WificondControl: No valid wificond scanner interface handler
+12-08 16:16:44.494  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 16:16:44.502  1884  1967 E WifiScanRequestProxy: Scan failure received. reason: -1,description: not available
+12-08 16:16:44.503  1884  1902 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 16:16:44.586 15873 15873 E LoadedApk: Unable to instantiate appComponentFactory
+12-08 16:16:44.586 15873 15873 E LoadedApk: java.lang.ClassNotFoundException: Didn't find class "android.support.v4.app.CoreComponentFactory" on path: DexPathList[[zip file "/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/base.apk"],nativeLibraryDirectories=[/data/app/com.google.android.deskclock-irjeQ48B8SlCzNgOUY6aXg==/lib/x86, /system/lib]]
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.LoadedApk.createAppFactory(LoadedApk.java:226)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:731)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:810)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.LoadedApk.getResources(LoadedApk.java:1032)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.ContextImpl.createAppContext(ContextImpl.java:2345)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5749)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.os.Looper.loop(Looper.java:193)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 16:16:44.586 15873 15873 E LoadedApk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 16:16:45.336 15900 15900 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:16:46.051 15900 15900 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-08 16:16:46.129 15927 15927 E com.ustwo.lwp: Not starting debugger since process cannot load the jdwp agent.
+12-08 16:16:46.465  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 16:16:48.324  2413  2413 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 16:16:49.517  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 16:16:58.879  1884  1968 E WificondScannerImpl: Timed out waiting for scan result from wificond

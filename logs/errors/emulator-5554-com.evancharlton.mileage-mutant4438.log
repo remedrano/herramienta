@@ -1,0 +1,200 @@
+--------- beginning of main
+--------- beginning of system
+12-09 09:52:21.980  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 09:52:22.925  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 09:52:22.925  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 09:52:22.925  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 09:52:23.962 10368 10368 E id.defcontaine: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:23.975 10376 10376 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:24.006 10393 10393 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:24.892 10437 10437 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:25.960 10462 10462 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:26.755 10486 10486 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:28.241 10437 10437 E DocsApplication: [main] No default account found during application creation.
+12-09 09:52:28.954  1731  1949 E         : Couldn't opendir /data/app/vmdl826092954.tmp: No such file or directory
+12-09 09:52:28.954  1731  1949 E installd: Failed to delete /data/app/vmdl826092954.tmp: No such file or directory
+12-09 09:52:33.034 10541 10541 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:35.394  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 09:52:35.403  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+--------- beginning of crash
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 10541
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.Intent android.content.Intent.putExtra(java.lang.String, long)' on a null object reference
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at com.evancharlton.mileage.BaseListActivity.loadItem(BaseListActivity.java:127)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at com.evancharlton.mileage.FieldListActivity.onItemClick(FieldListActivity.java:51)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at com.evancharlton.mileage.BaseListActivity.onItemClick(BaseListActivity.java:133)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:318)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1159)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3136)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4052)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:873)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 09:52:39.883 10541 10541 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 09:52:40.359 10569 10569 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:44.072  1633  1633 E lowmemorykiller: Error opening /proc/10486/oom_score_adj; errno=2
+12-09 09:52:44.073  1633  1633 E lowmemorykiller: Error opening /proc/10462/oom_score_adj; errno=2
+12-09 09:52:44.507  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 09:52:44.518  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 09:52:47.559 10598 10598 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:48.131 10615 10615 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:49.336 10631 10631 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:49.718 10631 10631 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 09:52:49.934  1726  2181 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 09:52:50.037 10569 10591 E SQLiteLog: (1) no such table: fillups
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: Couldn't upgrade database!
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 09:52:50.044 10569 10591 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-09 09:52:50.102  1741  1741 E OMXNodeInstance: getConfig(0xe97a6a20:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 09:52:50.111  1726  1911 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 09:52:52.975 10660 10660 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:52:55.706  2378  5094 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 09:52:55.877  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 09:52:55.899  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 09:53:04.526 10688 10688 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:53:12.035  8824  8824 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 09:53:13.984  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 09:53:13.984  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 09:53:14.725  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:21.993  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 09:53:23.151  2524  2836 E PlayCommon: [104] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-09 09:53:26.030  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.062  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.063  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.064  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.064  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.073  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.077  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.083  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.085  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.099  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.114  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.127  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.151  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.158  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.169  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.172  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.185  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.197  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.206  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.211  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.218  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.223  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.228  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.236  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.241  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.244  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.257  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.265  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.269  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.271  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.289  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.291  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.295  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.301  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.303  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.327  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.374  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.385  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.395  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.400  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.405  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.411  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.418  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.429  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.440  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.451  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.459  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.464  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.469  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.472  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.485  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.489  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.495  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.497  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.500  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.509  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.511  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.513  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.515  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.518  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.520  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.522  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.524  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.527  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.571  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.575  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.577  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.579  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.609  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.661  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.718  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:26.904  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.050  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.142 10741 10741 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:53:27.163  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.281  1633  1633 E lowmemorykiller: Error opening /proc/10615/oom_score_adj; errno=2
+12-09 09:53:27.321  1633  1633 E lowmemorykiller: Error writing /proc/10660/oom_score_adj; errno=22
+12-09 09:53:27.321  1633  1633 E lowmemorykiller: Error opening /proc/10615/oom_score_adj; errno=2
+12-09 09:53:27.322  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.456  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.587  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.743  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.874  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:27.880 10757 10757 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:53:27.957  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:28.031  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:28.101  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 09:53:28.337 10774 10774 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 09:53:30.494  8824  8864 E MicroDetectionWorker: Stale runnable..ignoring

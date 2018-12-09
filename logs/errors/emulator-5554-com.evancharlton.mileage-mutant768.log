@@ -1,0 +1,41 @@
+--------- beginning of main
+--------- beginning of system
+12-09 12:49:18.847  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 12:49:18.847  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 12:49:18.847  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 12:49:18.979  9391  9845 E IconLoader: Unexpected null component name or activity info: ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}, null
+12-09 12:49:19.873 30523 12636 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_511d658b-4777-4271-90ef-bfa1e4e643c7)
+12-09 12:49:22.981  1731  1731 E         : Couldn't opendir /data/app/vmdl1728975583.tmp: No such file or directory
+12-09 12:49:22.981  1731  1731 E installd: Failed to delete /data/app/vmdl1728975583.tmp: No such file or directory
+12-09 12:49:24.914 13481 13481 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 12:49:26.169  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 12:49:34.414  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 12:49:34.509 13481 13481 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:49:34.509 13481 13481 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 12:49:45.927  2378  3140 E PlaceInferenceEngine: Position timestamp out of order. Previous: 1544359600000, Current: 1544341786000. Skipping this Position.
+12-09 12:49:45.950  2378 13401 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 12:49:46.341  2378 13401 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 12:49:46.341  2378 13401 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-09 12:49:46.861  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 12:49:47.304  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 12:49:48.806 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 12:50:08.410  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 3
+12-09 12:50:08.532  1994  1994 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

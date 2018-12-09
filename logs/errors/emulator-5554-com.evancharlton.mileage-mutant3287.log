@@ -1,0 +1,84 @@
+--------- beginning of main
+12-08 22:49:04.423 28012 28083 E SQLiteLog: (1) no such table: fillups
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: Couldn't upgrade database!
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-08 22:49:04.435 28012 28083 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+--------- beginning of system
+12-08 22:49:06.476  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 22:49:06.476  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 22:49:06.476  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 22:49:08.176  2439 27914 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:49:08.505  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:49:10.785  1731  1771 E         : Couldn't opendir /data/app/vmdl258124262.tmp: No such file or directory
+12-08 22:49:10.785  1731  1771 E installd: Failed to delete /data/app/vmdl258124262.tmp: No such file or directory
+12-08 22:49:13.264 28159 28159 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:49:15.098  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 22:49:15.103  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 22:49:23.065  1884  4455 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.121  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.161  1884  4712 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.190  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.217  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.255  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.316  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:23.354  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:49:32.588  2413  6895 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-J2BQbSIDpwGUzM-4Y8QGNA==/base.apk' I/O error
+12-08 22:49:32.633  2413  6895 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-J2BQbSIDpwGUzM-4Y8QGNA==/base.apk
+12-08 22:49:33.997  2439 28095 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:49:34.161  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 22:49:34.250  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:49:44.327  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:49:44.328  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:49:45.264  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:49:51.386  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:49:57.877 28229 28229 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:49:58.113  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9ee4fb8 VFE...CL. ...P.... 0,436-1038,583 #c7} because the view is not tagged for visual element logging.
+12-08 22:49:58.236  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5567185 VFE...CL. ...P.... 0,289-1038,436 #c6} because the view is not tagged for visual element logging.
+12-08 22:49:58.349  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{823443e VFE...CL. ...P.... 0,142-1038,289 #c5} because the view is not tagged for visual element logging.
+12-08 22:49:58.765  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5567185 VFE...CL. ...p.... 0,289-1038,436 #c6} because the view is not tagged for visual element logging.
+12-08 22:49:58.827  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5567185 VFE...CL. ...P.... 0,289-1038,436 #c6} because the view is not tagged for visual element logging.
+12-08 22:49:59.347  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9e5dbce VFE...CL. ...P.... 0,583-1038,730 #c8} because the view is not tagged for visual element logging.
+12-08 22:49:59.781  2826  2826 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{823443e VFE...CL. ...P.... 0,142-1038,289 #c5} because the view is not tagged for visual element logging.
+12-08 22:50:01.564 28256 28256 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:50:03.698  2826  2834 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-08 22:50:01.310]

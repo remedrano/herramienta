@@ -1,0 +1,356 @@
+--------- beginning of main
+--------- beginning of system
+12-09 00:03:24.797  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 00:03:24.797  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 00:03:24.797  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 00:03:25.679  5758  5758 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:25.800  5782  5782 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:25.974  2438  5662 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 00:03:26.153  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-09 00:03:26.160  5811  5811 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:26.202  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-09 00:03:27.087  5811  5811 E DocsApplication: [main] No default account found during application creation.
+12-09 00:03:27.928  1733  1930 E         : Couldn't opendir /data/app/vmdl1027649902.tmp: No such file or directory
+12-09 00:03:27.928  1733  1930 E installd: Failed to delete /data/app/vmdl1027649902.tmp: No such file or directory
+12-09 00:03:28.999  5876  5876 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 5876
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:29.260  5876  5876 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:29.302  1633  1633 E lowmemorykiller: Error writing /proc/5876/oom_score_adj; errno=22
+12-09 00:03:31.395  5900  5900 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:31.601  5915  5915 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:34.514  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{1fc2600 VFE...CL. ...P.... 0,289-1038,436 #f} because the view is not tagged for visual element logging.
+12-09 00:03:35.084  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{f23ac7e VFE...CL. .F....ID 0,-5-1038,142 #d} because the view is not tagged for visual element logging.
+12-09 00:03:35.110  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{83305df VFE...CL. ...P.... 0,142-1038,289 #e} because the view is not tagged for visual element logging.
+12-09 00:03:36.953  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fda22c VFE...CL. ...P.... 0,436-1038,583 #10} because the view is not tagged for visual element logging.
+12-09 00:03:37.610  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 00:03:37.610  2570  2570 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 00:03:38.076  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fda22c VFE...CL. ...P.... 0,436-1038,583 #10} because the view is not tagged for visual element logging.
+12-09 00:03:38.246  5952  5952 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:39.326  5977  5977 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:39.542  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{2fda22c VFE...CL. ...P.... 0,436-1038,583 #10} because the view is not tagged for visual element logging.
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 5977
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:39.651  5977  5977 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:39.735  1633  1633 E lowmemorykiller: Error writing /proc/5977/oom_score_adj; errno=22
+12-09 00:03:40.808  6003  6003 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6003
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:41.079  6003  6003 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:41.233  2337  4889 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage--WLOGR-C_-oVhXQ-9q4ejQ==/base.apk' I/O error
+12-09 00:03:41.234  2337  4889 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage--WLOGR-C_-oVhXQ-9q4ejQ==/base.apk
+12-09 00:03:41.887  2570  2584 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 00:03:38.187]
+12-09 00:03:41.992  6029  6029 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6029
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:42.310  6029  6029 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:42.370  1633  1633 E lowmemorykiller: Error writing /proc/6029/oom_score_adj; errno=22
+12-09 00:03:43.824  6053  6053 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6053
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:44.099  6053  6053 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:44.149  1633  1633 E lowmemorykiller: Error writing /proc/6053/oom_score_adj; errno=22
+12-09 00:03:45.005  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 00:03:45.005  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 00:03:45.889  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:03:45.940  6084  6084 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:45.968  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6084
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:46.220  6084  6084 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:46.256  1633  1633 E lowmemorykiller: Error writing /proc/6084/oom_score_adj; errno=22
+12-09 00:03:46.295  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:03:46.363  1991  1991 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-09 00:03:46.363  1991  1991 E EGL_emulation: tid 1991: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 00:03:46.418  1991  1991 E EGL_emulation: eglQueryContext 32c0  EGL_BAD_ATTRIBUTE
+12-09 00:03:46.418  1991  1991 E EGL_emulation: tid 1991: eglQueryContext(1861): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 00:03:50.668  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:50.817  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:51.070  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 00:03:51.375  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:51.452  6131  6131 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:51.432  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6131
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:51.743  6131  6131 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:51.788  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:03:51.962  2337  2403 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage--WLOGR-C_-oVhXQ-9q4ejQ==/base.apk' I/O error
+12-09 00:03:51.963  2337  2403 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage--WLOGR-C_-oVhXQ-9q4ejQ==/base.apk
+12-09 00:03:52.044  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:03:52.389  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:53.474  2534  3247 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_ee5559a7-1eb0-445e-a8c4-827faaa175c2)
+12-09 00:03:53.149  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:54.092  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 00:03:54.433  6158  6158 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6158
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:03:54.766  6158  6158 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:03:54.821  1633  1633 E lowmemorykiller: Error writing /proc/6158/oom_score_adj; errno=22
+12-09 00:03:56.327  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:56.683  6187  6187 E d.process.acor: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:03:58.563  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 00:03:58.714  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:04:00.819  2534  4844 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_ee5559a7-1eb0-445e-a8c4-827faaa175c2)
+12-09 00:04:04.455  6211  6211 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 6211
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.FillupActivity: void com.evancharlton.mileage.FillupActivity.onResume() failed to verify: void com.evancharlton.mileage.FillupActivity.onResume(): [0xF7] wide register v14 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.FillupActivity' appears in base.apk)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 00:04:04.628  6211  6211 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 00:04:04.656  1633  1633 E lowmemorykiller: Error writing /proc/6211/oom_score_adj; errno=22
+12-09 00:04:05.846  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:04:07.167  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-09 00:04:07.226  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:04:07.399  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 00:04:07.658  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

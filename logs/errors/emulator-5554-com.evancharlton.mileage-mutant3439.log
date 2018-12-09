@@ -1,0 +1,359 @@
+--------- beginning of main
+--------- beginning of system
+12-08 19:10:55.128  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 14
+12-08 19:10:55.272  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 19:10:58.818  1733  1733 E         : Couldn't opendir /data/app/vmdl503888679.tmp: No such file or directory
+12-08 19:10:58.819  1733  1733 E installd: Failed to delete /data/app/vmdl503888679.tmp: No such file or directory
+12-08 19:10:59.801  8932  8932 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 8932
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	... 11 more
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:00.321  8932  8932 E AndroidRuntime: 	... 17 more
+12-08 19:11:00.372  1633  1633 E lowmemorykiller: Error writing /proc/8932/oom_score_adj; errno=22
+12-08 19:11:00.458  2337  2403 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk' I/O error
+12-08 19:11:00.458  2337  2403 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk
+12-08 19:11:03.357  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing
+12-08 19:11:06.311  8952  8952 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 8952
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	... 11 more
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:06.579  8952  8952 E AndroidRuntime: 	... 17 more
+12-08 19:11:06.660  1633  1633 E lowmemorykiller: Error writing /proc/8952/oom_score_adj; errno=22
+12-08 19:11:07.348  8976  8976 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 8976
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	... 11 more
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:07.635  8976  8976 E AndroidRuntime: 	... 17 more
+12-08 19:11:07.674  1633  1633 E lowmemorykiller: Error writing /proc/8976/oom_score_adj; errno=22
+12-08 19:11:07.897  2337  6295 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk' I/O error
+12-08 19:11:07.897  2337  6295 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk
+12-08 19:11:08.457  8996  8996 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 8996
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	... 11 more
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:08.811  8996  8996 E AndroidRuntime: 	... 17 more
+12-08 19:11:08.851  1633  1633 E lowmemorykiller: Error writing /proc/8996/oom_score_adj; errno=22
+12-08 19:11:10.212  9016  9016 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9016
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	... 11 more
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:10.589  9016  9016 E AndroidRuntime: 	... 17 more
+12-08 19:11:10.627  1633  1633 E lowmemorykiller: Error writing /proc/9016/oom_score_adj; errno=22
+12-08 19:11:12.292  9041  9041 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9041
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	... 11 more
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:12.812  9041  9041 E AndroidRuntime: 	... 17 more
+12-08 19:11:12.855  1633  1633 E lowmemorykiller: Error writing /proc/9041/oom_score_adj; errno=22
+12-08 19:11:16.772  9074  9074 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9074
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	... 11 more
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:17.048  9074  9074 E AndroidRuntime: 	... 17 more
+12-08 19:11:17.090  1633  1633 E lowmemorykiller: Error writing /proc/9074/oom_score_adj; errno=22
+12-08 19:11:17.178  2337  6840 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk' I/O error
+12-08 19:11:17.178  2337  6840 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk
+12-08 19:11:19.640  2858  3026 E PlayCommon: [148] com.google.android.play.b.w.a(20): Failed to connect to server for server timestamp: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 19:11:19.651  2858  3026 E PlayCommon: [148] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 19:11:20.124  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 19:11:20.652  9100  9100 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9100
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	... 11 more
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:21.084  9100  9100 E AndroidRuntime: 	... 17 more
+12-08 19:11:21.121  1633  1633 E lowmemorykiller: Error writing /proc/9100/oom_score_adj; errno=22
+12-08 19:11:22.393  1629  1629 E android.hardware.wifi@1.0-service: Failed to register radio mode change callback
+12-08 19:11:22.397  1629  1629 E android.hardware.wifi@1.0-service: Failed to set DFS flag; DFS channels may be unavailable.
+12-08 19:11:22.545  1742  1742 E wificond: No Offload Service available
+12-08 19:11:22.929  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:11:22.957  1881  1967 E WifiP2pService: Unhandled message { when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+12-08 19:11:23.029  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:11:23.105  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:11:23.252  1881  1968 E ConnectivityService: exception in setMtu()java.lang.IllegalStateException: command '118 interface setmtu radio0 1500' failed with '400 118 Failed to set MTU (Permission denied)'
+12-08 19:11:23.932  2438  9156 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:11:24.338  9164  9164 E id.gms.unstabl: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:27.121  1881  1899 E BatteryExternalStatsWorker: no controller energy info supplied for wifi
+12-08 19:11:27.245  1881  1965 E WifiVendorHal: stopRssiMonitoring(l.2404) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+12-08 19:11:27.895  2438  9211 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 19:11:27.916  1739  1788 E Netd    : Error adding route ::/0 -> fe80::ff:fe00:100 wlan0 to table 1003: File exists
+12-08 19:11:28.037  2438  9214 E WakeLock: GCM_CONN_ALARM release without a matched acquire!
+12-08 19:11:28.755  9215  9215 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: FATAL EXCEPTION: main
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 9215
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3784)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:197)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:543)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	... 11 more
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:267)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7292)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+12-08 19:11:29.133  9215  9215 E AndroidRuntime: 	... 17 more
+12-08 19:11:29.188  1633  1633 E lowmemorykiller: Error writing /proc/9215/oom_score_adj; errno=22
+12-08 19:11:29.199  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:11:29.276  2337  4889 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk' I/O error
+12-08 19:11:29.279  2337  4889 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-V6Xl3YjkM3oAs-wXVJF2Eg==/base.apk
+12-08 19:11:29.485  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:11:29.622  1881  1894 E memtrack: Couldn't load memtrack module
+12-08 19:11:35.341  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{6f24742 VFE...CL. ...P.... 0,142-1038,289 #2d} because the view is not tagged for visual element logging.
+12-08 19:11:35.544  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{cb5d9bc VFE...CL. ...P.... 0,-5-1038,142 #2c} because the view is not tagged for visual element logging.
+12-08 19:11:36.081  9255  9255 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:36.133  9267  9267 E boxed_process1: Not starting debugger since process cannot load the jdwp agent.
+12-08 19:11:36.291  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99009 pid 9255: No such file or directory
+12-08 19:11:36.468  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{cb5d9bc VFE...CL. ...P.... 0,-5-1038,142 #2c} because the view is not tagged for visual element logging.
+12-08 19:11:37.048  1881  1898 E libprocessgroup: Error encountered killing process cgroup uid 99008 pid 8657: No such file or directory

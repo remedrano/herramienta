@@ -1,0 +1,41 @@
+--------- beginning of main
+--------- beginning of system
+12-09 11:40:17.379  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 11:40:17.379  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage is currently frozen!
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:4000)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 11:40:17.379  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 11:40:18.860  2378 32506 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 11:40:19.169  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 11:40:21.508  1731  6658 E         : Couldn't opendir /data/app/vmdl309815785.tmp: No such file or directory
+12-09 11:40:21.508  1731  6658 E installd: Failed to delete /data/app/vmdl309815785.tmp: No such file or directory
+12-09 11:40:23.232 32624 32624 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 11:40:23.709  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 11:40:26.951 13690 13723 E PlayCommon: [6481] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-09 11:40:33.555  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 11:40:37.815  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 11:40:39.448 23591 23602 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-uBFkczg7Aioy5okYa8mzzA==/base.apk' I/O error
+12-09 11:40:39.460 23591 23602 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-uBFkczg7Aioy5okYa8mzzA==/base.apk
+12-09 11:40:40.613  2378 32374 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 11:40:40.876  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 11:40:41.049  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 11:40:44.539 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 11:40:51.862 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 11:40:53.473 23591 23591 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 11:41:00.569 30523 31887 E SQLiteCastStore: Skip saving CastDeviceInfo: "Nearby device" (__cast_nearby___V_5f0526cf-c7a3-4a69-a519-5eb9b63933c9)

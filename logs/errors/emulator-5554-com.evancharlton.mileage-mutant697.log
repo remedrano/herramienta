@@ -1,0 +1,204 @@
+--------- beginning of main
+--------- beginning of system
+12-09 07:28:38.255  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 07:28:38.255  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 07:28:38.255  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 07:28:39.662  8939  8939 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 07:28:40.281  2378  8267 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 07:28:40.788  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 07:28:43.094  8939  8939 E DocsApplication: [main] No default account found during application creation.
+12-09 07:28:43.831  1731  1949 E         : Couldn't opendir /data/app/vmdl1392292297.tmp: No such file or directory
+12-09 07:28:43.831  1731  1949 E installd: Failed to delete /data/app/vmdl1392292297.tmp: No such file or directory
+12-09 07:28:46.712  9012  9012 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 07:28:49.161  1994  7294 E putmethod.lati: Invalid ID 0x00000001.
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 07:28:49.167  1994  7294 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 07:29:04.858  2378  8959 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-09 07:29:05.353  2378  2378 E BeaconBle: Missing BluetoothAdapter
+12-09 07:29:05.379  2378  2378 E BeaconBle: Scan couldn't start for Places
+12-09 07:29:09.433 23668 23668 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 07:29:16.135  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 07:29:16.135  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 07:29:20.170  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 07:29:25.798  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 07:29:31.539  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 07:29:31.649  1885  1898 E memtrack: Couldn't load memtrack module
+12-09 07:29:36.517  1885  1899 E ActivityManager: ANR in com.google.android.apps.nexuslauncher (com.google.android.apps.nexuslauncher/.NexusLauncherActivity)
+12-09 07:29:36.517  1885  1899 E ActivityManager: PID: 23591
+12-09 07:29:36.517  1885  1899 E ActivityManager: Reason: Input dispatching timed out (Waiting to send key event because the focused window has not finished processing all of the input events that were previously delivered to it.  Outbound queue length: 0.  Wait queue length: 1.)
+12-09 07:29:36.517  1885  1899 E ActivityManager: Load: 5.49 / 6.2 / 6.48
+12-09 07:29:36.517  1885  1899 E ActivityManager: CPU usage from 2ms to 6772ms later (2018-12-09 07:29:29.570 to 2018-12-09 07:29:36.339):
+12-09 07:29:36.517  1885  1899 E ActivityManager:   31% 1885/system_server: 16% user + 15% kernel / faults: 4980 minor 408 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   22% 1726/surfaceflinger: 9.6% user + 12% kernel / faults: 743 minor 2 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   15% 645/kswapd0: 0% user + 15% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   14% 1614/android.hardware.audio@2.0-service: 2.2% user + 11% kernel / faults: 6 minor 14 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   12% 23591/com.google.android.apps.nexuslauncher: 4.8% user + 7.3% kernel / faults: 2901 minor 245 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   10% 23668/com.google.android.googlequicksearchbox:search: 3.6% user + 7% kernel / faults: 2625 minor 556 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   8.9% 2013/com.android.systemui: 4.2% user + 4.6% kernel / faults: 2055 minor 133 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   7.9% 1632/audioserver: 0.1% user + 7.7% kernel / faults: 297 minor 16 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   6.8% 2318/adbd: 0.2% user + 6.5% kernel / faults: 58596 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:   5.1% 9012/com.evancharlton.mileage: 1.4% user + 3.6% kernel / faults: 11569 minor 79 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   4.5% 1994/com.google.android.inputmethod.latin: 1.7% user + 2.7% kernel / faults: 1900 minor 62 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   4.2% 1687/kworker/u9:2: 0% user + 4.2% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   4.2% 2378/com.google.android.gms.persistent: 0.8% user + 3.3% kernel / faults: 925 minor 287 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   3.9% 1701/kworker/u9:4: 0% user + 3.9% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   3.9% 1754/android.hardware.graphics.composer@2.1-service: 0.1% user + 3.8% kernel / faults: 43 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:   3.3% 1685/kworker/u9:1: 0% user + 3.3% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   2.3% 8300/kworker/u9:0: 0% user + 2.3% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   2% 30506/kworker/u8:2: 0% user + 2% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 1741/media.codec: 0% user + 0% kernel / faults: 1166 minor 8 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.7% 1555/logd: 0.2% user + 1.4% kernel / faults: 4 minor 2 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.7% 2118/com.android.phone: 1.4% user + 0.2% kernel / faults: 663 minor 9 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.3% 3/ksoftirqd/0: 0% user + 1.3% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.3% 6770/kworker/u8:0: 0% user + 1.3% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.3% 28529/kworker/u8:6: 0% user + 1.3% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1.1% 1628/android.hardware.sensors@1.0-service: 0% user + 1.1% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 2415/com.android.se: 0% user + 0% kernel / faults: 765 minor 8 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   1% 4735/kworker/u8:7: 0% user + 1% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.8% 3107/kworker/u8:1: 0% user + 0.8% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.7% 9000/com.android.commands.monkey: 0.1% user + 0.5% kernel / faults: 238 minor 37 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 1734/media.extractor: 0% user + 0% kernel / faults: 738 minor 5 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.5% 30523/com.google.android.gms: 0.1% user + 0.4% kernel / faults: 25 minor 14 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 1//init: 0% user + 0% kernel / faults: 8 minor 10 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.4% 1624/android.hardware.graphics.allocator@2.0-service: 0.2% user + 0.1% kernel / faults: 24 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 1745/tombstoned: 0% user + 0% kernel / faults: 5 minor 2 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.2% 16/ksoftirqd/2: 0% user + 0.2% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.2% 1556/servicemanager: 0% user + 0.2% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.2% 8329/kworker/0:2: 0% user + 0.2% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 1623/android.hardware.gnss@1.0-service: 0% user + 0.1% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 1728/cameraserver: 0% user + 0.1% kernel / faults: 29 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0% 1735/media.metrics: 0% user + 0% kernel / faults: 61 minor 10 major
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 1738/statsd: 0.1% user + 0% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 2331/logcat: 0% user + 0.1% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   0.1% 32282/com.android.chrome:privileged_process0: 0% user + 0.1% kernel / faults: 1 major
+12-09 07:29:36.517  1885  1899 E ActivityManager: 57% TOTAL: 15% user + 35% kernel + 5.7% iowait + 1.3% softirq
+12-09 07:29:36.517  1885  1899 E ActivityManager: CPU usage from 39ms to 470ms later (2018-12-09 07:29:29.607 to 2018-12-09 07:29:30.037):
+12-09 07:29:36.517  1885  1899 E ActivityManager:   46% 1885/system_server: 40% user + 5.4% kernel / faults: 327 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:     40% 1899/ActivityManager: 40% user + 0% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:     2.7% 1885/system_server: 2.7% user + 0% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:     2.7% 2149/Binder:1885_5: 0% user + 2.7% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:   10% 1726/surfaceflinger: 2.5% user + 7.7% kernel / faults: 5 minor
+12-09 07:29:36.517  1885  1899 E ActivityManager:     2.5% 1726/surfaceflinger: 0% user + 2.5% kernel
+12-09 07:29:36.517  1885  1899 E ActivityManager:     2.5% 1751/Binder:1726_2: 0% user + 2.5% ke
+12-09 07:29:42.000  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.095  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.225  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.287  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.372  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.462  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.545  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.656  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.722  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.784  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.855  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:42.932  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.007  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.072  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.135  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.195  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.267  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.325  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.386  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.445  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.508  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.568  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.627  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.683  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.740  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.809  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.877  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:43.961  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.089  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.116  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.117  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.118  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.119  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.126  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.130  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.136  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.140  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.146  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.155  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.160  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.164  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.172  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.185  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.191  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.205  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.211  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.218  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.229  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.239  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.247  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.254  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.260  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.267  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.272  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.277  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.282  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.288  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.291  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.315  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.318  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.324  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.329  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.333  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.351  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.407  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.422  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.434  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.441  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.447  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.456  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.464  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.481  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.494  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.511  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.523  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.530  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.543  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.549  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.575  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.582  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.590  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.594  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.599  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.615  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.618  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.622  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.630  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.637  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.641  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.645  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.650  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.654  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.709  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.713  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.718  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.725  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.768  1885  4768 E memtrack: Couldn't load memtrack module
+12-09 07:29:44.773  1885  4768 E memtrack: Couldn't load memtrack module

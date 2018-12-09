@@ -1,0 +1,65 @@
+--------- beginning of system
+--------- beginning of main
+12-08 20:34:17.322  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 20:34:17.322  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 20:34:17.322  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 20:34:21.702  1733  1752 E         : Couldn't opendir /data/app/vmdl193089944.tmp: No such file or directory
+12-08 20:34:21.703  1733  1752 E installd: Failed to delete /data/app/vmdl193089944.tmp: No such file or directory
+12-08 20:34:24.396 25827 25827 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:34:25.768  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 20:34:25.773  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 20:34:32.983 25827 25827 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:34:32.983 25827 25827 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:34:36.878 25827 25827 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:34:36.878 25827 25827 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 20:34:40.225  1991  1991 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 1
+12-08 20:34:42.623  2438 23891 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 20:34:42.650  2438 23891 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=1
+12-08 20:34:42.790  2438  2438 E BeaconBle: Missing BluetoothAdapter
+12-08 20:34:42.854  2438  2438 E BeaconBle: Scan couldn't start for Places
+12-08 20:34:46.197  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:34:46.197  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:34:52.793  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:35:03.385 25878 25878 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-08 20:35:05.770  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 20:35:46.198  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:35:46.199  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:35:52.796  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:36:23.293  2858  3026 E PlayCommon: [148] com.google.android.play.b.g.a(448): Failed to connect to server: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+12-08 20:36:39.885  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:36:44.729  2337  2337 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-08 20:36:46.200  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:36:46.200  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:36:52.797  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:37:46.209  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:37:46.209  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:37:52.798  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:38:46.213  1807  1807 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 20:38:46.213  1807  1807 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 20:38:52.799  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 20:39:15.423  1728  1728 E SurfaceFlinger: [StatusBar#0] rejecting buffer: bufWidth=1080, bufHeight=1920, front.active.{w=1080, h=63}
+12-08 20:39:17.242  1991  1991 E native  : clearcut-logger.cc:191 USER_EDIT span#originalSpan is missing

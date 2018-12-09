@@ -1,0 +1,354 @@
+--------- beginning of system
+12-09 10:14:57.566  1885  1899 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 10:14:57.566  1885  1899 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 10:14:57.566  1885  1899 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+--------- beginning of main
+12-09 10:15:02.859 14844 14844 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:15:02.959 14857 14857 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:15:04.910 14887 14887 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+--------- beginning of crash
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 14887
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:15:05.169 14887 14887 E AndroidRuntime: 	... 27 more
+12-09 10:15:05.223  1633  1633 E lowmemorykiller: Error writing /proc/14887/oom_score_adj; errno=22
+12-09 10:15:14.236  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:15:14.236  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:15:22.238  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:15:42.959 14954 14954 E .android.diale: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:15:43.658 14954 14954 E .android.diale: The String#value field is not present on Android versions >= 6.0
+12-09 10:16:14.242  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:16:14.242  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:16:22.241  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:17:14.297  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:17:14.297  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:17:22.242  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:17:23.168 14993 14993 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:26.046  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 10:17:26.112  1994  1994 E native  : suggestion-transformer.cc:118 suggestion picked candidate not found for id: 2
+12-09 10:17:28.090 15028 15028 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:28.756 15045 15045 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:29.765 14749 15067 E BluetoothAdapter: Bluetooth binder is null
+12-09 10:17:32.650 14749 14749 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{d7d2119 VFE...CL. ...P.... 0,436-1038,583 #4} because the view is not tagged for visual element logging.
+12-09 10:17:35.902 15093 15093 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15093
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:17:38.076 15093 15093 E AndroidRuntime: 	... 27 more
+12-09 10:17:38.173  1633  1633 E lowmemorykiller: Error writing /proc/15093/oom_score_adj; errno=22
+12-09 10:17:39.600 15119 15119 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15119
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:17:41.176 15119 15119 E AndroidRuntime: 	... 27 more
+12-09 10:17:41.298  1633  1633 E lowmemorykiller: Error writing /proc/15119/oom_score_adj; errno=22
+12-09 10:17:42.089 15140 15140 E emui:screensho: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:42.948 14749 14816 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 10:17:43.183 15156 15156 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:43.630 15169 15169 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:43.858 15140 15140 E SoundPool: error loading /product/media/audio/ui/camera_click.ogg
+12-09 10:17:44.122  1726  1911 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15169
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:17:44.304 15169 15169 E AndroidRuntime: 	... 27 more
+12-09 10:17:44.326  1741  2074 E OMXNodeInstance: getConfig(0xe9391180:google.vorbis.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-09 10:17:44.409  1726  1750 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-09 10:17:44.444  1633  1633 E lowmemorykiller: Error writing /proc/15169/oom_score_adj; errno=22
+12-09 10:17:46.679 14749 14766 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 10:17:42.961]
+12-09 10:17:47.723 15213 15213 E d.process.medi: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:47.824 15222 15222 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:48.239 14749 14816 E MicroDetectionWorker: Stale runnable..ignoring
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15222
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:17:49.371 15222 15222 E AndroidRuntime: 	... 27 more
+12-09 10:17:49.596  1633  1633 E lowmemorykiller: Error writing /proc/15222/oom_score_adj; errno=22
+12-09 10:17:53.783 14749 14749 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 10:17:53.783 14749 14749 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 10:17:55.643 15257 15257 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15257
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:17:56.738 15257 15257 E AndroidRuntime: 	... 27 more
+12-09 10:17:56.789  1633  1633 E lowmemorykiller: Error writing /proc/15257/oom_score_adj; errno=22
+12-09 10:17:58.054 14749 14749 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 10:17:58.054 14749 14749 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 10:18:00.573 15279 15279 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:18:02.044 15299 15299 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:18:14.301  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:18:14.301  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:18:22.270  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:18:37.019 14749 14749 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 10:18:52.021 15354 15354 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15354
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:18:53.184 15354 15354 E AndroidRuntime: 	... 27 more
+12-09 10:18:53.316  1633  1633 E lowmemorykiller: Error writing /proc/15354/oom_score_adj; errno=22
+12-09 10:19:14.332  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:19:14.332  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:19:22.276  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:20:14.340  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:20:14.340  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:20:17.353  2378 11349 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-09 10:20:17.728 15391 15391 E id.gms.learnin: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:20:22.282  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:20:26.656 15416 15416 E hod.latin:trai: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:20:31.919  1633  1633 E lowmemorykiller: Error writing /proc/15391/oom_score_adj; errno=22
+12-09 10:20:32.233 15444 15444 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: FATAL EXCEPTION: main
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: Process: com.evancharlton.mileage, PID: 15444
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in base.apk)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at java.lang.Class.newInstance(Native Method)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.AppComponentFactory.instantiateActivity(AppComponentFactory.java:69)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1215)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2831)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2723)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:139)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:366)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.widget.TabHost.addTab(TabHost.java:238)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7136)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:7127)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.content.ContentValues): [0x6D] register v12 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in base.apk)
+12-09 10:20:33.087 15444 15444 E AndroidRuntime: 	... 27 more
+12-09 10:20:33.194  1633  1633 E lowmemorykiller: Error writing /proc/15444/oom_score_adj; errno=22
+12-09 10:21:11.217  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 10:21:14.350  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:21:14.350  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:21:18.343  2342  2342 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+12-09 10:21:22.287  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 10:22:14.411  1834  1834 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-09 10:22:14.412  1834  1834 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-09 10:22:22.290  1739  1762 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0

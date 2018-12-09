@@ -1,0 +1,82 @@
+--------- beginning of main
+--------- beginning of system
+12-08 22:16:34.236  1884  1898 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-08 22:16:34.236  1884  1898 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-08 22:16:34.236  1884  1898 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-08 22:16:36.219  2439 24799 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:16:36.470  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:16:38.591  1731  1771 E         : Couldn't opendir /data/app/vmdl1647174512.tmp: No such file or directory
+12-08 22:16:38.592  1731  1771 E installd: Failed to delete /data/app/vmdl1647174512.tmp: No such file or directory
+12-08 22:16:41.478 25053 25053 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-08 22:16:43.025  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:16:43.025  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:16:43.250  1993 19358 E putmethod.lati: Invalid ID 0x00000001.
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: 	at emn.a(PG:12)
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: 	at emk.run(PG:5)
+12-08 22:16:43.252  1993 19358 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-08 22:16:49.935  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:16:59.320  2413  6895 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-D8kF-Asdloc6aDru5WC8-w==/base.apk' I/O error
+12-08 22:16:59.330  2413  6895 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-D8kF-Asdloc6aDru5WC8-w==/base.apk
+12-08 22:17:01.212  2439 24804 E ctxmgr  : [ProducerStatusImpl]updateStateForNewContextData: inactive, contextName=7
+12-08 22:17:01.388  2439  2439 E BeaconBle: Missing BluetoothAdapter
+12-08 22:17:01.457  2439  2439 E BeaconBle: Scan couldn't start for Places
+12-08 22:17:11.250 25053 25053 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:17:11.250 25053 25053 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:17:12.772  2826  2826 E ContextIntentStarter: No activity found for any of the 0 intents
+12-08 22:17:13.760  1884  2547 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.784  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.806  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.872  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.903  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.922  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.936  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:13.971  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:14.001  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:14.019  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:14.038  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:17:43.030  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:17:43.030  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:17:49.941  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:18:05.157  2439 24716 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+12-08 22:18:43.032  1827  1827 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+12-08 22:18:43.033  1827  1827 E netmgr  : WifiForwarder unable to open QEMU pipe: Invalid argument
+12-08 22:18:49.945  1739  1753 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-08 22:19:14.109 25053 25053 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:19:14.109 25053 25053 E SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-08 22:19:14.685  1884  2547 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.716  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.737  1884  1899 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.763  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.808  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.922  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:14.958  1884  4426 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.007  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.067  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.095  1884  4426 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.136  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.162  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.200  1884  4426 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.227  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping
+12-08 22:19:15.284  1884  1938 E WindowManager: Performed 6 layouts in a row. Skipping

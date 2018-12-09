@@ -1,0 +1,135 @@
+--------- beginning of main
+--------- beginning of system
+12-09 02:34:50.174  1881  1895 E ActivityManager: Failure starting process com.evancharlton.mileage
+12-09 02:34:50.174  1881  1895 E ActivityManager: java.lang.SecurityException: Package com.evancharlton.mileage was not found!
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.pm.PackageManagerService.checkPackageStartable(PackageManagerService.java:3987)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4234)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4199)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4181)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.startProcessLocked(ActivityManagerService.java:4067)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.startSpecificActivityLocked(ActivityStackSupervisor.java:1715)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:2764)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2302)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2234)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityStackSupervisor.resumeFocusedStackTopActivityLocked(ActivityStackSupervisor.java:2218)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:5923)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.removeProcessLocked(ActivityManagerService.java:7501)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.killPackageProcessesLocked(ActivityManagerService.java:7142)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService.forceStopPackageLocked(ActivityManagerService.java:7275)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.am.ActivityManagerService$MainHandler.handleMessage(ActivityManagerService.java:2289)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at android.os.Looper.loop(Looper.java:193)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+12-09 02:34:50.174  1881  1895 E ActivityManager: 	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+12-09 02:34:50.866 31993 31993 E droid.apps.doc: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:34:52.365 31993 31993 E DocsApplication: [main] No default account found during application creation.
+12-09 02:34:54.453  1741  1793 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+12-09 02:34:54.675  1733  1752 E         : Couldn't opendir /data/app/vmdl1834071392.tmp: No such file or directory
+12-09 02:34:54.675  1733  1752 E installd: Failed to delete /data/app/vmdl1834071392.tmp: No such file or directory
+12-09 02:34:57.552 32076 32076 E harlton.mileag: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:34:58.720  1991 22160 E putmethod.lati: Invalid ID 0x00000001.
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: emn: Can't get resource name for input slot
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x1
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: 	at android.content.res.ResourcesImpl.getResourceName(ResourcesImpl.java:255)
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: 	at android.content.res.Resources.getResourceName(Resources.java:1954)
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: 	at emn.a(PG:12)
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: 	at emk.run(PG:5)
+12-09 02:34:58.726  1991 22160 E LstmTrainingCache: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:35:06.733 32076 32076 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-09 02:35:06.739 32076 32076 E harlton.mileag: No package ID 49 found for ID 0x49470b49.
+12-09 02:35:06.739 32076 32076 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-09 02:35:06.740 32076 32076 E harlton.mileag: No package ID 87 found for ID 0x87589fbe.
+12-09 02:35:06.740 32076 32076 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-09 02:35:06.740 32076 32076 E harlton.mileag: No package ID 99 found for ID 0x990fd33a.
+12-09 02:35:06.740 32076 32076 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-09 02:35:06.740 32076 32076 E harlton.mileag: No package ID 7c found for ID 0x7c0596af.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID 9f found for ID 0x9f2c01f4.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID 77 found for ID 0x779c270c.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-09 02:35:06.741 32076 32076 E harlton.mileag: No package ID ae found for ID 0xae06108c.
+12-09 02:35:06.742 32076 32076 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-09 02:35:06.742 32076 32076 E harlton.mileag: No package ID b5 found for ID 0xb5413a44.
+12-09 02:35:06.936  1881  2381 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:06.963  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:06.996  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:07.166  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:07.188  1881  4988 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:07.216  1881  2389 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:07.248  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:07.322  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:12.714  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:35:12.975  2337  6295 E s.nexuslaunche: Failed to open APK '/data/app/com.evancharlton.mileage-kwXO7F3_CNPQuwSM4_Xo7A==/base.apk' I/O error
+12-09 02:35:12.997  2337  6295 E ResourcesManager: failed to add asset path /data/app/com.evancharlton.mileage-kwXO7F3_CNPQuwSM4_Xo7A==/base.apk
+12-09 02:35:23.585 32123 32123 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:35:24.203 32140 32140 E ocess.gservice: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:35:27.166  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:35:27.294  2570  2570 E ContextIntentStarter: No activity found for any of the 0 intents
+12-09 02:35:27.520 32076 32093 E SQLiteLog: (1) no such table: fillups
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: Couldn't upgrade database!
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 02:35:27.545 32076 32093 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
+12-09 02:35:27.758  1881  2381 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:27.782  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:27.812  1881  4077 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:27.851  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:27.917  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.288  1881  4405 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.314  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.387  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.434  1881  1891 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.500  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:28.580  1881  1934 E WindowManager: Performed 6 layouts in a row. Skipping
+12-09 02:35:32.778  1881  1894 E memtrack: Couldn't load memtrack module
+12-09 02:35:34.557 32193 32193 E id.partnersetu: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:35:35.018 32209 32209 E dboxed_process: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:35:36.687  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{9e1b548 VFE...CL. ...P.... 0,436-1038,583 #d7} because the view is not tagged for visual element logging.
+12-09 02:35:36.706  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4f543eb VFE...CL. ...P.... 0,289-1038,436 #d6} because the view is not tagged for visual element logging.
+12-09 02:35:37.020  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5672b3a VFE...CL. ...P.... 0,142-1038,289 #d5} because the view is not tagged for visual element logging.
+12-09 02:35:37.612  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4f543eb VFE...CL. ...P.... 0,289-1038,436 #d6} because the view is not tagged for visual element logging.
+12-09 02:35:37.615  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{4f543eb VFE...CL. ...P.... 0,289-1038,436 #d6} because the view is not tagged for visual element logging.
+12-09 02:35:38.092  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{8064fe1 VFE...CL. ...P.... 0,583-1038,730 #d8} because the view is not tagged for visual element logging.
+12-09 02:35:39.246  2570  2570 E ClientVe: Failed to create ClientVisualElementsProto for user interaction on view com.google.android.apps.gsa.searchbox.ui.suggestions.views.CoreSuggestionView{5672b3a VFE...CL. ...P.... 0,142-1038,289 #d5} because the view is not tagged for visual element logging.
+12-09 02:35:39.774  2570  2584 E ReloadingLock: Finalizing LOCKED Token[searchresults_activity 2018-12-09 02:35:37.480]
+12-09 02:35:43.796 32259 32259 E .android.chrom: Not starting debugger since process cannot load the jdwp agent.
+12-09 02:35:44.012 32076 32264 E SQLiteLog: (1) no such table: fillups
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: Couldn't upgrade database!
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: android.database.sqlite.SQLiteException: no such table: fillups (code 1 SQLITE_ERROR): , while compiling: ALTER TABLE fillups ADD COLUMN is_partial INTEGER;
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:903)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:514)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1769)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1698)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.exec(DatabaseUpgrader.java:105)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:44)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.provider.DatabaseUpgrader.upgradeDatabase(DatabaseUpgrader.java:89)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:77)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-09 02:35:44.077 32076 32264 E DatabaseUpgrader: 	at java.lang.Thread.run(Thread.java:764)
