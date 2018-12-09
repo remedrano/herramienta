@@ -18,6 +18,64 @@ function obtenerCookie(name) {
 
 $(document).ready(function(){
 
+    $('#btn-random').on('click', function(){
+        $('#contenido-random').show();
+        $('#contenido-calabash').hide();
+        $('#contenido-vrt').hide();
+    });
+
+    $('#btn-calabash').on('click', function(){
+        $('#contenido-calabash').show();
+        $('#contenido-random').hide();
+        $('#contenido-vrt').hide();
+    });
+
+    $('#btn-vrt').on('click', function(){
+        $('#contenido-vrt').show();
+        $('#contenido-calabash').hide();
+        $('#contenido-random').hide();
+    });
+
+    $('#ejecutarCalabash').on('click', function(){
+        var csrftoken = obtenerCookie('csrftoken');
+        $.ajax({
+            url: "ejecutarCalabash",
+            async: false,
+            method: "POST",
+            data: {  },
+            dataType: "json",
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }).done(function (data) {
+            unidades = data;
+        }).fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        }).always(function () {
+            //$('.loader').hide();
+        });
+    });
+
+    $('#agregarPermiso').on('click', function(){
+        var csrftoken = obtenerCookie('csrftoken');
+        $.ajax({
+            url: "permisoInternetApks",
+            async: false,
+            method: "POST",
+            data: {  },
+            dataType: "json",
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }).done(function (data) {
+            unidades = data;
+        }).fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        }).always(function () {
+            //$('.loader').hide();
+        });
+    });
+
     $("#form-random").submit(function (e) {
         e.preventDefault();
         var csrftoken = obtenerCookie('csrftoken');
