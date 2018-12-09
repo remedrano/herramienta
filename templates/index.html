@@ -40,10 +40,10 @@
           Pruebas disponibles
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Random</a>
-          <a class="dropdown-item" href="#">BDT / Calabash</a>
+          <a class="dropdown-item" id="btn-random" href="#">Random</a>
+          <a class="dropdown-item" id="btn-calabash" href="#">BDT / Calabash</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">VRT </a>
+          <a class="dropdown-item" id="btn-vrt" href="#">VRT </a>
         </div>
       </li>
     </ul>
@@ -54,8 +54,10 @@
   </div>
 </nav>
 
-<!--- Modales -->
+<!--- Contenido -->
 {% include  'html/random.html' %}
+{% include  'html/calabash.html' %}
+{% include  'html/vrt.html' %}
 
 
 </body>

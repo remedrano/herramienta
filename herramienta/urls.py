@@ -21,5 +21,7 @@ from parcial import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.IndexView.index),
-    path('randomTesting', views.IndexView.randomTesting)
+    path('randomTesting', views.IndexView.randomTesting),
+    path('permisoInternetApks', views.IndexView.agregarPermisoInternetApks),
+    path('ejecutarCalabash', views.IndexView.ejecutarCalabash)
 ]

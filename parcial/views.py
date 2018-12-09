@@ -71,6 +71,75 @@ class IndexView(base.View):
 
         return HttpResponse(json.dumps(respuesta), content_type='application/json')
 
+    #Agrega el permiso de internet a todas las apks antes de ejecutar calabash
+    def agregarPermisoInternetApks(self):
+
+        rutas = os.walk('apks/originales')
+        rutaJar = 'apks/apktool_2.3.4.jar'
+        rutasDestino = 'apks/conpermiso'
+        rutasDescomprimido = 'apks/descomprimidos'
+
+        for (dirpath, dirnames, filenames) in rutas:
+            for file in filenames:
+                filename, file_extension = os.path.splitext(file)
+                if (file_extension == '.apk'):
+                    nombreLog = str(os.path.basename(os.path.normpath(dirpath)))
+                    apk = 'apks/originales/' + nombreLog + '/' + file
+
+                    #  Descrompimir
+                    comando = "java -jar "+rutaJar+" d -f "+apk+" -o "+rutasDescomprimido+"/"+nombreLog
+                    subprocess.call(comando, shell=True)
+
+                    #Editar archivo
+                    archivo = open(rutasDescomprimido +"/"+nombreLog + "/AndroidManifest.xml",'r')
+                    data = archivo.readlines()
+                    data[3] = data[3] + '\n\t<uses-permission android:name="android.permission.INTERNET" />\n'
+
+                    with open(rutasDescomprimido +"/"+nombreLog + "/AndroidManifest.xml",'w') as file:
+                        file.writelines(data)
+                    archivo.close()
+
+                    #  Comprimir
+                    comando = "java -jar " + rutaJar + " b -f " + (rutasDescomprimido + "/" + nombreLog) + " -o " + (rutasDestino+"/"+nombreLog+"/"+"com.evancharlton.mileage_3110.apk")
+                    subprocess.call(comando, shell=True)
+
+        respuesta = True
+
+        return HttpResponse(json.dumps(respuesta), content_type='application/json')
+
+
+    #Ejecuta los escenarios de calabash
+    def ejecutarCalabash(self):
+
+        rutas = os.walk('apks/conpermiso')
+        rutasDestino = 'calabash/resultados/'
+
+        for (dirpath, dirnames, filenames) in rutas:
+            for file in filenames:
+                filename, file_extension = os.path.splitext(file)
+                if (file_extension == '.apk'):
+                    nombreLog = str(os.path.basename(os.path.normpath(dirpath)))
+                    apk = '../apks/conpermiso/' + nombreLog + '/' + file
+
+                    #  Firmar app calabash
+                    comando = "calabash-android resign "+apk
+                    subprocess.call(comando, shell=True, cwd='calabash/')
+
+                    #  Crear carpeta de resultados
+                    comando = "mkdir resultados/" + nombreLog+"/"
+                    subprocess.call(comando, shell=True, cwd='calabash/')
+
+                    #  Crear permisos
+                    comando = "chmod  777 -R resultados/" + nombreLog + "/"
+                    subprocess.call(comando, shell=True, cwd='calabash/')
+
+                    #  Correr calabash en app
+                    comando = "SCREENSHOT_PATH=resultados/"+nombreLog+"/ calabash-android run " + apk+" --format html --out resultados/"+nombreLog+"/reports.html "
+                    subprocess.call(comando, shell=True, cwd='calabash/')
+
+        respuesta = True
+
+        return HttpResponse(json.dumps(respuesta), content_type='application/json')
 
 #Funcion principal para ejecutar el worker
 def ejecutarMonkey( emulador, semilla, apks, nombresLog):
