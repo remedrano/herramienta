@@ -23,5 +23,8 @@ urlpatterns = [
     path('', views.IndexView.index),
     path('randomTesting', views.IndexView.randomTesting),
     path('permisoInternetApks', views.IndexView.agregarPermisoInternetApks),
-    path('ejecutarCalabash', views.IndexView.ejecutarCalabash)
+    path('ejecutarCalabash', views.IndexView.ejecutarCalabash),
+    path('generarReporteRandom', views.IndexView.generarReporteRandom),
+    path('generarReporteCalabash', views.IndexView.generarReporteRandom),
+    path('generarReporteVRT', views.IndexView.generarReporteRandom)
 ]

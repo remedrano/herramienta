@@ -15,26 +15,77 @@ function obtenerCookie(name) {
     return cookieValue;
 }
 
-
 $(document).ready(function(){
+    $('#btn-random-reporte').on('click', function(){
+        $('.container').hide();
+        $('#random-reporte').show();
+    });
+
+    $('#btn-calabash-reporte').on('click', function(){
+        $('.container').hide();
+        $('#calabash-reporte').show();
+    });
+
+    $('#btn-vrt-reporte').on('click', function(){
+        $('.container').hide();
+        $('#vrt-reporte').show();
+    });
 
     $('#btn-random').on('click', function(){
+        $('.container').hide();
         $('#contenido-random').show();
-        $('#contenido-calabash').hide();
-        $('#contenido-vrt').hide();
     });
 
     $('#btn-calabash').on('click', function(){
+        $('.container').hide();
         $('#contenido-calabash').show();
-        $('#contenido-random').hide();
-        $('#contenido-vrt').hide();
     });
 
     $('#btn-vrt').on('click', function(){
+        $('.container').hide();
         $('#contenido-vrt').show();
-        $('#contenido-calabash').hide();
-        $('#contenido-random').hide();
     });
+
+    $('#reporteRandom').on('click', function(){
+        var csrftoken = obtenerCookie('csrftoken');
+        $.ajax({
+            url: "generarReporteRandom",
+            async: false,
+            method: "POST",
+            data: {  },
+            dataType: "json",
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }).done(function (data) {
+
+            $("#tabla-reporte-random tbody").html('');
+            var cantidad = 0;
+            var html = "";
+            for( var indice in data){
+                cantidad = ""+(indice + 1);
+                html+="<tr>" +
+                    "<td>"+cantidad+"</td>" +
+                    "<td>"+data[indice].fecha+" "+data[indice].hora+"</td>" +
+                    "<td >"+data[indice].mutante+"</td>" +
+                    "<td style='color: red'>"+data[indice].des+"</td>" +
+                    "<td style='color: red'>"+data[indice].linea+"</td>" +
+                    "</tr>"
+
+            }
+            $("#tabla-reporte-random tbody").append( html );
+
+            var totalRandom = $("#tabla-reporte-random tbody tr").length;
+            $("#totalRandom").val( totalRandom );
+
+        }).fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        }).always(function () {
+            //$('.loader').hide();
+        });
+    });
+
+
 
     $('#ejecutarCalabash').on('click', function(){
         var csrftoken = obtenerCookie('csrftoken');
@@ -80,7 +131,6 @@ $(document).ready(function(){
         e.preventDefault();
         var csrftoken = obtenerCookie('csrftoken');
 
-        alert( csrftoken );
         $.ajax({
             url: "randomTesting",
             async: false,

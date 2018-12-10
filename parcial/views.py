@@ -4,6 +4,7 @@ import subprocess
 from django.conf import settings
 import os
 from django.views.generic import base
+import re
 
 ANDROID_ADB = getattr(settings, "ANDROID_ADB", None)
 SDK_SIGNUP = getattr(settings, "SDK_SIGNUP", None)
@@ -140,6 +141,77 @@ class IndexView(base.View):
         respuesta = True
 
         return HttpResponse(json.dumps(respuesta), content_type='application/json')
+
+    def generarReporteRandom( self ):
+
+        rutas = os.walk('logs/errors')
+        erroresArray = []
+        cantidadErrores = 0;
+        for (dirpath, dirnames, filenames) in rutas:
+            for file in filenames:
+                filename, file_extension = os.path.splitext(file)
+                if (file_extension == '.log'):
+                    # Editar archivo
+                    archivo = open(dirpath + "/" + file , 'r')
+                    data = archivo.readlines()
+                    i = 0
+                    for linea in data:
+                        if linea.find("FATAL EXCEPTION") != -1 or linea.find("FATAL SQLITE_ERROR") != -1:
+
+                            if data[i+1].find("com.evancharlton.mileage") != -1:
+                                j = i+1
+                                varCiclo = True
+                                #Buscar la causa del error
+                                descripcionError = ''
+                                while varCiclo:
+                                    if j < len( data ):
+                                        if data[j].find("Caused by:") != -1:
+                                            descripcionError = data[j]
+                                            break
+                                    else:
+                                        j = len( data ) - 1
+                                        break
+                                    j+=1
+
+                                descripcionError = data[j]
+                                cantidadErrores += 1
+                                if descripcionError == '':
+                                    descripcionError = linea
+
+                                emu, num, package, log = file.split("-")
+
+                                mutante,ext = log.split(".")
+                                arreglo = linea.split(' ')
+                                arregloFiltro = descripcionError.split("Caused by:")
+                                descripcionFinal = ""
+
+                                valor = True
+                                if( len(arregloFiltro) > 1):
+                                    valor = next((item for item in erroresArray if ( item["mutante"] == (package+ mutante) and item["des"].find( arregloFiltro[1] )!=-1  ) ), False)
+                                    descripcionFinal = "Caused by:" + arregloFiltro[1]
+                                else:
+                                    descripcionFinal = arregloFiltro[0]
+
+                                if( valor!= False ):
+                                    erroresArray.append({'fecha': arreglo[0], 'hora': arreglo[1],
+                                                     'linea': linea+data[i+1], 'des': descripcionFinal,
+                                                     'mutante':  (package+"-"+ mutante)})
+
+
+                        #if (str(linea)).find("FATAL SQLITE_ERROR") != -1:
+                        #    arreglo = linea.split(' ')
+                        #    erroresArray.append({'fecha': arreglo[0], 'hora': arreglo[1]})
+                        #Comprobar que sea de la aplicacion
+
+                        #if (str(linea)).find( "com.evancharlton.mileage" ) != -1 :
+                        #        arreglo = linea.split(' ')
+                         #       erroresArray.append( { 'fecha':arreglo[0], 'hora':arreglo[1] } )
+                        i+=1
+                    #archivo.close()
+        #print( cantidadErrores )
+        #print(erroresArray)
+
+        return HttpResponse(json.dumps(erroresArray), content_type='application/json')
 
 #Funcion principal para ejecutar el worker
 def ejecutarMonkey( emulador, semilla, apks, nombresLog):

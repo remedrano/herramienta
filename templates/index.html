@@ -32,9 +32,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"> Estrategia de pruebas </a>
-      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Pruebas disponibles
@@ -43,8 +41,25 @@
           <a class="dropdown-item" id="btn-random" href="#">Random</a>
           <a class="dropdown-item" id="btn-calabash" href="#">BDT / Calabash</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" id="btn-vrt" href="#">VRT </a>
+          <a class="dropdown-item" id="btn-vrt" href="#">VRT - ResembleJS</a>
         </div>
+      </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reportes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="btn-random-reporte" href="#">Random</a>
+          <a class="dropdown-item" id="btn-calabash-reporte" href="#">BDT / Calabash</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="btn-vrt-reporte" href="#">VRT - ResembleJS</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"> Estrategia de pruebas </a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"> Consolidado </a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -58,7 +73,9 @@
 {% include  'html/random.html' %}
 {% include  'html/calabash.html' %}
 {% include  'html/vrt.html' %}
-
+{% include  'html/random-reporte.html' %}
+{% include  'html/calabash-reporte.html' %}
+{% include  'html/vrt-reporte.html' %}
 
 </body>
 </html>
