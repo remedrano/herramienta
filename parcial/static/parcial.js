@@ -85,7 +85,44 @@ $(document).ready(function(){
         });
     });
 
+    $('#reporteCalabash').on('click', function(){
+        var csrftoken = obtenerCookie('csrftoken');
+        $.ajax({
+            url: "generarReporteCalabash",
+            async: false,
+            method: "POST",
+            data: {  },
+            dataType: "json",
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }).done(function (data) {
 
+            $("#tabla-calabash-reporte tbody").html('');
+            var cantidad = 0;
+            var html = "";
+            for( var indice in data){
+                cantidad = ""+(indice + 1);
+                html="<tr>" +
+                    "<td>"+cantidad+"</td>" +
+                    "<td>"+data[indice].casoPrueba+"</td>" +
+                    "<td>"+data[indice].mutante+"</td>" +
+                    "<td style='color:red'>"+data[indice]['error']+"</td>" +
+                    "<td >"+data[indice].archivo+"</td>" +
+                    "</tr>"
+                    $("#tabla-calabash-reporte tbody").append( html );
+            }
+
+
+            var totalCalabash = $("#tabla-calabash-reporte tbody tr").length;
+            $("#totalCalabash").val( totalCalabash );
+
+        }).fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        }).always(function () {
+            //$('.loader').hide();
+        });
+    });
 
     $('#ejecutarCalabash').on('click', function(){
         var csrftoken = obtenerCookie('csrftoken');

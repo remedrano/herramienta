@@ -1,4 +1,4 @@
-<div id="random-reporte" class="container col-12 mt-5 " style="display">
+<div id="random-reporte" class="container col-12 mt-5 " style="display:none">
     <div class="card ">
         <div class="card-header">
             Random Reporte
@@ -10,22 +10,23 @@
             <div class="form-group">
 
                 <div class="row">
-                    <div class="col-12  mb-4">
+                    <div class="col-4  mb-4">
                         <label for="exampleInputEmail1">Semilla</label>
                         <input type="text" class="form-control" id="ruta" aria-describedby="ruta" value="100" disabled>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12  mb-4">
+                    <div class="col-4  mb-4">
                         <label for="exampleInputEmail1">Casos de prueba</label>
                         <input type="text" class="form-control" id="ruta" aria-describedby="ruta" value="Aleatorios random monkey" disabled>
+                    </div>
+                    <div class="col-4  mb-4">
+                        <label for="exampleInputEmail1">Total apks probadas</label>
+                        <input type="text" class="form-control" id="totalRandom" aria-describedby="ruta" value="1504" disabled>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12  mb-4">
-                        <label for="exampleInputEmail1">Total errores</label>
+                    <div class="col-4  mb-4">
+                        <label for="exampleInputEmail1">Total errores detectados</label>
                         <input type="text" class="form-control" id="totalRandom" aria-describedby="ruta" value="" disabled>
                     </div>
                 </div>
@@ -37,7 +38,7 @@
                             <th>Fecha</th>
                             <th>Mutante (Apk)</th>
                             <th>Causa</th>
-                            <th>Descripcion</th>
+                            <th>Archivo</th>
                         </tr>
                     </thead>
                     <tbody>

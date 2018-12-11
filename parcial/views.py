@@ -213,6 +213,45 @@ class IndexView(base.View):
 
         return HttpResponse(json.dumps(erroresArray), content_type='application/json')
 
+    def generarReporteCalabash( self ):
+        rutas = os.walk('../calabash/resultados')
+        erroresArray = []
+        cantidadErrores = 0;
+        for (dirpath, dirnames, filenames) in rutas:
+            for file in filenames:
+                filename, file_extension = os.path.splitext(file)
+                nombreMutante = nombreLog = str(os.path.basename(os.path.normpath(dirpath)))
+
+                if (file_extension == '.html'):
+
+                    archivo = open(dirpath + "/" + file, 'r')
+                    data = archivo.readlines()
+                    i = 0
+                    for linea in data:
+                        if linea.find('class="message"') != -1:
+                            s = linea
+                            start = s.find('class="message"') + 21
+                            end = s.find('</pre></div>', start)
+
+                            error = s[start:end]
+
+                            start = linea.find('<span class="keyword">Scenario:') + 38
+                            end = linea.find('</span></h3>', start)
+                            casoPrueba = linea[start:end]
+
+                            if( len(casoPrueba) > 50):
+                                casoPrueba = '-'
+
+                            start = linea.find('class="backtrace"')+23
+                            end = linea.find('</pre></div>', start)
+                            archivo = linea[start:end]
+
+                            erroresArray.append({ 'archivo':archivo, 'casoPrueba':casoPrueba,'error':error,
+                                                 'linea': linea.strip(), 'des': linea.strip(),
+                                                 'mutante': nombreMutante})
+
+        return HttpResponse(json.dumps(erroresArray), content_type='application/json')
+
 #Funcion principal para ejecutar el worker
 def ejecutarMonkey( emulador, semilla, apks, nombresLog):
     i = 0
